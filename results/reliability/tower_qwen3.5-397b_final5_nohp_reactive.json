@@ -1,0 +1,730 @@
+{
+  "label": "tower_qwen3.5-397b_final5_nohp_reactive",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "tower_basic_v4_wayup.txt",
+    "prompt_chars": 4203,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "8192",
+      "CONVERSATION_HISTORY_TURNS": "0",
+      "MOTA_TOWER_HP_FLOOR": "0",
+      "MOTA_ORDER_TWO_SIDED": "1",
+      "MOTA_FIGHT_KEY_FLOOD": "1",
+      "MOTA_SHOP_ROUTE": "1",
+      "MOTA_REMOTE_ACTIONS": "1",
+      "MOTA_WAY_UP": "1",
+      "MOTA_HP_RULE_PCT": "40",
+      "LLM_TIMEOUT": "300"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.1831,
+      "success": false,
+      "died": false,
+      "floors_reached": 8,
+      "max_floor_id": "MT8",
+      "total_floors": 24,
+      "final_floor_id": "MT7",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose [MT6] Fight Senior Mage at (3,6) dmg=999999999)",
+      "final_hp": 46,
+      "hero_atk": 104,
+      "hero_def": 106,
+      "keys": {
+        "yellow": 4,
+        "blue": 6,
+        "red": 0
+      },
+      "money": 6,
+      "exp": 3,
+      "turns": 208,
+      "llm_calls": 84,
+      "model_calls": 85,
+      "planned_turns": 0,
+      "parse_errors": 1,
+      "forced_turns": 124,
+      "lethal_only_stop": {
+        "action": "[MT6] Fight Senior Mage at (3,6) dmg=999999999",
+        "hp_after": -1,
+        "damage": 999999999
+      },
+      "run_log": "20261002_001001_873689_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 468,
+          "turn": 39
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 468,
+          "turn": 40,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 396,
+          "turn": 43,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 396,
+          "turn": 44,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 396,
+          "turn": 45,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT4",
+          "hero_hp": 548,
+          "turn": 51,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 548,
+          "turn": 53,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 548,
+          "turn": 54,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 380,
+          "turn": 56,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT4",
+          "hero_hp": 360,
+          "turn": 57,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 780,
+          "turn": 75
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 780,
+          "turn": 84
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 780,
+          "turn": 88
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 2080,
+          "turn": 103,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT1",
+          "hero_hp": 1335,
+          "turn": 123,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT5",
+          "hero_hp": 1335,
+          "turn": 129,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT7",
+          "hero_hp": 1394,
+          "turn": 146,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1394,
+          "turn": 149,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT7",
+          "hero_hp": 1394,
+          "turn": 150,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 920,
+          "turn": 154
+        },
+        {
+          "from": "MT8",
+          "to": "MT4",
+          "hero_hp": 920,
+          "turn": 156,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 920,
+          "turn": 164,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT7",
+          "hero_hp": 2620,
+          "turn": 195,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT6",
+          "hero_hp": 2620,
+          "turn": 196,
+          "type": "remote"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2620,
+          "turn": 205,
+          "type": "remote"
+        }
+      ],
+      "elapsed_s": 2721.9,
+      "timestamp": "2026-10-02T02:55:23",
+      "run_idx": 1
+    },
+    {
+      "score": 0.7279,
+      "success": false,
+      "died": false,
+      "floors_reached": 8,
+      "max_floor_id": "MT8",
+      "total_floors": 24,
+      "final_floor_id": "MT7",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose [MT8] Fight Red Bat at (1,6) dmg=6213)",
+      "final_hp": 2770,
+      "hero_atk": 95,
+      "hero_def": 103,
+      "keys": {
+        "yellow": 4,
+        "blue": 6,
+        "red": 0
+      },
+      "money": 6,
+      "exp": 13,
+      "turns": 204,
+      "llm_calls": 83,
+      "model_calls": 84,
+      "planned_turns": 0,
+      "parse_errors": 0,
+      "forced_turns": 121,
+      "lethal_only_stop": {
+        "action": "[MT8] Fight Red Bat at (1,6) dmg=6213",
+        "hp_after": -3443,
+        "damage": 6213
+      },
+      "run_log": "20261002_005523_865863_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 305,
+          "turn": 38
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 299,
+          "turn": 40,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 227,
+          "turn": 45,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 212,
+          "turn": 48,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 212,
+          "turn": 49,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT4",
+          "hero_hp": 368,
+          "turn": 55,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 620,
+          "turn": 75
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 620,
+          "turn": 84
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 620,
+          "turn": 87
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1920,
+          "turn": 103,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT1",
+          "hero_hp": 1815,
+          "turn": 112,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT5",
+          "hero_hp": 2652,
+          "turn": 127,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT1",
+          "hero_hp": 1970,
+          "turn": 149,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT7",
+          "hero_hp": 2770,
+          "turn": 160,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 2770,
+          "turn": 164,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT1",
+          "hero_hp": 2770,
+          "turn": 166,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT5",
+          "hero_hp": 2770,
+          "turn": 174,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT7",
+          "hero_hp": 2770,
+          "turn": 178,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 2770,
+          "turn": 181
+        },
+        {
+          "from": "MT8",
+          "to": "MT4",
+          "hero_hp": 2770,
+          "turn": 185,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT6",
+          "hero_hp": 2770,
+          "turn": 193,
+          "type": "remote"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2770,
+          "turn": 204,
+          "type": "remote"
+        }
+      ],
+      "elapsed_s": 2685.7,
+      "timestamp": "2026-10-02T03:40:09",
+      "run_idx": 2
+    },
+    {
+      "score": 0.5277,
+      "success": false,
+      "died": false,
+      "floors_reached": 8,
+      "max_floor_id": "MT8",
+      "total_floors": 24,
+      "final_floor_id": "MT6",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose [MT7] Fight Red Bat at (3,3) dmg=7672)",
+      "final_hp": 1769,
+      "hero_atk": 94,
+      "hero_def": 104,
+      "keys": {
+        "yellow": 4,
+        "blue": 6,
+        "red": 0
+      },
+      "money": 6,
+      "exp": 13,
+      "turns": 204,
+      "llm_calls": 83,
+      "model_calls": 84,
+      "planned_turns": 0,
+      "parse_errors": 3,
+      "forced_turns": 121,
+      "lethal_only_stop": {
+        "action": "[MT7] Fight Red Bat at (3,3) dmg=7672",
+        "hp_after": -5903,
+        "damage": 7672
+      },
+      "run_log": "20261002_014009_620293_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 483,
+          "turn": 38
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 483,
+          "turn": 39,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 411,
+          "turn": 42,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 411,
+          "turn": 43,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 411,
+          "turn": 45,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 396,
+          "turn": 48,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 396,
+          "turn": 49,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT4",
+          "hero_hp": 572,
+          "turn": 54,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 404,
+          "turn": 56,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT4",
+          "hero_hp": 384,
+          "turn": 57,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 804,
+          "turn": 75
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 804,
+          "turn": 84
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 804,
+          "turn": 87
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 2104,
+          "turn": 103,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT7",
+          "hero_hp": 1345,
+          "turn": 120,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1345,
+          "turn": 121,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT5",
+          "hero_hp": 3045,
+          "turn": 148,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT7",
+          "hero_hp": 2993,
+          "turn": 162,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 2993,
+          "turn": 164,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT1",
+          "hero_hp": 2993,
+          "turn": 165,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT7",
+          "hero_hp": 2849,
+          "turn": 172,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 2129,
+          "turn": 176,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT7",
+          "hero_hp": 2129,
+          "turn": 177,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 1769,
+          "turn": 178
+        },
+        {
+          "from": "MT8",
+          "to": "MT4",
+          "hero_hp": 1769,
+          "turn": 180,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT6",
+          "hero_hp": 1769,
+          "turn": 186,
+          "type": "remote"
+        }
+      ],
+      "elapsed_s": 2394.4,
+      "timestamp": "2026-10-02T04:20:04",
+      "run_idx": 3
+    }
+  ],
+  "aggregate": {
+    "n": 3,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.5615
+    ],
+    "died": 0,
+    "lethal_only_stops": 3,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.4796,
+    "score_sd": 0.2756,
+    "score_min": 0.1831,
+    "score_max": 0.7279,
+    "final_hp_mean": 1528.3333,
+    "final_hp_sd": 1377.855,
+    "llm_calls_total": 250,
+    "seconds_per_call": 31.21,
+    "parse_error_rate": 0.016,
+    "elapsed_s_total": 7802.0,
+    "floors_reached_mean": 8.0,
+    "floors_reached_max": 8,
+    "max_floor_ids": [
+      "MT8",
+      "MT8",
+      "MT8"
+    ]
+  },
+  "updated": "2026-10-02 04:20"
+}

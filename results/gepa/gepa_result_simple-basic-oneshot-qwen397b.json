@@ -1,0 +1,63 @@
+{
+  "format_version": 3,
+  "timestamp": "20260427_024954",
+  "experiment_label": "simple-basic-oneshot-qwen397b",
+  "seed_prompt": "You are planning one move in Magic Tower (MOTA).\n\nTrust the engine-provided numbers in the action list.\n- Free collects are good.\n- Avoid unwinnable fights.\n- Prefer actions that improve future options without wasting HP.\n- On boss maps, the goal is to beat the boss with as much HP as possible.\n\nOUTPUT FORMAT:\n- Obey the exact format requested in the user message.\n- If the user message requests FINAL_CHOICE or PATH, the first visible characters on line 1 must be that exact token.\n- Do not put explanation or markdown before the required line.\n- Keep any visible explanation to one short sentence at most.",
+  "seed_was_custom": true,
+  "early_stopped": false,
+  "best_prompt": "You are planning one move in Magic Tower (MOTA).\n\nTrust the engine-provided numbers in the action list.\n- Free collects are good.\n- Avoid unwinnable fights.\n- Prefer actions that improve future options without wasting HP.\n- On boss maps, the goal is to beat the boss with as much HP as possible.\n\nOUTPUT FORMAT:\n- Obey the exact format requested in the user message.\n- If the user message requests FINAL_CHOICE or PATH, the first visible characters on line 1 must be that exact token.\n- Do not put explanation or markdown before the required line.\n- Keep any visible explanation to one short sentence at most.",
+  "best_idx": 0,
+  "best_score": 0.3712,
+  "all_scores": [
+    0.3712
+  ],
+  "num_candidates": 1,
+  "candidate_history": [
+    {
+      "idx": 0,
+      "is_best": true,
+      "score": 0.3712,
+      "val_subscores": {
+        "0": 0.3712
+      },
+      "discovery_eval_count": 0,
+      "parents": [
+        null
+      ],
+      "prompt": "You are planning one move in Magic Tower (MOTA).\n\nTrust the engine-provided numbers in the action list.\n- Free collects are good.\n- Avoid unwinnable fights.\n- Prefer actions that improve future options without wasting HP.\n- On boss maps, the goal is to beat the boss with as much HP as possible.\n\nOUTPUT FORMAT:\n- Obey the exact format requested in the user message.\n- If the user message requests FINAL_CHOICE or PATH, the first visible characters on line 1 must be that exact token.\n- Do not put explanation or markdown before the required line.\n- Keep any visible explanation to one short sentence at most.",
+      "candidate": {
+        "current_candidate": "You are planning one move in Magic Tower (MOTA).\n\nTrust the engine-provided numbers in the action list.\n- Free collects are good.\n- Avoid unwinnable fights.\n- Prefer actions that improve future options without wasting HP.\n- On boss maps, the goal is to beat the boss with as much HP as possible.\n\nOUTPUT FORMAT:\n- Obey the exact format requested in the user message.\n- If the user message requests FINAL_CHOICE or PATH, the first visible characters on line 1 must be that exact token.\n- Do not put explanation or markdown before the required line.\n- Keep any visible explanation to one short sentence at most."
+      }
+    }
+  ],
+  "parents": [
+    [
+      null
+    ]
+  ],
+  "val_subscores": [
+    {
+      "0": 0.3712
+    }
+  ],
+  "per_val_instance_best_candidates": {
+    "0": [
+      0
+    ]
+  },
+  "discovery_eval_counts": [
+    0
+  ],
+  "total_metric_calls": 9,
+  "num_full_val_evals": 1,
+  "run_dir": null,
+  "seed": 0,
+  "config": {
+    "max_metric_calls": 8,
+    "reflection_model": "qwen3.5-397b-a17b",
+    "task_model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking"
+  },
+  "reflection_traces_file": "D:\\Thesis\\Code\\mota24\\mota-gepa\\results\\prompt_history\\reflection_traces_20260427_024413.jsonl",
+  "objective": "Maximize the composite score of an LLM playing the Magic Tower (MOTA) game on floor 'simple'. The score combines: enemy completion (35%), final HP vs BFS-optimal target of 13 (25%), step efficiency vs reference 36 steps (15%), stat optimization (15%), and strategic violation avoidance (10%). The candidate text is the LLM's system prompt. A perfect game kills 12/13 enemies in ~36 steps with final HP=13."
+}

@@ -1,0 +1,102 @@
+{
+  "label": "_cgepa_smoke",
+  "method": "constrained-linear-gepa",
+  "floor": "simple",
+  "tower": null,
+  "preset": "qwen3.6-35b",
+  "task_model": "qwen3.6-35b-a3b",
+  "reflection_model": "qwen3.5-397b-a17b",
+  "rollouts": 1,
+  "seed_file": "floor_basic.txt",
+  "started": "2026-09-28T01:09:25.608119",
+  "env": {},
+  "iterations": [
+    {
+      "iteration": 0,
+      "prompt": "You play Magic Tower (MOTA): a deterministic, turn-based dungeon game on ONE floor. Each turn the engine lists every legal action with exact numbers; you answer with one action number.\n\nCOMBAT (exact, deterministic, turn-based):\n- You and the monster trade hits in rounds; you strike first.\n- Your hit = heroATK - monDEF. If heroATK <= monDEF you deal no damage and cannot win.\n- Monster hit = monATK - heroDEF. If heroDEF >= monATK the fight costs 0 HP.\n- rounds = ceil(monHP / your hit); total cost = rounds x monster hit. The list shows it as damage= and hpAfter=.\n- Special abilities: [magic-atk] ignores your DEF; [Nx-combo] multiplies the monster's hit; [first-strike] adds one extra monster hit.\n\nREADING THE ACTION LIST:\n- damage / hpAfter are exact for your current stats. [FREE if DEF>=X] tells you how much DEF makes that fight free; min-cost@maxStats tells you its cost after collecting every remaining stat item.\n- The indented tree under a fight or door shows what it unlocks (items, keys, doors, further enemies). lookahead = value of what it unlocks; effCost = damage - lookahead.\n- The tree is the only reliable map. Do not infer routes from coordinates (\"the boss is above me, so I must go straight up\") — walls and doors make that wrong; if an action does not list something in its tree, that action does not lead there.\n- [DEAD END] doors unlock nothing useful. [OPTIONAL] enemies block nothing. [LETHAL] means hpAfter <= 0.\n\nPRIORITIES:\n1. Stat items first. Every +1 DEF lowers every future fight; every +1 ATK lowers the rounds. Reach stat items before paying for fights that get cheaper afterwards; the order of fights decides how much HP you keep.\n2. When several fights all make progress, take the one with the lowest effCost (it already accounts for what the fight unlocks); a fight with lookahead=0 that unlocks nothing new is almost never the right first move.\n3. Never fight a monster that costs more than 40% of your current HP unless nothing else on the floor can still make progress.\n4. HP is the only currency here. Never pay HP for a fight that unlocks nothing needed for the goal.\n5. Keys are scarce: open a door only when what it unlocks is needed.\n\nGOAL: reach the floor's objective (kill the boss if there is one) alive with as much HP as possible. Think about the whole floor before each move: which stat items are still out there, what the boss costs now versus after collecting them, and which fights are truly on the way.\n\nGive a short reasoning, then end with: FINAL_CHOICE: <number>\n",
+      "score": 0.4,
+      "rollouts": [
+        {
+          "objective": 0.4,
+          "success": false,
+          "final_hp": 500,
+          "hero_atk": 13,
+          "hero_def": 8,
+          "max_floor_id": null,
+          "floors_reached": null,
+          "failure_reason": null,
+          "run_log": "20260927_130705_112380_simple_llm.json"
+        }
+      ],
+      "eval_s": 0.0,
+      "reflection": {
+        "response": "diag\n```\nGo to (4,7) first. FINAL_CHOICE: <number>\n```",
+        "violations": [
+          "contains coordinates like (x,y)"
+        ],
+        "s": 0.0,
+        "retry": {
+          "response": "fixed\n```\nGeneral rule text. FINAL_CHOICE: <number>\n```",
+          "violations": []
+        }
+      },
+      "accepted": true
+    },
+    {
+      "iteration": 1,
+      "prompt": "General rule text. FINAL_CHOICE: <number>",
+      "score": 0.5,
+      "rollouts": [
+        {
+          "objective": 0.5,
+          "success": false,
+          "final_hp": 500,
+          "hero_atk": 13,
+          "hero_def": 8,
+          "max_floor_id": null,
+          "floors_reached": null,
+          "failure_reason": null,
+          "run_log": "20260927_130705_112380_simple_llm.json"
+        }
+      ],
+      "eval_s": 0.0,
+      "reflection": {
+        "response": "x\n```\nAnother general prompt with 613 HP. FINAL_CHOICE: <number>\n```",
+        "violations": [
+          "floor-specific number 613"
+        ],
+        "s": 0.0,
+        "retry": {
+          "response": "y\n```\nStill 613. FINAL_CHOICE: <number>\n```",
+          "violations": [
+            "floor-specific number 613"
+          ]
+        }
+      },
+      "accepted": false
+    },
+    {
+      "iteration": 2,
+      "prompt": "General rule text. FINAL_CHOICE: <number>",
+      "score": 0.6,
+      "rollouts": [
+        {
+          "objective": 0.6000000000000001,
+          "success": false,
+          "final_hp": 500,
+          "hero_atk": 13,
+          "hero_def": 8,
+          "max_floor_id": null,
+          "floors_reached": null,
+          "failure_reason": null,
+          "run_log": "20260927_130705_112380_simple_llm.json"
+        }
+      ],
+      "eval_s": 0.0
+    }
+  ],
+  "best_prompt": "General rule text. FINAL_CHOICE: <number>",
+  "best_score": 0.6000000000000001,
+  "updated": "2026-09-28T01:09:25.636052",
+  "finished": "2026-09-28T01:09:25.636052"
+}

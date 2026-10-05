@@ -1,0 +1,38 @@
+[
+ {
+  "variant": "rule-1 shop exception",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ },
+ {
+  "variant": "rule-1 shop exception",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ },
+ {
+  "variant": "rule-1 shop exception",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ },
+ {
+  "variant": "rule-1 shop exception",
+  "preset": "qwen3.5-397b",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ },
+ {
+  "variant": "rule-1 shop exception",
+  "preset": "qwen3.5-397b",
+  "choice": "Fight Skeleton at (6,4) dmg=72",
+  "good": true
+ },
+ {
+  "variant": "rule-1 shop exception",
+  "preset": "qwen3.5-397b",
+  "choice": "Fight Skeleton at (6,4) dmg=72",
+  "good": true
+ }
+]

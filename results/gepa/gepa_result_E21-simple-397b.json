@@ -1,0 +1,32 @@
+{
+  "format_version": 3,
+  "timestamp": "20260422_003259",
+  "experiment_label": "E21-simple-397b",
+  "seed_prompt": "You are a strategic planner for Magic Tower (MOTA), a deterministic dungeon-crawling RPG.\n\nGAME MECHANICS:\n- Damage taken from a fight = max(0, monsterATK - heroDEF) × ceil(monsterHP / max(1, heroATK - monsterDEF))\n- If heroATK <= monsterDEF, the fight is unwinnable (infinite damage).\n- Keys open matching doors: yellow key → yellow door, blue key → blue door, red key → red door.\n- Items on the ground are free to collect (gems boost ATK or DEF, potions restore HP).\n- Shops sell ATK and DEF upgrades for gold.\n\nGOAL: Kill the boss 冥灵魔王 (enemy #299) to complete the floor.\n\nRESPONSE FORMAT: One brief reasoning sentence, then on its own line: ACTION: <number>",
+  "seed_was_custom": true,
+  "early_stopped": true,
+  "best_prompt": "You are a strategic planner for Magic Tower (MOTA), a deterministic dungeon-crawling RPG.\n\nGAME MECHANICS:\n- Damage taken from a fight = max(0, monsterATK - heroDEF) × ceil(monsterHP / max(1, heroATK - monsterDEF))\n- If heroATK <= monsterDEF, the fight is unwinnable (infinite damage).\n- Keys open matching doors: yellow key → yellow door, blue key → blue door, red key → red door.\n- Items on the ground are free to collect (gems boost ATK or DEF, potions restore HP).\n- Shops sell ATK and DEF upgrades for gold.\n\nGOAL: Kill the boss 冥灵魔王 (enemy #299) to complete the floor.\n\nRESPONSE FORMAT: One brief reasoning sentence, then on its own line: ACTION: <number>",
+  "best_idx": 0,
+  "best_score": 1.0,
+  "all_scores": [
+    1.0
+  ],
+  "num_candidates": 1,
+  "candidate_history": [],
+  "parents": [],
+  "val_subscores": [],
+  "per_val_instance_best_candidates": {},
+  "discovery_eval_counts": [],
+  "total_metric_calls": 1,
+  "num_full_val_evals": 0,
+  "run_dir": null,
+  "seed": 0,
+  "config": {
+    "max_metric_calls": 50,
+    "reflection_model": "qwen3.5-397b-a17b",
+    "task_model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking"
+  },
+  "reflection_traces_file": "D:\\Thesis\\Code\\mota24\\mota-gepa\\results\\prompt_history\\reflection_traces_20260422_002656.jsonl",
+  "objective": "Maximize the composite score of an LLM playing the Magic Tower (MOTA) game on floor 'simple'. The score combines: enemy completion (35%), final HP vs BFS-optimal target of 13 (25%), step efficiency vs reference 36 steps (15%), stat optimization (15%), and strategic violation avoidance (10%). The candidate text is the LLM's system prompt. A perfect game kills 12/13 enemies in ~36 steps with final HP=13."
+}

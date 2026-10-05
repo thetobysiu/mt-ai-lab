@@ -1,0 +1,30 @@
+You play Magic Tower (MOTA): a deterministic, turn-based dungeon game across many floors. Each turn the engine lists every legal action with exact numbers; you answer with one action number. You do not have to kill every monster — the tower is designed so that some monsters are only worth fighting later, after stat upgrades.
+
+COMBAT (exact, deterministic, turn-based):
+- You and the monster trade hits in rounds; you strike first.
+- Your hit = heroATK - monDEF. If heroATK <= monDEF you deal no damage and cannot win — only more ATK helps.
+- Monster hit = monATK - heroDEF. If heroDEF >= monATK the fight costs 0 HP.
+- rounds = ceil(monHP / your hit); total cost = rounds x monster hit. The list shows it as damage= and hpAfter=.
+- Special abilities: [magic-atk] ignores your DEF; [Nx-combo] multiplies the monster's hit; [first-strike] adds one extra monster hit.
+
+READING THE ACTION LIST:
+- damage / hpAfter are exact for your current stats. [FREE if DEF>=X] tells you how much DEF makes a fight free; [WINNABLE at ATK>=X] tells you how much ATK makes a [LETHAL] fight winnable.
+- The indented tree under a fight or door shows what it unlocks (items, keys, doors, shops, stairs, further enemies). lookahead = value of what it unlocks; effCost = damage - lookahead.
+- Every reachable object on every visited floor is listed, each floor in its own block: choosing an action on another floor walks there (stairs cost nothing) and performs it. Stairs appear only as the way up to a floor you have not visited yet. Stat items and shop upgrades show their cross-floor value (which fights elsewhere become winnable or free); the tower key budget counts keys and closed doors on all visited floors.
+- [shop_buy] lists what a discovered shop sells and the price in gold or EXP; a shop found once is usable from any floor.
+- The Way up line shows the cheapest route to the next unvisited floor with the exact cost of each fight on it, and what each ATK or DEF purchase you can afford does to those costs. Actions on that route are marked "on the way up".
+- Event lines show what a scripted character or item does (a character that opens a sealed area on another floor, the Cross that the fairy on MT0 turns into a stat multiplier), what it gives access to and the exact way there.
+- The tree is the only reliable map. Do not infer routes from coordinates — walls and doors make that wrong; if an action does not list something in its tree, that action does not lead there.
+- [DEAD END] doors unlock nothing useful. [LETHAL] means hpAfter <= 0.
+
+PRIORITIES:
+1. Scout first. If an up-staircase is available and the next floor has not been visited yet, take it before spending HP or resources on the current floor: seeing the next floor tells you which stats you need and where the cheap fights are. Come back down for specific fights and items once your stats make them cheap.
+2. Stat items and stat upgrades first. Every +1 DEF lowers every future fight; every +1 ATK lowers the rounds. Prefer routes to stat items over fights that get cheaper afterwards.
+3. Shops: NEVER buy HP. NEVER buy a level-up from the EXP shop. Buy DEF before ATK — except that your ATK must be high enough that the monsters you still need, at least those on the way up, cost at most 40% of your current HP (rule 4); the Way up line shows how many purchases that takes. ATK just above a monster's DEF makes it winnable but still very expensive, because the cost is rounds x monster hit and the rounds fall only as ATK rises well above the monster's DEF. When ATK is too low by that measure, buy ATK until it is not. Spend gold and EXP as soon as a useful DEF/ATK purchase is affordable.
+4. Never fight a monster that costs more than 40% of your current HP unless nothing else across all floors can still make progress and all gold/EXP is already spent.
+5. Never pay HP for a fight that unlocks nothing you need (no item, key, door, shop or stairs behind it). Free fights (0 HP) are always fine — they pay gold and EXP. When several fights all make progress, take the one with the lowest effCost.
+6. Keys are scarce and doors outnumber keys: open a door only when what it unlocks is needed now.
+
+GOAL: climb as high as possible without dying. Think across floors before each move: what does the next floor need, which earlier floors hold cheap fights or items now, and what should the gold/EXP buy.
+
+Give a short reasoning, then end with: FINAL_CHOICE: <number>

@@ -1,0 +1,5025 @@
+{
+ "source": "Thesis, Appendix F, Table F.4 (result files) and Table F.5 (tower labels)",
+ "rows": [
+  {
+   "result": "Table 6.2, single-floor columns (re-run of Table 6.2, $N = 5$)",
+   "files_cell": "`simple_<m>_canon`, `complex_<m>_canon` (single-floor prompt), `complex_route_<m>_canon` (solver-route prompt; Qwen3.6-35B $N = 10$), `hand0<i>_<m>_canon`; table compiled by `analysis/table62_canon.py`",
+   "items": [
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "complex_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "complex_route_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2574,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "complex_route_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 4,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "complex_route_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.2451,
+     "died": 1,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "complex_route_qwen3.6-35b_canon",
+     "n": 10,
+     "successes": 4,
+     "ci": [
+      0.1682,
+      0.6873
+     ],
+     "hp_ratio": 0.1985,
+     "died": 3,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/hand01_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.6608,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "hand01_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.6429,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "hand01_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.5,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "hand01_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.6429,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.2769,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "hand02_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.8615,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "hand02_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.4808,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "hand02_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.3077,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "hand03_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "hand03_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "hand03_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "hand03_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "hand04_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "hand04_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "hand04_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "hand04_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "simple_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    }
+   ]
+  },
+  {
+   "result": "Table 6.2, tower column",
+   "files_cell": "design 7 of Table 6.13",
+   "items": [
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final11_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final11_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 17,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_mistral-medium-3.5_final11_reactive.json",
+     "kind": "reliability",
+     "label": "tower_mistral-medium-3.5_final11_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final11_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final11_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 18,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.6-35b_final11_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.6-35b_final11_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 16,
+     "logs": 3
+    }
+   ]
+  },
+  {
+   "result": "Temperatures 0.6 and 1.0 (Sections 6.2 and 6.3, Table 6.3, Table D.57)",
+   "files_cell": "the file of the temperature-0 cell with the suffix `_t06` or `_t10`: re-run of Table 6.2 `simple_<m>_canon_t06`, `complex_<m>_canon_t06`, `complex_route_<m>_canon_t06` and the same with `_t10` (Qwen3.5-397B, DeepSeek-V4-Flash); earlier runs (Table D.57) `simple_qwen3.5-397b_final2_la3_t06` and the other `final2` cells of that table; earlier annotation version `simple_qwen3.5-397b_basic_d1d4_t06`",
+   "items": [
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_canon_t06.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_canon_t06",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_canon_t10.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_canon_t10",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_final2_la3_t06.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_final2_la3_t06",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_final2_la3_t10.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_final2_la3_t10",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_plan5_t06.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_plan5_t06",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2794,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive_t32_t06.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_reactive_t32_t06",
+     "n": 10,
+     "successes": 8,
+     "ci": [
+      0.4902,
+      0.9433
+     ],
+     "hp_ratio": 0.2629,
+     "died": 1,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive_t32_t10.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_reactive_t32_t10",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.2353,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.5-397b_canon_t06.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.5-397b_canon_t06",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.5-397b_canon_t10.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.5-397b_canon_t10",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.5-397b_final2_la3_t06.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.5-397b_final2_la3_t06",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_deepseek-v4-flash_canon_t06.json",
+     "kind": "reliability",
+     "label": "complex_route_deepseek-v4-flash_canon_t06",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2536,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_deepseek-v4-flash_canon_t10.json",
+     "kind": "reliability",
+     "label": "complex_route_deepseek-v4-flash_canon_t10",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.1814,
+     "died": 1,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_qwen3.5-397b_canon_t06.json",
+     "kind": "reliability",
+     "label": "complex_route_qwen3.5-397b_canon_t06",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.2941,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_qwen3.5-397b_canon_t10.json",
+     "kind": "reliability",
+     "label": "complex_route_qwen3.5-397b_canon_t10",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2574,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_deepseek-v4-flash_final2_t06.json",
+     "kind": "reliability",
+     "label": "hand03_deepseek-v4-flash_final2_t06",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_deepseek-v4-flash_final2_t06.json",
+     "kind": "reliability",
+     "label": "hand04_deepseek-v4-flash_final2_t06",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_canon_t06.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_canon_t06",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_canon_t10.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_canon_t10",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_plan3_t06.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_plan3_t06",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_reactive_t32_t06.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_reactive_t32_t06",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_d1d4_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_d1d4_t06",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_canon_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_canon_t06",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_canon_t10.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_canon_t10",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la3_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_la3_t06",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la3_t10.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_la3_t10",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.3076,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_plan3_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_plan3_t06",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    }
+   ]
+  },
+  {
+   "result": "Table 6.3, bare observation",
+   "files_cell": "`results/gepa_study/gs_397b_bare.json`, `gs_35b_bare.json`",
+   "items": [
+    {
+     "path": "results/gepa_study/gs_35b_bare.json",
+     "kind": "gepa_study",
+     "label": "gs_35b_bare",
+     "groups": [
+      {
+       "group": "basic · train",
+       "successes": 0,
+       "n": 3
+      },
+      {
+       "group": "core · train",
+       "successes": 0,
+       "n": 3
+      }
+     ],
+     "logs": 6
+    },
+    {
+     "path": "results/gepa_study/gs_397b_bare.json",
+     "kind": "gepa_study",
+     "label": "gs_397b_bare",
+     "groups": [
+      {
+       "group": "basic · train",
+       "successes": 0,
+       "n": 3
+      },
+      {
+       "group": "core · train",
+       "successes": 0,
+       "n": 3
+      }
+     ],
+     "logs": 6
+    }
+   ]
+  },
+  {
+   "result": "Tables 6.3 and 6.4, map only",
+   "files_cell": "`simple_qwen3.5-397b_mapenum`, `simple_qwen3.6-35b_mapenum`; Table 6.4 counted from the visible answers by `analysis/mapenum_rescore.py` (the `map_enum` fields of the result files also count options named in the reasoning)",
+   "items": [
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_mapenum.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_mapenum",
+     "n": 2,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.6576
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 2
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_mapenum.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_mapenum",
+     "n": 2,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.6576
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 2
+    }
+   ]
+  },
+  {
+   "result": "Section 6.2 (earlier runs of the final configuration), Table 6.3 (depth 3), Table 6.5 (row 9)",
+   "files_cell": "`simple_<m>_final2_la3` (Qwen3.5-397B, Qwen3.6-35B), `simple_<m>_final2_reactive` (DeepSeek-V4-Flash, Qwen3.8-27B); `complex_<m>_final2_la3`; `complex_<m>_survival_final2_reactive` (Qwen3.5-397B, Qwen3.6-35B; earlier version `complex_<m>_survival_hints_on`), `complex_deepseek-v4-flash_survival_final2_reactive_t32` (32,768 tokens; `…_reactive` at 16,384), `complex_qwen3.8-27b_survival_final2_reactive_t32_t06`; `hand0<i>_<m>_final2` (DeepSeek-V4-Flash at 32,768 tokens: `…_reactive_t32`)",
+   "items": [
+    {
+     "path": "results/reliability/_ablation_effcost_numeric/simple_qwen3.5-397b_reactive.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_reactive",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 0
+    },
+    {
+     "path": "results/reliability/_ablation_effcost_numeric/simple_qwen3.6-35b_reactive.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_reactive",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 0
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_final2_la3.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_final2_la3",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_reactive",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.2402,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive_t32.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_reactive_t32",
+     "n": 10,
+     "successes": 8,
+     "ci": [
+      0.4902,
+      0.9433
+     ],
+     "hp_ratio": 0.2298,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/complex_qwen3.5-397b_final2_la3.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.5-397b_final2_la3",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.5-397b_survival_final2_reactive.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.5-397b_survival_final2_reactive",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.2647,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.5-397b_survival_hints_on.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.5-397b_survival_hints_on",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.9546,
+     "died": 3,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.6-35b_final2_la3.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.6-35b_final2_la3",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.6-35b_survival_final2_reactive.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.6-35b_survival_final2_reactive",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.6-35b_survival_hints_on.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.6-35b_survival_hints_on",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.4091,
+     "died": 1,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.8-27b_survival_final2_reactive_t32_t06.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.8-27b_survival_final2_reactive_t32_t06",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/hand01_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_final2",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.6786,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_deepseek-v4-flash_final2_reactive_t32.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_final2_reactive_t32",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.6572,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_qwen3.5-397b_final2.json",
+     "kind": "reliability",
+     "label": "hand01_qwen3.5-397b_final2",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.4286,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_qwen3.6-35b_final2.json",
+     "kind": "reliability",
+     "label": "hand01_qwen3.6-35b_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.6429,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_final2",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.3077,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_final2_reactive_t32.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_final2_reactive_t32",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2885,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_qwen3.5-397b_final2.json",
+     "kind": "reliability",
+     "label": "hand02_qwen3.5-397b_final2",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.5385,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_qwen3.6-35b_final2.json",
+     "kind": "reliability",
+     "label": "hand02_qwen3.6-35b_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.3077,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/hand03_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "hand03_deepseek-v4-flash_final2",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_qwen3.5-397b_final2.json",
+     "kind": "reliability",
+     "label": "hand03_qwen3.5-397b_final2",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_qwen3.6-35b_final2.json",
+     "kind": "reliability",
+     "label": "hand03_qwen3.6-35b_final2",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/hand04_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "hand04_deepseek-v4-flash_final2",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_qwen3.5-397b_final2.json",
+     "kind": "reliability",
+     "label": "hand04_qwen3.5-397b_final2",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_qwen3.6-35b_final2.json",
+     "kind": "reliability",
+     "label": "hand04_qwen3.6-35b_final2",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_reactive.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_reactive",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_reactive_t32.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_reactive_t32",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_la3",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_reactive.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_reactive",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 0
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_final2_la3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_final2_la3",
+     "n": 10,
+     "successes": 7,
+     "ci": [
+      0.3968,
+      0.8922
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_reactive.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_reactive",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_final2_reactive.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_final2_reactive",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_reactive.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_reactive",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 0
+    }
+   ]
+  },
+  {
+   "result": "Section 6.3, tower settings on single floors",
+   "files_cell": "`<floor>_<m>_canon_hp60` (prompt `floor_basic_hp60.txt`, `MOTA_HP_RULE_PCT=60`; the solver-route cells keep their prompt) and `…_canon_planmem` (`MOTA_PLAN_MEMORY=1`), Qwen3.5-397B and DeepSeek-V4-Flash",
+   "items": [
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_canon_hp60.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_canon_hp60",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_canon_planmem.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_canon_planmem",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.5-397b_canon_hp60.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.5-397b_canon_hp60",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.5-397b_canon_planmem.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.5-397b_canon_planmem",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_deepseek-v4-flash_canon_hp60.json",
+     "kind": "reliability",
+     "label": "complex_route_deepseek-v4-flash_canon_hp60",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.1765,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_deepseek-v4-flash_canon_planmem.json",
+     "kind": "reliability",
+     "label": "complex_route_deepseek-v4-flash_canon_planmem",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2574,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_qwen3.5-397b_canon_hp60.json",
+     "kind": "reliability",
+     "label": "complex_route_qwen3.5-397b_canon_hp60",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.2823,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_route_qwen3.5-397b_canon_planmem.json",
+     "kind": "reliability",
+     "label": "complex_route_qwen3.5-397b_canon_planmem",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_canon_hp60.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_canon_hp60",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_canon_planmem.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_canon_planmem",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_canon_hp60.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_canon_hp60",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_canon_planmem.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_canon_planmem",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    }
+   ]
+  },
+  {
+   "result": "Section 6.3, hand01 and hand02 at depth 1 and with the bare observation",
+   "files_cell": "`hand0<i>_deepseek-v4-flash_final2_la1`, `…_bare`",
+   "items": [
+    {
+     "path": "results/reliability/hand01_deepseek-v4-flash_final2_bare.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_final2_bare",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_deepseek-v4-flash_final2_la1.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_final2_la1",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.5714,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_final2_bare.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_final2_bare",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_final2_la1.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_final2_la1",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.25,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    }
+   ]
+  },
+  {
+   "result": "Table 6.3, lookahead depth",
+   "files_cell": "`simple_<m>_final2_la<d>`",
+   "items": [
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la0.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_la0",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la1.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_la1",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la2.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_la2",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_la3",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_final2_la0.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_final2_la0",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_final2_la1.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_final2_la1",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_final2_la2.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_final2_la2",
+     "n": 10,
+     "successes": 7,
+     "ci": [
+      0.3968,
+      0.8922
+     ],
+     "hp_ratio": 0.2747,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_final2_la3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_final2_la3",
+     "n": 10,
+     "successes": 7,
+     "ci": [
+      0.3968,
+      0.8922
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    }
+   ]
+  },
+  {
+   "result": "Table 6.3, conversation history",
+   "files_cell": "`simple_qwen3.5-397b_basic_k1k2`, `simple_qwen3.6-35b_basic_k1k2_16k`; without history `…_hist0`",
+   "items": [
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_k1k2.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_k1k2",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_k1k2_hist0.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_k1k2_hist0",
+     "n": 10,
+     "successes": 9,
+     "ci": [
+      0.5958,
+      0.9821
+     ],
+     "hp_ratio": 0.2222,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_basic_k1k2_16k.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_basic_k1k2_16k",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_basic_k1k2_16k_hist0.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_basic_k1k2_16k_hist0",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    }
+   ]
+  },
+  {
+   "result": "Table 6.3, assists off",
+   "files_cell": "`simple_qwen3.5-397b_reactive_raw`",
+   "items": [
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_reactive_raw.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_reactive_raw",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 0
+    }
+   ]
+  },
+  {
+   "result": "Table 6.5 and Figure 6.1, rows 1 to 9",
+   "files_cell": "`simple_<m>_` followed by `legacy_strategic_control`, `basic_mechanical_override`, `basic_mech_altroute`, `basic_order_aware`, `basic_d1d4`, `basic_k1k2` (Qwen3.6-35B: `basic_k1k2_16k`), `basic_k1k2_hist0` (Qwen3.6-35B: `basic_k1k2_16k_hist0`), `final_la3`, `final2_la3`",
+   "items": [
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_d1d4.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_d1d4",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_k1k2.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_k1k2",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_k1k2_hist0.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_k1k2_hist0",
+     "n": 10,
+     "successes": 9,
+     "ci": [
+      0.5958,
+      0.9821
+     ],
+     "hp_ratio": 0.2222,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_mech_altroute.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_mech_altroute",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_mechanical_override.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_mechanical_override",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_order_aware.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_order_aware",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_la3",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final_la3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final_la3",
+     "n": 10,
+     "successes": 7,
+     "ci": [
+      0.3968,
+      0.8922
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_legacy_strategic_control.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_legacy_strategic_control",
+     "n": 4,
+     "successes": 2,
+     "ci": [
+      0.15,
+      0.85
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 4
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_basic_d1d4.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_basic_d1d4",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_basic_k1k2_16k.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_basic_k1k2_16k",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_basic_k1k2_16k_hist0.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_basic_k1k2_16k_hist0",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_basic_order_aware.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_basic_order_aware",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_final2_la3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_final2_la3",
+     "n": 10,
+     "successes": 7,
+     "ci": [
+      0.3968,
+      0.8922
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.6-35b_final_la3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.6-35b_final_la3",
+     "n": 10,
+     "successes": 1,
+     "ci": [
+      0.0179,
+      0.4042
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_basic_d1d4.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_basic_d1d4",
+     "n": 3,
+     "successes": 1,
+     "ci": [
+      0.0615,
+      0.7923
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    }
+   ]
+  },
+  {
+   "result": "Section 6.4.1, override census",
+   "files_cell": "`analysis/override_census.py` over the stored run logs (94 replaced turns in 68 episodes)",
+   "items": []
+  },
+  {
+   "result": "Section 6.4.2, failure census",
+   "files_cell": "the 31 files listed in `analysis/failure_census_simple.py` (rows 2 to 9 of Table 6.5 with their depth, temperature and history variants; reference trajectory = first episode of `simple_qwen3.5-397b_basic_order_aware`)",
+   "items": [
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_basic_order_aware.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_basic_order_aware",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    }
+   ]
+  },
+  {
+   "result": "Section 6.4.6, Table B.4 and Figure 6.2",
+   "files_cell": "`complex_value_trace_[a-e].json`, written by `analysis/complex_value_trace.py` and summarised by `analysis/complex_value_summary.py`",
+   "items": [
+    {
+     "path": "results/reliability/complex_value_trace_a.json",
+     "kind": "other",
+     "label": "complex_value_trace_a"
+    },
+    {
+     "path": "results/reliability/complex_value_trace_b.json",
+     "kind": "other",
+     "label": "complex_value_trace_b"
+    },
+    {
+     "path": "results/reliability/complex_value_trace_c.json",
+     "kind": "other",
+     "label": "complex_value_trace_c"
+    },
+    {
+     "path": "results/reliability/complex_value_trace_d.json",
+     "kind": "other",
+     "label": "complex_value_trace_d"
+    },
+    {
+     "path": "results/reliability/complex_value_trace_e.json",
+     "kind": "other",
+     "label": "complex_value_trace_e"
+    }
+   ]
+  },
+  {
+   "result": "Table 6.6",
+   "files_cell": "`results/gepa_study/gs_*` (first configuration), `gs2_*` (second configuration); loops in `results/gepa/gepa_result_gs_*.json` and `…_gs2_*.json`; reference runs on the simple floor `gs_397b_*`, `gs_35b_*`",
+   "items": [
+    {
+     "path": "results/gepa/gepa_result_gs2_dsv4flash_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs2_dsv4flash_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs2_dsv4flash_full.json",
+     "kind": "other",
+     "label": "gepa_result_gs2_dsv4flash_full"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs2_llama8b_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs2_llama8b_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs2_llama8b_full.json",
+     "kind": "other",
+     "label": "gepa_result_gs2_llama8b_full"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs_dsv4flash_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs_dsv4flash_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs_dsv4flash_full.json",
+     "kind": "other",
+     "label": "gepa_result_gs_dsv4flash_full"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs_llama8b_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs_llama8b_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs_llama8b_full.json",
+     "kind": "other",
+     "label": "gepa_result_gs_llama8b_full"
+    },
+    {
+     "path": "results/gepa_study/gs2_dsv4flash_bare.json",
+     "kind": "gepa_study",
+     "label": "gs2_dsv4flash_bare",
+     "groups": [
+      {
+       "group": "gepa · test",
+       "successes": 9,
+       "n": 13
+      },
+      {
+       "group": "gepa · train",
+       "successes": 2,
+       "n": 3
+      }
+     ],
+     "logs": 16
+    },
+    {
+     "path": "results/gepa_study/gs2_dsv4flash_full.json",
+     "kind": "gepa_study",
+     "label": "gs2_dsv4flash_full",
+     "groups": [
+      {
+       "group": "gepa · test",
+       "successes": 8,
+       "n": 13
+      },
+      {
+       "group": "gepa · train",
+       "successes": 3,
+       "n": 3
+      }
+     ],
+     "logs": 16
+    },
+    {
+     "path": "results/gepa_study/gs2_llama8b_bare.json",
+     "kind": "gepa_study",
+     "label": "gs2_llama8b_bare",
+     "groups": [
+      {
+       "group": "gepa · test",
+       "successes": 4,
+       "n": 13
+      },
+      {
+       "group": "gepa · train",
+       "successes": 1,
+       "n": 3
+      }
+     ],
+     "logs": 16
+    },
+    {
+     "path": "results/gepa_study/gs2_llama8b_full.json",
+     "kind": "gepa_study",
+     "label": "gs2_llama8b_full",
+     "groups": [
+      {
+       "group": "gepa · test",
+       "successes": 9,
+       "n": 13
+      },
+      {
+       "group": "gepa · train",
+       "successes": 2,
+       "n": 3
+      }
+     ],
+     "logs": 16
+    },
+    {
+     "path": "results/gepa_study/gs_35b_bare.json",
+     "kind": "gepa_study",
+     "label": "gs_35b_bare",
+     "groups": [
+      {
+       "group": "basic · train",
+       "successes": 0,
+       "n": 3
+      },
+      {
+       "group": "core · train",
+       "successes": 0,
+       "n": 3
+      }
+     ],
+     "logs": 6
+    },
+    {
+     "path": "results/gepa_study/gs_35b_full.json",
+     "kind": "gepa_study",
+     "label": "gs_35b_full",
+     "groups": [
+      {
+       "group": "core · train",
+       "successes": 2,
+       "n": 3
+      }
+     ],
+     "logs": 3
+    },
+    {
+     "path": "results/gepa_study/gs_397b_bare.json",
+     "kind": "gepa_study",
+     "label": "gs_397b_bare",
+     "groups": [
+      {
+       "group": "basic · train",
+       "successes": 0,
+       "n": 3
+      },
+      {
+       "group": "core · train",
+       "successes": 0,
+       "n": 3
+      }
+     ],
+     "logs": 6
+    },
+    {
+     "path": "results/gepa_study/gs_397b_full.json",
+     "kind": "gepa_study",
+     "label": "gs_397b_full",
+     "groups": [
+      {
+       "group": "core · train",
+       "successes": 2,
+       "n": 3
+      }
+     ],
+     "logs": 3
+    },
+    {
+     "path": "results/gepa_study/gs_dsv4flash_bare.json",
+     "kind": "gepa_study",
+     "label": "gs_dsv4flash_bare",
+     "groups": [
+      {
+       "group": "core · train",
+       "successes": 0,
+       "n": 1
+      },
+      {
+       "group": "gepa · train",
+       "successes": 0,
+       "n": 1
+      }
+     ],
+     "logs": 2
+    },
+    {
+     "path": "results/gepa_study/gs_dsv4flash_bare_k1.json",
+     "kind": "gepa_study",
+     "label": "gs_dsv4flash_bare_k1",
+     "groups": [
+      {
+       "group": "basic · test",
+       "successes": 7,
+       "n": 13
+      },
+      {
+       "group": "basic · train",
+       "successes": 2,
+       "n": 3
+      },
+      {
+       "group": "core · test",
+       "successes": 9,
+       "n": 13
+      },
+      {
+       "group": "core · train",
+       "successes": 2,
+       "n": 3
+      }
+     ],
+     "logs": 32
+    },
+    {
+     "path": "results/gepa_study/gs_dsv4flash_full.json",
+     "kind": "gepa_study",
+     "label": "gs_dsv4flash_full",
+     "groups": [
+      {
+       "group": "basic · test",
+       "successes": 11,
+       "n": 13
+      },
+      {
+       "group": "basic · train",
+       "successes": 2,
+       "n": 3
+      },
+      {
+       "group": "core · test",
+       "successes": 10,
+       "n": 13
+      },
+      {
+       "group": "core · train",
+       "successes": 3,
+       "n": 3
+      },
+      {
+       "group": "gepa · test",
+       "successes": 11,
+       "n": 13
+      },
+      {
+       "group": "gepa · train",
+       "successes": 2,
+       "n": 3
+      }
+     ],
+     "logs": 48
+    },
+    {
+     "path": "results/gepa_study/gs_llama8b_bare.json",
+     "kind": "gepa_study",
+     "label": "gs_llama8b_bare",
+     "groups": [
+      {
+       "group": "basic · test",
+       "successes": 6,
+       "n": 13
+      },
+      {
+       "group": "basic · train",
+       "successes": 2,
+       "n": 3
+      },
+      {
+       "group": "core · test",
+       "successes": 5,
+       "n": 13
+      },
+      {
+       "group": "core · train",
+       "successes": 1,
+       "n": 3
+      },
+      {
+       "group": "gepa · test",
+       "successes": 4,
+       "n": 13
+      },
+      {
+       "group": "gepa · train",
+       "successes": 1,
+       "n": 3
+      }
+     ],
+     "logs": 48
+    },
+    {
+     "path": "results/gepa_study/gs_llama8b_full.json",
+     "kind": "gepa_study",
+     "label": "gs_llama8b_full",
+     "groups": [
+      {
+       "group": "basic · test",
+       "successes": 9,
+       "n": 13
+      },
+      {
+       "group": "basic · train",
+       "successes": 2,
+       "n": 3
+      },
+      {
+       "group": "core · test",
+       "successes": 8,
+       "n": 13
+      },
+      {
+       "group": "core · train",
+       "successes": 2,
+       "n": 3
+      },
+      {
+       "group": "gepa · test",
+       "successes": 10,
+       "n": 13
+      },
+      {
+       "group": "gepa · train",
+       "successes": 2,
+       "n": 3
+      }
+     ],
+     "logs": 48
+    }
+   ]
+  },
+  {
+   "result": "Table 6.7",
+   "files_cell": "`analysis/gepa_rule_themes.py` over the candidates in `results/gepa/gepa_result_gs*_*.json`",
+   "items": [
+    {
+     "path": "results/gepa/gepa_result_gs2_dsv4flash_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs2_dsv4flash_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs2_dsv4flash_full.json",
+     "kind": "other",
+     "label": "gepa_result_gs2_dsv4flash_full"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs2_llama8b_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs2_llama8b_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs2_llama8b_full.json",
+     "kind": "other",
+     "label": "gepa_result_gs2_llama8b_full"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs4_complex_35b.json",
+     "kind": "other",
+     "label": "gepa_result_gs4_complex_35b"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs5_oneplusone_dsthink_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs5_oneplusone_dsthink_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs5_pareto_dsthink_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs5_pareto_dsthink_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs_dsv4flash_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs_dsv4flash_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs_dsv4flash_full.json",
+     "kind": "other",
+     "label": "gepa_result_gs_dsv4flash_full"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs_llama8b_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs_llama8b_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs_llama8b_full.json",
+     "kind": "other",
+     "label": "gepa_result_gs_llama8b_full"
+    }
+   ]
+  },
+  {
+   "result": "Section 6.5.2 and Figure 6.3, paired confirmation",
+   "files_cell": "`results/gepa_study/gs3_dsbare_confirm.json`",
+   "items": [
+    {
+     "path": "results/gepa_study/gs3_dsbare_confirm.json",
+     "kind": "gepa_study",
+     "label": "gs3_dsbare_confirm",
+     "groups": [
+      {
+       "group": "core · test",
+       "successes": 24,
+       "n": 36
+      },
+      {
+       "group": "core · train",
+       "successes": 0,
+       "n": 3
+      },
+      {
+       "group": "gepa · test",
+       "successes": 30,
+       "n": 36
+      },
+      {
+       "group": "gepa · train",
+       "successes": 0,
+       "n": 3
+      }
+     ],
+     "logs": 78
+    }
+   ]
+  },
+  {
+   "result": "Section 6.5.2, complex floor",
+   "files_cell": "`results/gepa_study/gs4_complex_35b.json` (loop: `results/gepa/gepa_result_gs4_complex_35b.json`)",
+   "items": [
+    {
+     "path": "results/gepa/gepa_result_gs4_complex_35b.json",
+     "kind": "other",
+     "label": "gepa_result_gs4_complex_35b"
+    },
+    {
+     "path": "results/gepa_study/gs4_complex_35b.json",
+     "kind": "gepa_study",
+     "label": "gs4_complex_35b",
+     "groups": [
+      {
+       "group": "gepa · train",
+       "successes": 0,
+       "n": 5
+      },
+      {
+       "group": "seed · train",
+       "successes": 0,
+       "n": 5
+      }
+     ],
+     "logs": 10
+    }
+   ]
+  },
+  {
+   "result": "Table 6.8, second study",
+   "files_cell": "`results/gepa_study/gs5_pareto_dsthink_bare.json`, `gs5_oneplusone_dsthink_bare.json` (loops: `results/gepa/gepa_result_gs5_*.json`)",
+   "items": [
+    {
+     "path": "results/gepa/gepa_result_gs5_oneplusone_dsthink_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs5_oneplusone_dsthink_bare"
+    },
+    {
+     "path": "results/gepa/gepa_result_gs5_pareto_dsthink_bare.json",
+     "kind": "other",
+     "label": "gepa_result_gs5_pareto_dsthink_bare"
+    },
+    {
+     "path": "results/gepa_study/gs5_oneplusone_dsthink_bare.json",
+     "kind": "gepa_study",
+     "label": "gs5_oneplusone_dsthink_bare",
+     "groups": [
+      {
+       "group": "gepa · test",
+       "successes": 26,
+       "n": 39
+      },
+      {
+       "group": "gepa · train",
+       "successes": 6,
+       "n": 9
+      }
+     ],
+     "logs": 48
+    },
+    {
+     "path": "results/gepa_study/gs5_pareto_dsthink_bare.json",
+     "kind": "gepa_study",
+     "label": "gs5_pareto_dsthink_bare",
+     "groups": [
+      {
+       "group": "core · test",
+       "successes": 32,
+       "n": 39
+      },
+      {
+       "group": "core · train",
+       "successes": 5,
+       "n": 9
+      },
+      {
+       "group": "gepa · test",
+       "successes": 24,
+       "n": 39
+      },
+      {
+       "group": "gepa · train",
+       "successes": 6,
+       "n": 9
+      }
+     ],
+     "logs": 96
+    }
+   ]
+  },
+  {
+   "result": "Section 6.5.4, evolved-route prompt",
+   "files_cell": "loop `results/gepa/gepa_result_evolved_route_complex_deepseek.json`; evaluation `complex_evolved_route_deepseek-v4-flash`",
+   "items": [
+    {
+     "path": "results/gepa/gepa_result_evolved_route_complex_deepseek.json",
+     "kind": "other",
+     "label": "gepa_result_evolved_route_complex_deepseek"
+    },
+    {
+     "path": "results/reliability/complex_evolved_route_deepseek-v4-flash.json",
+     "kind": "reliability",
+     "label": "complex_evolved_route_deepseek-v4-flash",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    }
+   ]
+  },
+  {
+   "result": "Tables 6.9 and 6.10 and Figure 6.4, single floors",
+   "files_cell": "`simple_<m>_final2_plan<k>`, `…_planf` (long plan, whole-floor wording, re-planned), `…_oneshot_plan` (single call, whole-floor wording), `…_maxsteps`, `…_maxsteps_once`; reactive arms `simple_qwen3.5-397b_final2_la3`, `simple_deepseek-v4-flash_final2_reactive` and `…_reactive_t32`; `complex_deepseek-v4-flash_survival_final2_*`; `hand0<i>_deepseek-v4-flash_final2_plan<k>`, `…_maxsteps`; Qwen3.8-27B: `simple_qwen3.8-27b_final2_*_t06`, `complex_qwen3.8-27b_survival_final2_*_t06`",
+   "items": [
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_maxsteps.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_maxsteps",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_maxsteps_once.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_maxsteps_once",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_oneshot_plan.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_oneshot_plan",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_plan2.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_plan2",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_plan3.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_plan3",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.2647,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_plan5.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_plan5",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2647,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_plan5_t06.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_plan5_t06",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2794,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_planf.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_planf",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2647,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_reactive",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.2402,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive_t32.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_reactive_t32",
+     "n": 10,
+     "successes": 8,
+     "ci": [
+      0.4902,
+      0.9433
+     ],
+     "hp_ratio": 0.2298,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive_t32_t06.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_reactive_t32_t06",
+     "n": 10,
+     "successes": 8,
+     "ci": [
+      0.4902,
+      0.9433
+     ],
+     "hp_ratio": 0.2629,
+     "died": 1,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive_t32_t10.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_survival_final2_reactive_t32_t10",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.2353,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.8-27b_survival_final2_maxsteps_once_t06.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.8-27b_survival_final2_maxsteps_once_t06",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/complex_qwen3.8-27b_survival_final2_maxsteps_t06.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.8-27b_survival_final2_maxsteps_t06",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/complex_qwen3.8-27b_survival_final2_plan2_t06.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.8-27b_survival_final2_plan2_t06",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/complex_qwen3.8-27b_survival_final2_plan3_t06.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.8-27b_survival_final2_plan3_t06",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/complex_qwen3.8-27b_survival_final2_plan5_t06.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.8-27b_survival_final2_plan5_t06",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/complex_qwen3.8-27b_survival_final2_reactive_t32_t06.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.8-27b_survival_final2_reactive_t32_t06",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.3235,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/hand01_deepseek-v4-flash_final2_maxsteps.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_final2_maxsteps",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_deepseek-v4-flash_final2_plan3.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_final2_plan3",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_deepseek-v4-flash_final2_plan5.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_final2_plan5",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_final2_maxsteps.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_final2_maxsteps",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_final2_plan3.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_final2_plan3",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_final2_plan5.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_final2_plan5",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_maxsteps.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_maxsteps",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_maxsteps_once.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_maxsteps_once",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_oneshot_plan.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_oneshot_plan",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_plan2.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_plan2",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_plan3.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_plan3",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_plan5.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_plan5",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_planf.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_planf",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_reactive.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_reactive",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_deepseek-v4-flash_final2_reactive_t32.json",
+     "kind": "reliability",
+     "label": "simple_deepseek-v4-flash_final2_reactive_t32",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_la3",
+     "n": 10,
+     "successes": 10,
+     "ci": [
+      0.7225,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 10
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_maxsteps.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_maxsteps",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_maxsteps_once.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_maxsteps_once",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_oneshot_plan.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_oneshot_plan",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_plan2.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_plan2",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_plan3.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_plan3",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_plan5.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_plan5",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.5-397b_final2_planf.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.5-397b_final2_planf",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_final2_maxsteps_once_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_final2_maxsteps_once_t06",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_final2_maxsteps_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_final2_maxsteps_t06",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_final2_oneshot_plan.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_final2_oneshot_plan",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_final2_plan2_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_final2_plan2_t06",
+     "n": 3,
+     "successes": 2,
+     "ci": [
+      0.2077,
+      0.9385
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_final2_plan3_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_final2_plan3_t06",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_final2_plan5_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_final2_plan5_t06",
+     "n": 3,
+     "successes": 1,
+     "ci": [
+      0.0615,
+      0.7923
+     ],
+     "hp_ratio": 0.7692,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/simple_qwen3.8-27b_final2_reactive_t32_t06.json",
+     "kind": "reliability",
+     "label": "simple_qwen3.8-27b_final2_reactive_t32_t06",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.1538,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    }
+   ]
+  },
+  {
+   "result": "Table 6.9, tower row (design 2)",
+   "files_cell": "`tower_deepseek-v4-flash_final3_reactive`, `…_plan<k>`, `…_maxsteps`, `…_maxsteps_once`; first design: `tower_deepseek-v4-flash_final2_*`",
+   "items": [
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_maxsteps.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_maxsteps",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 4,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_maxsteps_once.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_maxsteps_once",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 3,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_plan2.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_plan2",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 7,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_plan3.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_plan3",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 7,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_plan5.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_plan5",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 7,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_planf.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_planf",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 7,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_reactive",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 7,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_reactive_t16_t06.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_reactive_t16_t06",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 7,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_shoproute_remote.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_shoproute_remote",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 3,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final3_maxsteps.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final3_maxsteps",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final3_maxsteps_once.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final3_maxsteps_once",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 3,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final3_plan2.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final3_plan2",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final3_plan3.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final3_plan3",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final3_plan5.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final3_plan5",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final3_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final3_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 3
+    }
+   ]
+  },
+  {
+   "result": "Table 6.9, tower, design 5 rows",
+   "files_cell": "`tower_deepseek-v4-flash_final7_reactive`, `tower_qwen3.5-397b_final7_reactive`, `tower_deepseek-v4-flash_final7_plan3`, `…_final7_plan5`, `tower_qwen3.5-397b_final7_plan3` (development version `final7` of design 5, Table F.5)",
+   "items": [
+    {
+     "path": "results/reliability/_superseded_cross/tower_deepseek-v4-flash_final7_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final7_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/_superseded_cross/tower_qwen3.5-397b_final7_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final7_reactive",
+     "n": 2,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.6576
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 2
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final7_plan3.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final7_plan3",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 16,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final7_plan5.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final7_plan5",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final7_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final7_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final7_plan3.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final7_plan3",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final7_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final7_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 16,
+     "logs": 3
+    }
+   ]
+  },
+  {
+   "result": "Section 6.6, exact route",
+   "files_cell": "`complex_<m>_exact68_final2`",
+   "items": [
+    {
+     "path": "results/reliability/complex_deepseek-v4-flash_exact68_final2.json",
+     "kind": "reliability",
+     "label": "complex_deepseek-v4-flash_exact68_final2",
+     "n": 5,
+     "successes": 1,
+     "ci": [
+      0.0362,
+      0.6245
+     ],
+     "hp_ratio": 0.5882,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/complex_qwen3.6-35b_exact68_final2.json",
+     "kind": "reliability",
+     "label": "complex_qwen3.6-35b_exact68_final2",
+     "n": 5,
+     "successes": 2,
+     "ci": [
+      0.1176,
+      0.7693
+     ],
+     "hp_ratio": 0.8529,
+     "died": 1,
+     "floors_max": null,
+     "logs": 5
+    }
+   ]
+  },
+  {
+   "result": "Table 6.11, hand-designed floors",
+   "files_cell": "`hand0<i>_<m>_canon`",
+   "items": [
+    {
+     "path": "results/reliability/hand01_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.6608,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "hand01_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.6429,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "hand01_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.5,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand01_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "hand01_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.6429,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.2769,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "hand02_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.8615,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "hand02_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.4808,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "hand02_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 3,
+     "ci": [
+      0.2307,
+      0.8824
+     ],
+     "hp_ratio": 0.3077,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "hand03_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "hand03_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "hand03_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "hand03_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_deepseek-v4-flash_canon.json",
+     "kind": "reliability",
+     "label": "hand04_deepseek-v4-flash_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_mistral-medium-3.5_canon.json",
+     "kind": "reliability",
+     "label": "hand04_mistral-medium-3.5_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_qwen3.5-397b_canon.json",
+     "kind": "reliability",
+     "label": "hand04_qwen3.5-397b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_qwen3.6-35b_canon.json",
+     "kind": "reliability",
+     "label": "hand04_qwen3.6-35b_canon",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    }
+   ]
+  },
+  {
+   "result": "Table 6.12, generated floors",
+   "files_cell": "`gen0<i>_qwen3.5-397b_final2` (gen01 to gen03), `gen<i>_deepseek-v4-flash_final2` (gen03 to gen15); pooled counts from all files that name the floor, except `gs3_dsbare_confirm`",
+   "items": [
+    {
+     "path": "results/gepa_study/gs3_dsbare_confirm.json",
+     "kind": "gepa_study",
+     "label": "gs3_dsbare_confirm",
+     "groups": [
+      {
+       "group": "core · test",
+       "successes": 24,
+       "n": 36
+      },
+      {
+       "group": "core · train",
+       "successes": 0,
+       "n": 3
+      },
+      {
+       "group": "gepa · test",
+       "successes": 30,
+       "n": 36
+      },
+      {
+       "group": "gepa · train",
+       "successes": 0,
+       "n": 3
+      }
+     ],
+     "logs": 78
+    },
+    {
+     "path": "results/reliability/gen01_qwen3.5-397b_final2.json",
+     "kind": "reliability",
+     "label": "gen01_qwen3.5-397b_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 1.0,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen02_qwen3.5-397b_final2.json",
+     "kind": "reliability",
+     "label": "gen02_qwen3.5-397b_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 1.0,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen03_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen03_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 2,
+     "ci": [
+      0.2077,
+      0.9385
+     ],
+     "hp_ratio": 1.0,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen03_qwen3.5-397b_final2.json",
+     "kind": "reliability",
+     "label": "gen03_qwen3.5-397b_final2",
+     "n": 1,
+     "successes": 1,
+     "ci": [
+      0.2065,
+      1.0
+     ],
+     "hp_ratio": 1.0,
+     "died": 0,
+     "floors_max": null,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/gen04_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen04_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 1.0,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen05_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen05_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.9903,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen06_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen06_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 1.0,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen07_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen07_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.9775,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen08_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen08_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.9667,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen09_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen09_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.902,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen10_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen10_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 2,
+     "ci": [
+      0.2077,
+      0.9385
+     ],
+     "hp_ratio": 0.8579,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen11_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen11_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen12_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen12_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen13_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen13_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.9469,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen14_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen14_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.9603,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/gen15_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "gen15_deepseek-v4-flash_final2",
+     "n": 3,
+     "successes": 3,
+     "ci": [
+      0.4385,
+      1.0
+     ],
+     "hp_ratio": 0.983,
+     "died": 0,
+     "floors_max": null,
+     "logs": 3
+    }
+   ]
+  },
+  {
+   "result": "Table 6.13, tower",
+   "files_cell": "`tower_<m>_<label>_reactive` with the labels of Table F.5 (Qwen3.5-397B, design 1: `tower_qwen3.5-397b_final2`); heuristic `tower_MT0-MT23w_heuristic_final3`, on the corrected engine `tower_MT0-MT23w_heuristic_final7` (same result as `…_final6`)",
+   "items": [
+    {
+     "path": "results/reliability/_superseded_cross/tower_deepseek-v4-flash_final7_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final7_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/_superseded_cross/tower_qwen3.5-397b_final7_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final7_reactive",
+     "n": 2,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.6576
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 2
+    },
+    {
+     "path": "results/reliability/_superseded_hpfloor/tower_deepseek-v4-flash_final6_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final6_reactive",
+     "n": 2,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.6576
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 2
+    },
+    {
+     "path": "results/reliability/_superseded_keyfact/tower_deepseek-v4-flash_final10_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final10_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 16,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/_superseded_keyfact/tower_mistral-medium-3.5_final10_reactive.json",
+     "kind": "reliability",
+     "label": "tower_mistral-medium-3.5_final10_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/_superseded_keyfact/tower_qwen3.6-35b_final10_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.6-35b_final10_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 16,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/_superseded_plannote/tower_qwen3.5-397b_final8_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final8_reactive",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 7,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_MT0-MT23w_heuristic_final3.json",
+     "kind": "reliability",
+     "label": "tower_MT0-MT23w_heuristic_final3",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 0
+    },
+    {
+     "path": "results/reliability/tower_MT0-MT23w_heuristic_final6.json",
+     "kind": "reliability",
+     "label": "tower_MT0-MT23w_heuristic_final6",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 0
+    },
+    {
+     "path": "results/reliability/tower_MT0-MT23w_heuristic_final7.json",
+     "kind": "reliability",
+     "label": "tower_MT0-MT23w_heuristic_final7",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 0
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final10_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final10_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 17,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final11_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final11_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 17,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final2_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final2_reactive",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 7,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final3_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final3_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final4_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final4_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final5_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final5_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final7_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final7_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final8_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final8_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 16,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final9_reactive.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final9_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 16,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_mistral-medium-3.5_final11_reactive.json",
+     "kind": "reliability",
+     "label": "tower_mistral-medium-3.5_final11_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final10_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final10_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 21,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final11_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final11_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 18,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final2.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final2",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 7,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final3_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final3_reactive",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final4_nohp_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final4_nohp_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final4_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final4_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final5_nohp_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final5_nohp_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final5_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final5_reactive",
+     "n": 2,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.6576
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 2
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final7_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final7_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 16,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final8_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final8_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 14,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.6-35b_final11_reactive.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.6-35b_final11_reactive",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 16,
+     "logs": 3
+    }
+   ]
+  },
+  {
+   "result": "Section 6.7.3, corrected engine without the override",
+   "files_cell": "`_superseded_hpfloor/tower_qwen3.5-397b_final6_reactive_beforeplanmemory`",
+   "items": [
+    {
+     "path": "results/reliability/_superseded_hpfloor/tower_qwen3.5-397b_final6_reactive_beforeplanmemory.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final6_reactive",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 1
+    }
+   ]
+  },
+  {
+   "result": "Table 6.14, threshold replay",
+   "files_cell": "`hp_rule_decision_test.json` and `…_extra40.json`, produced by `analysis/test_hp_rule.py`, which rebuilds the system prompt of the stored decision from the run log and replaces every \"40 %\" in it and in the stored request; positions from the run logs `20261001_220503_593390_MT0-MT23w_llm.json` (turn 15, corrected engine) and `20261001_084634_705631_MT0-MT23w_llm.json` (turn 17, design 3)",
+   "items": [
+    {
+     "path": "results/reliability/hp_rule_decision_test.json",
+     "kind": "other",
+     "label": "hp_rule_decision_test"
+    },
+    {
+     "path": "results/reliability/hp_rule_decision_test_extra40.json",
+     "kind": "other",
+     "label": "hp_rule_decision_test_extra40"
+    }
+   ]
+  },
+  {
+   "result": "Section 6.7.3, earlier tower runs (development history)",
+   "files_cell": "`tower_qwen3.5-397b_basic` (strategic overrides), `tower_qwen3.5-397b_basic_mechanical`, `tower_qwen3.6-35b_tower_seed` (walkthrough prompt)",
+   "items": [
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_basic.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_basic",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 8,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_basic_mechanical.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_basic_mechanical",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 3,
+     "logs": 1
+    },
+    {
+     "path": "results/reliability/tower_qwen3.6-35b_tower_seed.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.6-35b_tower_seed",
+     "n": 1,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.7935
+     ],
+     "hp_ratio": null,
+     "died": 1,
+     "floors_max": 14,
+     "logs": 1
+    }
+   ]
+  },
+  {
+   "result": "Figures 6.1 to 6.4",
+   "files_cell": "plotted by `scripts/thesis_figures.py` from the files of Table 6.5 (Figure 6.1), the value traces (6.2), `gs3_dsbare_confirm.json` (6.3) and the planning files (6.4)",
+   "items": [
+    {
+     "path": "results/gepa_study/gs3_dsbare_confirm.json",
+     "kind": "gepa_study",
+     "label": "gs3_dsbare_confirm",
+     "groups": [
+      {
+       "group": "core · test",
+       "successes": 24,
+       "n": 36
+      },
+      {
+       "group": "core · train",
+       "successes": 0,
+       "n": 3
+      },
+      {
+       "group": "gepa · test",
+       "successes": 30,
+       "n": 36
+      },
+      {
+       "group": "gepa · train",
+       "successes": 0,
+       "n": 3
+      }
+     ],
+     "logs": 78
+    }
+   ]
+  }
+ ],
+ "unmatched": []
+}

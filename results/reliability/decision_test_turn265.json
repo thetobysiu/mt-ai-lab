@@ -1,0 +1,146 @@
+[
+ {
+  "variant": "no treasure line",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT8] Fight Junior Guard at (7,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "no treasure line",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "no treasure line",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "no treasure line",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT8] Fight Junior Guard at (7,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "no treasure line",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT8] Fight Junior Guard at (7,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "no treasure line",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT5] Collect Key Box (+1 yellow, +1 blue, +1 red key) at (1,1)",
+  "good": false
+ },
+ {
+  "variant": "Treasures",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Treasures",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Treasures",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Treasures",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Treasures",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Treasures",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT8] Fight Junior Guard at (7,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Unique items",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Unique items",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Unique items",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Unique items",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT8] Fight Junior Guard at (7,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Unique items",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT5] Collect Key Box (+1 yellow, +1 blue, +1 red key) at (1,1)",
+  "good": false
+ },
+ {
+  "variant": "Unique items",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT8] Fight Junior Guard at (7,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Special items",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Special items",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Special items",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT5] Fight Junior Guard at (10,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Special items",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT8] Fight Junior Guard at (7,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Special items",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT5] Collect Key Box (+1 yellow, +1 blue, +1 red key) at (1,1)",
+  "good": false
+ },
+ {
+  "variant": "Special items",
+  "preset": "qwen3.5-397b",
+  "choice": "[MT6] Open yellow door at (3,9)",
+  "good": false
+ }
+]

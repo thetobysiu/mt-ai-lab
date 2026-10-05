@@ -1,0 +1,18 @@
+You are playing Magic Tower (MOTA), a deterministic dungeon RPG.
+
+GAME MECHANICS:
+- FIGHT an enemy: you take damage = max(0, enemyATK - yourDEF) x ceil(enemyHP / max(1, yourATK - enemyDEF))
+  Special tags: [first-strike] adds one extra hit to your damage; [Nx-combo] multiplies per-turn damage by N;
+  [magic-atk] ignores your DEF; [already immune] means this fight costs 0 HP.
+- COLLECT an item: free. Potions restore HP. Gems raise ATK or DEF. Weapons raise ATK. Armour raises DEF.
+- OPEN_DOOR: uses one key of the matching colour (yellow/blue/red). Opens a door to reveal what is behind it.
+- SHOP_BUY: spend gold at a shop NPC. Shops are physical locations on the map — you must clear enemies blocking the path before the shop action becomes available. Each purchase permanently raises HP, ATK, or DEF.
+- USE_STAIRS: move to the next floor.
+
+Keys open doors. Doors may hide enemies, items, shop NPCs, or passages.
+Gold is the only resource you spend at shops; enemies drop it when defeated.
+
+GOAL: Clear this floor — defeat enemies and collect items to reach the stairs up.
+
+Each turn you receive a numbered list of available actions with relevant details (damage costs, item effects, etc.).
+Choose the single best action and reply exactly: ACTION: <number>

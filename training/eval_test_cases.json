@@ -1,0 +1,82 @@
+[
+  {
+    "input": "Floor: SYN00095_0 (9x9). Hero at (5,2). HP=1020 ATK=12 DEF=4. Keys: Y=1 B=0 R=0.\nMap:\n#########\n###M..###\n##..S@M.#\n##....#*#\n#....M..#\n#M....###\n#D#..####\n####.####\n#########\n\nChoose the best action:\n  A) Fight 绿头怪 at (5,4) dmg=64 hp->956 → unlocks [Red Potion (+200 HP)]\n  B) Fight 小蝙蝠 at (6,2) dmg=224 hp->796 → unlocks [Red Potion (+200 HP)]\n  C) use_stairs upFloor at (4,2) → then: fight 绿头怪 dmg=64 | fight 小蝙蝠 dmg=224",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: SYN00007_0 (7x7). Hero at (1,3). HP=1000 ATK=24 DEF=3. Keys: Y=0 B=0 R=0.\nMap:\n#######\n##.S.##\n#.....#\n#@MM.M#\n##....#\n###..##\n#######\n\nChoose the best action:\n  A) Fight 绿头怪 at (5,3) dmg=34 hp->966 → then: use_stairs upFloor | fight 小蝙蝠 dmg=85\n  B) use_stairs upFloor at (3,1) → then: fight 绿头怪 dmg=34 | fight 小蝙蝠 dmg=85\n  C) Fight 小蝙蝠 at (3,3) dmg=85 hp->915 → then: fight 绿头怪 dmg=34 | use_stairs upFloor",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: 单层-最简单 (11x11). Hero at (10,7). HP=797 ATK=11 DEF=7. Keys: Y=0 B=0 R=0.\nMap:\n.*###......\n*.M.#.###..\n###.M...#..\n#.###M.####\n...##...##.\n......#....\n#####.#.#..\n.##...#.##@\n.#..#.####.\n...##M#..M.\n#..##M#**.#\n\nChoose the best action:\n  A) Fight Enemy #204 at (9,9) dmg=39 hp->758 → unlocks [Blue Gem (+1 DEF) [STAT], Red Gem (+1 ATK) [STAT]]\n  B) Fight Enemy #202 at (5,3) dmg=24 hp->773 → then: fight Enemy #204 dmg=39 | fight Enemy #204 dmg=39\n  C) Fight Enemy #204 at (4,2) dmg=39 hp->758 → then: fight Enemy #204 dmg=39 | fight Enemy #204 dmg=39",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: SYN00032_1 (9x9). Hero at (2,4). HP=711 ATK=11 DEF=12. Keys: Y=0 B=0 R=0.\nMap:\n#########\n####M.###\n####S..##\n####...##\n#.@.M..M#\n###...###\n####..###\n###...###\n#########\n\nChoose the best action:\n  A) Fight 绿头怪 at (4,4) dmg=32 hp->679 → then: use_stairs upFloor | fight 小蝙蝠 dmg=128\n  B) use_stairs upFloor at (4,2) → then: fight 绿头怪 dmg=32 | fight 小蝙蝠 dmg=128\n  C) Fight 小蝙蝠 at (4,1) dmg=128 hp->583 → then: fight 绿头怪 dmg=32 | use_stairs upFloor",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: SYN00027_0 (7x7). Hero at (5,5). HP=774 ATK=9 DEF=3. Keys: Y=2 B=0 R=0.\nMap:\n#######\n##.S..#\n##..#.#\n#.M...#\n##D...#\n###.M@#\n#######\n\nChoose the best action:\n  A) use_stairs upFloor at (3,1) → then: open_door Yellow Door | fight 红头怪 dmg=108\n  B) Open Yellow Door at (2,4) → then: use_stairs upFloor | fight 红头怪 dmg=108\n  C) Fight 红头怪 at (4,5) dmg=108 hp->666 → then: use_stairs upFloor | open_door Yellow Door",
+    "expected": "C"
+  },
+  {
+    "input": "Floor: SYN00024_0 (9x9). Hero at (5,5). HP=1585 ATK=15 DEF=14. Keys: Y=0 B=0 R=0.\nMap:\n#########\n#...S####\n#.M..####\n#.#..####\n#......M#\n####.@..#\n####....#\n####.####\n#########\n\nChoose the best action:\n  A) use_stairs upFloor at (4,1) → then: fight 小蝙蝠 dmg=54 | fight 小蝙蝠 dmg=54\n  B) Fight 小蝙蝠 at (2,2) dmg=54 hp->1531 → then: use_stairs upFloor | fight 小蝙蝠 dmg=54\n  C) Fight 小蝙蝠 at (7,4) dmg=54 hp->1531 → then: use_stairs upFloor | fight 小蝙蝠 dmg=54",
+    "expected": "B"
+  },
+  {
+    "input": "Floor: SYN00011_0 (7x7). Hero at (2,1). HP=841 ATK=13 DEF=9. Keys: Y=0 B=0 R=0.\nMap:\n#######\n#.@S.##\n#.M...#\n#..M..#\n##....#\n###..##\n#######\n\nChoose the best action:\n  A) use_stairs upFloor at (3,1) → then: fight 骷髅人 dmg=208 | fight 骷髅人 dmg=208\n  B) Fight 骷髅人 at (2,2) dmg=208 hp->633 → then: use_stairs upFloor | fight 骷髅人 dmg=208\n  C) Fight 骷髅人 at (3,3) dmg=208 hp->633 → then: use_stairs upFloor | fight 骷髅人 dmg=208",
+    "expected": "B"
+  },
+  {
+    "input": "Floor: SYN00005_8 (7x7). Hero at (4,2). HP=385 ATK=33 DEF=29. Keys: Y=2 B=0 R=0.\nMap:\n#######\n##.S###\n#..M@##\n#.....#\n#..D..#\n##....#\n#######\n\nChoose the best action:\n  A) use_stairs upFloor at (3,1) → then: open_door Yellow Door | fight 初级法师 dmg=315\n  B) Open Yellow Door at (3,4) → then: use_stairs upFloor | fight 初级法师 dmg=315\n  C) Fight 初级法师 at (3,2) dmg=315 hp->70 → then: use_stairs upFloor | open_door Yellow Door",
+    "expected": "C"
+  },
+  {
+    "input": "Floor: SYN00080_0 (7x7). Hero at (5,3). HP=627 ATK=16 DEF=5. Keys: Y=1 B=0 R=0.\nMap:\n#######\n###SM.#\n#....D#\n#....@#\n##...##\n#...###\n#######\n\nChoose the best action:\n  A) use_stairs upFloor at (3,1) → then: open_door Yellow Door | fight 骷髅人 dmg=180\n  B) Open Yellow Door at (5,2) → then: use_stairs upFloor | fight 骷髅人 dmg=180\n  C) Fight 骷髅人 at (4,1) dmg=180 hp->447 → then: use_stairs upFloor | open_door Yellow Door",
+    "expected": "C"
+  },
+  {
+    "input": "Floor: SYN00004_6 (11x11). Hero at (9,5). HP=640 ATK=35 DEF=39. Keys: Y=0 B=0 R=0.\nMap:\n###########\n#####.#####\n#####.#..##\n###..S....#\n#####.....#\n#........@#\n####M....M#\n####......#\n#####.#####\n#####.#####\n###########\n\nChoose the best action:\n  A) Fight 骷髅士兵 at (4,6) dmg=9 hp->631 → then: fight 骷髅士兵 dmg=9 | use_stairs upFloor\n  B) Fight 骷髅士兵 at (9,6) dmg=9 hp->631 → then: fight 骷髅士兵 dmg=9 | use_stairs upFloor\n  C) use_stairs upFloor at (5,3) → then: fight 骷髅士兵 dmg=9 | fight 骷髅士兵 dmg=9",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: SYN00087_0 (7x7). Hero at (5,3). HP=687 ATK=13 DEF=8. Keys: Y=1 B=2 R=0.\nMap:\n#######\n###S..#\n#.....#\n#.M.D@#\n#...###\n#.#.###\n#######\n\nChoose the best action:\n  A) use_stairs upFloor at (3,1) → then: open_door Yellow Door | fight 骷髅人 dmg=221\n  B) Open Yellow Door at (4,3) → then: use_stairs upFloor | fight 骷髅人 dmg=221\n  C) Fight 骷髅人 at (2,3) dmg=221 hp->466 → then: use_stairs upFloor | open_door Yellow Door",
+    "expected": "C"
+  },
+  {
+    "input": "Floor: SYN00057_0 (9x9). Hero at (1,4). HP=575 ATK=14 DEF=7. Keys: Y=3 B=0 R=0.\nMap:\n#########\n###...M*#\n###.S..##\n###...###\n#@......#\n##......#\n##...#.D#\n##...####\n#########\n\nChoose the best action:\n  A) use_stairs upFloor at (4,2) → then: fight 小蝙蝠 dmg=143 | open_door Yellow Door\n  B) Fight 小蝙蝠 at (6,1) dmg=143 hp->432 → unlocks [Yellow Key]\n  C) Open Yellow Door at (7,6) → then: use_stairs upFloor | fight 小蝙蝠 dmg=143",
+    "expected": "B"
+  },
+  {
+    "input": "Floor: 单层-最简单 (11x11). Hero at (5,3). HP=699 ATK=13 DEF=8. Keys: Y=1 B=0 R=0.\nMap:\n..###......\n....#.###..\n###.....#..\n#.###@.####\n...##...##.\n......#....\n#####.#.#..\n.##...#.##.\n.#..#.####.\n...##M#....\n#..##M#...#\n\nChoose the best action:\n  A) Fight Enemy #205 at (5,9) dmg=81 hp->618 → then: fight Enemy #299 dmg=588",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: 单层-最简单 (11x11). Hero at (0,1). HP=714 ATK=13 DEF=8. Keys: Y=1 B=0 R=0.\nMap:\n..###......\n@...#.###..\n###.....#..\n#.###M.####\n...##...##.\n......#....\n#####.#.#..\n.##...#.##.\n.#..#.####.\n...##M#....\n#..##M#...#\n\nChoose the best action:\n  A) Fight Enemy #202 at (5,3) dmg=15 hp->699 → then: fight Enemy #205 dmg=81\n  B) Fight Enemy #205 at (5,9) dmg=81 hp->633 → then: fight Enemy #202 dmg=15 | fight Enemy #299 dmg=588",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: SYN00005_8 (7x7). Hero at (5,3). HP=1080 ATK=23 DEF=29. Keys: Y=2 B=0 R=0.\nMap:\n#######\n##.S###\n#..MM##\n#*M.M@#\n#M.D..#\n##...M#\n#######\n\nChoose the best action:\n  A) Fight 青头怪 at (1,4) dmg=90 hp->990 → unlocks [Iron Sword (+10 ATK) [MAJOR], stairs]\n  B) Fight 骷髅士兵 at (2,3) dmg=539 hp->541 → unlocks [Iron Sword (+10 ATK) [MAJOR], stairs]\n  C) Fight 青头怪 at (4,3) dmg=90 hp->990 → then: fight 青头怪 dmg=90 | fight 骷髅士兵 dmg=539",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: SYN00023_0 (7x7). Hero at (3,1). HP=624 ATK=9 DEF=6. Keys: Y=2 B=1 R=0.\nMap:\n#######\n###@..#\n###SM.#\n#..D..#\n#M...##\n#...###\n#######\n\nChoose the best action:\n  A) use_stairs upFloor at (3,2) → then: fight 绿头怪 dmg=84 | fight 绿头怪 dmg=84\n  B) Fight 绿头怪 at (1,4) dmg=84 hp->540 → then: use_stairs upFloor | fight 绿头怪 dmg=84\n  C) Fight 绿头怪 at (4,2) dmg=84 hp->540 → then: use_stairs upFloor | fight 绿头怪 dmg=84",
+    "expected": "C"
+  },
+  {
+    "input": "Floor: SYN00025_9 (7x7). Hero at (3,1). HP=526 ATK=37 DEF=26. Keys: Y=0 B=0 R=0.\nMap:\n#######\n#M#@###\n#..S###\n#.M...#\n#...###\n#..M###\n#######\n\nChoose the best action:\n  A) use_stairs upFloor at (3,2) → then: fight 骷髅士兵 dmg=112 | fight 骷髅士兵 dmg=112\n  B) Fight 骷髅士兵 at (1,1) dmg=112 hp->414 → then: use_stairs upFloor | fight 骷髅士兵 dmg=112\n  C) Fight 骷髅士兵 at (3,5) dmg=112 hp->414 → then: use_stairs upFloor | fight 骷髅士兵 dmg=112",
+    "expected": "B"
+  },
+  {
+    "input": "Floor: SYN00072_0 (9x9). Hero at (5,2). HP=842 ATK=15 DEF=6. Keys: Y=2 B=0 R=0.\nMap:\n#########\n#...SD###\n#.M..@###\n#M#..####\n#.......#\n#....#..#\n###.....#\n####.#.##\n#########\n\nChoose the best action:\n  A) Fight 红头怪 at (1,3) dmg=45 hp->797 → then: use_stairs upFloor | open_door Yellow Door\n  B) use_stairs upFloor at (4,1) → then: fight 红头怪 dmg=45 | open_door Yellow Door\n  C) Open Yellow Door at (5,1) → then: fight 红头怪 dmg=45 | use_stairs upFloor",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: SYN00089_0 (7x7). Hero at (5,4). HP=344 ATK=12 DEF=7. Keys: Y=0 B=0 R=0.\nMap:\n#######\n###.###\n###S###\n#..M..#\n#*M..@#\n#M....#\n#######\n\nChoose the best action:\n  A) Fight 红头怪 at (2,4) dmg=48 hp->296 → unlocks [Red Gem (+3 ATK) [STAT]]\n  B) Fight 绿头怪 at (1,5) dmg=52 hp->292 → unlocks [Red Gem (+3 ATK) [STAT]]\n  C) Fight 小蝙蝠 at (3,3) dmg=182 hp->162 → unlocks [Red Gem (+3 ATK) [STAT], stairs]",
+    "expected": "A"
+  },
+  {
+    "input": "Floor: 单层-最简单 (11x11). Hero at (7,10). HP=758 ATK=12 DEF=8. Keys: Y=0 B=0 R=0.\nMap:\n.*###......\n*.M.#.###..\n###.M...#..\n#.###M.####\n...##...##.\n......#....\n#####.#.#..\n.##...#.##.\n.#..#.####.\n...##M#....\n#..##M#@..#\n\nChoose the best action:\n  A) Fight Enemy #202 at (5,3) dmg=18 hp->740 → then: fight Enemy #204 dmg=22 | fight Enemy #205 dmg=81\n  B) Fight Enemy #204 at (4,2) dmg=22 hp->736 → then: fight Enemy #204 dmg=22 | fight Enemy #202 dmg=18\n  C) Fight Enemy #205 at (5,9) dmg=81 hp->677 → then: fight Enemy #202 dmg=18 | fight Enemy #204 dmg=22",
+    "expected": "B"
+  }
+]

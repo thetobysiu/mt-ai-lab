@@ -1,0 +1,18 @@
+{
+  "floor": "MT4",
+  "model": "qwen3.5-397b-a17b",
+  "task_mode": "thinking",
+  "score": 0.4025,
+  "elapsed_s": 23.6,
+  "turns": 13,
+  "is_boss_floor": false,
+  "boss_killed": false,
+  "goal_reached": null,
+  "enemies_killed": 7,
+  "enemies_total": 20,
+  "final_hp": -40,
+  "violations": [
+    "suicide_fight: \u9752\u5934\u602a at (4,11)"
+  ],
+  "dashboard_log": "20260601_032429_089318_MT4_llm.json"
+}

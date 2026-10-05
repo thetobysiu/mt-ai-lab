@@ -1,0 +1,405 @@
+{
+  "label": "tower_qwen3.5-397b_basic",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 3630,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.6007,
+      "success": false,
+      "died": false,
+      "floors_reached": 8,
+      "max_floor_id": "MT8",
+      "total_floors": 24,
+      "final_floor_id": "MT8",
+      "failure_reason": "Stuck — only unwinnable fight remains",
+      "final_hp": 2134,
+      "hero_atk": 68,
+      "hero_def": 111,
+      "keys": {
+        "yellow": 5,
+        "blue": 7,
+        "red": 0
+      },
+      "money": 7,
+      "exp": 13,
+      "turns": 240,
+      "llm_calls": 114,
+      "parse_errors": 1,
+      "forced_turns": 126,
+      "run_log": "20260924_000653_650705_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 860,
+          "turn": 11,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 13
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 14
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 860,
+          "turn": 15,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 16
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 17
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 670,
+          "turn": 19,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 670,
+          "turn": 20
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 670,
+          "turn": 21
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 380,
+          "turn": 25,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 380,
+          "turn": 26
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 380,
+          "turn": 27
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 268,
+          "turn": 56
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 253,
+          "turn": 61,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 429,
+          "turn": 66
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 429,
+          "turn": 67
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 429,
+          "turn": 69
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 633,
+          "turn": 90
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 633,
+          "turn": 100
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 633,
+          "turn": 103
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1933,
+          "turn": 119,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 3288,
+          "turn": 146
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 3288,
+          "turn": 147
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 3288,
+          "turn": 148
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 3288,
+          "turn": 149
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 3098,
+          "turn": 167
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 3098,
+          "turn": 168
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 3098,
+          "turn": 169,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 3098,
+          "turn": 170
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 3098,
+          "turn": 179
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 3098,
+          "turn": 182,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 3098,
+          "turn": 185
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 3098,
+          "turn": 186
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 1634,
+          "turn": 191
+        },
+        {
+          "from": "MT8",
+          "to": "MT5",
+          "hero_hp": 1634,
+          "turn": 193,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1634,
+          "turn": 195
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 1634,
+          "turn": 200,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1634,
+          "turn": 203
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 1634,
+          "turn": 205,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2134,
+          "turn": 218
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2134,
+          "turn": 220
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 2134,
+          "turn": 221,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 2134,
+          "turn": 229
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 2134,
+          "turn": 230
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 2134,
+          "turn": 231
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 2134,
+          "turn": 232
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2134,
+          "turn": 233
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2134,
+          "turn": 234
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 2134,
+          "turn": 235
+        }
+      ],
+      "elapsed_s": 3159.7,
+      "timestamp": "2026-09-24T02:59:33",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.6007,
+    "score_sd": 0.0,
+    "score_min": 0.6007,
+    "score_max": 0.6007,
+    "final_hp_mean": 2134.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 114,
+    "seconds_per_call": 27.72,
+    "parse_error_rate": 0.0088,
+    "elapsed_s_total": 3159.7,
+    "floors_reached_mean": 8.0,
+    "floors_reached_max": 8
+  },
+  "updated": "2026-09-24 02:59"
+}

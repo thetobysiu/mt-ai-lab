@@ -1,0 +1,158 @@
+You are improving the SYSTEM PROMPT of an LLM agent that plays Magic Tower (MOTA), a deterministic
+turn-based dungeon game. This is SINGLE-FLOOR mode: one floor, the goal is to kill the boss alive with as much HP as possible. There are NO shops, NO gold/EXP purchases and NO stairs on these floors.
+
+Each turn the engine gives the agent the exact state and a numbered list of every legal action with
+exact annotations (damage, hpAfter, [FREE if DEF>=X], min-cost@maxStats, an unlock tree, lookahead,
+effCost, stat-gem net value, ORDER lines comparing fight orders, key budget / key lines, [DEAD END],
+[OPTIONAL], [LETHAL]). The agent answers with one action number: FINAL_CHOICE: <number>.
+
+RULES FOR THE PROMPT YOU WRITE (binding — a prompt that breaks them is rejected):
+- It must work on ANY floor of this kind, not only the one in the trace. So it must NOT contain:
+  coordinates, floor names/ids, monster or item names, positions, lists of fights/doors to take or
+  avoid, step-by-step routes, allowlists/forbidden lists, or numbers taken from this floor
+  (HP thresholds, costs, counts). Percentages of current HP and the combat formula are fine.
+- Allowed content: the exact combat calculation and special abilities; how to read what the engine
+  shows; general strategy rules that you derive from the traces.
+- Do NOT mention shops, gold, EXP or stairs: single floors have none.
+- Keep the output contract: short reasoning, then "FINAL_CHOICE: <number>".
+- Keep what worked; change or add general rules only for failures you can see in the trace.
+- Length: at most ~3000 characters.
+
+CURRENT PROMPT:
+```
+You play Magic Tower, a turn-based dungeon game on one floor. Each turn you get your state and a numbered list of the actions you can take now; you answer with one action number.
+
+GAME RULES:
+- Combat: You hit first. Your dmg = ATK - Enemy DEF. Enemy dmg = Enemy ATK - Your DEF. If your DEF >= Enemy ATK, you take 0 damage. If your ATK <= Enemy DEF, you deal 0 damage.
+- Resources: HP is not restored between fights. Keys open matching doors and are consumed. Items (gems/potions/keys) are collected by walking onto them.
+- Goal: Kill the Boss alive with MAXIMUM remaining HP. Do not stop until the Boss is dead.
+
+STRATEGY:
+1. Exhaustive Collection (CRITICAL): Before fighting the Boss, verify the `unlock tree` shows NO uncollected items (gems, potions, keys). If the tree shows accessible nodes you haven't collected, DO NOT fight the Boss yet. Collect all accessible stats first.
+2. HP Budget Check: Calculate `HP Margin = Current HP - Boss Damage`. 
+   - If `HP Margin <= 0`: The Boss is unwinnable. You MUST find missed stats/paths. Do not fight the Boss.
+   - If `HP Margin` is tight (e.g., < 50% of Boss Damage): Avoid ALL optional fights, even if `effCost` is negative. Preserve HP for the Boss.
+3. Boss Priority: Every action must progress toward reaching and killing the Boss. Avoid optional fights that do not yield stats/keys required for the Boss path. Verify paths lead to the Boss using the `unlock tree`.
+4. Efficiency: Prefer actions with negative or low `effCost` ONLY if they are on the critical path or if HP Margin is safe. Use `lookahead` to identify chains that net HP or stats.
+5. Stat Gating: Do not fight high-damage enemies if you can collect stat gems first to reduce the damage. Check `min-cost@maxStats` and `ORDER` lines to sequence fights for minimal HP loss.
+6. Action Consistency: Ensure your `FINAL_CHOICE` number matches the action described in your reasoning. If reasoning says "Fight Boss", choose the Boss action number.
+
+OUTPUT:
+Provide short reasoning based on the annotations (effCost, lookahead, ORDER, unlock tree), then end with: FINAL_CHOICE: <number>
+```
+
+EPISODE TRACES (per LLM decision: turn, chosen action, hero after, engine overrides, end of the
+agent's reasoning; then the outcome):
+```
+--- episode 1 (simple) ---
+T1 [engine: forced] Collect Yellow Key at (5,1) -> HP 470
+T2 Fight Black Slime at (6,4) dmg=55 -> HP 415 ATK 9 DEF 4
+   reasoning tail: ...The best action is to fight the Black Slime at (6,4). It is safe (55 damage), has a positive lookahead (29), and unlocks a chain leading to multiple stat gems (ATK+1, DEF+2) and potions. The ORDER note shows taking this fight before the Slime Lord saves 93 HP. This is the most efficient path to boost stats before the Boss.
+T3 Fight Green Slime at (5,6) dmg=24 -> HP 391 ATK 9 DEF 4
+   reasoning tail: ...The Green Slime at (5,6) is a safe fight (24 damage) and unlocks a path to two DEF gems and two yellow keys, which are critical for progression. Its effective cost is negative (-23) due to the +200 HP potion behind it, and it should be taken before opening the yellow door at (7,5) to save HP. This is the best next step to build stats for the boss.
+T4 Open yellow door at (4,7) -> HP 391 ATK 9 DEF 4
+   reasoning tail: ...door at (4,7) because it leads to +2 DEF gems and +200 HP potion, which are critical for reducing future fight costs and preparing for the boss. The lookahead is positive (+23 net), and it unlocks a chain that gives DEF and HP without requiring a risky fight now. Fighting the Bat or Slime Lord now would cost too much HP before collecting stat gems.
+T5 Fight Black Slime at (3,7) dmg=55 -> HP 336 ATK 9 DEF 4
+   reasoning tail: ...The best move is to take the Black Slime at (3,7) — it has a negative effective cost (-104), unlocks two DEF gems and two yellow keys, and leads to a Blue Potion (+200 HP). This is on the critical path to the boss and significantly improves your stats before tougher fights.
+T6 [engine: auto-collect] Collect Yellow Key at (2,8) -> HP 336
+T7 [engine: auto-collect] Collect Blue Gem (+1 DEF) at (2,10) -> HP 336
+T8 [engine: auto-collect] Collect Yellow Key at (1,10) -> HP 336
+T9 Open yellow door at (7,0) -> HP 336 ATK 9 DEF 5
+   reasoning tail: ...t. It costs only 16 HP to reach a Green Slime, then
+   [...]
+ Key, both needed to progress toward the boss. Its effective cost is negative (-70) because of the stat/key value, and it reduces future fight costs. The HP margin is safe, and this is on the critical path.
+T20 [engine: auto-collect] Collect Red Gem (+1 ATK) at (1,0) -> HP 600
+T21 [engine: auto-collect] Collect Yellow Key at (0,1) -> HP 600
+T22 Open yellow door at (7,5) -> HP 600 ATK 11 DEF 6
+   reasoning tail: ...w door at (7,5) first. This unlocks access to stat gems (+1 ATK, +2 DEF) and potions, which will reduce the cost of subsequent fights. Fighting the Bat now would cost 121 HP, but after collecting the gems behind the door, it costs only 81 HP. The door is on the critical path to the boss and provides the needed stats to make the boss fight winnable.
+T23 [engine: auto-collect] Collect Red Potion (+75 HP) at (7,7) -> HP 675
+T24 Fight Black Slime at (9,5) dmg=35 -> HP 640 ATK 11 DEF 6
+   reasoning tail: ...s (Red Gem +1 ATK) via the Red Slime and Slime Lord. Its effCost is -53, meaning it nets HP overall. Fighting it now is safe (35 damage), and it reduces the cost of the Bat fights later by 40 HP each. The boss is currently unwinnable (ATK=11 vs DEF=12), so I must collect the remaining ATK gems first. This action is on the critical path to the boss.
+T25 [engine: auto-collect] Collect Blue Gem (+1 DEF) at (10,4) -> HP 640
+T26 [engine: auto-collect] Collect Red Potion (+75 HP) at (10,6) -> HP 715
+T27 Fight Red Slime at (10,7) dmg=24 -> HP 691 ATK 11 DEF 7
+   reasoning tail: ...stat gems are critical: you need ATK≥13 to damage the Boss, and more DEF reduces damage from the Bat fights blocking the path. The lookahead is +73 HP-equivalent, and the effCost is -49, meaning this action nets HP overall. Taking this fight now also reduces the cost of the Bat at (3,5) later (saves 29 HP). This is on the critical path to the Boss.
+T28 Fight Slime Lord at (9,9) dmg=39 -> HP 652 ATK 11 DEF 7
+   reasoning tail: ... which are essential to reach the boss. Its current cost is 39 HP, but after collecting those gems, it will save 64 HP on other fights, netting +25 HP. The lookahead is 160, making the effective cost -121, which is highly efficient. This fight is on the critical path to the boss and should be taken now before other fights to minimize total HP loss.
+T29 [engine: auto-collect] Collect Red Gem (+1 ATK) at (7,10) -> HP 652
+T30 [engine: auto-collect] Collect Blue Gem (+1 DEF) at (8,10) -> HP 652
+T31 Fight Bat at (3,5) dmg=81 -> HP 571 ATK 12 DEF 8
+   reasoning tail: ...unlocks a Yellow Key and a Red Potion. Fighting the Bat costs 81 HP but gives +75 HP potion and +1 ATK, netting a small loss but enabling the boss fight. The other available fight (Red Slime at (5,3)) is optional and not needed for the boss path, so skip it. The Bat at (5,9) leads only to the boss, which is currently unwinnable without the ATK gem.
+T32 [engine: auto-collect] Collect Red Gem (+1 ATK) at (1,3) -> HP 571
+T33 [engine: auto-collect] Collect Yellow Key at (0,4) -> HP 571
+T34 [engine: auto-collect] Collect Red Potion (+75 HP) at (2,4) -> HP 646
+T35 Fight Bat at (5,9) dmg=81 -> HP 565 ATK 13 DEF 8
+   reasoning tail: ...ghting the Bat costs 81 HP, leaving 565 HP, then the boss costs 588 HP — you would die. Since there is no way to gain more HP or stats, the boss is impossible to defeat. But the game expects a choice; the only path forward is to fight the Bat to reach the boss, even if it results in death. The Red Slime is optional and would only worsen the margin.
+T36 Fight Red Slime at (5,3) dmg=15 -> HP 550 ATK 13 DEF 8 [engine override: LLM chose Fight Boss at (5,10) dmg=588 (unwinnable)]
+   reasoning tail: ...o uncollected items left to improve stats. The only other action is an optional Red Slime fight that does not help reach the Boss or improve stats. Since the Boss is unwinnable at current stats and no further progression is possible, the only meaningful action is to attempt the Boss despite the lethal outcome, as no other action changes the result.
+OUTCOME: boss NOT killed; final HP 550 (solver optimum ends with more HP); ATK 13 DEF 8; alive; lethal-only stop: False
+
+--- episode 2 (D:\Thesis\Code\mota24\mota-gepa\data\floors\gen\gen01.txt) ---
+T1 [engine: auto-collect] Collect Red Potion (+75 HP) at (4,9) -> HP 545
+T2 [engine: auto-collect] Collect Red Potion (+75 HP) at (5,9) -> HP 620
+T3 [engine: forced] Fight Bat at (7,8) dmg=182 -> HP 438
+T4 [engine: auto-collect] Collect Red Gem (+1 ATK) at (9,9) -> HP 438
+T5 [engine: auto-collect] Collect Red Gem (+1 ATK) at (10,9) -> HP 438
+T6 [engine: auto-collect] Collect Red Gem (+1 ATK) at (10,10) -> HP 438
+T7 [engine: auto-collect] Collect Red Potion (+75 HP) at (8,6) -> HP 513
+T8 [engine: auto-collect] Collect Blue Gem (+1 DEF) at (8,4) -> HP 513
+T9 Fight Bat at (10,3) dmg=108 -> HP 405 ATK 12 DEF 5
+   reasoning tail: ... route to those gems. Fighting the Slime Lord at (7,0) now costs 55 HP, but it unlocks the ATK gems and the Blue Potion/Yellow Key area. This is the critical path to make the boss winnable. The other fights (Bat at (10,3)) lead to +2 ATK but cost 248 HP to reach, which is worse. I should take the Slime Lord at (7,0) to progress toward the ATK gems.
+T10 Fight Slime Lord at (7,0) dmg=55 -> HP 350 ATK 12 DEF 5
+   reasoning tail: ... reduce it by collecting DEF gems first). However, the DEF gems are behind other fights. The Slime Lord at (7,0) leads to Black Slimes and Red Slime, which unlock the remaining ATK gems and the Blue Potion/Yellow Key. This is the critical path to make the Boss winnable. The other Slime Lord at (8,9) is optional and should be skipped to conserve HP.
+T11 Fight Black Slime at (2,1) dmg=30 -> HP 320 ATK 12 DEF 5
+   reasoning tail: ...EF+1 gems. The cheapest path to those ATK gems is through the Black Slime chain (action 1), which unlocks both ATK gems with only 85 HP of fighting and has a negative effCost (-34). Action 2 (Red Slime) gives a potion and key but doesn't directly give ATK, and its cost is better deferred. Action 3 is optional and not needed. Action 4 is lethal now.
+T12 [engine: auto-collect] Collect Red Gem (+1 ATK) at (1,0) -> HP 320
+T13 Fight Slime Lord at (2,3) dmg=45 -> HP 275 ATK 13 DEF 5
+   reasoning tail: ...(2,3) to increase ATK, which reduces future fight costs and is on the path to the boss. The fight costs 45 HP now but unlocks a Red Gem (+1 ATK) and leads to more stat gains, improving the HP margin for the boss. The lookahead is 70 with effCost -25, making it efficient. Avoid optional fights like Black Slime and Slime Lord at (8,9) to conserve HP.
+T14 [engine: auto-collect] Collect Red Gem (+1 ATK) at (0,5) -> HP 275
+T15 Fight Red Slime at (4,3) dmg=30 -> HP 245 ATK 14 DEF 5
+   reasoning tail: ...tleneck is the yellow key. You have 0 yellow keys, and the only yellow key on the floor is behind the Red Slime at (4,3). That fight also unlocks the Blue Potion (+200 HP), which is critical for your HP budget. You must take action 3 to get the key and potion, then proceed to the boss. The other fights are optional and not needed for the boss path.
+T16 [engine: auto-collect] Collect Yellow Key at (5,5) -> HP 245
+T17 [engine: auto-collect] Collect Blue Potion (+200 HP) at (4,5) -> HP 445
+T18 Fight Slime Lord at (2,6) dmg=40 -> HP 405 ATK 14 DEF 5
+   reasoning tail: ...uce the Boss damage from 360 to 312, saving 48 HP — a net gain of 8 HP plus access to a +75 HP potion. This is clearly the critical path. The other optional fights (Black Slime, Slime Lord at 8,9) are not needed and would waste HP. The yellow door at (7,5) is a dead end. So the best action is to fight the Slime Lord at (2,6) to unlock the DEF gems.
+T19 Open yellow door at (2,7) -> HP 405 ATK 14 DEF 5
+   reasoning tail: ...The best move is to open the yellow door at (2,7) because it leads to two DEF gems and a potion, which are critical for reducing Boss damage. The other yellow door is a dead end, and fighting optional enemies now would waste HP. Collecting the DEF gems first will lower the Boss fight cost significantly.
+T20 [engine: auto-collect] Collect Blue Gem (+1 DEF) at (1,8) -> HP 405
+T21 [engine: auto-collect] Collect Blue Gem (+1 DEF) at (2,10) -> HP 405
+T22 [engine: auto-collect] Collect Red Potion (+75 HP) at (1,10) -> HP 480
+T23 Fight Boss at (9,1) dmg=312 -> HP 168 ATK 14 DEF 7
+   reasoning tail: ...All collectibles are already picked up, and the only remaining enemies are optional. The Boss costs 312 HP, leaving 168 HP margin. Fighting optional enemies would only reduce HP without providing any needed stats or keys. The optimal play is to go straight to the Boss now.
+OUTCOME: BOSS KILLED; final HP 168 (solver optimum ends with more HP); ATK 14 DEF 7; alive; lethal-only stop: False
+
+--- episode 3 (D:\Thesis\Code\mota24\mota-gepa\data\floors\gen\gen02.txt) ---
+T1 [engine: auto-collect] Collect Yellow Key at (10,9) -> HP 470
+T2 [engine: auto-collect] Collect Red Potion (+75 HP) at (6,9) -> HP 545
+T3 Fight Black Slime at (10,7) dmg=55 -> HP 490 ATK 9 DEF 4
+   reasoning tail: ...FINAL_CHOICE: 2
+T4 [engine: auto-collect] Collect Red Gem (+1 ATK) at (10,6) -> HP 490
+T5 [engine: auto-collect] Collect Blue Gem (+1 DEF) at (9,6) -> HP 490
+T6 [engine: auto-collect] Collect Blue Gem (+1 DEF) at (10,4) -> HP 490
+T7 Fight Black Slime at (3,9) dmg=40 -> HP 450 ATK 10 DEF 6
+   reasoning tail: ...lect +3 ATK gems (Red Gems at (0,8), (6,4), (6,5)) and potions, which are essential to reach the boss. The ORDER note shows that taking this fight before opening the yellow door saves 52 HP. The fight itself costs only 40 HP, and the lookahead shows it unlocks valuable stats. The other Black Slimes are optional and should be skipped to conserve HP.
+T8 [engine: auto-collect] Collect Red Gem (+1 ATK) at (0,8) -> HP 450
+T9 Fight Bat at (0,7) dmg=121 -> HP 329 ATK 11 DEF 6
+   reasoning tail: ...+2 ATK gems and potions. Fighting it now costs 121 HP, but it is the most efficient route to make the Boss winnable. The yellow door route costs more (173 HP) for only +1 ATK +1 DEF, and the Black Slimes are optional and not needed. Since HP is high (450) and the margin after this fight is still safe, take the Bat fight to progress toward the Boss.
+T10 [engine: auto-collect] Collect Red Gem (+1 ATK) at (6,5) -> HP 329
+T11 [engine: auto-collect] Collect Red Gem (+1 ATK) at (6,4) -> HP 329
+T12 [engine: auto-collect] Collect Red Potion (+75 HP) at (5,4) -> HP 404
+T13 [engine: auto-collect] Collect Red Potion (+75 HP) at (5,6) -> HP 479
+T14 Open yellow door at (8,3) -> HP 479 ATK 13 DEF 6
+   reasoning tail: ...), which unlocks the Blue Potion (+200 HP) and the remaining stat gems (+1 ATK, +1 DEF). Without those stats, the Boss is unwinnable (ATK=13 vs DEF=12 deals only 1 damage per hit, and you’d take 14 damage per turn — not enough HP). The door is the critical next step. Fighting optional Black Slimes now wastes HP and doesn’t progress toward the Boss.
+T15 [engine: auto-collect] Collect Blue Potion (+200 HP) at (10,1) -> HP 679
+T16 Fight Slime Lord at (7,1) dmg=36 -> HP 643 ATK 13 DEF 6
+   reasoning tail: ... reduces future fight costs and is needed to maximize HP before the Boss. Fighting Slime Lord at (7,1) now costs 36 HP, but it unlocks the path to those gems. The alternative Slime Lord at (6,3) opens the same area but is redundant and costs the same now, so (7,1) is the better choice. The other fights are optional and not needed for the boss path.
+T17 Fight Bat at (3,1) dmg=99 -> HP 544 ATK 13 DEF 6
+   reasoning tail: ...able (need ATK≥14 to deal damage; currently ATK=13). The fight costs 99 HP now, but after collecting the gems, the Boss becomes winnable. The other fights are optional and not needed for the boss path. The HP margin is safe (643 HP, boss damage after gems will be manageable). So the correct move is to fight the Bat at (3,1) to unlock the stat gems.
+T18 [engine: auto-collect] Collect Blue Gem (+1 DEF) at (0,0) -> HP 544
+T19 [engine: auto-collect] Collect Red Gem (+1 ATK) at (1,0) -> HP 544
+T20 [engine: auto-fight (0 HP)] Fight Green Slime at (1,2) dmg=0 -> HP 544
+T21 Fight Boss at (6,2) dmg=312 -> HP 232 ATK 14 DEF 7
+   reasoning tail: ...All collectibles are already picked up, and the only required fight is the Boss. The Boss costs 312 HP, leaving 232 HP after. All other available fights are optional and do not grant any stats/keys needed for the Boss. To maximize HP, skip all optional fights and go straight to the Boss.
+OUTCOME: BOSS KILLED; final HP 232 (solver optimum ends with more HP); ATK 14 DEF 7; alive; lethal-only stop: False
+```
+
+First diagnose in 3-6 bullet points which decisions lost HP or the game and which general principle
+the agent misapplied (name the annotation it misread, not the position). Then give the full improved
+prompt inside ``` fences.

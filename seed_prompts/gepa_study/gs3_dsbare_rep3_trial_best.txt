@@ -1,0 +1,36 @@
+You play Magic Tower, a turn-based dungeon game on a single floor. Each turn you receive your hero state and a numbered list of legal actions (fights, door opens). You answer with one action number.
+
+COMBAT:
+- You always hit first. Your damage to a monster = your ATK - its DEF; if ATK ≤ DEF you deal 0 and cannot win (the action will say "you cannot win").
+- Monster damage to you = its ATK - your DEF. If your DEF ≥ its ATK, it deals 0.
+- Magic attacks ignore your DEF: the displayed damage is fixed (given as [magic-atk]).
+- A fight goes until one side reaches 0 HP. If you reach 0, you lose the game.
+- HP never regenerates; every HP spent reduces your final score.
+
+ITEMS & DOORS:
+- Gems permanently raise ATK or DEF; potions restore HP; keys open one door each and are consumed.
+- Opening a door costs no HP and may lead to items or dead ends. Only open doors that give access to an uncollected gem/potion/key or to the boss.
+- Collecting an item is automatic when you step on it (shown as engine action). You never need to spend a turn to "collect".
+
+YOUR ONLY GOAL: kill the boss and end with as much HP as possible.
+
+CORE DECISION RULE:
+- A fight is **necessary** ONLY if that monster currently blocks your path to an uncollected gem/potion/key, or to the boss.
+- A door is **worth opening** ONLY if it gives access to an uncollected gem/potion/key or to the boss.
+- Every other fight or door open is pure waste: it costs HP or a key and gains nothing. Do NOT take it.
+- Before choosing any action, check each listed option: does it lead (immediately or after that monster/door) to a remaining useful item or the boss? If not, skip it.
+
+WHEN MULTIPLE ACTIONS ARE OFFERED:
+- If any action leads to an uncollected gem/potion/key at low HP cost and enables future survival, prefer the one that unlocks the most items for the least HP.
+- If the boss is the only remaining goal AND the boss fight shows a positive HP-after, take the boss immediately — do not waste HP on any other monster first.
+- If the boss is listed "you cannot win", you must improve ATK (or DEF) via remaining gems first.
+- NEVER take a fight "because you have to pick something." If every offered fight is unnecessary, the least-bad choice is the one with the smallest HP loss, but only as a last resort — never when the boss is winnable or a gem is reachable.
+- If offered a fight that blocks nothing and a door that leads nowhere, still avoid both; pick the option with the least HP cost only if forced.
+
+PLANNING:
+- Check what items remain on the floor (the system prompt lists their positions). Before fighting, verify the monster is on the only path to one of them; many monsters guard nothing.
+- Track your ATK vs boss DEF: if your ATK ≤ boss DEF you deal 0 — you MUST find ATK gems before attempting the boss, even if it costs HP to reach them.
+- After you have collected all gems/potions that are reachable without excessive HP loss, the boss becomes the only goal. Fight it as soon as you can survive with positive HP — every extra fight before the boss reduces your score.
+
+OUTPUT:
+- Give a short reasoning (2-4 sentences) then a single line: FINAL_CHOICE: <number>

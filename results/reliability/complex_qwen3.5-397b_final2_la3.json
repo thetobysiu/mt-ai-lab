@@ -1,0 +1,217 @@
+{
+  "label": "complex_qwen3.5-397b_final2_la3",
+  "config": {
+    "floor": "complex",
+    "start": null,
+    "end": null,
+    "max_turns": null,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-floor-basic",
+    "prompt_chars": 2527,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 3,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "32768",
+      "CONVERSATION_HISTORY_TURNS": "0",
+      "MOTA_ORDER_TWO_SIDED": "1",
+      "MOTA_FIGHT_KEY_FLOOD": "1"
+    },
+    "source": "cli",
+    "reference_hp": 68
+  },
+  "runs": [
+    {
+      "score": 0.3641,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 152,
+      "hero_atk": 11,
+      "hero_def": 17,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "steps": 37,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 15,
+      "parse_errors": 0,
+      "forced_turns": 22,
+      "lethal_only_stop": {
+        "action": "Fight Slime Lord at (4,7) dmg=230",
+        "hp_after": -78,
+        "damage": 230
+      },
+      "map_enum": null,
+      "run_log": "20260927_155156_553141_complex_llm.json",
+      "elapsed_s": 1458.0,
+      "timestamp": "2026-09-27T18:16:14",
+      "run_idx": 1
+    },
+    {
+      "score": 0.3813,
+      "goal_score": 0.182,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 147,
+      "hero_atk": 13,
+      "hero_def": 16,
+      "enemies_killed": 13,
+      "enemies_total": 25,
+      "steps": 39,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 16,
+      "parse_errors": 0,
+      "forced_turns": 23,
+      "lethal_only_stop": {
+        "action": "Fight Slime Lord at (4,7) dmg=170",
+        "hp_after": -23,
+        "damage": 170
+      },
+      "map_enum": null,
+      "run_log": "20260927_161614_558798_complex_llm.json",
+      "elapsed_s": 1807.7,
+      "timestamp": "2026-09-27T18:46:22",
+      "run_idx": 2
+    },
+    {
+      "score": 0.3787,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 84,
+      "hero_atk": 11,
+      "hero_def": 17,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "steps": 37,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 15,
+      "parse_errors": 0,
+      "forced_turns": 22,
+      "lethal_only_stop": {
+        "action": "Fight Slime Lord at (4,7) dmg=230",
+        "hp_after": -146,
+        "damage": 230
+      },
+      "map_enum": null,
+      "run_log": "20260927_164622_227266_complex_llm.json",
+      "elapsed_s": 1683.5,
+      "timestamp": "2026-09-27T19:14:25",
+      "run_idx": 3
+    },
+    {
+      "score": 0.4006,
+      "goal_score": 0.294,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 37,
+      "hero_atk": 15,
+      "hero_def": 20,
+      "enemies_killed": 21,
+      "enemies_total": 25,
+      "steps": 62,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 23,
+      "parse_errors": 0,
+      "forced_turns": 39,
+      "lethal_only_stop": {
+        "action": "Fight Slime Lord at (10,10) dmg=130",
+        "hp_after": -93,
+        "damage": 130
+      },
+      "map_enum": null,
+      "run_log": "20260927_171425_729573_complex_llm.json",
+      "elapsed_s": 2679.5,
+      "timestamp": "2026-09-27T19:59:05",
+      "run_idx": 4
+    },
+    {
+      "score": 0.3664,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 135,
+      "hero_atk": 11,
+      "hero_def": 17,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "steps": 37,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 15,
+      "parse_errors": 1,
+      "forced_turns": 22,
+      "lethal_only_stop": {
+        "action": "Fight Slime Lord at (4,7) dmg=230",
+        "hp_after": -95,
+        "damage": 230
+      },
+      "map_enum": null,
+      "run_log": "20260927_175905_174831_complex_llm.json",
+      "elapsed_s": 2991.5,
+      "timestamp": "2026-09-27T20:48:56",
+      "run_idx": 5
+    }
+  ],
+  "aggregate": {
+    "n": 5,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.4345
+    ],
+    "died": 0,
+    "lethal_only_stops": 5,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": 0.196,
+    "goal_score_sd": 0.0551,
+    "score_mean": 0.3782,
+    "score_sd": 0.0146,
+    "score_min": 0.3641,
+    "score_max": 0.4006,
+    "final_hp_mean": 111.0,
+    "final_hp_sd": 49.3913,
+    "llm_calls_total": 84,
+    "seconds_per_call": 126.43,
+    "parse_error_rate": 0.0119,
+    "elapsed_s_total": 10620.2
+  },
+  "updated": "2026-09-27 20:48"
+}

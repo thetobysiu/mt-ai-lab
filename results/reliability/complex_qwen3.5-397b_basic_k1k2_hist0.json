@@ -1,0 +1,210 @@
+{
+  "label": "complex_qwen3.5-397b_basic_k1k2_hist0",
+  "config": {
+    "floor": "complex",
+    "start": null,
+    "end": null,
+    "max_turns": null,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-floor-basic",
+    "prompt_chars": 2527,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 3,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "32768",
+      "CONVERSATION_HISTORY_TURNS": "0"
+    },
+    "source": "cli",
+    "reference_hp": 68
+  },
+  "runs": [
+    {
+      "score": 0.3696,
+      "goal_score": 0.252,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 79,
+      "hero_atk": 13,
+      "hero_def": 20,
+      "enemies_killed": 18,
+      "enemies_total": 25,
+      "steps": 56,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 20,
+      "parse_errors": 0,
+      "forced_turns": 36,
+      "lethal_only_stop": {
+        "action": "Fight Bat at (11,4) dmg=120",
+        "hp_after": -41,
+        "damage": 120
+      },
+      "run_log": "20260926_203437_272889_complex_llm.json",
+      "elapsed_s": 1241.7,
+      "timestamp": "2026-09-26T22:55:19",
+      "run_idx": 1
+    },
+    {
+      "score": 0.3658,
+      "goal_score": 0.154,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 90,
+      "hero_atk": 12,
+      "hero_def": 17,
+      "enemies_killed": 11,
+      "enemies_total": 25,
+      "steps": 33,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 14,
+      "parse_errors": 0,
+      "forced_turns": 19,
+      "lethal_only_stop": {
+        "action": "Fight Red Bat at (4,2) dmg=224",
+        "hp_after": -134,
+        "damage": 224
+      },
+      "run_log": "20260926_205519_044197_complex_llm.json",
+      "elapsed_s": 1106.5,
+      "timestamp": "2026-09-26T23:13:45",
+      "run_idx": 2
+    },
+    {
+      "score": 0.4081,
+      "goal_score": 0.154,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 14,
+      "hero_atk": 12,
+      "hero_def": 14,
+      "enemies_killed": 11,
+      "enemies_total": 25,
+      "steps": 33,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 14,
+      "parse_errors": 0,
+      "forced_turns": 19,
+      "lethal_only_stop": {
+        "action": "Fight Red Bat at (4,2) dmg=242",
+        "hp_after": -228,
+        "damage": 242
+      },
+      "run_log": "20260926_211345_529617_complex_llm.json",
+      "elapsed_s": 1030.6,
+      "timestamp": "2026-09-26T23:30:56",
+      "run_idx": 3
+    },
+    {
+      "score": 0.3883,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 65,
+      "hero_atk": 11,
+      "hero_def": 17,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "steps": 37,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 15,
+      "parse_errors": 0,
+      "forced_turns": 22,
+      "lethal_only_stop": {
+        "action": "Fight Slime Lord at (4,7) dmg=230",
+        "hp_after": -165,
+        "damage": 230
+      },
+      "run_log": "20260926_213056_125609_complex_llm.json",
+      "elapsed_s": 821.2,
+      "timestamp": "2026-09-26T23:44:37",
+      "run_idx": 4
+    },
+    {
+      "score": 0.3676,
+      "goal_score": 0.154,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 85,
+      "hero_atk": 12,
+      "hero_def": 17,
+      "enemies_killed": 11,
+      "enemies_total": 25,
+      "steps": 33,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 14,
+      "parse_errors": 0,
+      "forced_turns": 19,
+      "lethal_only_stop": {
+        "action": "Fight Big Bat at (0,2) dmg=166",
+        "hp_after": -81,
+        "damage": 166
+      },
+      "run_log": "20260926_214437_314529_complex_llm.json",
+      "elapsed_s": 1103.0,
+      "timestamp": "2026-09-27T00:03:00",
+      "run_idx": 5
+    }
+  ],
+  "aggregate": {
+    "n": 5,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.4345
+    ],
+    "died": 0,
+    "lethal_only_stops": 5,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": 0.1764,
+    "goal_score_sd": 0.0427,
+    "score_mean": 0.3799,
+    "score_sd": 0.0182,
+    "score_min": 0.3658,
+    "score_max": 0.4081,
+    "final_hp_mean": 66.6,
+    "final_hp_sd": 30.8594,
+    "llm_calls_total": 77,
+    "seconds_per_call": 68.87,
+    "parse_error_rate": 0.0,
+    "elapsed_s_total": 5303.0
+  },
+  "updated": "2026-09-27 00:03"
+}

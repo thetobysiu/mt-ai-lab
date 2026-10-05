@@ -1,0 +1,278 @@
+{
+  "accuracy": 0.36666666666666664,
+  "json_rate": 0.9666666666666667,
+  "correct": 11,
+  "total": 30,
+  "results": [
+    {
+      "idx": 0,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 17.82,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The floor at (2,4) is already clear (##.S..#), so I can safely go up to the stairs to access the Red Gem (+3 ATK) at (3,2) which will reduce all future fight damage.\", \"macr"
+    },
+    {
+      "idx": 1,
+      "expected": "B",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 9.15,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The hero is already on the floor (S.M#), and the 小蝙蝠 (bat) is at (4,2) — the floor is the best place to start fighting bats to reduce HP.\", \"macro_action\": [\"use_stairs_upFl"
+    },
+    {
+      "idx": 2,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 12.42,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The hero is at (2,1) with 380 HP. Fighting Enemy #204 at (4,2) costs 90 HP (380-290=90) and unlocks a yellow door leading to a shop with a Yellow Key and a small enemy (Enem"
+    },
+    {
+      "idx": 3,
+      "expected": "B",
+      "predicted": "C",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 4.61,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"CoT reasoning (see training data)\", \"macro_action\": [\"fight_Enemy #206 at (0,2)\"]}"
+    },
+    {
+      "idx": 4,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 9.76,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Opening the Yellow Door at (7,4) is the priority per rules - it unlocks the path to the Blue Potion (key to the Blue Potion) and eventually the Blue Potion itself, which is "
+    },
+    {
+      "idx": 5,
+      "expected": "C",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 6.38,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The Yellow Door at (3,3) is accessible and should be opened before climbing stairs to reach the skeleton soldier.\", \"macro_action\": [\"use_stairs_upFloor at (5,1)\"]}"
+    },
+    {
+      "idx": 6,
+      "expected": "B",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 6.24,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The hero must first clear the stairs leading to the bat fight before engaging it, as per priority rules.\", \"macro_action\": [\"use_stairs_upFloor at (5,1)\"]}"
+    },
+    {
+      "idx": 7,
+      "expected": "B",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 9.25,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The Blue Gem (+3 DEF) and Yellow Key are available and valuable; fighting the Blue Potion at (2,4) unlocks these items while reducing HP to 134 (vs. 610), which is critical "
+    },
+    {
+      "idx": 8,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 8.22,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The Yellow Door at (9,4) is the best option per priority rules - I need to open it before accessing the key at (2,5) to unlock the door leading to the yellow key.\", \"macro_a"
+    },
+    {
+      "idx": 9,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 11.23,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The Yellow Door at (3,7) is the best strategic option per priority rules - it unlocks the blue key (Y) and leads to the blue door (2) which eventually connects to the yellow"
+    },
+    {
+      "idx": 10,
+      "expected": "B",
+      "predicted": "C",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 10.65,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"The 骷髅士兵 has the highest dmg value (119) and should be prioritized before fighting the 青头怪 (72) or 青头怪 (72). The 骷髅士兵 must be defeated before engaging the 青头怪 to reduce HP e"
+    },
+    {
+      "idx": 11,
+      "expected": "C",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 7.76,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The Yellow Door at (4,2) is unlocked by climbing stairs upFloor (STEP 1 priority), and opening it will allow access to the dungeon.\", \"macro_action\": [\"use_stairs upFloor at"
+    },
+    {
+      "idx": 12,
+      "expected": "B",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 8.95,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The floor is already SYN00249_0 (7x7) and the hero is at (2,5), so I can safely use_stairs upFloor at (3,1) to access the upper levels.\", \"macro_action\": [\"use_stairs upFloo"
+    },
+    {
+      "idx": 13,
+      "expected": "B",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 7.82,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The floor at (5,1) is the first available staircase up from the hero's position (5,6), and I must go there before accessing the upstairs room.\", \"macro_action\": [\"use_stairs"
+    },
+    {
+      "idx": 14,
+      "expected": "?",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": false,
+      "elapsed": 25.09,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The Yellow Door at (5,3) is unlocked by opening the Yellow Door at (6,2), which is adjacent to the existing Yellow Door at (6,2) (same coordinates? Wait, the map shows (6,2)"
+    },
+    {
+      "idx": 15,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 9.43,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The hero is already at (4,5) with HP=852, which is above the DEF=7 threshold (852 >= 7). Fighting the green head monster at (3,3) (dmg=52) will reduce HP to 800 (852-52=800)"
+    },
+    {
+      "idx": 16,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 6.42,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Opening the Yellow Door at (1,4) unlocks a chain leading to the initial 初级卫兵 at (2,2), which is a winable option and should be prioritized before any fights.\", \"macro_action"
+    },
+    {
+      "idx": 17,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 7.27,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The fight against the 红头怪 at (3,1) is the highest-value target available (42 HP cost + 144 HP gain), and DEF=8 is below the 20 HP threshold for the Blue Key unlock, making t"
+    },
+    {
+      "idx": 18,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 7.65,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The Yellow Door at (3,5) unlocks a chain leading to the initial 初级卫兵 (unwinnable) and a 骷髅队长 (unwinnable) — this is the only progress possible. I must go inside before any f"
+    },
+    {
+      "idx": 19,
+      "expected": "B",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 6.42,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The hero must first go up stairs to access the dungeon (STEP 1 priority), then the fight has lower dmg (112) than the alternative (212) and leaves more HP for future fights."
+    },
+    {
+      "idx": 20,
+      "expected": "B",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 7.26,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"STEP 1 priority: stat pickups must be taken before any fights. The floor at (3,2) contains stat upgrades worth 64 HP, which will make the 绿头怪 fights cheaper (64 HP cost inst"
+    },
+    {
+      "idx": 21,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 7.3,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The 骷髅士兵 at (4,5) is the only active fight with positive ROI (432 HP spent for 209 HP returned +19% DEF upgrade). This should be prioritized before any other actions.\", \"mac"
+    },
+    {
+      "idx": 22,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 6.91,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The fight at (4,4) has lower dmg (60 vs 180) and will result in a Blue Potion (+500 HP) and Red Gem (+3 ATK) which are valuable for HP recovery and stat upgrades.\", \"macro_a"
+    },
+    {
+      "idx": 23,
+      "expected": "A",
+      "predicted": "C",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 5.67,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"STEP 1 priority: I must clear the stairs before I can fight the boss. The floor is blocked by walls and I need to go upstairs to access the fight area.\", \"macro_action\": [\"u"
+    },
+    {
+      "idx": 24,
+      "expected": "A",
+      "predicted": "C",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 6.42,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"Opening the yellow door at (1,5) is the highest priority per rules - this will make the skeleton fighter accessible and unlock the path to the Red Gem (+3 ATK) and stairs le"
+    },
+    {
+      "idx": 25,
+      "expected": "B",
+      "predicted": "C",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 5.49,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"The hero must first clear the path to the 红头怪 by climbing stairs before engaging any fights; this is prioritized per rules.\", \"macro_action\": [\"fight_小蝙蝠 at (4,5)\"]}"
+    },
+    {
+      "idx": 26,
+      "expected": "?",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 5.55,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The 青头怪 at (5,2) has a high dmg value (56) and will unlock stairs, which are valuable for future access to the map.\", \"macro_action\": [\"fight_青头怪 at (5,2)\"]}"
+    },
+    {
+      "idx": 27,
+      "expected": "A",
+      "predicted": "C",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 5.66,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"The Yellow Door at (1,3) must be opened before accessing the 红头怪 at (4,4), as the door is required to enter the floor above.\", \"macro_action\": [\"open_Yellow Door at (1,3)\"]}"
+    },
+    {
+      "idx": 28,
+      "expected": "C",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 5.11,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"The Yellow Door at (7,1) is accessible and should be opened before fighting the skeleton soldier to unlock the floor for future actions.\", \"macro_action\": [\"use_stairs upFlo"
+    },
+    {
+      "idx": 29,
+      "expected": "B",
+      "predicted": "C",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 6.5,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"The hero must first open the Yellow Door at (7,6) before being able to fight the 青头怪 (Stone Giant) at (2,2). This is the logical prerequisite before any battles.\", \"macro_ac"
+    }
+  ]
+}

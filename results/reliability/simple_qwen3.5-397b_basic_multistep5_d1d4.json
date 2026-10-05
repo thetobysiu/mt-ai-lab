@@ -1,0 +1,131 @@
+{
+  "label": "simple_qwen3.5-397b_basic_multistep5_d1d4",
+  "config": {
+    "floor": "simple",
+    "start": null,
+    "end": null,
+    "max_turns": null,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-floor-basic",
+    "prompt_chars": 2527,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "multistep-5",
+    "temperature": 0.0,
+    "lookahead": 3,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "32768"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.6172,
+      "goal_score": 0.0964,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": true,
+      "goal": "boss",
+      "goal_reached": true,
+      "died": true,
+      "final_hp": -1,
+      "hero_atk": 11,
+      "hero_def": 6,
+      "enemies_killed": 9,
+      "enemies_total": 14,
+      "steps": 21,
+      "violations": [
+        "suicide_fight: Boss at (5,10)"
+      ],
+      "llm_calls": 18,
+      "parse_errors": 18,
+      "forced_turns": 0,
+      "run_log": null,
+      "elapsed_s": 1201.0,
+      "timestamp": "2026-09-26T04:14:37",
+      "run_idx": 1
+    },
+    {
+      "score": 0.2673,
+      "goal_score": 0.075,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": true,
+      "final_hp": -15,
+      "hero_atk": 11,
+      "hero_def": 5,
+      "enemies_killed": 7,
+      "enemies_total": 14,
+      "steps": 17,
+      "violations": [
+        "suicide_fight: Slime Lord at (1,9)",
+        "boss_not_killed"
+      ],
+      "llm_calls": 14,
+      "parse_errors": 14,
+      "forced_turns": 0,
+      "run_log": null,
+      "elapsed_s": 2465.6,
+      "timestamp": "2026-09-26T04:55:43",
+      "run_idx": 2
+    },
+    {
+      "score": 0.6464,
+      "goal_score": 0.1071,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": true,
+      "goal": "boss",
+      "goal_reached": true,
+      "died": true,
+      "final_hp": -1,
+      "hero_atk": 11,
+      "hero_def": 6,
+      "enemies_killed": 10,
+      "enemies_total": 14,
+      "steps": 26,
+      "violations": [
+        "suicide_fight: Boss at (5,10)"
+      ],
+      "llm_calls": 35,
+      "parse_errors": 32,
+      "forced_turns": 0,
+      "run_log": null,
+      "elapsed_s": 3441.1,
+      "timestamp": "2026-09-26T05:53:04",
+      "run_idx": 3
+    }
+  ],
+  "aggregate": {
+    "n": 3,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.5615
+    ],
+    "died": 3,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": 0.0928,
+    "goal_score_sd": 0.0163,
+    "score_mean": 0.5103,
+    "score_sd": 0.211,
+    "score_min": 0.2673,
+    "score_max": 0.6464,
+    "final_hp_mean": -5.6667,
+    "final_hp_sd": 8.0829,
+    "llm_calls_total": 67,
+    "seconds_per_call": 106.09,
+    "parse_error_rate": 0.9552,
+    "elapsed_s_total": 7107.7
+  },
+  "updated": "2026-09-26 05:53"
+}

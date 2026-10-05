@@ -1,0 +1,524 @@
+[
+  {
+    "file": "20260424_012713_937471_单层-最简单.txt_llm.json",
+    "date": "20260424",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.8333,
+    "final_hp": 2,
+    "steps": 36,
+    "boss_killed": true,
+    "died": false,
+    "violations": [],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260426_222838_090047_simple_llm.json",
+    "date": "20260426",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.7885,
+    "final_hp": 2,
+    "steps": 36,
+    "boss_killed": true,
+    "died": false,
+    "violations": [],
+    "pre_scorer_fix": false,
+    "prompt_chars": 1906
+  },
+  {
+    "file": "20260427_210455_321074_simple_llm.json",
+    "date": "20260427",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3706,
+    "final_hp": 527,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 2927
+  },
+  {
+    "file": "20260427_231457_172915_simple_llm.json",
+    "date": "20260427",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3705,
+    "final_hp": 550,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 2927
+  },
+  {
+    "file": "20260427_233611_483538_simple_llm.json",
+    "date": "20260427",
+    "floor": "simple",
+    "model": "meta-llama-3.1-8b-instruct",
+    "task_mode": "instruct",
+    "score": 0.3706,
+    "final_hp": 530,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4152
+  },
+  {
+    "file": "20260428_005114_698558_simple_llm.json",
+    "date": "20260428",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.371,
+    "final_hp": 470,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4152
+  },
+  {
+    "file": "20260430_200226_519008_simple_llm.json",
+    "date": "20260430",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.7885,
+    "final_hp": 2,
+    "steps": 36,
+    "boss_killed": true,
+    "died": false,
+    "violations": [],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260430_204222_617693_simple_llm.json",
+    "date": "20260430",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3706,
+    "final_hp": 526,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260430_210514_006904_simple_llm.json",
+    "date": "20260430",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3706,
+    "final_hp": 526,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260430_212457_728253_simple_llm.json",
+    "date": "20260430",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.7885,
+    "final_hp": 2,
+    "steps": 36,
+    "boss_killed": true,
+    "died": false,
+    "violations": [],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260502_001232_350216_simple_llm.json",
+    "date": "20260502",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.7885,
+    "final_hp": 2,
+    "steps": 36,
+    "boss_killed": true,
+    "died": false,
+    "violations": [],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260502_001456_721573_simple_llm.json",
+    "date": "20260502",
+    "floor": "simple",
+    "model": "qwen3-30b-a3b-instruct-2507",
+    "task_mode": "instruct",
+    "score": 0.3705,
+    "final_hp": 550,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260507_220939_183068_simple_llm.json",
+    "date": "20260507",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3704,
+    "final_hp": 565,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260520_092241_406817_simple_llm.json",
+    "date": "20260520",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3704,
+    "final_hp": 565,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260525_232548_460808_complex_llm.json",
+    "date": "20260525",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.3184,
+    "final_hp": -50,
+    "steps": 32,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Bat at (8,2)",
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4298
+  },
+  {
+    "file": "20260525_233756_828593_complex_llm.json",
+    "date": "20260525",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.3184,
+    "final_hp": -41,
+    "steps": 32,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Slime Lord at (10,10)",
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4298
+  },
+  {
+    "file": "20260526_003549_619976_complex_llm.json",
+    "date": "20260526",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.3337,
+    "final_hp": -9,
+    "steps": 54,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Bat at (11,4)",
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4298
+  },
+  {
+    "file": "20260526_231938_468873_complex_llm.json",
+    "date": "20260526",
+    "floor": "complex",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3184,
+    "final_hp": -41,
+    "steps": 32,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Big Bat at (12,12)",
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4298
+  },
+  {
+    "file": "20260527_001148_654820_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3184,
+    "final_hp": -41,
+    "steps": 32,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Big Bat at (12,12)",
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4298
+  },
+  {
+    "file": "20260527_002529_405244_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.3184,
+    "final_hp": -88,
+    "steps": 32,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Red Bat at (4,11)",
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4298
+  },
+  {
+    "file": "20260527_003627_192765_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.3184,
+    "final_hp": -41,
+    "steps": 32,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Big Bat at (12,12)",
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4298
+  },
+  {
+    "file": "20260527_004951_863303_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.7012,
+    "final_hp": -142,
+    "steps": 49,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Boss at (6,0)"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4699
+  },
+  {
+    "file": "20260527_010026_613155_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.2856,
+    "final_hp": 0,
+    "steps": 30,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Big Bat at (12,12)",
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4699
+  },
+  {
+    "file": "20260527_074006_704228_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.8982,
+    "final_hp": 17,
+    "steps": 52,
+    "boss_killed": true,
+    "died": false,
+    "violations": [],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4898
+  },
+  {
+    "file": "20260527_163720_946596_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.675,
+    "final_hp": -315,
+    "steps": 56,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Boss at (6,0)"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4898
+  },
+  {
+    "file": "20260527_164622_858094_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.3039,
+    "final_hp": -2,
+    "steps": 36,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Green Slime at (6,6)",
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4898
+  },
+  {
+    "file": "20260527_165216_394729_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.7012,
+    "final_hp": -52,
+    "steps": 49,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Boss at (6,0)"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4898
+  },
+  {
+    "file": "20260527_170638_742491_complex_llm.json",
+    "date": "20260527",
+    "floor": "complex",
+    "model": "qwen3.5-35b-a3b",
+    "task_mode": "thinking",
+    "score": 0.7012,
+    "final_hp": -77,
+    "steps": 49,
+    "boss_killed": false,
+    "died": true,
+    "violations": [
+      "suicide_fight: Boss at (6,0)"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4898
+  },
+  {
+    "file": "20260601_030330_326005_simple_llm.json",
+    "date": "20260601",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3704,
+    "final_hp": 554,
+    "steps": 36,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3618
+  },
+  {
+    "file": "20260601_031150_389884_complex_llm.json",
+    "date": "20260601",
+    "floor": "complex",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3409,
+    "final_hp": 196,
+    "steps": 31,
+    "boss_killed": false,
+    "died": false,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "pre_scorer_fix": false,
+    "prompt_chars": 4898
+  },
+  {
+    "file": "20260601_033724_008241_simple_llm.json",
+    "date": "20260601",
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.7885,
+    "final_hp": 2,
+    "steps": 36,
+    "boss_killed": true,
+    "died": false,
+    "violations": [],
+    "pre_scorer_fix": false,
+    "prompt_chars": 3778
+  }
+]

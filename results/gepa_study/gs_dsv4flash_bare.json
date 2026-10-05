@@ -1,0 +1,108 @@
+{
+  "label": "gs_dsv4flash_bare",
+  "preset": "deepseek-v4-flash",
+  "task_model": "deepseek-v4-flash-0731",
+  "task_mode": "instruct",
+  "obs": "bare",
+  "train": [
+    "simple",
+    "gen01",
+    "gen02"
+  ],
+  "test": [
+    "gen03",
+    "gen04",
+    "gen05",
+    "gen06",
+    "gen07",
+    "gen08",
+    "gen09",
+    "gen10",
+    "gen11",
+    "gen12",
+    "gen13",
+    "gen14",
+    "gen15"
+  ],
+  "repeat": 1,
+  "env": {
+    "CONVERSATION_HISTORY_TURNS": "0",
+    "MOTA_ORDER_TWO_SIDED": "1",
+    "MOTA_FIGHT_KEY_FLOOD": "1",
+    "LOOKAHEAD_DEPTH": "3",
+    "MOTA_BARE_OBS": "1",
+    "MOTA_EVAL_TEMPERATURE": "0.0",
+    "THINKING_MAX_TOKENS": "16384",
+    "MOTA_DISABLE_OVERRIDES": null,
+    "MOTA_SUPPRESS_HINTS": null
+  },
+  "overrides": "mechanical-only (dead-end / unwinnable / lethal) + auto-collect + auto-fight-0-HP",
+  "episodes": [
+    {
+      "prompt": "core",
+      "floor": "simple",
+      "split": "train",
+      "rep": 0,
+      "goal_score": 0.325,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 443,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "llm_calls": 16,
+      "parse_errors": 48,
+      "forced_turns": 20,
+      "lethal_only_stop": null,
+      "run_log": "20260928_053732_299208_simple_llm.json",
+      "elapsed_s": 7921.6
+    },
+    {
+      "prompt": "gepa",
+      "floor": "simple",
+      "split": "train",
+      "rep": 0,
+      "goal_score": 0.325,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 443,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "llm_calls": 16,
+      "parse_errors": 48,
+      "forced_turns": 20,
+      "lethal_only_stop": null,
+      "run_log": "20260928_074933_868442_simple_llm.json",
+      "elapsed_s": 7916.0
+    }
+  ],
+  "started": "2026-09-28T03:32:51.982298",
+  "gepa": {
+    "result_file": "results/gepa/gepa_result_gs_dsv4flash_bare.json",
+    "best_score": 0.6065666666666667,
+    "trajectory": [
+      0.6066,
+      0.4692,
+      0.4692,
+      0.603,
+      0.5383,
+      0.5659
+    ],
+    "accepted": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      null
+    ],
+    "best_is_seed": true,
+    "finished": "2026-09-28T07:37:32.299208"
+  },
+  "updated": "2026-09-28T12:01:29.853554"
+}

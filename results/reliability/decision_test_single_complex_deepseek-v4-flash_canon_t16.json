@@ -1,0 +1,110 @@
+[
+ {
+  "variant": "depth 3",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Open yellow door at (10,5)",
+  "good": false
+ },
+ {
+  "variant": "depth 3",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Open yellow door at (10,5)",
+  "good": false
+ },
+ {
+  "variant": "depth 3",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Open yellow door at (10,5)",
+  "good": false
+ },
+ {
+  "variant": "depth 3",
+  "preset": "qwen3.5-397b",
+  "choice": "Open yellow door at (5,8)",
+  "good": true
+ },
+ {
+  "variant": "depth 3",
+  "preset": "qwen3.5-397b",
+  "choice": "Fight Slime Lord at (10,10) dmg=235",
+  "good": true
+ },
+ {
+  "variant": "depth 3",
+  "preset": "qwen3.5-397b",
+  "choice": "Open yellow door at (10,5)",
+  "good": false
+ },
+ {
+  "variant": "depth 4",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Open yellow door at (5,8)",
+  "good": true
+ },
+ {
+  "variant": "depth 4",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Fight Slime Lord at (10,10) dmg=235",
+  "good": true
+ },
+ {
+  "variant": "depth 4",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Open yellow door at (10,5)",
+  "good": false
+ },
+ {
+  "variant": "depth 4",
+  "preset": "qwen3.5-397b",
+  "choice": "Open yellow door at (5,8)",
+  "good": true
+ },
+ {
+  "variant": "depth 4",
+  "preset": "qwen3.5-397b",
+  "choice": "Open yellow door at (5,8)",
+  "good": true
+ },
+ {
+  "variant": "depth 4",
+  "preset": "qwen3.5-397b",
+  "choice": "Open yellow door at (5,8)",
+  "good": true
+ },
+ {
+  "variant": "depth 5",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Fight Slime Lord at (10,10) dmg=235",
+  "good": true
+ },
+ {
+  "variant": "depth 5",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Open yellow door at (5,8)",
+  "good": true
+ },
+ {
+  "variant": "depth 5",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Open yellow door at (5,8)",
+  "good": true
+ },
+ {
+  "variant": "depth 5",
+  "preset": "qwen3.5-397b",
+  "choice": "Open yellow door at (8,4)",
+  "good": true
+ },
+ {
+  "variant": "depth 5",
+  "preset": "qwen3.5-397b",
+  "choice": "Fight Slime Lord at (10,10) dmg=235",
+  "good": true
+ },
+ {
+  "variant": "depth 5",
+  "preset": "qwen3.5-397b",
+  "choice": "Open yellow door at (5,8)",
+  "good": true
+ }
+]

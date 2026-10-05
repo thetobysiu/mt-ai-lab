@@ -1,0 +1,121 @@
+{
+  "label": "segment2_qwen3.5-397b_basic_d1d4",
+  "config": {
+    "floor": null,
+    "start": "MT8",
+    "end": "MT11",
+    "max_turns": 400,
+    "checkpoint": 2,
+    "hero_override": {
+      "hp": 823,
+      "atk": 112,
+      "def": 70,
+      "money": 128,
+      "exp": 23,
+      "yellow": 5,
+      "blue": 7,
+      "red": 1
+    },
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 3630,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "8192"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.1646,
+      "success": false,
+      "died": false,
+      "floors_reached": 0,
+      "max_floor_id": "MT8",
+      "total_floors": 4,
+      "final_floor_id": "MT8",
+      "failure_reason": "Stuck — only unwinnable fight remains",
+      "final_hp": 823,
+      "hero_atk": 112,
+      "hero_def": 70,
+      "keys": {
+        "yellow": 5,
+        "blue": 7,
+        "red": 1
+      },
+      "money": 138,
+      "exp": 31,
+      "turns": 1,
+      "llm_calls": 0,
+      "parse_errors": 0,
+      "forced_turns": 1,
+      "run_log": "20260926_031705_129350_MT8-MT11_llm.json",
+      "floor_transitions": [],
+      "elapsed_s": 0.0,
+      "timestamp": "2026-09-26T05:17:05",
+      "run_idx": 1
+    },
+    {
+      "score": 0.1646,
+      "success": false,
+      "died": false,
+      "floors_reached": 0,
+      "max_floor_id": "MT8",
+      "total_floors": 4,
+      "final_floor_id": "MT8",
+      "failure_reason": "Stuck — only unwinnable fight remains",
+      "final_hp": 823,
+      "hero_atk": 112,
+      "hero_def": 70,
+      "keys": {
+        "yellow": 5,
+        "blue": 7,
+        "red": 1
+      },
+      "money": 138,
+      "exp": 31,
+      "turns": 1,
+      "llm_calls": 0,
+      "parse_errors": 0,
+      "forced_turns": 1,
+      "run_log": "20260926_031705_146191_MT8-MT11_llm.json",
+      "floor_transitions": [],
+      "elapsed_s": 0.0,
+      "timestamp": "2026-09-26T05:17:05",
+      "run_idx": 2
+    }
+  ],
+  "aggregate": {
+    "n": 2,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.6576
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.1646,
+    "score_sd": 0.0,
+    "score_min": 0.1646,
+    "score_max": 0.1646,
+    "final_hp_mean": 823.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 0,
+    "seconds_per_call": null,
+    "parse_error_rate": null,
+    "elapsed_s_total": 0,
+    "floors_reached_mean": 0.0,
+    "floors_reached_max": 0
+  },
+  "updated": "2026-09-26 05:17"
+}

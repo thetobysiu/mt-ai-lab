@@ -1,0 +1,329 @@
+{
+  "label": "gs4_complex_35b",
+  "preset": "qwen3.6-35b",
+  "task_model": "qwen3.6-35b-a3b",
+  "task_mode": "thinking",
+  "obs": "full",
+  "train": [
+    "complex"
+  ],
+  "test": [],
+  "repeat": 5,
+  "env": {
+    "CONVERSATION_HISTORY_TURNS": "0",
+    "MOTA_ORDER_TWO_SIDED": "1",
+    "MOTA_FIGHT_KEY_FLOOD": "1",
+    "LOOKAHEAD_DEPTH": "3",
+    "MOTA_BARE_OBS": null,
+    "MOTA_EVAL_TEMPERATURE": "0.0",
+    "THINKING_MAX_TOKENS": "16384",
+    "MOTA_DISABLE_OVERRIDES": null,
+    "MOTA_SUPPRESS_HINTS": null
+  },
+  "overrides": "mechanical-only (dead-end / unwinnable / lethal) + auto-collect + auto-fight-0-HP",
+  "episodes": [
+    {
+      "prompt": "seed",
+      "floor": "complex",
+      "split": "train",
+      "rep": 0,
+      "goal_score": 0.14,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 147,
+      "hero_atk": 11,
+      "hero_def": 14,
+      "enemies_killed": 10,
+      "enemies_total": 25,
+      "llm_calls": 13,
+      "parse_errors": 0,
+      "forced_turns": 18,
+      "lethal_only_stop": {
+        "action": "Fight Bat at (8,2) dmg=230",
+        "hp_after": -83,
+        "damage": 230
+      },
+      "run_log": "20260928_220517_403792_complex_llm.json",
+      "elapsed_s": 259.3
+    },
+    {
+      "prompt": "gepa",
+      "floor": "complex",
+      "split": "train",
+      "rep": 0,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 15,
+      "hero_atk": 11,
+      "hero_def": 16,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "llm_calls": 15,
+      "parse_errors": 3,
+      "forced_turns": 22,
+      "lethal_only_stop": {
+        "action": "Fight Green Slime at (6,6) dmg=21",
+        "hp_after": -6,
+        "damage": 21
+      },
+      "run_log": "20260928_220936_737859_complex_llm.json",
+      "elapsed_s": 238.1
+    },
+    {
+      "prompt": "seed",
+      "floor": "complex",
+      "split": "train",
+      "rep": 1,
+      "goal_score": 0.14,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 119,
+      "hero_atk": 11,
+      "hero_def": 16,
+      "enemies_killed": 10,
+      "enemies_total": 25,
+      "llm_calls": 13,
+      "parse_errors": 0,
+      "forced_turns": 20,
+      "lethal_only_stop": {
+        "action": "Fight Slime Lord at (3,10) dmg=230",
+        "hp_after": -111,
+        "damage": 230
+      },
+      "run_log": "20260928_221334_878481_complex_llm.json",
+      "elapsed_s": 281.6
+    },
+    {
+      "prompt": "gepa",
+      "floor": "complex",
+      "split": "train",
+      "rep": 1,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 15,
+      "hero_atk": 11,
+      "hero_def": 16,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "llm_calls": 15,
+      "parse_errors": 3,
+      "forced_turns": 22,
+      "lethal_only_stop": {
+        "action": "Fight Green Slime at (6,6) dmg=21",
+        "hp_after": -6,
+        "damage": 21
+      },
+      "run_log": "20260928_221816_496238_complex_llm.json",
+      "elapsed_s": 233.8
+    },
+    {
+      "prompt": "seed",
+      "floor": "complex",
+      "split": "train",
+      "rep": 2,
+      "goal_score": 0.14,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 155,
+      "hero_atk": 12,
+      "hero_def": 14,
+      "enemies_killed": 10,
+      "enemies_total": 25,
+      "llm_calls": 13,
+      "parse_errors": 0,
+      "forced_turns": 19,
+      "lethal_only_stop": {
+        "action": "Fight Red Bat at (4,2) dmg=242",
+        "hp_after": -87,
+        "damage": 242
+      },
+      "run_log": "20260928_222210_318478_complex_llm.json",
+      "elapsed_s": 278.8
+    },
+    {
+      "prompt": "gepa",
+      "floor": "complex",
+      "split": "train",
+      "rep": 2,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 15,
+      "hero_atk": 11,
+      "hero_def": 16,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "llm_calls": 15,
+      "parse_errors": 3,
+      "forced_turns": 22,
+      "lethal_only_stop": {
+        "action": "Fight Green Slime at (6,6) dmg=21",
+        "hp_after": -6,
+        "damage": 21
+      },
+      "run_log": "20260928_222649_102563_complex_llm.json",
+      "elapsed_s": 232.9
+    },
+    {
+      "prompt": "seed",
+      "floor": "complex",
+      "split": "train",
+      "rep": 3,
+      "goal_score": 0.14,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 147,
+      "hero_atk": 11,
+      "hero_def": 14,
+      "enemies_killed": 10,
+      "enemies_total": 25,
+      "llm_calls": 13,
+      "parse_errors": 0,
+      "forced_turns": 18,
+      "lethal_only_stop": {
+        "action": "Fight Bat at (8,2) dmg=230",
+        "hp_after": -83,
+        "damage": 230
+      },
+      "run_log": "20260928_223042_026147_complex_llm.json",
+      "elapsed_s": 274.9
+    },
+    {
+      "prompt": "gepa",
+      "floor": "complex",
+      "split": "train",
+      "rep": 3,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 15,
+      "hero_atk": 11,
+      "hero_def": 16,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "llm_calls": 15,
+      "parse_errors": 3,
+      "forced_turns": 22,
+      "lethal_only_stop": {
+        "action": "Fight Green Slime at (6,6) dmg=21",
+        "hp_after": -6,
+        "damage": 21
+      },
+      "run_log": "20260928_223516_883533_complex_llm.json",
+      "elapsed_s": 239.8
+    },
+    {
+      "prompt": "seed",
+      "floor": "complex",
+      "split": "train",
+      "rep": 4,
+      "goal_score": 0.14,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 147,
+      "hero_atk": 11,
+      "hero_def": 14,
+      "enemies_killed": 10,
+      "enemies_total": 25,
+      "llm_calls": 13,
+      "parse_errors": 0,
+      "forced_turns": 18,
+      "lethal_only_stop": {
+        "action": "Fight Bat at (8,2) dmg=230",
+        "hp_after": -83,
+        "damage": 230
+      },
+      "run_log": "20260928_223916_643217_complex_llm.json",
+      "elapsed_s": 282.5
+    },
+    {
+      "prompt": "gepa",
+      "floor": "complex",
+      "split": "train",
+      "rep": 4,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 15,
+      "hero_atk": 11,
+      "hero_def": 16,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "llm_calls": 15,
+      "parse_errors": 3,
+      "forced_turns": 22,
+      "lethal_only_stop": {
+        "action": "Fight Green Slime at (6,6) dmg=21",
+        "hp_after": -6,
+        "damage": 21
+      },
+      "run_log": "20260928_224359_135708_complex_llm.json",
+      "elapsed_s": 237.0
+    }
+  ],
+  "started": "2026-09-28T22:55:08.702732",
+  "gepa": {
+    "result_file": "results/gepa/gepa_result_gs4_complex_35b.json",
+    "reflection_model": "deepseek-v4-flash-0731",
+    "rich_trace": true,
+    "best_score": 0.168,
+    "trajectory": [
+      0.14,
+      0.14,
+      0.154,
+      0.14,
+      0.168,
+      0.154
+    ],
+    "accepted": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      null
+    ],
+    "best_is_seed": false,
+    "finished": "2026-09-29T00:05:17.403792"
+  },
+  "updated": "2026-09-29T00:47:56.151576",
+  "summary": {
+    "train/seed": {
+      "n": 5,
+      "success": 0,
+      "deaths": 0,
+      "goal_mean": 0.14
+    },
+    "train/gepa": {
+      "n": 5,
+      "success": 0,
+      "deaths": 0,
+      "goal_mean": 0.168
+    },
+    "all/seed": {
+      "n": 5,
+      "success": 0,
+      "deaths": 0,
+      "goal_mean": 0.14
+    },
+    "all/gepa": {
+      "n": 5,
+      "success": 0,
+      "deaths": 0,
+      "goal_mean": 0.168
+    }
+  },
+  "finished": "2026-09-29T00:47:56.151576"
+}

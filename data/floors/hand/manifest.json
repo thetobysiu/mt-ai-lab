@@ -1,0 +1,113 @@
+{
+  "generator": "hand-designed (scripts/hand_floor_designs.py)",
+  "floors": [
+    {
+      "name": "hand01",
+      "file": "data/floors/hand/hand01.txt",
+      "target_hp": 14,
+      "target_atk": 14,
+      "target_def": 7,
+      "ref_steps": 10,
+      "enemies_total": 13,
+      "enemies_killed": 8,
+      "critical": 13,
+      "forced": 3,
+      "lose_share": 0.797,
+      "random_win": 0.0,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 136,
+        "score": 0.3054
+      },
+      "greedy": {
+        "boss_killed": false,
+        "hp": 113
+      },
+      "wins": 1,
+      "optimal_solutions": 1,
+      "solver": "java",
+      "solver_states": 461
+    },
+    {
+      "name": "hand02",
+      "file": "data/floors/hand/hand02.txt",
+      "target_hp": 13,
+      "target_atk": 13,
+      "target_def": 9,
+      "ref_steps": 9,
+      "enemies_total": 13,
+      "enemies_killed": 6,
+      "critical": 8,
+      "forced": 3,
+      "lose_share": 0.83,
+      "random_win": 0.0,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 64,
+        "score": 0.3179
+      },
+      "greedy": {
+        "boss_killed": false,
+        "hp": 4
+      },
+      "wins": 1,
+      "optimal_solutions": 1,
+      "solver": "java",
+      "solver_states": 1539
+    },
+    {
+      "name": "hand03",
+      "file": "data/floors/hand/hand03.txt",
+      "target_hp": 9,
+      "target_atk": 14,
+      "target_def": 14,
+      "ref_steps": 8,
+      "enemies_total": 16,
+      "enemies_killed": 5,
+      "critical": 8,
+      "forced": 8,
+      "lose_share": 1.0,
+      "random_win": 0.0,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 124,
+        "score": 0.3076
+      },
+      "greedy": {
+        "boss_killed": false,
+        "hp": 125
+      },
+      "wins": 1,
+      "optimal_solutions": 1,
+      "solver": "java",
+      "solver_states": 118351
+    },
+    {
+      "name": "hand04",
+      "file": "data/floors/hand/hand04.txt",
+      "target_hp": 3,
+      "target_atk": 13,
+      "target_def": 8,
+      "ref_steps": 12,
+      "enemies_total": 14,
+      "enemies_killed": 9,
+      "critical": 12,
+      "forced": 11,
+      "lose_share": 0.979,
+      "random_win": 0.0,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 101,
+        "score": 0.3098
+      },
+      "greedy": {
+        "boss_killed": false,
+        "hp": 103
+      },
+      "wins": 1,
+      "optimal_solutions": 1,
+      "solver": "java",
+      "solver_states": 7917
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+Floor: 单层-最简单 (11x11). Hero at (2,4). HP=545 ATK=10 DEF=4. Keys: Y=1 B=0 R=0.
+Map:
+.*###..DDM.
+*.M.#*###*.
+###.M...#**
+#.###M.####
+..@##.M.##*
+...M..#D.M.
+#####M#.#.*
+*##MD.#*##M
+.#*.#.####.
+*M.##M#..M.
+#**##M#**.#
+
+Choose the best action:
+  A) Fight Enemy #205 at (3,5) dmg=156 hp->389 → then: fight Enemy #203 dmg=40 | fight Enemy #202 dmg=49

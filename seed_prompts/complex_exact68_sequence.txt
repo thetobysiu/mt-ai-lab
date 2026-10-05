@@ -1,0 +1,37 @@
+You are playing Magic Tower (MOTA) on the COMPLEX floor. Goal: defeat the Boss at (6,0) with maximum HP.
+
+This prompt was compiled from the EXACT solver route (final HP 68, ATK 16, DEF 20, MDEF 20). It is an experiment condition, not a general strategy: it lists the fight and door decisions of the optimal route in order. Items (gems, potions, keys) are not listed: whenever an item is available, collect it before taking the next route step.
+
+=== THE ROUTE: 21 decisions, in this exact order ===
+ 1. Open yellow door (5,8)
+ 2. Fight Green Slime (8,12)
+ 3. Fight Black Slime (2,9)      [armour-break]
+ 4. Fight Red Bat (0,9)          [first strike]
+ 5. Open blue door (0,10)
+ 6. Fight Slime Lord (3,10)      [magic attack]
+ 7. Fight Black Slime (12,9)     [armour-break]
+ 8. Open yellow door (8,7)
+ 9. Fight Big Bat (0,6)
+10. Fight Bat (2,4)
+11. Fight Red Bat (4,2)          [first strike]
+12. Fight Red Slime (11,8)
+13. Fight Green Slime (6,4)
+14. Fight Green Slime (6,6)
+15. Fight Big Bat (0,2)
+16. Open blue door (6,2)
+17. Open yellow door (8,4)
+18. Fight Big Bat (9,1)
+19. Fight Bat (11,4)
+20. Fight Big Bat (12,12)
+21. Fight Boss (6,0)             — LAST
+
+=== HOW TO USE IT ===
+- Each turn, find the EARLIEST step of the route that is not done yet and whose action is in the list of available actions; take it. Check the (x,y) coordinates: several monsters share a name.
+- Do not fight any monster and do not open any door that is not in the route. Every fight not listed wastes HP the boss fight needs; every door not listed wastes a key the route needs.
+- The expected HP after the steps is approximately: 1000 → 880 → 795 → 485 → 685 → 510 → 471 → 546 → 361 → 206 → 86 → 150 → 223 → 221 → 101 → 101 → 176 → 221 → 196 → 312 → 68. HP rises where potions behind a step are collected automatically.
+
+=== SURVIVAL GATE (overrides the route) ===
+NEVER choose an action whose line shows [LETHAL] or hpAfter < 0. If the next route step is lethal, you have deviated: take the cheapest available fight or door that exposes a potion or a stat gem, then re-check.
+
+RESPONSE FORMAT:
+FINAL_CHOICE: <number>

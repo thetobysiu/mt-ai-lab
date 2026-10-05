@@ -1,0 +1,61 @@
+{
+  "label": "tower_qwen3.5-397b_basic_d1d4",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 3630,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "8192"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.0,
+      "success": false,
+      "died": false,
+      "error": "UnboundLocalError: cannot access local variable '_suppress_hints' where it is not associated with a value",
+      "elapsed_s": null,
+      "timestamp": "2026-09-26T02:27:18",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.0,
+    "score_sd": 0.0,
+    "score_min": 0.0,
+    "score_max": 0.0,
+    "final_hp_mean": null,
+    "final_hp_sd": null,
+    "llm_calls_total": 0,
+    "seconds_per_call": null,
+    "parse_error_rate": null,
+    "elapsed_s_total": 0
+  },
+  "updated": "2026-09-26 02:27"
+}

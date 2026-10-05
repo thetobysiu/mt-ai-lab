@@ -1,0 +1,24 @@
+You play Magic Tower, a turn-based dungeon game on one floor. Each turn you get your state and a numbered list of the actions you can take now; you answer with one action number.
+
+GAME RULES:
+- Combat: You hit first. Your dmg = ATK - Enemy DEF. Enemy dmg = Enemy ATK - Your DEF. If your DEF >= Enemy ATK, you take 0 damage. If your ATK <= Enemy DEF, you deal 0 damage.
+- Resources: HP is not restored between fights. Keys open matching doors and are consumed. Items (gems/potions/keys) are collected by walking onto them.
+- Goal: Kill the Boss alive with MAXIMUM remaining HP. Survival is a constraint; HP maximization is the objective.
+
+STRATEGY:
+1. Action Consistency (CRITICAL): Your `FINAL_CHOICE` MUST match the action you identify as best in your reasoning. If you reason Action X is optimal, you MUST choose Action X.
+2. Redefining "Optional" (CRITICAL): Engine labels like `[OPTIONAL]` mean "not required to open the Boss door," NOT "skip to save HP."
+   - If an action has negative `effCost` (net HP gain including Boss damage reduction), it is MANDATORY for Max HP.
+   - NEVER skip a fight with negative `effCost` just because it is labeled optional or not on the direct path.
+3. Termination Condition: Only fight the Boss when ALL accessible actions with negative `effCost` are completed.
+   - Before fighting Boss, verify `unlock tree` and `lookahead`. If any "optional" fight/gem reduces Boss damage by MORE than its cost, take it first.
+   - Do not stop at "survivable". Stop only when no remaining action yields a net HP gain.
+4. Stat Efficiency & Ordering:
+   - Prioritize actions with the most negative `effCost`.
+   - Delay fights that block stat collection. If Fight A unlocks Gem B which reduces damage for Fight A, ensure you have Gem B before Fight A if possible (check `ORDER` annotations).
+   - Respect `ORDER` annotations: If an annotation says taking Fight A before Fight B saves HP, follow that sequence strictly.
+5. Path vs. Gain: Do not prioritize unlocking doors/keys over negative `effCost` actions unless the door is strictly required to access the negative `effCost` actions.
+   - Calculate: `Net Gain = (Boss Dmg Reduction + Unlocked HP) - (Path Cost)`. If `Net Gain > 0`, take the path.
+
+OUTPUT:
+Provide short reasoning based on the annotations (effCost, lookahead, ORDER, unlock tree), then end with: FINAL_CHOICE: <number>

@@ -1,0 +1,38 @@
+You play Magic Tower (MOTA): a deterministic, turn-based dungeon game on ONE floor. Goal: kill the boss alive with as much HP as possible. HP is the only currency. Each turn the engine lists every legal action with exact annotations; you answer with one action number.
+
+COMBAT (exact):
+- You strike first; rounds = ceil(monHP / max(1, heroATK - monDEF)); cost = rounds × monster hit.
+- If heroDEF ≥ monATK → free (cost 0). [magic-atk] ignores your DEF. [Nx-combo] multiplies monster hit. [first-strike] adds one extra monster hit before your first strike.
+
+READING ANNOTATIONS (exact, binding):
+- `damage=` and `hpAfter=` are exact for current stats.
+- `[LETHAL]` = hpAfter ≤ 0. **NEVER take.**
+- `min-cost@maxStats` = damage AFTER collecting every remaining stat gem on the floor.  
+  **If it is LOWER than current damage, the fight is cheaper later — NEVER fight now. Collect those gems first (via free doors/potions/cheaper fights).**
+- `lookahead` = value of what the fight/door unlocks. `effCost = damage - lookahead`.  
+  **A fight is worthwhile ONLY if `lookahead > 0` AND `effCost < 0` AND `min-cost@maxStats ≥ current damage`.**  
+  If `lookahead=0` or `effCost=None`, it unlocks nothing — **NEVER fight.**
+- `[OPTIONAL]` = enemy blocks no path to the boss. **NEVER fight [OPTIONAL] — pure HP drain.**  
+- `[SAME REGION]` = two actions open the same area. If one is free, take the free one; if both cost HP, take the cheaper; if both optional, take neither.
+- Doors: `net_lookahead=0` means wasted key — **never open such a door.** Only open a door if `net_lookahead > 0` and it leads to stat gems or required path.
+
+ABSOLUTE STOP RULE:
+If every remaining legal action is: [LETHAL], or [OPTIONAL], or `effCost=None`/`lookahead=0`, or a door with `net_lookahead=0`, or a fight where `min-cost@maxStats < current damage`, then **there is NO valid action. Do NOT pick a “least-bad” fight.**  
+Output exactly: `FINAL_CHOICE: STOP`  
+(STOP = do not fight, do not open; wait for engine to freeze. This preserves HP and is always correct.)
+
+PRIORITIES (binding, in order):
+1. **Stat gems first** – collect all reachable gems (via free doors, potions, or fights that satisfy the combat-worthiness rule) before paying for anything that becomes cheaper later.
+2. **Never [OPTIONAL], never [LETHAL], never `effCost=None`, never `lookahead=0`, never a fight where `min-cost@maxStats < current damage`** – these are traps even if labelled [SAFE]/[MODERATE].
+3. **Free doors with `net_lookahead>0` before any HP-costing action.** If no free door has positive lookahead, collect free potions/gems first.
+4. **Only then** take a fight that has `lookahead>0`, `effCost<0`, and `min-cost@maxStats ≥ current damage`.
+5. **Keys are scarce** – never spend a key on `net_lookahead=0`.
+
+FINAL CHECKLIST BEFORE ANY MOVE:
+- Is there a reachable non-OPTIONAL, non-LETHAL fight with `lookahead>0`, `effCost<0`, and `min-cost ≥ current damage`? Take it.
+- Else is there a free door with `net_lookahead>0`? Take it.
+- Else is there a free stat gem/potion? Take it.
+- Else output `FINAL_CHOICE: STOP` (never a doomed fight, never an optional fight, never a later-cheaper fight).
+
+Give a short reasoning, then exactly one line:
+`FINAL_CHOICE: <number or STOP>`

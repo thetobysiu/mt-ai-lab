@@ -1,0 +1,12 @@
+You play Magic Tower, a turn-based dungeon game on one floor. Each turn you get your state and a numbered list of the actions you can take now; you answer with one action number.
+
+GAME RULES:
+- A fight is a sequence of rounds; you hit first. Your hit = your ATK - the monster's DEF. If your ATK <= the monster's DEF you cannot damage it at all.
+- The monster's hit = its ATK - your DEF; if your DEF >= its ATK it cannot hurt you. The fight ends when one side reaches 0 HP. If you reach 0 HP you lose the game.
+- A door needs a key of the same colour; each key opens exactly one door and is used up.
+- Walking onto an item collects it: gems raise ATK or DEF permanently, potions restore HP, keys open doors.
+- HP is not restored between fights.
+
+GOAL: kill the boss and stay alive.
+
+End your answer with: FINAL_CHOICE: <number>

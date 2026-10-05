@@ -1,0 +1,265 @@
+{
+  "label": "tower_deepseek-v4-flash_final2_maxsteps_once",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 3630,
+    "model": "deepseek-v4-flash-0731",
+    "task_mode": "thinking",
+    "preset": "deepseek-v4-flash-think",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "16384",
+      "CONVERSATION_HISTORY_TURNS": "0",
+      "MOTA_ORDER_TWO_SIDED": "1",
+      "MOTA_FIGHT_KEY_FLOOD": "1",
+      "MOTA_PLAN_STEPS": "60",
+      "MOTA_PLAN_NO_REPLAN": "1",
+      "LLM_TIMEOUT": "1800"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.0672,
+      "success": false,
+      "died": false,
+      "floors_reached": 3,
+      "max_floor_id": "MT3",
+      "total_floors": 24,
+      "final_floor_id": "MT3",
+      "failure_reason": "Stuck — only unwinnable fight remains",
+      "final_hp": 10,
+      "hero_atk": 20,
+      "hero_def": 10,
+      "keys": {
+        "yellow": 3,
+        "blue": 1,
+        "red": 1
+      },
+      "money": 21,
+      "exp": 20,
+      "turns": 25,
+      "llm_calls": 9,
+      "parse_errors": 0,
+      "forced_turns": 16,
+      "lethal_only_stop": null,
+      "run_log": "20260930_000502_133311_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 860,
+          "turn": 11,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 12
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 13
+        }
+      ],
+      "elapsed_s": 44.7,
+      "timestamp": "2026-09-30T02:05:46",
+      "run_idx": 1
+    },
+    {
+      "score": 0.0672,
+      "success": false,
+      "died": false,
+      "floors_reached": 3,
+      "max_floor_id": "MT3",
+      "total_floors": 24,
+      "final_floor_id": "MT3",
+      "failure_reason": "Stuck — only unwinnable fight remains",
+      "final_hp": 10,
+      "hero_atk": 20,
+      "hero_def": 10,
+      "keys": {
+        "yellow": 3,
+        "blue": 1,
+        "red": 1
+      },
+      "money": 21,
+      "exp": 20,
+      "turns": 25,
+      "llm_calls": 9,
+      "parse_errors": 0,
+      "forced_turns": 16,
+      "lethal_only_stop": null,
+      "run_log": "20261001_010515_221769_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 860,
+          "turn": 11,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 12
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 13
+        }
+      ],
+      "elapsed_s": 11.2,
+      "timestamp": "2026-10-01T03:05:26",
+      "run_idx": 2
+    },
+    {
+      "score": 0.0672,
+      "success": false,
+      "died": false,
+      "floors_reached": 3,
+      "max_floor_id": "MT3",
+      "total_floors": 24,
+      "final_floor_id": "MT3",
+      "failure_reason": "Stuck — only unwinnable fight remains",
+      "final_hp": 10,
+      "hero_atk": 20,
+      "hero_def": 10,
+      "keys": {
+        "yellow": 3,
+        "blue": 1,
+        "red": 1
+      },
+      "money": 21,
+      "exp": 20,
+      "turns": 25,
+      "llm_calls": 9,
+      "parse_errors": 0,
+      "forced_turns": 16,
+      "lethal_only_stop": null,
+      "run_log": "20261001_010526_447981_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 860,
+          "turn": 11,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 12
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 13
+        }
+      ],
+      "elapsed_s": 22.2,
+      "timestamp": "2026-10-01T03:05:48",
+      "run_idx": 3
+    }
+  ],
+  "aggregate": {
+    "n": 3,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.5615
+    ],
+    "died": 0,
+    "lethal_only_stops": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.0672,
+    "score_sd": 0.0,
+    "score_min": 0.0672,
+    "score_max": 0.0672,
+    "final_hp_mean": 10.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 27,
+    "seconds_per_call": 2.89,
+    "parse_error_rate": 0.0,
+    "elapsed_s_total": 78.1,
+    "floors_reached_mean": 3.0,
+    "floors_reached_max": 3
+  },
+  "updated": "2026-10-01 03:05"
+}

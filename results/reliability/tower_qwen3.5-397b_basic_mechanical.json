@@ -1,0 +1,121 @@
+{
+  "label": "tower_qwen3.5-397b_basic_mechanical",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 3630,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "8192"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.0742,
+      "success": false,
+      "died": false,
+      "floors_reached": 3,
+      "max_floor_id": "MT3",
+      "total_floors": 24,
+      "final_floor_id": "MT3",
+      "failure_reason": "Stuck — only unwinnable fight remains",
+      "final_hp": 45,
+      "hero_atk": 23,
+      "hero_def": 10,
+      "keys": {
+        "yellow": 3,
+        "blue": 1,
+        "red": 1
+      },
+      "money": 33,
+      "exp": 30,
+      "turns": 32,
+      "llm_calls": 9,
+      "parse_errors": 0,
+      "forced_turns": 23,
+      "run_log": "20260925_001105_626826_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 860,
+          "turn": 11,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 550,
+          "turn": 18
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 550,
+          "turn": 19
+        }
+      ],
+      "elapsed_s": 168.1,
+      "timestamp": "2026-09-25T02:13:53",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.0742,
+    "score_sd": 0.0,
+    "score_min": 0.0742,
+    "score_max": 0.0742,
+    "final_hp_mean": 45.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 9,
+    "seconds_per_call": 18.68,
+    "parse_error_rate": 0.0,
+    "elapsed_s_total": 168.1,
+    "floors_reached_mean": 3.0,
+    "floors_reached_max": 3
+  },
+  "updated": "2026-09-25 02:13"
+}

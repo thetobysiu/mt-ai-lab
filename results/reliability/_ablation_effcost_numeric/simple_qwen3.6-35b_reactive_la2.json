@@ -1,0 +1,157 @@
+{
+  "label": "simple_qwen3.6-35b_reactive_la2",
+  "config": {
+    "floor": "simple",
+    "start": null,
+    "end": null,
+    "max_turns": null,
+    "prompt_file": "target_boss_seed.txt",
+    "prompt_chars": 3618,
+    "model": "qwen3.6-35b-a3b",
+    "task_mode": "thinking",
+    "preset": "qwen3.6-35b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false
+  },
+  "runs": [
+    {
+      "score": 0.3705,
+      "success": false,
+      "boss_killed": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 546,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "steps": 36,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 16,
+      "parse_errors": 0,
+      "forced_turns": 20,
+      "elapsed_s": 323.3,
+      "timestamp": "2026-09-20T19:28:59",
+      "run_idx": 1
+    },
+    {
+      "score": 0.3705,
+      "success": false,
+      "boss_killed": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 546,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "steps": 36,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 16,
+      "parse_errors": 0,
+      "forced_turns": 20,
+      "elapsed_s": 329.5,
+      "timestamp": "2026-09-20T19:34:28",
+      "run_idx": 2
+    },
+    {
+      "score": 0.3707,
+      "success": false,
+      "boss_killed": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 503,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "steps": 36,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 16,
+      "parse_errors": 0,
+      "forced_turns": 20,
+      "elapsed_s": 2003.6,
+      "timestamp": "2026-09-20T20:07:52",
+      "run_idx": 3
+    },
+    {
+      "score": 0.3706,
+      "success": false,
+      "boss_killed": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 530,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "steps": 36,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 16,
+      "parse_errors": 0,
+      "forced_turns": 20,
+      "elapsed_s": 2063.7,
+      "timestamp": "2026-09-20T20:42:15",
+      "run_idx": 4
+    },
+    {
+      "score": 0.3706,
+      "success": false,
+      "boss_killed": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 530,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "steps": 36,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 16,
+      "parse_errors": 0,
+      "forced_turns": 20,
+      "elapsed_s": 328.8,
+      "timestamp": "2026-09-20T20:47:44",
+      "run_idx": 5
+    }
+  ],
+  "aggregate": {
+    "n": 5,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.4345
+    ],
+    "died": 0,
+    "score_mean": 0.3706,
+    "score_sd": 0.0001,
+    "score_min": 0.3705,
+    "score_max": 0.3707,
+    "final_hp_mean": 531.0,
+    "final_hp_sd": 17.5784,
+    "llm_calls_total": 80,
+    "seconds_per_call": 63.11,
+    "parse_error_rate": 0.0,
+    "elapsed_s_total": 5048.9
+  },
+  "updated": "2026-09-20 20:47"
+}

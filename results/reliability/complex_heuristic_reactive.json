@@ -1,0 +1,68 @@
+{
+  "label": "complex_heuristic_reactive",
+  "config": {
+    "floor": "complex",
+    "start": null,
+    "end": null,
+    "max_turns": null,
+    "prompt_file": "none",
+    "prompt_chars": 0,
+    "model": "heuristic",
+    "task_mode": "-",
+    "preset": "heuristic",
+    "mode": "heuristic",
+    "temperature": 0.0,
+    "overrides_disabled": false,
+    "reference_hp": 68
+  },
+  "runs": [
+    {
+      "score": 0.3269,
+      "success": false,
+      "died": false,
+      "final_hp": 190,
+      "hero_atk": 11,
+      "hero_def": 14,
+      "enemies_killed": 10,
+      "enemies_total": 25,
+      "steps": 31,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "elapsed_s": 6.6,
+      "timestamp": "2026-09-20T12:27:06",
+      "run_idx": 1,
+      "goal": "boss",
+      "goal_reached": false,
+      "boss_fight_won": false
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.3269,
+    "score_sd": 0.0,
+    "score_min": 0.3269,
+    "score_max": 0.3269,
+    "final_hp_mean": 190.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 0,
+    "seconds_per_call": null,
+    "parse_error_rate": null,
+    "elapsed_s_total": 6.6
+  },
+  "updated": "2026-09-20 12:27"
+}

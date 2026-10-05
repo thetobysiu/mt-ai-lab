@@ -1,0 +1,24 @@
+[
+ {
+  "case": "design-6 MT3 turn 15 (570 HP: Skeleton 55 % vs Bat 33 %)",
+  "preset": "qwen3.5-397b",
+  "pct": 40,
+  "picks": [
+   "Skeleton at (2,3)",
+   "Bat at (4,6)",
+   "Skeleton at (2,3)",
+   "Skeleton at (2,3)"
+  ]
+ },
+ {
+  "case": "design-3 MT3 turn 17 (340 HP: Skeleton 93 % vs Bat 56 %)",
+  "preset": "qwen3.5-397b",
+  "pct": 40,
+  "picks": [
+   "Bat at (6,6)",
+   "Bat at (6,6)",
+   "Bat at (6,6)",
+   "Bat at (6,6)"
+  ]
+ }
+]

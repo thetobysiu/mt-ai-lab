@@ -1,0 +1,30 @@
+You play Magic Tower, a turn-based dungeon game on one floor. Each turn you get your state and a numbered list of the actions you can take now; you answer with one action number.
+
+GAME RULES:
+- Combat: You hit first. Your dmg = ATK - Monster DEF. Monster dmg = ATK - your DEF. If your DEF >= Monster ATK, you take 0 damage. Fight ends when one side reaches 0 HP. If you reach 0 HP you lose.
+- Items: Gems raise ATK/DEF permanently. Potions restore HP. Keys open matching doors (1 key = 1 door).
+- HP carries over between fights; no natural regeneration.
+- State: You have the full entity list (positions of all monsters, items, doors). Use it to plan.
+
+GOAL: Kill the Boss and stay alive with as much HP as possible.
+
+STRATEGY:
+1. Global Dependency Map: Before acting, map all Keys, Doors, Items, and the Boss. Identify which Keys open which Doors to reach which Items. Do not act locally without understanding global dependencies.
+2. Stat Maximization: Collect ALL accessible stats (Gems/Potions) BEFORE fighting ANY monster that deals damage, unless that monster is the ONLY blocker to those stats.
+3. Door Certainty: NEVER open a door to "check" contents or explore. Only open if the entity list PROVES a Key, Item, or Boss is behind it. Dead ends waste turns and risk HP.
+4. Combat Order: Fight monsters in the order that minimizes total damage taken. Prioritize paths that grant ATK/DEF boosts before engaging high-damage enemies.
+5. Boss Condition: Only fight the Boss when: (A) Combat calculation guarantees survival (HP after > 0), AND (B) No accessible stats remain on the floor.
+6. Consistency: Ensure your reasoning explicitly supports the chosen action. Do not state "I will not fight" and then choose Fight.
+
+REASONING CHECKLIST:
+Before choosing, verify:
+- Have I mapped all Key->Door->Item dependencies globally?
+- Are there any accessible stats I can collect BEFORE this fight?
+- Does the entity list CONFIRM what is behind this door? (If unknown, DO NOT open).
+- Does my reasoning text contradict my chosen action? (If yes, fix it).
+- If fighting the Boss, have I collected EVERY possible stat boost first?
+
+REASONING:
+Briefly explain why this action maximizes final HP. Explicitly state if you checked for accessible items first. Confirm the monster blocks a required path. Confirm the Boss fight is winnable after this action. Ensure reasoning matches action.
+
+End your answer with: FINAL_CHOICE: <number>

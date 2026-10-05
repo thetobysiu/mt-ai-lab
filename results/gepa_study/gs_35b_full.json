@@ -1,0 +1,106 @@
+{
+  "label": "gs_35b_full",
+  "preset": "qwen3.6-35b",
+  "task_model": "qwen3.6-35b-a3b",
+  "task_mode": "thinking",
+  "obs": "full",
+  "train": [
+    "simple"
+  ],
+  "test": [],
+  "repeat": 3,
+  "env": {
+    "CONVERSATION_HISTORY_TURNS": "0",
+    "MOTA_ORDER_TWO_SIDED": "1",
+    "MOTA_FIGHT_KEY_FLOOD": "1",
+    "LOOKAHEAD_DEPTH": "3",
+    "MOTA_BARE_OBS": null,
+    "MOTA_EVAL_TEMPERATURE": "0.0",
+    "THINKING_MAX_TOKENS": "16384",
+    "MOTA_DISABLE_OVERRIDES": null,
+    "MOTA_SUPPRESS_HINTS": null
+  },
+  "overrides": "mechanical-only (dead-end / unwinnable / lethal) + auto-collect + auto-fight-0-HP",
+  "episodes": [
+    {
+      "prompt": "core",
+      "floor": "simple",
+      "split": "train",
+      "rep": 0,
+      "goal_score": 0.5769,
+      "success": true,
+      "hp_ratio": 0.1538,
+      "died": false,
+      "final_hp": 2,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "llm_calls": 17,
+      "parse_errors": 0,
+      "forced_turns": 19,
+      "lethal_only_stop": null,
+      "run_log": "20260928_004139_338335_simple_llm.json",
+      "elapsed_s": 472.4
+    },
+    {
+      "prompt": "core",
+      "floor": "simple",
+      "split": "train",
+      "rep": 1,
+      "goal_score": 0.325,
+      "success": false,
+      "hp_ratio": null,
+      "died": false,
+      "final_hp": 543,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "llm_calls": 16,
+      "parse_errors": 3,
+      "forced_turns": 20,
+      "lethal_only_stop": null,
+      "run_log": "20260928_004931_704796_simple_llm.json",
+      "elapsed_s": 680.9
+    },
+    {
+      "prompt": "core",
+      "floor": "simple",
+      "split": "train",
+      "rep": 2,
+      "goal_score": 0.5769,
+      "success": true,
+      "hp_ratio": 0.1538,
+      "died": false,
+      "final_hp": 2,
+      "hero_atk": 13,
+      "hero_def": 8,
+      "enemies_killed": 13,
+      "enemies_total": 14,
+      "llm_calls": 17,
+      "parse_errors": 0,
+      "forced_turns": 19,
+      "lethal_only_stop": null,
+      "run_log": "20260928_010052_591729_simple_llm.json",
+      "elapsed_s": 420.2
+    }
+  ],
+  "started": "2026-09-28T02:41:33.761395",
+  "updated": "2026-09-28T03:07:52.769240",
+  "summary": {
+    "train/core": {
+      "n": 3,
+      "success": 2,
+      "deaths": 0,
+      "goal_mean": 0.4929
+    },
+    "all/core": {
+      "n": 3,
+      "success": 2,
+      "deaths": 0,
+      "goal_mean": 0.4929
+    }
+  },
+  "finished": "2026-09-28T03:07:52.769240"
+}

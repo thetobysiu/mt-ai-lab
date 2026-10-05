@@ -1,0 +1,594 @@
+var items_296f5d02_12fd_4166_a7c1_b5e830c9ee3a = 
+{
+	"yellowKey": {
+		"cls": "tools",
+		"name": "黄钥匙",
+		"text": "可以打开一扇黄门",
+		"hideInToolbox": true
+	},
+	"blueKey": {
+		"cls": "tools",
+		"name": "蓝钥匙",
+		"text": "可以打开一扇蓝门",
+		"hideInToolbox": true
+	},
+	"redKey": {
+		"cls": "tools",
+		"name": "红钥匙",
+		"text": "可以打开一扇红门",
+		"hideInToolbox": true
+	},
+	"redGem": {
+		"cls": "items",
+		"name": "红宝石",
+		"text": "攻击+3",
+		"itemEffect": "core.status.hero.atk += 3",
+		"itemEffectTip": "，攻击+3",
+		"useItemEffect": null,
+		"canUseItemEffect": null
+	},
+	"blueGem": {
+		"cls": "items",
+		"name": "蓝宝石",
+		"text": "，防御+3",
+		"itemEffect": "core.status.hero.def += 3",
+		"itemEffectTip": "，防御+3",
+		"useItemEffect": null,
+		"canUseItemEffect": null
+	},
+	"greenGem": {
+		"cls": "items",
+		"name": "绿宝石",
+		"text": "，护盾+${core.values.greenGem}",
+		"itemEffect": "core.status.hero.mdef += core.values.greenGem * core.status.thisMap.ratio",
+		"itemEffectTip": "，护盾+${core.values.greenGem * core.status.thisMap.ratio}",
+		"useItemEffect": "core.status.hero.mdef += core.values.greenGem",
+		"canUseItemEffect": "true"
+	},
+	"yellowGem": {
+		"cls": "items",
+		"name": "黄宝石",
+		"text": "可以进行加点",
+		"itemEffect": "core.status.hero.hp+=1000;core.status.hero.atk+=6;core.status.hero.def+=6;core.status.hero.mdef+=10;",
+		"itemEffectTip": "，全属性提升",
+		"useItemEvent": [
+			{
+				"type": "choices",
+				"choices": [
+					{
+						"text": "攻击+1",
+						"action": [
+							{
+								"type": "setValue",
+								"name": "status:atk",
+								"operator": "+=",
+								"value": "1"
+							}
+						]
+					},
+					{
+						"text": "防御+2",
+						"action": [
+							{
+								"type": "setValue",
+								"name": "status:def",
+								"operator": "+=",
+								"value": "2"
+							}
+						]
+					},
+					{
+						"text": "生命+200",
+						"action": [
+							{
+								"type": "setValue",
+								"name": "status:hp",
+								"operator": "+=",
+								"value": "200"
+							}
+						]
+					}
+				]
+			}
+		],
+		"canUseItemEffect": "true"
+	},
+	"redPotion": {
+		"cls": "items",
+		"name": "红血瓶",
+		"text": "，生命+200",
+		"itemEffect": "core.status.hero.hp += 200",
+		"itemEffectTip": "，生命+200",
+		"useItemEffect": null,
+		"canUseItemEffect": null
+	},
+	"bluePotion": {
+		"cls": "items",
+		"name": "蓝血瓶",
+		"text": "，生命+500",
+		"itemEffect": "core.status.hero.hp += 500",
+		"itemEffectTip": "，生命+500",
+		"useItemEffect": null,
+		"canUseItemEffect": null
+	},
+	"yellowPotion": {
+		"cls": "items",
+		"name": "黄血瓶",
+		"text": "，生命+${core.values.yellowPotion}",
+		"itemEffect": "core.status.hero.hp += core.values.yellowPotion * core.status.thisMap.ratio",
+		"itemEffectTip": "，生命+${core.values.yellowPotion * core.status.thisMap.ratio}",
+		"useItemEffect": "core.status.hero.hp += core.values.yellowPotion",
+		"canUseItemEffect": "true"
+	},
+	"greenPotion": {
+		"cls": "items",
+		"name": "绿血瓶",
+		"text": "，生命+${core.values.greenPotion}",
+		"itemEffect": "core.status.hero.hp += core.values.greenPotion * core.status.thisMap.ratio",
+		"itemEffectTip": "，生命+${core.values.greenPotion * core.status.thisMap.ratio}",
+		"useItemEffect": "core.status.hero.hp += core.values.greenPotion",
+		"canUseItemEffect": "true"
+	},
+	"sword0": {
+		"cls": "items",
+		"name": "破旧的剑",
+		"text": "一把已经生锈的剑",
+		"equip": {
+			"type": 0,
+			"animate": "sword",
+			"value": {
+				"atk": 0
+			}
+		},
+		"itemEffect": "core.status.hero.atk += 0",
+		"itemEffectTip": "，攻击+0"
+	},
+	"sword1": {
+		"cls": "items",
+		"name": "铁剑",
+		"text": "一把很普通的铁剑",
+		"equip": {
+			"type": 0,
+			"animate": "sword",
+			"value": {
+				"atk": 10
+			}
+		},
+		"itemEffect": "core.status.hero.atk += 10",
+		"itemEffectTip": "，攻击加 10 ！"
+	},
+	"sword2": {
+		"cls": "items",
+		"name": "钢剑",
+		"text": "一把很普通的钢剑",
+		"equip": {
+			"type": 0,
+			"animate": "sword",
+			"value": {
+				"atk": 70
+			},
+			"percentage": {}
+		},
+		"itemEffect": "core.status.hero.atk += 70",
+		"itemEffectTip": "，攻击加 70 ！"
+	},
+	"sword3": {
+		"cls": "items",
+		"name": "青锋剑",
+		"text": "一把很普通的青锋剑",
+		"equip": {
+			"type": 0,
+			"animate": "sword",
+			"value": {
+				"atk": 40
+			}
+		},
+		"itemEffect": "core.status.hero.atk += 70",
+		"itemEffectTip": "，攻击加 70 ！"
+	},
+	"sword4": {
+		"cls": "items",
+		"name": "圣光剑",
+		"text": "一把很普通的圣光剑",
+		"equip": {
+			"type": 0,
+			"animate": "sword",
+			"value": {
+				"atk": 80
+			}
+		},
+		"itemEffect": "core.status.hero.atk += 120",
+		"itemEffectTip": "，攻击加 120 ！"
+	},
+	"sword5": {
+		"cls": "items",
+		"name": "星光神剑",
+		"text": "一把很普通的神圣剑",
+		"equip": {
+			"type": 0,
+			"animate": "sword",
+			"value": {
+				"atk": 150
+			}
+		},
+		"itemEffect": "core.status.hero.atk += 150",
+		"itemEffectTip": "，攻击加 150 ！"
+	},
+	"shield0": {
+		"cls": "items",
+		"name": "破旧的盾",
+		"text": "一个很破旧的铁盾",
+		"equip": {
+			"type": 1,
+			"value": {
+				"def": 0
+			}
+		},
+		"itemEffect": "core.status.hero.def += 0",
+		"itemEffectTip": "，防御+0"
+	},
+	"shield1": {
+		"cls": "items",
+		"name": "铁盾",
+		"text": "一个很普通的铁盾",
+		"equip": {
+			"type": 1,
+			"value": {
+				"def": 10
+			}
+		},
+		"itemEffect": "core.status.hero.def += 10",
+		"itemEffectTip": "，防御加 10 ！"
+	},
+	"shield2": {
+		"cls": "items",
+		"name": "钢盾",
+		"text": "一个很普通的钢盾",
+		"equip": {
+			"type": 1,
+			"value": {
+				"def": 30
+			}
+		},
+		"itemEffect": "core.status.hero.def += 30",
+		"itemEffectTip": "，防御加 30 ！"
+	},
+	"shield3": {
+		"cls": "items",
+		"name": "黄金盾",
+		"text": "一个很普通的黄金盾",
+		"equip": {
+			"type": 1,
+			"value": {
+				"def": 40
+			}
+		},
+		"itemEffect": "core.status.hero.def += 85",
+		"itemEffectTip": "，防御加 85 ！"
+	},
+	"shield4": {
+		"cls": "items",
+		"name": "星光盾",
+		"text": "一个很普通的星光盾",
+		"equip": {
+			"type": 1,
+			"value": {
+				"def": 120
+			}
+		},
+		"itemEffect": "core.status.hero.def += 120",
+		"itemEffectTip": "，防御加 120 ！"
+	},
+	"shield5": {
+		"cls": "items",
+		"name": "光芒神盾",
+		"text": "一个很普通的光芒神盾",
+		"equip": {
+			"type": 1,
+			"value": {
+				"def": 100,
+				"mdef": 100
+			}
+		},
+		"itemEffect": "core.status.hero.def += 190",
+		"itemEffectTip": "，防御加 190 ！"
+	},
+	"superPotion": {
+		"cls": "items",
+		"name": "圣水",
+		"itemEffect": "core.status.hero.hp *= 2",
+		"itemEffectTip": "，生命值翻倍",
+		"useItemEffect": "core.status.hero.hp *= 2;core.playSound('回血');",
+		"canUseItemEffect": "true",
+		"text": "生命值翻倍"
+	},
+	"book": {
+		"cls": "constants",
+		"name": "圣光徽",
+		"text": "该宝物可以查看怪物的基本情况。使用时按下键盘上的X键即可查看。",
+		"hideInToolbox": true,
+		"useItemEffect": "core.ui.drawBook(0);",
+		"canUseItemEffect": "true"
+	},
+	"fly": {
+		"cls": "constants",
+		"name": "风之罗盘",
+		"text": "该宝物可以随意在已经走过的楼层间自由上下。主角可使用G键在已经走过的楼层间进行跳跃。",
+		"hideInReplay": true,
+		"hideInToolbox": true,
+		"useItemEffect": "core.ui.drawFly(core.floorIds.indexOf(core.status.floorId));",
+		"canUseItemEffect": "(function () {\n\tif (core.flags.flyNearStair && !core.nearStair()) return false;\n\treturn core.status.maps[core.status.floorId].canFlyFrom;\n})();"
+	},
+	"coin": {
+		"cls": "constants",
+		"name": "幸运金币",
+		"text": "持有时打败怪物可得双倍金币"
+	},
+	"freezeBadge": {
+		"cls": "constants",
+		"name": "冰冻徽章",
+		"text": "可以将面前的熔岩变成平地",
+		"useItemEffect": "(function () {\n\tvar success = false;\n\n\tvar snowFourDirections = false; // 是否多方向雪花；如果是将其改成true\n\tif (snowFourDirections) {\n\t\t// 多方向雪花\n\t\tfor (var direction in core.utils.scan) { // 多方向雪花默认四方向，如需改为八方向请将这两个scan改为scan2\n\t\t\tvar delta = core.utils.scan[direction];\n\t\t\tvar nx = core.getHeroLoc('x') + delta.x,\n\t\t\t\tny = core.getHeroLoc('y') + delta.y;\n\t\t\tif (core.getBlockId(nx, ny) == 'lava') {\n\t\t\t\tcore.removeBlock(nx, ny);\n\t\t\t\tsuccess = true;\n\t\t\t}\n\t\t}\n\t} else {\n\t\tif (core.getBlockId(core.nextX(), core.nextY()) == 'lava') {\n\t\t\tcore.removeBlock(core.nextX(), core.nextY());\n\t\t\tsuccess = true;\n\t\t}\n\t}\n\n\tif (success) {\n\t\tcore.playSound('打开界面');\n\t\tcore.drawTip(core.material.items[itemId].name + '使用成功', itemId);\n\t} else {\n\t\tcore.playSound('操作失败');\n\t\tcore.drawTip(\"当前无法使用\" + core.material.items[itemId].name, itemId);\n\t\tcore.addItem(itemId, 1);\n\t\treturn;\n\t}\n})();",
+		"canUseItemEffect": "true"
+	},
+	"cross": {
+		"cls": "constants",
+		"name": "幸运十字架",
+		"text": "把它交给序章中的仙子，可以将自身的所有能力提升三分之一（攻击、防御和生命值）。"
+	},
+	"dagger": {
+		"cls": "constants",
+		"name": "屠龙匕首",
+		"text": "该道具尚未被定义"
+	},
+	"amulet": {
+		"cls": "constants",
+		"name": "护符",
+		"text": "持有时无视负面地形"
+	},
+	"bigKey": {
+		"cls": "items",
+		"name": "钥匙盒",
+		"text": "可以开启当前层所有黄门",
+		"itemEffect": "core.addItem('yellowKey', 1);\ncore.addItem('blueKey', 1);\ncore.addItem('redKey', 1);",
+		"itemEffectTip": "，各种钥匙数加1！",
+		"useItemEffect": "(function () {\n\tvar actions = core.searchBlock(\"yellowDoor\").map(function (block) {\n\t\treturn { \"type\": \"openDoor\", \"loc\": [block.x, block.y], \"async\": true };\n\t});\n\tactions.push({ \"type\": \"waitAsync\" });\n\tactions.push({ \"type\": \"tip\", \"text\": core.material.items[itemId].name + \"使用成功\" });\n\tcore.insertAction(actions);\n})();",
+		"canUseItemEffect": "(function () {\n\treturn core.searchBlock('yellowDoor').length > 0;\n})();"
+	},
+	"greenKey": {
+		"cls": "tools",
+		"name": "绿钥匙",
+		"text": "可以打开一扇绿门"
+	},
+	"steelKey": {
+		"cls": "tools",
+		"name": "铁门钥匙",
+		"text": "可以打开一扇铁门"
+	},
+	"pickaxe": {
+		"cls": "tools",
+		"name": "破墙镐",
+		"text": "可以破坏勇士面前的墙",
+		"useItemEffect": "(function () {\n\tvar canBreak = function (x, y) {\n\t\tvar block = core.getBlock(x, y);\n\t\tif (block == null || block.disable) return false;\n\t\treturn block.event.canBreak;\n\t};\n\n\tvar success = false;\n\tvar pickaxeFourDirections = false; // 是否多方向破；如果是将其改成true\n\tif (pickaxeFourDirections) {\n\t\t// 多方向破\n\t\tfor (var direction in core.utils.scan) { // 多方向破默认四方向，如需改成八方向请将这两个scan改为scan2\n\t\t\tvar delta = core.utils.scan[direction];\n\t\t\tvar nx = core.getHeroLoc('x') + delta.x,\n\t\t\t\tny = core.getHeroLoc('y') + delta.y;\n\t\t\tif (canBreak(nx, ny)) {\n\t\t\t\tcore.removeBlock(nx, ny);\n\t\t\t\tsuccess = true;\n\t\t\t}\n\t\t}\n\t} else {\n\t\t// 仅破当前\n\t\tif (canBreak(core.nextX(), core.nextY())) {\n\t\t\tcore.removeBlock(core.nextX(), core.nextY());\n\t\t\tsuccess = true;\n\t\t}\n\t}\n\n\tif (success) {\n\t\tcore.playSound('破墙镐');\n\t\tcore.drawTip(core.material.items[itemId].name + '使用成功', itemId);\n\t} else {\n\t\t// 无法使用\n\t\tcore.playSound('操作失败');\n\t\tcore.drawTip(\"当前无法使用\" + core.material.items[itemId].name, itemId);\n\t\tcore.addItem(itemId, 1);\n\t\treturn;\n\t}\n})();",
+		"canUseItemEffect": "true"
+	},
+	"icePickaxe": {
+		"cls": "constants",
+		"name": "宝石锄头",
+		"text": "小偷的锄头",
+		"useItemEffect": null,
+		"canUseItemEffect": null
+	},
+	"bomb": {
+		"cls": "tools",
+		"name": "炸弹",
+		"text": "可以炸掉勇士面前的怪物",
+		"useItemEffect": "(function () {\n\tvar bombList = []; // 炸掉的怪物坐标列表\n\tvar todo = []; // 炸弹后事件\n\tvar money = 0,\n\t\texp = 0; // 炸弹获得的金币和经验\n\n\tvar canBomb = function (x, y) {\n\t\tvar block = core.getBlock(x, y);\n\t\tif (block == null || block.disable || block.event.cls.indexOf('enemy') != 0) return false;\n\t\tvar enemy = core.material.enemys[block.event.id];\n\t\treturn enemy && !enemy.notBomb;\n\t};\n\n\tvar bomb = function (x, y) {\n\t\tif (!canBomb(x, y)) return;\n\t\tbombList.push([x, y]);\n\t\tvar id = core.getBlockId(x, y),\n\t\t\tenemy = core.material.enemys[id];\n\t\tmoney += core.getEnemyValue(enemy, 'money', x, y) || 0;\n\t\texp += core.getEnemyValue(enemy, 'exp', x, y) || 0;\n\t\tcore.push(todo, core.floors[core.status.floorId].afterBattle[x + \",\" + y]);\n\t\tcore.push(todo, enemy.afterBattle);\n\t\tcore.removeBlock(x, y);\n\t}\n\n\t// 如果要多方向可炸，把这里的false改成true\n\tif (false) {\n\t\tvar scan = core.utils.scan; // 多方向炸时默认四方向，如果要改成八方向炸可以改成 core.utils.scan2\n\t\tfor (var direction in scan) {\n\t\t\tvar delta = scan[direction];\n\t\t\tbomb(core.getHeroLoc('x') + delta.x, core.getHeroLoc('y') + delta.y);\n\t\t}\n\t} else {\n\t\t// 仅炸当前\n\t\tbomb(core.nextX(), core.nextY());\n\t}\n\n\tif (bombList.length == 0) {\n\t\tcore.playSound('操作失败');\n\t\tcore.drawTip('当前无法使用' + core.material.items[itemId].name, itemId);\n\t\tcore.addItem(itemId, 1);\n\t\treturn;\n\t}\n\n\tcore.playSound('炸弹');\n\tcore.drawTip(core.material.items[itemId].name + '使用成功', itemId);\n\n\t// 取消这里的注释可以炸弹后获得金币和经验\n\t// core.status.hero.money += money;\n\t// core.status.hero.exp += exp;\n\n\t// 取消这里的注释可以炸弹引发战后事件\n\t// if (todo.length > 0) core.insertAction(todo);\n\n})();",
+		"canUseItemEffect": "true"
+	},
+	"centerFly": {
+		"cls": "items",
+		"name": "小飞羽",
+		"text": null,
+		"useItemEffect": null,
+		"canUseItemEffect": null,
+		"itemEffect": "core.status.hero.lv += 1\ncore.status.hero.hp += 1000\ncore.status.hero.atk += 10\ncore.status.hero.def += 10",
+		"itemEffectTip": " 等级提升一级 ！"
+	},
+	"upFly": {
+		"cls": "tools",
+		"name": "上楼器",
+		"text": "可以飞往楼上的相同位置",
+		"useItemEffect": "(function () {\n\tvar floorId = core.floorIds[core.floorIds.indexOf(core.status.floorId) + 1];\n\tif (core.status.event.id == 'action') {\n\t\tcore.insertAction([\n\t\t\t{ \"type\": \"changeFloor\", \"loc\": [core.getHeroLoc('x'), core.getHeroLoc('y')], \"floorId\": floorId },\n\t\t\t{ \"type\": \"tip\", \"text\": core.material.items[itemId].name + '使用成功' }\n\t\t]);\n\t} else {\n\t\tcore.changeFloor(floorId, null, core.status.hero.loc, null, function () {\n\t\t\tcore.drawTip(core.material.items[itemId].name + '使用成功');\n\t\t\tcore.replay();\n\t\t});\n\t}\n})();",
+		"canUseItemEffect": "(function () {\n\tvar floorId = core.status.floorId,\n\t\tindex = core.floorIds.indexOf(floorId);\n\tif (index < core.floorIds.length - 1) {\n\t\tvar toId = core.floorIds[index + 1],\n\t\t\ttoX = core.getHeroLoc('x'),\n\t\t\ttoY = core.getHeroLoc('y');\n\t\tvar mw = core.floors[toId].width,\n\t\t\tmh = core.floors[toId].height;\n\t\tif (toX >= 0 && toX < mw && toY >= 0 && toY < mh && core.getBlock(toX, toY, toId) == null) {\n\t\t\treturn true;\n\t\t}\n\t}\n\treturn false;\n})();"
+	},
+	"downFly": {
+		"cls": "tools",
+		"name": "下楼器",
+		"text": "可以飞往楼下的相同位置",
+		"useItemEffect": "(function () {\n\tvar floorId = core.floorIds[core.floorIds.indexOf(core.status.floorId) - 1];\n\tif (core.status.event.id == 'action') {\n\t\tcore.insertAction([\n\t\t\t{ \"type\": \"changeFloor\", \"loc\": [core.getHeroLoc('x'), core.getHeroLoc('y')], \"floorId\": floorId },\n\t\t\t{ \"type\": \"tip\", \"text\": core.material.items[itemId].name + '使用成功' }\n\t\t]);\n\t} else {\n\t\tcore.changeFloor(floorId, null, core.status.hero.loc, null, function () {\n\t\t\tcore.drawTip(core.material.items[itemId].name + '使用成功');\n\t\t\tcore.replay();\n\t\t});\n\t}\n})();",
+		"canUseItemEffect": "(function () {\n\tvar floorId = core.status.floorId,\n\t\tindex = core.floorIds.indexOf(floorId);\n\tif (index > 0) {\n\t\tvar toId = core.floorIds[index - 1],\n\t\t\ttoX = core.getHeroLoc('x'),\n\t\t\ttoY = core.getHeroLoc('y');\n\t\tvar mw = core.floors[toId].width,\n\t\t\tmh = core.floors[toId].height;\n\t\tif (toX >= 0 && toX < mw && toY >= 0 && toY < mh && core.getBlock(toX, toY, toId) == null) {\n\t\t\treturn true;\n\t\t}\n\t}\n\treturn false;\n})();"
+	},
+	"earthquake": {
+		"cls": "tools",
+		"name": "地震卷轴",
+		"text": "可以破坏当前层的所有墙",
+		"useItemEffect": "(function () {\n\tvar indexes = [];\n\tfor (var index in core.status.thisMap.blocks) {\n\t\tvar block = core.status.thisMap.blocks[index];\n\t\tif (!block.disable && block.event.canBreak) {\n\t\t\tindexes.push(index);\n\t\t}\n\t}\n\tcore.removeBlockByIndexes(indexes);\n\tcore.redrawMap();\n\tcore.playSound('炸弹');\n\tcore.drawTip(core.material.items[itemId].name + '使用成功');\n})();",
+		"canUseItemEffect": "(function () {\n\treturn core.status.thisMap.blocks.filter(function (block) {\n\t\treturn !block.disable && block.event.canBreak;\n\t}).length > 0;\n})();"
+	},
+	"poisonWine": {
+		"cls": "tools",
+		"name": "解毒药水",
+		"text": "可以解除中毒状态",
+		"useItemEffect": "core.triggerDebuff('remove', 'poison');",
+		"canUseItemEffect": "core.hasFlag('poison');"
+	},
+	"weakWine": {
+		"cls": "tools",
+		"name": "解衰药水",
+		"text": "可以解除衰弱状态",
+		"useItemEffect": "core.triggerDebuff('remove', 'weak');",
+		"canUseItemEffect": "core.hasFlag('weak');"
+	},
+	"curseWine": {
+		"cls": "tools",
+		"name": "解咒药水",
+		"text": "可以解除诅咒状态",
+		"useItemEffect": "core.triggerDebuff('remove', 'curse');",
+		"canUseItemEffect": "core.hasFlag('curse');"
+	},
+	"superWine": {
+		"cls": "tools",
+		"name": "万能药水",
+		"text": "可以解除所有不良状态",
+		"useItemEffect": "core.triggerDebuff('remove', ['poison', 'weak', 'curse']);",
+		"canUseItemEffect": "(function() {\n\treturn core.hasFlag('poison') || core.hasFlag('weak') || core.hasFlag('curse');\n})();"
+	},
+	"hammer": {
+		"cls": "tools",
+		"name": "圣锤",
+		"text": "该道具尚未被定义"
+	},
+	"lifeWand": {
+		"cls": "tools",
+		"name": "生命魔杖",
+		"text": "可以恢复100点生命值",
+		"useItemEvent": [
+			{
+				"type": "comment",
+				"text": "先恢复一个魔杖（因为使用道具必须消耗一个）"
+			},
+			{
+				"type": "function",
+				"function": "function(){\ncore.addItem('lifeWand', 1);\n}"
+			},
+			{
+				"type": "playSound",
+				"name": "打开界面"
+			},
+			{
+				"type": "input",
+				"text": "请输入生命魔杖使用次数：(0-${item:lifeWand})"
+			},
+			{
+				"type": "comment",
+				"text": "【接受用户输入】弹窗输入的结果将会保存在“flag:input”中\n如果需要更多帮助，请查阅帮助文档"
+			},
+			{
+				"type": "if",
+				"condition": "flag:input<=item:lifeWand",
+				"true": [
+					{
+						"type": "setValue",
+						"name": "item:lifeWand",
+						"operator": "-=",
+						"value": "flag:input"
+					},
+					{
+						"type": "setValue",
+						"name": "status:hp",
+						"operator": "+=",
+						"value": "flag:input*100"
+					},
+					{
+						"type": "playSound",
+						"name": "回血"
+					},
+					"成功使用${flag:input}次生命魔杖，恢复${flag:input*100}点生命。"
+				],
+				"false": [
+					{
+						"type": "playSound",
+						"name": "操作失败"
+					},
+					"输入不合法！"
+				]
+			}
+		],
+		"canUseItemEffect": "true"
+	},
+	"jumpShoes": {
+		"cls": "tools",
+		"name": "跳跃靴",
+		"text": "能跳跃到前方两格处",
+		"useItemEffect": "core.playSound(\"跳跃\");\ncore.insertAction({ \"type\": \"jumpHero\", \"loc\": [core.nextX(2), core.nextY(2)] });",
+		"canUseItemEffect": "(function () {\n\tvar nx = core.nextX(2),\n\t\tny = core.nextY(2);\n\treturn nx >= 0 && nx < core.bigmap.width && ny >= 0 && ny < core.bigmap.height && core.getBlockId(nx, ny) == null;\n})();"
+	},
+	"skill1": {
+		"cls": "items",
+		"name": "炎之灵杖",
+		"text": null,
+		"hideInReplay": true,
+		"useItemEffect": null,
+		"canUseItemEffect": null
+	},
+	"wand": {
+		"cls": "items",
+		"name": "心之灵杖"
+	},
+	"pack": {
+		"cls": "items",
+		"name": "金块",
+		"itemEffect": "core.status.hero.money += 300",
+		"itemEffectTip": "，金币数加300！"
+	},
+	"I332": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	},
+	"I333": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	},
+	"I334": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	},
+	"I335": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	},
+	"I336": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	},
+	"I337": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	},
+	"I338": {
+		"cls": "items",
+		"name": "大飞羽",
+		"canUseItemEffect": "true",
+		"itemEffectTip": " 等级提升三级 ！",
+		"itemEffect": "core.status.hero.lv += 3\ncore.status.hero.hp += 3000\ncore.status.hero.atk += 30\ncore.status.hero.def += 30",
+		"hideInToolbox": true,
+		"hideInReplay": true
+	},
+	"I339": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	},
+	"I340": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	},
+	"I341": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	},
+	"I342": {
+		"cls": "items",
+		"name": "新物品",
+		"canUseItemEffect": "true"
+	}
+}

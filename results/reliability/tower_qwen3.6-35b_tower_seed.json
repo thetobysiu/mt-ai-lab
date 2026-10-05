@@ -1,0 +1,685 @@
+{
+  "label": "tower_qwen3.6-35b_tower_seed",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "tower_seed.txt",
+    "prompt_chars": 8537,
+    "model": "qwen3.6-35b-a3b",
+    "task_mode": "thinking",
+    "preset": "qwen3.6-35b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 3,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.3041,
+      "success": false,
+      "died": true,
+      "floors_reached": 14,
+      "max_floor_id": "MT14",
+      "total_floors": 24,
+      "final_floor_id": "MT14",
+      "failure_reason": "Hero died",
+      "final_hp": -1,
+      "hero_atk": 271,
+      "hero_def": 167,
+      "keys": {
+        "yellow": 11,
+        "blue": 6,
+        "red": 0
+      },
+      "money": 56,
+      "exp": 72,
+      "turns": 434,
+      "llm_calls": 415,
+      "parse_errors": 29,
+      "forced_turns": 19,
+      "run_log": "20260923_203105_990241_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 11
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 268,
+          "turn": 43,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 380,
+          "turn": 50
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 380,
+          "turn": 51
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 371,
+          "turn": 54
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 565,
+          "turn": 79
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 565,
+          "turn": 87
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 565,
+          "turn": 88,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1051,
+          "turn": 97
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 1051,
+          "turn": 98,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT1",
+          "hero_hp": 987,
+          "turn": 110,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 2663,
+          "turn": 138
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 2663,
+          "turn": 139
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 2663,
+          "turn": 140
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 2663,
+          "turn": 141
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2663,
+          "turn": 142
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 2663,
+          "turn": 145,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2663,
+          "turn": 146
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 2588,
+          "turn": 150,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2503,
+          "turn": 170
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 2499,
+          "turn": 178,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 2422,
+          "turn": 187
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 2422,
+          "turn": 188
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 2422,
+          "turn": 189
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 2272,
+          "turn": 197
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2272,
+          "turn": 200
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2272,
+          "turn": 201
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 3572,
+          "turn": 216,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 3572,
+          "turn": 217
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 3572,
+          "turn": 218
+        },
+        {
+          "from": "MT7",
+          "to": "MT4",
+          "hero_hp": 3325,
+          "turn": 224,
+          "type": "return"
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 3325,
+          "turn": 226
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 3325,
+          "turn": 227
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 3325,
+          "turn": 228
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 3325,
+          "turn": 229
+        },
+        {
+          "from": "MT8",
+          "to": "MT9",
+          "hero_hp": 3035,
+          "turn": 261
+        },
+        {
+          "from": "MT9",
+          "to": "MT6",
+          "hero_hp": 4521,
+          "turn": 301,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 4379,
+          "turn": 311
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 4175,
+          "turn": 318
+        },
+        {
+          "from": "MT8",
+          "to": "MT4",
+          "hero_hp": 4123,
+          "turn": 322,
+          "type": "return"
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 4923,
+          "turn": 325
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 4923,
+          "turn": 329
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 4923,
+          "turn": 330
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 4923,
+          "turn": 331
+        },
+        {
+          "from": "MT8",
+          "to": "MT9",
+          "hero_hp": 5723,
+          "turn": 337
+        },
+        {
+          "from": "MT9",
+          "to": "MT10",
+          "hero_hp": 5623,
+          "turn": 339
+        },
+        {
+          "from": "MT10",
+          "to": "MT11",
+          "hero_hp": 5816,
+          "turn": 360
+        },
+        {
+          "from": "MT11",
+          "to": "MT8",
+          "hero_hp": 6216,
+          "turn": 363,
+          "type": "return"
+        },
+        {
+          "from": "MT8",
+          "to": "MT9",
+          "hero_hp": 5215,
+          "turn": 369
+        },
+        {
+          "from": "MT9",
+          "to": "MT8",
+          "hero_hp": 5215,
+          "turn": 370,
+          "type": "return"
+        },
+        {
+          "from": "MT8",
+          "to": "MT9",
+          "hero_hp": 5215,
+          "turn": 371
+        },
+        {
+          "from": "MT9",
+          "to": "MT10",
+          "hero_hp": 5215,
+          "turn": 372
+        },
+        {
+          "from": "MT10",
+          "to": "MT8",
+          "hero_hp": 5012,
+          "turn": 386,
+          "type": "return"
+        },
+        {
+          "from": "MT8",
+          "to": "MT9",
+          "hero_hp": 5012,
+          "turn": 387
+        },
+        {
+          "from": "MT9",
+          "to": "MT10",
+          "hero_hp": 5012,
+          "turn": 388
+        },
+        {
+          "from": "MT10",
+          "to": "MT11",
+          "hero_hp": 5012,
+          "turn": 389
+        },
+        {
+          "from": "MT11",
+          "to": "MT12",
+          "hero_hp": 5012,
+          "turn": 390
+        },
+        {
+          "from": "MT12",
+          "to": "MT13",
+          "hero_hp": 5012,
+          "turn": 391
+        },
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 5512,
+          "turn": 394
+        },
+        {
+          "from": "MT14",
+          "to": "MT13",
+          "hero_hp": 5512,
+          "turn": 395,
+          "type": "return"
+        },
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 5512,
+          "turn": 396
+        },
+        {
+          "from": "MT14",
+          "to": "MT8",
+          "hero_hp": 5512,
+          "turn": 397,
+          "type": "return"
+        },
+        {
+          "from": "MT8",
+          "to": "MT9",
+          "hero_hp": 5512,
+          "turn": 398
+        },
+        {
+          "from": "MT9",
+          "to": "MT10",
+          "hero_hp": 5512,
+          "turn": 399
+        },
+        {
+          "from": "MT10",
+          "to": "MT11",
+          "hero_hp": 5512,
+          "turn": 400
+        },
+        {
+          "from": "MT11",
+          "to": "MT12",
+          "hero_hp": 5512,
+          "turn": 401
+        },
+        {
+          "from": "MT12",
+          "to": "MT13",
+          "hero_hp": 5512,
+          "turn": 402
+        },
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 5512,
+          "turn": 403
+        },
+        {
+          "from": "MT14",
+          "to": "MT13",
+          "hero_hp": 5512,
+          "turn": 405,
+          "type": "return"
+        },
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 5512,
+          "turn": 406
+        },
+        {
+          "from": "MT14",
+          "to": "MT8",
+          "hero_hp": 5512,
+          "turn": 407,
+          "type": "return"
+        },
+        {
+          "from": "MT8",
+          "to": "MT9",
+          "hero_hp": 5512,
+          "turn": 408
+        },
+        {
+          "from": "MT9",
+          "to": "MT10",
+          "hero_hp": 5512,
+          "turn": 409
+        },
+        {
+          "from": "MT10",
+          "to": "MT11",
+          "hero_hp": 5512,
+          "turn": 410
+        },
+        {
+          "from": "MT11",
+          "to": "MT12",
+          "hero_hp": 5512,
+          "turn": 411
+        },
+        {
+          "from": "MT12",
+          "to": "MT13",
+          "hero_hp": 5512,
+          "turn": 412
+        },
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 5512,
+          "turn": 413
+        },
+        {
+          "from": "MT14",
+          "to": "MT13",
+          "hero_hp": 5512,
+          "turn": 415,
+          "type": "return"
+        },
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 5512,
+          "turn": 416
+        },
+        {
+          "from": "MT14",
+          "to": "MT8",
+          "hero_hp": 5512,
+          "turn": 417,
+          "type": "return"
+        },
+        {
+          "from": "MT8",
+          "to": "MT9",
+          "hero_hp": 5512,
+          "turn": 418
+        },
+        {
+          "from": "MT9",
+          "to": "MT10",
+          "hero_hp": 5512,
+          "turn": 419
+        },
+        {
+          "from": "MT10",
+          "to": "MT11",
+          "hero_hp": 5512,
+          "turn": 420
+        },
+        {
+          "from": "MT11",
+          "to": "MT12",
+          "hero_hp": 5512,
+          "turn": 421
+        },
+        {
+          "from": "MT12",
+          "to": "MT13",
+          "hero_hp": 5512,
+          "turn": 422
+        },
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 5512,
+          "turn": 423
+        },
+        {
+          "from": "MT14",
+          "to": "MT13",
+          "hero_hp": 5512,
+          "turn": 425,
+          "type": "return"
+        },
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 5512,
+          "turn": 426
+        },
+        {
+          "from": "MT14",
+          "to": "MT8",
+          "hero_hp": 5512,
+          "turn": 427,
+          "type": "return"
+        },
+        {
+          "from": "MT8",
+          "to": "MT9",
+          "hero_hp": 5512,
+          "turn": 428
+        },
+        {
+          "from": "MT9",
+          "to": "MT10",
+          "hero_hp": 5512,
+          "turn": 429
+        },
+        {
+          "from": "MT10",
+          "to": "MT11",
+          "hero_hp": 5512,
+          "turn": 430
+        },
+        {
+          "from": "MT11",
+          "to": "MT12",
+          "hero_hp": 5512,
+          "turn": 431
+        },
+        {
+          "from": "MT12",
+          "to": "MT13",
+          "hero_hp": 5512,
+          "turn": 432
+        },
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 5512,
+          "turn": 433
+        }
+      ],
+      "elapsed_s": 9717.5,
+      "timestamp": "2026-09-24T01:13:10",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 1,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.3041,
+    "score_sd": 0.0,
+    "score_min": 0.3041,
+    "score_max": 0.3041,
+    "final_hp_mean": -1.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 415,
+    "seconds_per_call": 23.42,
+    "parse_error_rate": 0.0699,
+    "elapsed_s_total": 9717.5,
+    "floors_reached_mean": 14.0,
+    "floors_reached_max": 14
+  },
+  "updated": "2026-09-24 01:13"
+}

@@ -1,0 +1,429 @@
+{
+  "label": "MT3-MT4_qwen3.5-397b_basic_d1d4",
+  "config": {
+    "floor": null,
+    "start": "MT3",
+    "end": "MT4",
+    "max_turns": 300,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 3630,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 3,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "32768"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.8608,
+      "success": true,
+      "died": false,
+      "floors_reached": 1,
+      "max_floor_id": "MT4",
+      "total_floors": 2,
+      "final_floor_id": "MT4",
+      "failure_reason": "",
+      "final_hp": 304,
+      "hero_atk": 23,
+      "hero_def": 25,
+      "keys": {
+        "yellow": 3,
+        "blue": 0,
+        "red": 0
+      },
+      "money": 15,
+      "exp": 86,
+      "turns": 65,
+      "llm_calls": 26,
+      "parse_errors": 1,
+      "forced_turns": 39,
+      "run_log": "20260926_002722_631337_MT3-MT4_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 500,
+          "turn": 28
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 494,
+          "turn": 30,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 422,
+          "turn": 36
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 392,
+          "turn": 39,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 392,
+          "turn": 40
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 288,
+          "turn": 51,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 288,
+          "turn": 53
+        }
+      ],
+      "elapsed_s": 5103.8,
+      "timestamp": "2026-09-26T03:52:26",
+      "run_idx": 1
+    },
+    {
+      "score": 0.862,
+      "success": true,
+      "died": false,
+      "floors_reached": 1,
+      "max_floor_id": "MT4",
+      "total_floors": 2,
+      "final_floor_id": "MT4",
+      "failure_reason": "",
+      "final_hp": 310,
+      "hero_atk": 23,
+      "hero_def": 25,
+      "keys": {
+        "yellow": 3,
+        "blue": 0,
+        "red": 0
+      },
+      "money": 15,
+      "exp": 86,
+      "turns": 65,
+      "llm_calls": 27,
+      "parse_errors": 0,
+      "forced_turns": 38,
+      "run_log": "20260926_015226_485901_MT3-MT4_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 500,
+          "turn": 28
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 500,
+          "turn": 29,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 428,
+          "turn": 35
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 398,
+          "turn": 40,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 398,
+          "turn": 41
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 460,
+          "turn": 55,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 460,
+          "turn": 58
+        }
+      ],
+      "elapsed_s": 571.1,
+      "timestamp": "2026-09-26T04:01:57",
+      "run_idx": 2
+    },
+    {
+      "score": 0.8528,
+      "success": true,
+      "died": false,
+      "floors_reached": 1,
+      "max_floor_id": "MT4",
+      "total_floors": 2,
+      "final_floor_id": "MT4",
+      "failure_reason": "",
+      "final_hp": 264,
+      "hero_atk": 23,
+      "hero_def": 25,
+      "keys": {
+        "yellow": 3,
+        "blue": 0,
+        "red": 0
+      },
+      "money": 15,
+      "exp": 86,
+      "turns": 67,
+      "llm_calls": 27,
+      "parse_errors": 0,
+      "forced_turns": 40,
+      "run_log": "20260926_020157_589332_MT3-MT4_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 500,
+          "turn": 28
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 459,
+          "turn": 31,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 459,
+          "turn": 32
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 424,
+          "turn": 35,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 352,
+          "turn": 41
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 352,
+          "turn": 42,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 352,
+          "turn": 43
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 458,
+          "turn": 50,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 458,
+          "turn": 52
+        }
+      ],
+      "elapsed_s": 717.8,
+      "timestamp": "2026-09-26T04:13:55",
+      "run_idx": 3
+    },
+    {
+      "score": 0.8658,
+      "success": true,
+      "died": false,
+      "floors_reached": 1,
+      "max_floor_id": "MT4",
+      "total_floors": 2,
+      "final_floor_id": "MT4",
+      "failure_reason": "",
+      "final_hp": 329,
+      "hero_atk": 23,
+      "hero_def": 25,
+      "keys": {
+        "yellow": 3,
+        "blue": 0,
+        "red": 0
+      },
+      "money": 15,
+      "exp": 86,
+      "turns": 63,
+      "llm_calls": 22,
+      "parse_errors": 1,
+      "forced_turns": 41,
+      "run_log": "20260926_021355_395708_MT3-MT4_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 500,
+          "turn": 28
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 459,
+          "turn": 31,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 387,
+          "turn": 37
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 372,
+          "turn": 40,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 357,
+          "turn": 43
+        }
+      ],
+      "elapsed_s": 1287.5,
+      "timestamp": "2026-09-26T04:35:22",
+      "run_idx": 4
+    },
+    {
+      "score": 0.862,
+      "success": true,
+      "died": false,
+      "floors_reached": 1,
+      "max_floor_id": "MT4",
+      "total_floors": 2,
+      "final_floor_id": "MT4",
+      "failure_reason": "",
+      "final_hp": 310,
+      "hero_atk": 23,
+      "hero_def": 25,
+      "keys": {
+        "yellow": 3,
+        "blue": 0,
+        "red": 0
+      },
+      "money": 15,
+      "exp": 86,
+      "turns": 65,
+      "llm_calls": 25,
+      "parse_errors": 0,
+      "forced_turns": 40,
+      "run_log": "20260926_023522_962922_MT3-MT4_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 500,
+          "turn": 28
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 500,
+          "turn": 29,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 428,
+          "turn": 35
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 398,
+          "turn": 40,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 398,
+          "turn": 41
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 294,
+          "turn": 51,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 294,
+          "turn": 53
+        }
+      ],
+      "elapsed_s": 574.5,
+      "timestamp": "2026-09-26T04:44:57",
+      "run_idx": 5
+    }
+  ],
+  "aggregate": {
+    "n": 5,
+    "successes": 5,
+    "success_rate": 1.0,
+    "success_ci95": [
+      0.5655,
+      1.0
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.8607,
+    "score_sd": 0.0048,
+    "score_min": 0.8528,
+    "score_max": 0.8658,
+    "final_hp_mean": 303.4,
+    "final_hp_sd": 23.9541,
+    "llm_calls_total": 127,
+    "seconds_per_call": 65.0,
+    "parse_error_rate": 0.0157,
+    "elapsed_s_total": 8254.7,
+    "floors_reached_mean": 1.0,
+    "floors_reached_max": 1
+  },
+  "updated": "2026-09-26 04:44"
+}

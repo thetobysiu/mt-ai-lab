@@ -1,0 +1,136 @@
+{
+  "label": "gs2_llama8b_full",
+  "method": "constrained-linear-gepa",
+  "floor": null,
+  "floors": [
+    "simple",
+    "D:\\Thesis\\Code\\mota24\\mota-gepa\\data\\floors\\gen\\gen01.txt",
+    "D:\\Thesis\\Code\\mota24\\mota-gepa\\data\\floors\\gen\\gen02.txt"
+  ],
+  "tower": null,
+  "preset": "llama-3.1-8b",
+  "task_model": "meta-llama-3.1-8b-instruct",
+  "reflection_model": "glm-5.3-flash",
+  "rollouts": 1,
+  "seed_file": "core_rules.txt",
+  "bare_obs": false,
+  "strategy_examples": false,
+  "select": "best",
+  "rich_trace": true,
+  "started": "2026-09-28T14:06:28.502559",
+  "env": {
+    "CONVERSATION_HISTORY_TURNS": "0",
+    "MOTA_ORDER_TWO_SIDED": "1",
+    "MOTA_FIGHT_KEY_FLOOD": "1",
+    "THINKING_MAX_TOKENS": "16384",
+    "LOOKAHEAD_DEPTH": "3",
+    "MOTA_EVAL_TEMPERATURE": "0.0"
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "prompt": "You play Magic Tower, a turn-based dungeon game on one floor. Each turn you get your state and a numbered list of the actions you can take now; you answer with one action number.\n\nGAME RULES:\n- A fight is a sequence of rounds; you hit first. Your hit = your ATK - the monster's DEF. If your ATK <= the monster's DEF you cannot damage it at all.\n- The monster's hit = its ATK - your DEF; if your DEF >= its ATK it cannot hurt you. The fight ends when one side reaches 0 HP. If you reach 0 HP you lose the game.\n- A door needs a key of the same colour; each key opens exactly one door and is used up.\n- Walking onto an item collects it: gems raise ATK or DEF permanently, potions restore HP, keys open doors.\n- HP is not restored between fights.\n\nGOAL: kill the boss and stay alive.\n\nEnd your answer with: FINAL_CHOICE: <number>\n",
+      "score": 0.651,
+      "rollouts": [
+        {
+          "floor": "simple",
+          "objective": 0.325,
+          "success": false,
+          "final_hp": 365,
+          "hero_atk": 13,
+          "hero_def": 8,
+          "max_floor_id": null,
+          "floors_reached": null,
+          "failure_reason": null,
+          "run_log": "20260928_120628_510055_simple_llm.json"
+        },
+        {
+          "floor": "D:\\Thesis\\Code\\mota24\\mota-gepa\\data\\floors\\gen\\gen01.txt",
+          "objective": 0.7768,
+          "success": true,
+          "final_hp": 93,
+          "hero_atk": 14,
+          "hero_def": 7,
+          "max_floor_id": null,
+          "floors_reached": null,
+          "failure_reason": null,
+          "run_log": "20260928_120736_294594_gen01.txt_llm.json"
+        },
+        {
+          "floor": "D:\\Thesis\\Code\\mota24\\mota-gepa\\data\\floors\\gen\\gen02.txt",
+          "objective": 0.8513,
+          "success": true,
+          "final_hp": 163,
+          "hero_atk": 14,
+          "hero_def": 7,
+          "max_floor_id": null,
+          "floors_reached": null,
+          "failure_reason": null,
+          "run_log": "20260928_120804_446029_gen02.txt_llm.json"
+        }
+      ],
+      "eval_s": 134.9,
+      "reflection": {
+        "response": "",
+        "violations": [
+          "no fenced prompt in the reply"
+        ],
+        "s": 80.8,
+        "retry": {
+          "response": "",
+          "violations": [
+            "no fenced prompt in the reply"
+          ]
+        }
+      },
+      "accepted": false
+    },
+    {
+      "iteration": 1,
+      "prompt": "You play Magic Tower, a turn-based dungeon game on one floor. Each turn you get your state and a numbered list of the actions you can take now; you answer with one action number.\n\nGAME RULES:\n- A fight is a sequence of rounds; you hit first. Your hit = your ATK - the monster's DEF. If your ATK <= the monster's DEF you cannot damage it at all.\n- The monster's hit = its ATK - your DEF; if your DEF >= its ATK it cannot hurt you. The fight ends when one side reaches 0 HP. If you reach 0 HP you lose the game.\n- A door needs a key of the same colour; each key opens exactly one door and is used up.\n- Walking onto an item collects it: gems raise ATK or DEF permanently, potions restore HP, keys open doors.\n- HP is not restored between fights.\n\nGOAL: kill the boss and stay alive.\n\nEnd your answer with: FINAL_CHOICE: <number>\n",
+      "score": 0.669,
+      "rollouts": [
+        {
+          "floor": "simple",
+          "objective": 0.325,
+          "success": false,
+          "final_hp": 436,
+          "hero_atk": 13,
+          "hero_def": 8,
+          "max_floor_id": null,
+          "floors_reached": null,
+          "failure_reason": null,
+          "run_log": "20260928_121128_800634_simple_llm.json"
+        },
+        {
+          "floor": "D:\\Thesis\\Code\\mota24\\mota-gepa\\data\\floors\\gen\\gen01.txt",
+          "objective": 0.7768,
+          "success": true,
+          "final_hp": 93,
+          "hero_atk": 14,
+          "hero_def": 7,
+          "max_floor_id": null,
+          "floors_reached": null,
+          "failure_reason": null,
+          "run_log": "20260928_121232_902049_gen01.txt_llm.json"
+        },
+        {
+          "floor": "D:\\Thesis\\Code\\mota24\\mota-gepa\\data\\floors\\gen\\gen02.txt",
+          "objective": 0.9052,
+          "success": true,
+          "final_hp": 188,
+          "hero_atk": 14,
+          "hero_def": 7,
+          "max_floor_id": null,
+          "floors_reached": null,
+          "failure_reason": null,
+          "run_log": "20260928_121304_006156_gen02.txt_llm.json"
+        }
+      ],
+      "eval_s": 134.7
+    }
+  ],
+  "best_prompt": "You play Magic Tower, a turn-based dungeon game on one floor. Each turn you get your state and a numbered list of the actions you can take now; you answer with one action number.\n\nGAME RULES:\n- A fight is a sequence of rounds; you hit first. Your hit = your ATK - the monster's DEF. If your ATK <= the monster's DEF you cannot damage it at all.\n- The monster's hit = its ATK - your DEF; if your DEF >= its ATK it cannot hurt you. The fight ends when one side reaches 0 HP. If you reach 0 HP you lose the game.\n- A door needs a key of the same colour; each key opens exactly one door and is used up.\n- Walking onto an item collects it: gems raise ATK or DEF permanently, potions restore HP, keys open doors.\n- HP is not restored between fights.\n\nGOAL: kill the boss and stay alive.\n\nEnd your answer with: FINAL_CHOICE: <number>\n",
+  "best_score": 0.669,
+  "updated": "2026-09-28T14:13:43.523154"
+}

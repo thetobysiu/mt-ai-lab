@@ -1,0 +1,62 @@
+{
+  "label": "MT4_heuristic_reactive",
+  "config": {
+    "floor": "MT4",
+    "start": null,
+    "end": null,
+    "max_turns": null,
+    "prompt_file": "none",
+    "prompt_chars": 0,
+    "model": "heuristic",
+    "task_mode": "-",
+    "preset": "heuristic",
+    "mode": "heuristic",
+    "temperature": 0.0,
+    "overrides_disabled": false
+  },
+  "runs": [
+    {
+      "score": 0.5283,
+      "success": false,
+      "died": false,
+      "final_hp": 230,
+      "hero_atk": 23,
+      "hero_def": 17,
+      "enemies_killed": 6,
+      "enemies_total": 20,
+      "steps": 12,
+      "violations": [],
+      "llm_calls": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "elapsed_s": 0.0,
+      "timestamp": "2026-09-20T12:27:09",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.5283,
+    "score_sd": 0.0,
+    "score_min": 0.5283,
+    "score_max": 0.5283,
+    "final_hp_mean": 230.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 0,
+    "seconds_per_call": null,
+    "parse_error_rate": null,
+    "elapsed_s_total": 0
+  },
+  "updated": "2026-09-20 12:27"
+}

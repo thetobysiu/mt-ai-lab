@@ -1,0 +1,18 @@
+{
+  "floor": "simple",
+  "model": "qwen3.5-397b-a17b",
+  "task_mode": "thinking",
+  "score": 0.3704,
+  "elapsed_s": 247.1,
+  "turns": 36,
+  "is_boss_floor": true,
+  "boss_killed": false,
+  "goal_reached": null,
+  "enemies_killed": 13,
+  "enemies_total": 14,
+  "final_hp": 554,
+  "violations": [
+    "boss_not_killed"
+  ],
+  "dashboard_log": "20260601_030330_326005_simple_llm.json"
+}

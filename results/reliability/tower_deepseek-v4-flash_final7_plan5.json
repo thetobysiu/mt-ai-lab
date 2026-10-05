@@ -1,0 +1,354 @@
+{
+  "label": "tower_deepseek-v4-flash_final7_plan5",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 4805,
+    "model": "deepseek-v4-flash-0731",
+    "task_mode": "thinking",
+    "preset": "deepseek-v4-flash-think",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "16384",
+      "CONVERSATION_HISTORY_TURNS": "0",
+      "MOTA_OFFER_LEVELUPS": "1",
+      "MOTA_TOWER_HP_FLOOR": "0",
+      "MOTA_ORDER_TWO_SIDED": "1",
+      "MOTA_FIGHT_KEY_FLOOD": "1",
+      "MOTA_PLAN_STEPS": "5",
+      "MOTA_SHOP_ROUTE": "1",
+      "MOTA_REMOTE_ACTIONS": "1",
+      "MOTA_WAY_UP": "1",
+      "MOTA_TOWER_FIDELITY": "1",
+      "MOTA_PLAN_MEMORY": "1",
+      "MOTA_NO_KEY_PURCHASE": "1",
+      "MOTA_WAYUP_COMBINED": "1",
+      "MOTA_FREE_AFFORD": "1",
+      "LLM_TIMEOUT": "1800"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.0662,
+      "success": false,
+      "died": false,
+      "floors_reached": 3,
+      "max_floor_id": "MT3",
+      "total_floors": 24,
+      "final_floor_id": "MT3",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose Fight Red Slime at (11,4) dmg=15)",
+      "final_hp": 5,
+      "hero_atk": 20,
+      "hero_def": 10,
+      "keys": {
+        "yellow": 6,
+        "blue": 1,
+        "red": 1
+      },
+      "money": 29,
+      "exp": 28,
+      "turns": 28,
+      "llm_calls": 11,
+      "model_calls": 6,
+      "planned_turns": 6,
+      "parse_errors": 0,
+      "forced_turns": 17,
+      "lethal_only_stop": {
+        "action": "Fight Red Slime at (11,4) dmg=15",
+        "hp_after": -10,
+        "damage": 15
+      },
+      "run_log": "20261002_050128_263489_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        }
+      ],
+      "elapsed_s": 87.8,
+      "timestamp": "2026-10-02T07:02:56",
+      "run_idx": 1
+    },
+    {
+      "score": 0.2135,
+      "success": false,
+      "died": false,
+      "floors_reached": 8,
+      "max_floor_id": "MT8",
+      "total_floors": 24,
+      "final_floor_id": "MT7",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose Fight Red Bat at (3,3) dmg=2989)",
+      "final_hp": 198,
+      "hero_atk": 101,
+      "hero_def": 99,
+      "keys": {
+        "yellow": 3,
+        "blue": 5,
+        "red": 0
+      },
+      "money": 13,
+      "exp": 12,
+      "turns": 202,
+      "llm_calls": 93,
+      "model_calls": 55,
+      "planned_turns": 39,
+      "parse_errors": 0,
+      "forced_turns": 109,
+      "lethal_only_stop": {
+        "action": "Fight Red Bat at (3,3) dmg=2989",
+        "hp_after": -2791,
+        "damage": 2989
+      },
+      "run_log": "20261002_050256_122419_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 427,
+          "turn": 41
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 351,
+          "turn": 45,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 279,
+          "turn": 47,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT4",
+          "hero_hp": 391,
+          "turn": 55,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 479,
+          "turn": 74
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 479,
+          "turn": 83
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 479,
+          "turn": 86
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1779,
+          "turn": 101,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT1",
+          "hero_hp": 1667,
+          "turn": 107,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT5",
+          "hero_hp": 3089,
+          "turn": 133,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT7",
+          "hero_hp": 3979,
+          "turn": 161,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 3118,
+          "turn": 167
+        },
+        {
+          "from": "MT8",
+          "to": "MT4",
+          "hero_hp": 3118,
+          "turn": 169,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 3118,
+          "turn": 180,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT4",
+          "hero_hp": 3118,
+          "turn": 189,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT6",
+          "hero_hp": 198,
+          "turn": 193,
+          "type": "remote"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 198,
+          "turn": 201,
+          "type": "remote"
+        }
+      ],
+      "elapsed_s": 557.5,
+      "timestamp": "2026-10-02T07:12:13",
+      "run_idx": 2
+    },
+    {
+      "score": 0.0662,
+      "success": false,
+      "died": false,
+      "floors_reached": 3,
+      "max_floor_id": "MT3",
+      "total_floors": 24,
+      "final_floor_id": "MT3",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose Fight Red Slime at (7,9) dmg=15)",
+      "final_hp": 5,
+      "hero_atk": 20,
+      "hero_def": 10,
+      "keys": {
+        "yellow": 5,
+        "blue": 1,
+        "red": 1
+      },
+      "money": 29,
+      "exp": 28,
+      "turns": 29,
+      "llm_calls": 12,
+      "model_calls": 7,
+      "planned_turns": 6,
+      "parse_errors": 0,
+      "forced_turns": 17,
+      "lethal_only_stop": {
+        "action": "Fight Red Slime at (7,9) dmg=15",
+        "hp_after": -10,
+        "damage": 15
+      },
+      "run_log": "20261002_051213_706114_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        }
+      ],
+      "elapsed_s": 235.5,
+      "timestamp": "2026-10-02T07:16:09",
+      "run_idx": 3
+    }
+  ],
+  "aggregate": {
+    "n": 3,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.5615
+    ],
+    "died": 0,
+    "lethal_only_stops": 3,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.1153,
+    "score_sd": 0.085,
+    "score_min": 0.0662,
+    "score_max": 0.2135,
+    "final_hp_mean": 69.3333,
+    "final_hp_sd": 111.4286,
+    "llm_calls_total": 116,
+    "seconds_per_call": 7.59,
+    "parse_error_rate": 0.0,
+    "elapsed_s_total": 880.8,
+    "floors_reached_mean": 4.67,
+    "floors_reached_max": 8,
+    "max_floor_ids": [
+      "MT3",
+      "MT8",
+      "MT3"
+    ]
+  },
+  "updated": "2026-10-02 07:16"
+}

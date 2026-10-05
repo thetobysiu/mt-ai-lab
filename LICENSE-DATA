@@ -1,0 +1,19 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 King Wai Siu
+
+The following parts of this repository are licensed under CC BY 4.0:
+
+  - results/            experiment result files, the thesis index and the census reports
+  - docs/               documentation, including the screenshots in docs/images
+  - GLOSSARY.md
+  - the run-log archive run_logs.zip published as a release asset
+
+You may share and adapt this material for any purpose, including commercially, provided
+you give appropriate credit (cite the thesis, see CITATION.cff), provide a link to the
+licence, and indicate if changes were made.
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Material in these folders that comes from third parties (for example the game tiles shown
+in screenshots) keeps its own licence; see THIRD_PARTY.md.

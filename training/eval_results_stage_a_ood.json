@@ -1,0 +1,278 @@
+{
+  "accuracy": 0.8666666666666667,
+  "json_rate": 1.0,
+  "correct": 26,
+  "total": 30,
+  "results": [
+    {
+      "idx": 0,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 33.68,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Fight 红头怪 at (4,3) costs 99 HP, leaving 1423 HP. Earns 2 gold. Unlocks: Red Potion (+200 HP). Best follow-up: Red Potion (+200 HP) (cost 0 HP). Avoiding 小蝙蝠 (costs 384 HP) p"
+    },
+    {
+      "idx": 1,
+      "expected": "?",
+      "predicted": "C",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 6.57,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"Fight 小蝙蝠 at (2,3) costs 160 HP, leaving 574 HP. Earns 3 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_小蝙蝠_2_3\"]}"
+    },
+    {
+      "idx": 2,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 6.95,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Fight 绿头怪 at (3,2) costs 51 HP, leaving 2040 HP. Earns 1 gold. Unlocks: stairs. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_绿头怪_3_2\"]}"
+    },
+    {
+      "idx": 3,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 11.07,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Fight 绿头怪 at (2,5) costs 30 HP, leaving 532 HP. Earns 1 gold. Best follow-up: upFloor (cost 0 HP). Avoiding 小蝙蝠 (costs 105 HP) preserves 75 more HP.\", \"macro_action\": [\"figh"
+    },
+    {
+      "idx": 4,
+      "expected": "?",
+      "predicted": "?",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 5.27,
+      "output_snippet": "{\"answer\": \"?\", \"reason\": \"Optimal: Fight 骷髅士兵 at (4,4) dmg=243.\", \"macro_action\": [\"fight_骷髅士兵_4_4\"]}"
+    },
+    {
+      "idx": 5,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 3.64,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Open Yellow Door at (6,7).\", \"macro_action\": [\"open_door_Yellow_Door_6_7\"]}"
+    },
+    {
+      "idx": 6,
+      "expected": "B",
+      "predicted": "A",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 5.51,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Fight 兽面人 at (5,4) costs 648 HP, leaving 326 HP. Earns 13 gold.\", \"macro_action\": [\"fight_兽面人_5_4\"]}"
+    },
+    {
+      "idx": 7,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 6.84,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 骷髅人 at (5,1) costs 168 HP, leaving 849 HP. Earns 5 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_骷髅人_5_1\"]}"
+    },
+    {
+      "idx": 8,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 9.71,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 红头怪 at (4,4) costs 63 HP, leaving 721 HP. Earns 2 gold. Best follow-up: upFloor (cost 0 HP). Avoiding 小蝙蝠 (costs 224 HP) preserves 161 more HP.\", \"macro_action\": [\"fig"
+    },
+    {
+      "idx": 9,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 5.44,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Open Yellow Door at (4,2). Unlocks: ⚔ 兽面人@(3,2) CANNOT WIN.\", \"macro_action\": [\"open_door_Yellow_Door_4_2\"]}"
+    },
+    {
+      "idx": 10,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 10.09,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Fight 红头怪 at (6,7) costs 36 HP, leaving 507 HP. Earns 2 gold. Best follow-up: upFloor (cost 0 HP). Avoiding 绿头怪 (costs 42 HP) preserves 6 more HP.\", \"macro_action\": [\"fight_"
+    },
+    {
+      "idx": 11,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 4.28,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Open Yellow Door at (5,6).\", \"macro_action\": [\"open_door_Yellow_Door_5_6\"]}"
+    },
+    {
+      "idx": 12,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 7.73,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Fight 绿头怪 at (3,4) costs 33 HP, leaving 657 HP. Earns 1 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_绿头怪_3_4\", \"fight_小蝙蝠_2_5\"]}"
+    },
+    {
+      "idx": 13,
+      "expected": "C",
+      "predicted": "B",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 7.3,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 绿头怪 at (1,5) costs 52 HP, leaving 1166 HP. Earns 1 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_绿头怪_1_5\", \"fight_绿头怪_5_3\"]}"
+    },
+    {
+      "idx": 14,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 8.57,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 红头怪 at (7,4) costs 60 HP, leaving 123 HP. Earns 2 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_红头怪_7_4\", \"fight_红头怪_7_7\", \"fight_小蝙蝠_4_1\"]}"
+    },
+    {
+      "idx": 15,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 9.78,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 小蝙蝠 at (9,5) costs 99 HP, leaving 279 HP. Earns 3 gold. Best follow-up: upFloor (cost 0 HP). Avoiding 骷髅人 (costs 160 HP) preserves 61 more HP.\", \"macro_action\": [\"figh"
+    },
+    {
+      "idx": 16,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 9.8,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 小蝙蝠 at (7,4) costs 224 HP, leaving 497 HP. Earns 3 gold. Best follow-up: upFloor (cost 0 HP). Avoiding 骷髅人 (costs 342 HP) preserves 118 more HP.\", \"macro_action\": [\"fi"
+    },
+    {
+      "idx": 17,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 7.99,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 小蝙蝠 at (5,5) costs 90 HP, leaving 674 HP. Earns 3 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_小蝙蝠_5_5\", \"fight_小蝙蝠_7_5\"]}"
+    },
+    {
+      "idx": 18,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 8.78,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 红头怪 at (5,5) costs 66 HP, leaving 295 HP. Earns 2 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_红头怪_5_5\", \"fight_小蝙蝠_7_5\", \"fight_小蝙蝠_9_5\"]}"
+    },
+    {
+      "idx": 19,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 10.1,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 青头怪 at (6,4) costs 255 HP, leaving 1379 HP. Earns 5 gold. Best follow-up: upFloor (cost 0 HP). Avoiding 骷髅士兵 (costs 1078 HP) preserves 823 more HP.\", \"macro_action\": ["
+    },
+    {
+      "idx": 20,
+      "expected": "A",
+      "predicted": "B",
+      "correct": false,
+      "valid_json": true,
+      "elapsed": 8.44,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Open Yellow Door at (5,4). Best follow-up: 青头怪 (cost 120 HP). Avoiding 初级法师 (costs 450 HP) preserves 450 more HP.\", \"macro_action\": [\"open_door_Yellow_Door_5_4\", \"fight_青头怪_"
+    },
+    {
+      "idx": 21,
+      "expected": "C",
+      "predicted": "C",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 6.56,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"Fight 骷髅人 at (4,3) costs 171 HP, leaving 294 HP. Earns 5 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_骷髅人_4_3\"]}"
+    },
+    {
+      "idx": 22,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 3.73,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Open Yellow Door at (8,5).\", \"macro_action\": [\"open_door_Yellow_Door_8_5\"]}"
+    },
+    {
+      "idx": 23,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 8.63,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 红头怪 at (2,3) costs 70 HP, leaving 1243 HP. Earns 2 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_红头怪_2_3\", \"fight_红头怪_4_7\", \"fight_小蝙蝠_1_5\"]}"
+    },
+    {
+      "idx": 24,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 8.38,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Fight 绿头怪 at (4,3) costs 44 HP, leaving 744 HP. Earns 1 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_绿头怪_4_3\", \"fight_绿头怪_5_2\", \"fight_小蝙蝠_3_1\"]}"
+    },
+    {
+      "idx": 25,
+      "expected": "C",
+      "predicted": "C",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 6.7,
+      "output_snippet": "{\"answer\": \"C\", \"reason\": \"Fight 骷髅人 at (4,5) costs 204 HP, leaving 300 HP. Earns 5 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_骷髅人_4_5\"]}"
+    },
+    {
+      "idx": 26,
+      "expected": "A",
+      "predicted": "A",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 5.47,
+      "output_snippet": "{\"answer\": \"A\", \"reason\": \"Open Yellow Door at (4,5). Unlocks: ⚔ 初级卫兵@(5,5) CANNOT WIN.\", \"macro_action\": [\"open_door_Yellow_Door_4_5\"]}"
+    },
+    {
+      "idx": 27,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 7.67,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 红头怪 at (4,7) costs 70 HP, leaving 1173 HP. Earns 2 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_红头怪_4_7\", \"fight_小蝙蝠_2_4\"]}"
+    },
+    {
+      "idx": 28,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 9.78,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 小蝙蝠 at (8,1) costs 91 HP, leaving 499 HP. Earns 3 gold. Best follow-up: upFloor (cost 0 HP). Avoiding 骷髅人 (costs 144 HP) preserves 53 more HP.\", \"macro_action\": [\"figh"
+    },
+    {
+      "idx": 29,
+      "expected": "B",
+      "predicted": "B",
+      "correct": true,
+      "valid_json": true,
+      "elapsed": 6.65,
+      "output_snippet": "{\"answer\": \"B\", \"reason\": \"Fight 骷髅人 at (2,2) costs 140 HP, leaving 287 HP. Earns 5 gold. Best follow-up: upFloor (cost 0 HP).\", \"macro_action\": [\"fight_骷髅人_2_2\"]}"
+    }
+  ]
+}

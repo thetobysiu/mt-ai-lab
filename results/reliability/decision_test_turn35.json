@@ -1,0 +1,38 @@
+[
+ {
+  "variant": "lookahead 2",
+  "preset": "qwen3.6-35b",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ },
+ {
+  "variant": "lookahead 2",
+  "preset": "qwen3.6-35b",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ },
+ {
+  "variant": "lookahead 2",
+  "preset": "qwen3.6-35b",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ },
+ {
+  "variant": "lookahead 2",
+  "preset": "mistral-medium-3.5",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ },
+ {
+  "variant": "lookahead 2",
+  "preset": "mistral-medium-3.5",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ },
+ {
+  "variant": "lookahead 2",
+  "preset": "mistral-medium-3.5",
+  "choice": "Fight Bat at (10,2) dmg=35",
+  "good": false
+ }
+]

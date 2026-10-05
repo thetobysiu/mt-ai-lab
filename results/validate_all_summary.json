@@ -1,0 +1,50 @@
+[
+  {
+    "floor": "simple",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3704,
+    "elapsed_s": 247.1,
+    "turns": 36,
+    "is_boss_floor": true,
+    "boss_killed": false,
+    "goal_reached": null,
+    "enemies_killed": 13,
+    "enemies_total": 14,
+    "final_hp": 554,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "dashboard_log": "20260601_030330_326005_simple_llm.json"
+  },
+  {
+    "floor": "complex",
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "score": 0.3409,
+    "elapsed_s": 500.1,
+    "turns": 31,
+    "is_boss_floor": true,
+    "boss_killed": false,
+    "goal_reached": null,
+    "enemies_killed": 10,
+    "enemies_total": 25,
+    "final_hp": 196,
+    "violations": [
+      "boss_not_killed"
+    ],
+    "dashboard_log": "20260601_031150_389884_complex_llm.json"
+  },
+  {
+    "floor": "MT3",
+    "error": "'charmap' codec can't encode characters in position 20-22: character maps to <undefined>"
+  },
+  {
+    "floor": "MT4",
+    "error": "dashboard stayed busy (409) too long"
+  },
+  {
+    "floor": "MT3MT4",
+    "error": "'charmap' codec can't encode characters in position 20-22: character maps to <undefined>"
+  }
+]

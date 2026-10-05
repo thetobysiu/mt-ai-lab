@@ -1,0 +1,38 @@
+[
+ {
+  "variant": "no key fact",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Shop buy def for 100g",
+  "good": false
+ },
+ {
+  "variant": "no key fact",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Open yellow door at (6,2)",
+  "good": false
+ },
+ {
+  "variant": "no key fact",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Shop buy def for 100g",
+  "good": false
+ },
+ {
+  "variant": "key fact",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Shop buy buy_red for 100g",
+  "good": true
+ },
+ {
+  "variant": "key fact",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Shop buy def for 100g",
+  "good": false
+ },
+ {
+  "variant": "key fact",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "Shop buy def for 100g",
+  "good": false
+ }
+]

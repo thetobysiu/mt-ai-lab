@@ -1,0 +1,1904 @@
+{
+ "source": "24/project (original game, copied by scripts/copy_game_sprites.py)",
+ "sheets": {
+  "terrains": {
+   "url": "/sprites/terrains.png",
+   "frames": 1,
+   "w": 32,
+   "h": 1120
+  },
+  "animates": {
+   "url": "/sprites/animates.png",
+   "frames": 4,
+   "w": 128,
+   "h": 896
+  },
+  "enemys": {
+   "url": "/sprites/enemys.png",
+   "frames": 2,
+   "w": 64,
+   "h": 1920
+  },
+  "items": {
+   "url": "/sprites/items.png",
+   "frames": 1,
+   "w": 32,
+   "h": 1984
+  },
+  "npcs": {
+   "url": "/sprites/npcs.png",
+   "frames": 2,
+   "w": 64,
+   "h": 928
+  },
+  "hero": {
+   "url": "/sprites/hero.png",
+   "frames": 4,
+   "w": 128,
+   "h": 132
+  }
+ },
+ "tiles": {
+  "0": [
+   "terrains",
+   0
+  ],
+  "1": [
+   "animates",
+   10
+  ],
+  "2": [
+   "animates",
+   11
+  ],
+  "3": [
+   "animates",
+   12
+  ],
+  "4": [
+   "animates",
+   0
+  ],
+  "5": [
+   "animates",
+   1
+  ],
+  "6": [
+   "animates",
+   27
+  ],
+  "7": [
+   "terrains",
+   7
+  ],
+  "8": [
+   "terrains",
+   9
+  ],
+  "9": [
+   "terrains",
+   8
+  ],
+  "10": [
+   "terrains",
+   10
+  ],
+  "11": [
+   "animates",
+   19
+  ],
+  "12": [
+   "animates",
+   20
+  ],
+  "13": [
+   "animates",
+   21
+  ],
+  "14": [
+   "animates",
+   22
+  ],
+  "15": [
+   "animates",
+   2
+  ],
+  "16": [
+   "animates",
+   3
+  ],
+  "21": [
+   "items",
+   0
+  ],
+  "22": [
+   "items",
+   1
+  ],
+  "23": [
+   "items",
+   2
+  ],
+  "24": [
+   "items",
+   3
+  ],
+  "25": [
+   "items",
+   4
+  ],
+  "26": [
+   "items",
+   6
+  ],
+  "27": [
+   "items",
+   16
+  ],
+  "28": [
+   "items",
+   17
+  ],
+  "29": [
+   "items",
+   18
+  ],
+  "30": [
+   "items",
+   19
+  ],
+  "31": [
+   "items",
+   20
+  ],
+  "32": [
+   "items",
+   21
+  ],
+  "33": [
+   "items",
+   22
+  ],
+  "34": [
+   "items",
+   23
+  ],
+  "35": [
+   "items",
+   50
+  ],
+  "36": [
+   "items",
+   55
+  ],
+  "37": [
+   "items",
+   51
+  ],
+  "38": [
+   "items",
+   56
+  ],
+  "39": [
+   "items",
+   52
+  ],
+  "40": [
+   "items",
+   57
+  ],
+  "41": [
+   "items",
+   53
+  ],
+  "42": [
+   "items",
+   58
+  ],
+  "43": [
+   "items",
+   54
+  ],
+  "44": [
+   "items",
+   59
+  ],
+  "45": [
+   "items",
+   9
+  ],
+  "46": [
+   "items",
+   12
+  ],
+  "47": [
+   "items",
+   45
+  ],
+  "48": [
+   "items",
+   44
+  ],
+  "49": [
+   "items",
+   43
+  ],
+  "50": [
+   "items",
+   13
+  ],
+  "51": [
+   "items",
+   15
+  ],
+  "52": [
+   "items",
+   14
+  ],
+  "53": [
+   "items",
+   11
+  ],
+  "54": [
+   "items",
+   41
+  ],
+  "55": [
+   "items",
+   40
+  ],
+  "56": [
+   "items",
+   29
+  ],
+  "57": [
+   "items",
+   8
+  ],
+  "58": [
+   "items",
+   24
+  ],
+  "59": [
+   "items",
+   25
+  ],
+  "60": [
+   "items",
+   27
+  ],
+  "61": [
+   "items",
+   28
+  ],
+  "62": [
+   "items",
+   42
+  ],
+  "63": [
+   "items",
+   46
+  ],
+  "64": [
+   "items",
+   47
+  ],
+  "65": [
+   "items",
+   48
+  ],
+  "68": [
+   "items",
+   33
+  ],
+  "69": [
+   "items",
+   49
+  ],
+  "70": [
+   "items",
+   60
+  ],
+  "71": [
+   "items",
+   61
+  ],
+  "72": [
+   "items",
+   30
+  ],
+  "73": [
+   "items",
+   10
+  ],
+  "81": [
+   "animates",
+   4
+  ],
+  "82": [
+   "animates",
+   5
+  ],
+  "83": [
+   "animates",
+   6
+  ],
+  "84": [
+   "animates",
+   7
+  ],
+  "85": [
+   "animates",
+   8
+  ],
+  "86": [
+   "animates",
+   9
+  ],
+  "87": [
+   "terrains",
+   6
+  ],
+  "88": [
+   "terrains",
+   5
+  ],
+  "89": [
+   "animates",
+   17
+  ],
+  "90": [
+   "animates",
+   15
+  ],
+  "91": [
+   "animates",
+   26
+  ],
+  "92": [
+   "animates",
+   24
+  ],
+  "93": [
+   "animates",
+   23
+  ],
+  "94": [
+   "animates",
+   25
+  ],
+  "101": [
+   "animates",
+   13
+  ],
+  "102": [
+   "animates",
+   14
+  ],
+  "103": [
+   "animates",
+   16
+  ],
+  "104": [
+   "animates",
+   18
+  ],
+  "109": [
+   "animates",
+   28
+  ],
+  "121": [
+   "npcs",
+   0
+  ],
+  "122": [
+   "npcs",
+   1
+  ],
+  "123": [
+   "npcs",
+   2
+  ],
+  "124": [
+   "npcs",
+   3
+  ],
+  "125": [
+   "npcs",
+   4
+  ],
+  "126": [
+   "npcs",
+   5
+  ],
+  "127": [
+   "npcs",
+   6
+  ],
+  "128": [
+   "npcs",
+   7
+  ],
+  "129": [
+   "npcs",
+   8
+  ],
+  "130": [
+   "npcs",
+   9
+  ],
+  "131": [
+   "npcs",
+   10
+  ],
+  "132": [
+   "npcs",
+   11
+  ],
+  "161": [
+   "terrains",
+   11
+  ],
+  "162": [
+   "terrains",
+   12
+  ],
+  "163": [
+   "terrains",
+   13
+  ],
+  "164": [
+   "terrains",
+   14
+  ],
+  "165": [
+   "terrains",
+   15
+  ],
+  "166": [
+   "terrains",
+   16
+  ],
+  "167": [
+   "terrains",
+   17
+  ],
+  "168": [
+   "terrains",
+   18
+  ],
+  "169": [
+   "terrains",
+   19
+  ],
+  "170": [
+   "terrains",
+   20
+  ],
+  "181": [
+   "npcs",
+   12
+  ],
+  "182": [
+   "npcs",
+   13
+  ],
+  "183": [
+   "npcs",
+   14
+  ],
+  "184": [
+   "npcs",
+   15
+  ],
+  "185": [
+   "npcs",
+   16
+  ],
+  "186": [
+   "npcs",
+   17
+  ],
+  "187": [
+   "npcs",
+   18
+  ],
+  "188": [
+   "npcs",
+   19
+  ],
+  "189": [
+   "npcs",
+   20
+  ],
+  "190": [
+   "npcs",
+   21
+  ],
+  "191": [
+   "npcs",
+   22
+  ],
+  "192": [
+   "npcs",
+   23
+  ],
+  "193": [
+   "npcs",
+   24
+  ],
+  "194": [
+   "npcs",
+   25
+  ],
+  "195": [
+   "npcs",
+   26
+  ],
+  "196": [
+   "npcs",
+   27
+  ],
+  "201": [
+   "enemys",
+   0
+  ],
+  "202": [
+   "enemys",
+   1
+  ],
+  "203": [
+   "enemys",
+   2
+  ],
+  "204": [
+   "enemys",
+   3
+  ],
+  "205": [
+   "enemys",
+   4
+  ],
+  "206": [
+   "enemys",
+   5
+  ],
+  "207": [
+   "enemys",
+   6
+  ],
+  "208": [
+   "enemys",
+   7
+  ],
+  "209": [
+   "enemys",
+   8
+  ],
+  "210": [
+   "enemys",
+   9
+  ],
+  "211": [
+   "enemys",
+   10
+  ],
+  "212": [
+   "enemys",
+   11
+  ],
+  "213": [
+   "enemys",
+   12
+  ],
+  "214": [
+   "enemys",
+   13
+  ],
+  "215": [
+   "enemys",
+   14
+  ],
+  "216": [
+   "enemys",
+   15
+  ],
+  "217": [
+   "enemys",
+   16
+  ],
+  "218": [
+   "enemys",
+   17
+  ],
+  "219": [
+   "enemys",
+   18
+  ],
+  "220": [
+   "enemys",
+   19
+  ],
+  "221": [
+   "enemys",
+   20
+  ],
+  "222": [
+   "enemys",
+   21
+  ],
+  "223": [
+   "enemys",
+   22
+  ],
+  "224": [
+   "enemys",
+   23
+  ],
+  "225": [
+   "enemys",
+   24
+  ],
+  "226": [
+   "enemys",
+   25
+  ],
+  "227": [
+   "enemys",
+   26
+  ],
+  "228": [
+   "enemys",
+   27
+  ],
+  "229": [
+   "enemys",
+   28
+  ],
+  "230": [
+   "enemys",
+   29
+  ],
+  "231": [
+   "enemys",
+   30
+  ],
+  "232": [
+   "enemys",
+   31
+  ],
+  "233": [
+   "enemys",
+   32
+  ],
+  "234": [
+   "enemys",
+   33
+  ],
+  "235": [
+   "enemys",
+   34
+  ],
+  "236": [
+   "enemys",
+   35
+  ],
+  "237": [
+   "enemys",
+   36
+  ],
+  "238": [
+   "enemys",
+   37
+  ],
+  "239": [
+   "enemys",
+   38
+  ],
+  "240": [
+   "enemys",
+   39
+  ],
+  "241": [
+   "enemys",
+   40
+  ],
+  "242": [
+   "enemys",
+   41
+  ],
+  "243": [
+   "enemys",
+   42
+  ],
+  "244": [
+   "enemys",
+   43
+  ],
+  "245": [
+   "enemys",
+   44
+  ],
+  "246": [
+   "enemys",
+   45
+  ],
+  "247": [
+   "enemys",
+   46
+  ],
+  "248": [
+   "enemys",
+   47
+  ],
+  "249": [
+   "enemys",
+   48
+  ],
+  "250": [
+   "enemys",
+   49
+  ],
+  "251": [
+   "enemys",
+   50
+  ],
+  "252": [
+   "enemys",
+   51
+  ],
+  "253": [
+   "enemys",
+   52
+  ],
+  "254": [
+   "enemys",
+   53
+  ],
+  "255": [
+   "enemys",
+   54
+  ],
+  "256": [
+   "enemys",
+   55
+  ],
+  "257": [
+   "enemys",
+   56
+  ],
+  "258": [
+   "enemys",
+   57
+  ],
+  "259": [
+   "enemys",
+   58
+  ],
+  "260": [
+   "enemys",
+   59
+  ],
+  "270": [
+   "enemys",
+   59
+  ],
+  "279": [
+   "enemys",
+   52
+  ],
+  "300": [
+   "terrains",
+   0
+  ],
+  "301": [
+   "terrains",
+   21
+  ],
+  "302": [
+   "terrains",
+   22
+  ],
+  "303": [
+   "terrains",
+   23
+  ],
+  "304": [
+   "terrains",
+   24
+  ],
+  "305": [
+   "terrains",
+   1
+  ],
+  "306": [
+   "terrains",
+   25
+  ],
+  "307": [
+   "terrains",
+   26
+  ],
+  "308": [
+   "terrains",
+   2
+  ],
+  "309": [
+   "terrains",
+   27
+  ],
+  "310": [
+   "terrains",
+   28
+  ],
+  "311": [
+   "terrains",
+   3
+  ],
+  "312": [
+   "terrains",
+   29
+  ],
+  "313": [
+   "terrains",
+   4
+  ],
+  "314": [
+   "terrains",
+   30
+  ],
+  "315": [
+   "terrains",
+   31
+  ],
+  "316": [
+   "terrains",
+   32
+  ],
+  "317": [
+   "terrains",
+   33
+  ],
+  "318": [
+   "terrains",
+   34
+  ],
+  "331": [
+   "npcs",
+   28
+  ],
+  "332": [
+   "items",
+   5
+  ],
+  "333": [
+   "items",
+   7
+  ],
+  "334": [
+   "items",
+   26
+  ],
+  "335": [
+   "items",
+   31
+  ],
+  "336": [
+   "items",
+   32
+  ],
+  "337": [
+   "items",
+   34
+  ],
+  "338": [
+   "items",
+   35
+  ],
+  "339": [
+   "items",
+   36
+  ],
+  "340": [
+   "items",
+   37
+  ],
+  "341": [
+   "items",
+   38
+  ],
+  "342": [
+   "items",
+   39
+  ],
+  "299": [
+   "enemys",
+   56
+  ]
+ },
+ "names": {
+  "Boss": [
+   "enemys",
+   56
+  ],
+  "greenSlime": [
+   "enemys",
+   0
+  ],
+  "Green Slime": [
+   "enemys",
+   0
+  ],
+  "redSlime": [
+   "enemys",
+   1
+  ],
+  "Red Slime": [
+   "enemys",
+   1
+  ],
+  "blackSlime": [
+   "enemys",
+   2
+  ],
+  "Black Slime": [
+   "enemys",
+   2
+  ],
+  "slimelord": [
+   "enemys",
+   3
+  ],
+  "Slime Lord": [
+   "enemys",
+   3
+  ],
+  "bat": [
+   "enemys",
+   4
+  ],
+  "Bat": [
+   "enemys",
+   4
+  ],
+  "bigBat": [
+   "enemys",
+   5
+  ],
+  "Big Bat": [
+   "enemys",
+   5
+  ],
+  "redBat": [
+   "enemys",
+   6
+  ],
+  "Red Bat": [
+   "enemys",
+   6
+  ],
+  "vampire": [
+   "enemys",
+   7
+  ],
+  "Nether Demon King": [
+   "enemys",
+   7
+  ],
+  "skeleton": [
+   "enemys",
+   8
+  ],
+  "Skeleton": [
+   "enemys",
+   8
+  ],
+  "skeletonSoilder": [
+   "enemys",
+   9
+  ],
+  "Skeleton Soldier": [
+   "enemys",
+   9
+  ],
+  "skeletonCaptain": [
+   "enemys",
+   10
+  ],
+  "Skeleton Captain": [
+   "enemys",
+   10
+  ],
+  "ghostSkeleton": [
+   "enemys",
+   11
+  ],
+  "Nether Captain": [
+   "enemys",
+   11
+  ],
+  "zombie": [
+   "enemys",
+   12
+  ],
+  "Beast-Man": [
+   "enemys",
+   12
+  ],
+  "zombieKnight": [
+   "enemys",
+   13
+  ],
+  "Beast Warrior": [
+   "enemys",
+   13
+  ],
+  "rock": [
+   "enemys",
+   14
+  ],
+  "Rock Man": [
+   "enemys",
+   14
+  ],
+  "slimeMan": [
+   "enemys",
+   15
+  ],
+  "Shadow Warrior": [
+   "enemys",
+   15
+  ],
+  "bluePriest": [
+   "enemys",
+   16
+  ],
+  "Junior Mage": [
+   "enemys",
+   16
+  ],
+  "redPriest": [
+   "enemys",
+   17
+  ],
+  "Senior Mage": [
+   "enemys",
+   17
+  ],
+  "brownWizard": [
+   "enemys",
+   18
+  ],
+  "Hemp-Robe Mage": [
+   "enemys",
+   18
+  ],
+  "redWizard": [
+   "enemys",
+   19
+  ],
+  "Red-Robe Mage": [
+   "enemys",
+   19
+  ],
+  "yellowGuard": [
+   "enemys",
+   20
+  ],
+  "Junior Guard": [
+   "enemys",
+   20
+  ],
+  "blueGuard": [
+   "enemys",
+   21
+  ],
+  "Mid Guard": [
+   "enemys",
+   21
+  ],
+  "redGuard": [
+   "enemys",
+   22
+  ],
+  "Senior Guard": [
+   "enemys",
+   22
+  ],
+  "swordsman": [
+   "enemys",
+   23
+  ],
+  "Two-Hand Swordsman": [
+   "enemys",
+   23
+  ],
+  "soldier": [
+   "enemys",
+   24
+  ],
+  "Nether Warrior": [
+   "enemys",
+   24
+  ],
+  "yellowKnight": [
+   "enemys",
+   25
+  ],
+  "Gold Sentinel": [
+   "enemys",
+   25
+  ],
+  "redKnight": [
+   "enemys",
+   26
+  ],
+  "Gold Captain": [
+   "enemys",
+   26
+  ],
+  "darkKnight": [
+   "enemys",
+   27
+  ],
+  "Spirit Warrior": [
+   "enemys",
+   27
+  ],
+  "blackKing": [
+   "enemys",
+   28
+  ],
+  "Black Demon King": [
+   "enemys",
+   28
+  ],
+  "yellowKing": [
+   "enemys",
+   29
+  ],
+  "Yellow Demon King": [
+   "enemys",
+   29
+  ],
+  "greenKing": [
+   "enemys",
+   30
+  ],
+  "Green Demon King": [
+   "enemys",
+   30
+  ],
+  "blueKnight": [
+   "enemys",
+   31
+  ],
+  "Blue Knight": [
+   "enemys",
+   31
+  ],
+  "goldSlime": [
+   "enemys",
+   32
+  ],
+  "Gold Slime": [
+   "enemys",
+   32
+  ],
+  "poisonSkeleton": [
+   "enemys",
+   33
+  ],
+  "Purple Skeleton": [
+   "enemys",
+   33
+  ],
+  "poisonBat": [
+   "enemys",
+   34
+  ],
+  "Purple Bat": [
+   "enemys",
+   34
+  ],
+  "steelRock": [
+   "enemys",
+   35
+  ],
+  "Steel Rock": [
+   "enemys",
+   35
+  ],
+  "skeletonPriest": [
+   "enemys",
+   36
+  ],
+  "Skeleton Priest": [
+   "enemys",
+   36
+  ],
+  "skeletonKing": [
+   "enemys",
+   37
+  ],
+  "Skeleton King": [
+   "enemys",
+   37
+  ],
+  "skeletonWizard": [
+   "enemys",
+   38
+  ],
+  "Skeleton Wizard": [
+   "enemys",
+   38
+  ],
+  "redSkeletonCaption": [
+   "enemys",
+   39
+  ],
+  "Red Skeleton Captain": [
+   "enemys",
+   39
+  ],
+  "badHero": [
+   "enemys",
+   40
+  ],
+  "Fallen Hero": [
+   "enemys",
+   40
+  ],
+  "demon": [
+   "enemys",
+   41
+  ],
+  "Demon": [
+   "enemys",
+   41
+  ],
+  "demonPriest": [
+   "enemys",
+   42
+  ],
+  "Demon Priest": [
+   "enemys",
+   42
+  ],
+  "goldHornSlime": [
+   "enemys",
+   43
+  ],
+  "Gold-Horn Slime": [
+   "enemys",
+   43
+  ],
+  "redKing": [
+   "enemys",
+   44
+  ],
+  "Red Demon King": [
+   "enemys",
+   44
+  ],
+  "whiteKing": [
+   "enemys",
+   45
+  ],
+  "White Warrior": [
+   "enemys",
+   45
+  ],
+  "blackMagician": [
+   "enemys",
+   46
+  ],
+  "Spirit Mage": [
+   "enemys",
+   46
+  ],
+  "silverSlime": [
+   "enemys",
+   47
+  ],
+  "Silver Slime": [
+   "enemys",
+   47
+  ],
+  "swordEmperor": [
+   "enemys",
+   48
+  ],
+  "Sword Emperor": [
+   "enemys",
+   48
+  ],
+  "whiteHornSlime": [
+   "enemys",
+   49
+  ],
+  "White-Horn Slime": [
+   "enemys",
+   49
+  ],
+  "badPrincess": [
+   "enemys",
+   50
+  ],
+  "Witch of Agony": [
+   "enemys",
+   50
+  ],
+  "badFairy": [
+   "enemys",
+   51
+  ],
+  "Dark Fairy": [
+   "enemys",
+   51
+  ],
+  "grayPriest": [
+   "enemys",
+   52
+  ],
+  "Gray Priest": [
+   "enemys",
+   52
+  ],
+  "redSwordsman": [
+   "enemys",
+   53
+  ],
+  "Sword King": [
+   "enemys",
+   53
+  ],
+  "whiteGhost": [
+   "enemys",
+   54
+  ],
+  "White Ghost": [
+   "enemys",
+   54
+  ],
+  "poisonZombie": [
+   "enemys",
+   55
+  ],
+  "Green Beast-Man": [
+   "enemys",
+   55
+  ],
+  "magicDragon": [
+   "enemys",
+   56
+  ],
+  "Magic Dragon": [
+   "enemys",
+   56
+  ],
+  "octopus": [
+   "enemys",
+   57
+  ],
+  "Blood Shadow": [
+   "enemys",
+   57
+  ],
+  "darkFairy": [
+   "enemys",
+   58
+  ],
+  "Shadow Fairy": [
+   "enemys",
+   58
+  ],
+  "greenKnight": [
+   "enemys",
+   59
+  ],
+  "Green Knight": [
+   "enemys",
+   59
+  ],
+  "yellowKey": [
+   "items",
+   0
+  ],
+  "Yellow Key": [
+   "items",
+   0
+  ],
+  "blueKey": [
+   "items",
+   1
+  ],
+  "Blue Key": [
+   "items",
+   1
+  ],
+  "redKey": [
+   "items",
+   2
+  ],
+  "Red Key": [
+   "items",
+   2
+  ],
+  "greenKey": [
+   "items",
+   3
+  ],
+  "steelKey": [
+   "items",
+   4
+  ],
+  "bigKey": [
+   "items",
+   6
+  ],
+  "redGem": [
+   "items",
+   16
+  ],
+  "Red Gem": [
+   "items",
+   16
+  ],
+  "blueGem": [
+   "items",
+   17
+  ],
+  "Blue Gem": [
+   "items",
+   17
+  ],
+  "greenGem": [
+   "items",
+   18
+  ],
+  "Green Gem": [
+   "items",
+   18
+  ],
+  "yellowGem": [
+   "items",
+   19
+  ],
+  "redPotion": [
+   "items",
+   20
+  ],
+  "Red Potion": [
+   "items",
+   20
+  ],
+  "bluePotion": [
+   "items",
+   21
+  ],
+  "Blue Potion": [
+   "items",
+   21
+  ],
+  "greenPotion": [
+   "items",
+   22
+  ],
+  "Green Potion": [
+   "items",
+   22
+  ],
+  "yellowPotion": [
+   "items",
+   23
+  ],
+  "Yellow Potion": [
+   "items",
+   23
+  ],
+  "lifeWand": [
+   "items",
+   33
+  ],
+  "sword0": [
+   "items",
+   60
+  ],
+  "sword1": [
+   "items",
+   50
+  ],
+  "Iron Sword": [
+   "items",
+   50
+  ],
+  "sword2": [
+   "items",
+   51
+  ],
+  "Steel Sword": [
+   "items",
+   51
+  ],
+  "sword3": [
+   "items",
+   52
+  ],
+  "Knight Sword": [
+   "items",
+   52
+  ],
+  "sword4": [
+   "items",
+   53
+  ],
+  "Holy Sword": [
+   "items",
+   53
+  ],
+  "sword5": [
+   "items",
+   54
+  ],
+  "Divine Sword": [
+   "items",
+   54
+  ],
+  "shield0": [
+   "items",
+   61
+  ],
+  "shield1": [
+   "items",
+   55
+  ],
+  "Iron Shield": [
+   "items",
+   55
+  ],
+  "shield2": [
+   "items",
+   56
+  ],
+  "Silver Shield": [
+   "items",
+   56
+  ],
+  "shield3": [
+   "items",
+   57
+  ],
+  "Knight Shield": [
+   "items",
+   57
+  ],
+  "shield4": [
+   "items",
+   58
+  ],
+  "Holy Shield": [
+   "items",
+   58
+  ],
+  "shield5": [
+   "items",
+   59
+  ],
+  "Divine Shield": [
+   "items",
+   59
+  ],
+  "book": [
+   "items",
+   9
+  ],
+  "Monster Handbook": [
+   "items",
+   9
+  ],
+  "fly": [
+   "items",
+   12
+  ],
+  "Floor Transporter": [
+   "items",
+   12
+  ],
+  "pickaxe": [
+   "items",
+   45
+  ],
+  "icePickaxe": [
+   "items",
+   44
+  ],
+  "bomb": [
+   "items",
+   43
+  ],
+  "centerFly": [
+   "items",
+   13
+  ],
+  "upFly": [
+   "items",
+   15
+  ],
+  "downFly": [
+   "items",
+   14
+  ],
+  "coin": [
+   "items",
+   11
+  ],
+  "Lucky Coin": [
+   "items",
+   11
+  ],
+  "freezeBadge": [
+   "items",
+   41
+  ],
+  "cross": [
+   "items",
+   40
+  ],
+  "Cross": [
+   "items",
+   40
+  ],
+  "superPotion": [
+   "items",
+   29
+  ],
+  "earthquake": [
+   "items",
+   8
+  ],
+  "poisonWine": [
+   "items",
+   24
+  ],
+  "weakWine": [
+   "items",
+   25
+  ],
+  "curseWine": [
+   "items",
+   27
+  ],
+  "superWine": [
+   "items",
+   28
+  ],
+  "dagger": [
+   "items",
+   42
+  ],
+  "amulet": [
+   "items",
+   47
+  ],
+  "hammer": [
+   "items",
+   48
+  ],
+  "jumpShoes": [
+   "items",
+   49
+  ],
+  "skill1": [
+   "items",
+   30
+  ],
+  "wand": [
+   "items",
+   10
+  ],
+  "pack": [
+   "items",
+   46
+  ],
+  "Money Bag": [
+   "items",
+   46
+  ],
+  "I332": [
+   "items",
+   5
+  ],
+  "I333": [
+   "items",
+   7
+  ],
+  "I334": [
+   "items",
+   26
+  ],
+  "I335": [
+   "items",
+   31
+  ],
+  "I336": [
+   "items",
+   32
+  ],
+  "I337": [
+   "items",
+   34
+  ],
+  "I338": [
+   "items",
+   35
+  ],
+  "I339": [
+   "items",
+   36
+  ],
+  "I340": [
+   "items",
+   37
+  ],
+  "I341": [
+   "items",
+   38
+  ],
+  "I342": [
+   "items",
+   39
+  ],
+  "man": [
+   "npcs",
+   0
+  ],
+  "trader": [
+   "npcs",
+   1
+  ],
+  "thief": [
+   "npcs",
+   2
+  ],
+  "fairy": [
+   "npcs",
+   3
+  ],
+  "wizard": [
+   "npcs",
+   4
+  ],
+  "recluse": [
+   "npcs",
+   5
+  ],
+  "king": [
+   "npcs",
+   6
+  ],
+  "youngMan": [
+   "npcs",
+   7
+  ],
+  "sign": [
+   "npcs",
+   8
+  ],
+  "expShop": [
+   "npcs",
+   9
+  ],
+  "moneyShop": [
+   "npcs",
+   10
+  ],
+  "princess": [
+   "npcs",
+   11
+  ],
+  "wlt": [
+   "npcs",
+   12
+  ],
+  "wt": [
+   "npcs",
+   13
+  ],
+  "wrt": [
+   "npcs",
+   14
+  ],
+  "wl": [
+   "npcs",
+   15
+  ],
+  "wc": [
+   "npcs",
+   16
+  ],
+  "wr": [
+   "npcs",
+   17
+  ],
+  "wlb": [
+   "npcs",
+   18
+  ],
+  "wrb": [
+   "npcs",
+   19
+  ],
+  "dlt": [
+   "npcs",
+   20
+  ],
+  "dt": [
+   "npcs",
+   21
+  ],
+  "drt": [
+   "npcs",
+   22
+  ],
+  "dl": [
+   "npcs",
+   23
+  ],
+  "dc": [
+   "npcs",
+   24
+  ],
+  "dr": [
+   "npcs",
+   25
+  ],
+  "dlb": [
+   "npcs",
+   26
+  ],
+  "drb": [
+   "npcs",
+   27
+  ],
+  "N331": [
+   "npcs",
+   28
+  ]
+ },
+ "hero": {
+  "sheet": "hero",
+  "rows": 4,
+  "cols": 4,
+  "down": 0,
+  "stop": 0
+ },
+ "doors": {
+  "Y": [
+   "animates",
+   4
+  ],
+  "B": [
+   "animates",
+   5
+  ],
+  "R": [
+   "animates",
+   6
+  ]
+ },
+ "stairs": {
+  "up": [
+   "terrains",
+   6
+  ],
+  "down": [
+   "terrains",
+   5
+  ]
+ },
+ "wall": [
+  "animates",
+  10
+ ]
+}

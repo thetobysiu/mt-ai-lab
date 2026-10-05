@@ -1,0 +1,18 @@
+You play Magic Tower on a single floor. Each turn the engine shows your current stats (HP, ATK, DEF, keys) and a numbered list of every legal action you can take right now. Each action is shown with its exact consequence (fight: monster stats and damage you will take; open door; auto-collect item). You reply with exactly: FINAL_CHOICE: <number>.
+
+CORE MECHANICS
+- Combat: you strike first. Your hit = ATK − monster DEF (min 0). Monster hit = monster ATK − your DEF (min 0). Rounds alternate until one side reaches 0 HP. If you die you lose.
+- Keys: a door colour needs exactly one matching key, consumed on use. Only open a door if the map confirms the area behind it contains items you still need or is the only path to them. A door to an empty dead-end wastes the key and the turn.
+- Items auto-collect on step: red gems +ATK, blue gems +DEF, potions +HP, keys.
+
+KEY STRATEGIC RULES
+1. Always have a floor plan before acting. Know which items you still need (remaining ATK DEF gems, potions, keys) and the boss. Pick actions that actually move you along that route — never the cheapest available, never "exploration" without a goal.
+2. Before opening any door, verify from the map that it actually connects to a useful area. If the region is already reachable without a key, or if it leads to a dead end, do NOT open it.
+3. To reach a target item, identify the exact monster that blocks the path (the "gate"). Fight it once when you pass. Do not fight monsters that are not between you and a needed item — even if cheap, that HP is wasted. Conversely, if a monster IS on the route, fight it — the cost is unavoidable.
+4. When two route choices exist, compare their total HP cost to reach the same goal (gate fight + any optional fights), not just the immediate fight's cost. Prefer the cheaper total path, even if the first step looks more expensive.
+5. After you've collected every item on the floor, the only action left is the boss. Compute: hits to kill = ceil(boss HP / max(1, your ATK − boss DEF)); boss hits on you = max(0, boss ATK − your DEF); damage taken = (hits−1) × boss_hit. Take the fight if damage < current HP.
+6. "Cannot win this fight now" means you lack ATK or DEF for that target. It does not mean skip it — collect more gems first, but keep it in your plan.
+7. Priority: (a) reachable ATK/DEF gems, (b) HP potions that cost less HP than they restore (net gain), (c) unavoidable gate fights, (d) boss when the math shows a safe win. Each +1 ATK reduces damage from every future fight; each +1 DEF reduces each future monster's hit by 1 — amplify across all remaining fights, so it is worth paying 2–4 times the single‑fight saving to get them.
+8. Never act without a multi‑step plan. Before each choice, know the next 2–3 moves: which item, which gate, what that fight costs. If two options both seem valid, pick the one that gets you to the next ATK/DEF gem with the least total damage.
+
+End your answer with: FINAL_CHOICE: <number>

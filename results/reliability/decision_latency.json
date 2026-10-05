@@ -1,0 +1,82 @@
+{
+ "prompt": {
+  "log": "20260923_165759_089758_simple_llm.json",
+  "turn": 4,
+  "n_actions": 7,
+  "system_chars": 5775,
+  "user_chars": 4385,
+  "thinking_cap": 8192,
+  "episode_choice": "Open yellow door at (4,7)"
+ },
+ "rows": [
+  {
+   "preset": "qwen3.5-397b",
+   "model": "qwen3.5-397b-a17b",
+   "mode": "thinking",
+   "n": 2,
+   "seconds_median": 16.0,
+   "seconds_min": 12.5,
+   "seconds_max": 19.5,
+   "reasoning_chars_median": 2594.0,
+   "parsed": 2,
+   "truncated": 0,
+   "choices": [
+    3,
+    3
+   ],
+   "errors": []
+  },
+  {
+   "preset": "qwen3.6-35b",
+   "model": "qwen3.6-35b-a3b",
+   "mode": "thinking",
+   "n": 2,
+   "seconds_median": 13.05,
+   "seconds_min": 11.7,
+   "seconds_max": 14.4,
+   "reasoning_chars_median": 6098.0,
+   "parsed": 2,
+   "truncated": 0,
+   "choices": [
+    1,
+    1
+   ],
+   "errors": []
+  },
+  {
+   "preset": "qwen3.8-27b",
+   "model": "qwen3.8-27b",
+   "mode": "thinking",
+   "n": 2,
+   "seconds_median": 68.1,
+   "seconds_min": 37.1,
+   "seconds_max": 99.1,
+   "reasoning_chars_median": 6560.5,
+   "parsed": 2,
+   "truncated": 0,
+   "choices": [
+    1,
+    1
+   ],
+   "errors": []
+  },
+  {
+   "preset": "glm-5.3-flash",
+   "model": "glm-5.3-flash",
+   "mode": "instruct",
+   "n": 2,
+   "seconds_median": 20.3,
+   "seconds_min": 17.6,
+   "seconds_max": 23.0,
+   "reasoning_chars_median": 5529.5,
+   "parsed": 1,
+   "truncated": 1,
+   "choices": [
+    null,
+    1
+   ],
+   "errors": []
+  }
+ ],
+ "timestamp": "2026-09-24 00:11"
+}

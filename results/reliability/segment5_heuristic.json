@@ -1,0 +1,95 @@
+{
+  "label": "segment5_heuristic",
+  "config": {
+    "floor": null,
+    "start": "MT13",
+    "end": "MT16",
+    "max_turns": 800,
+    "checkpoint": 5,
+    "hero_override": {
+      "hp": 55,
+      "atk": 696,
+      "def": 625,
+      "money": 78,
+      "exp": 2314,
+      "yellow": 3,
+      "blue": 1,
+      "red": 3
+    },
+    "prompt_file": "none",
+    "prompt_chars": 0,
+    "model": "heuristic",
+    "task_mode": "-",
+    "preset": "heuristic",
+    "mode": "heuristic",
+    "temperature": 0.0,
+    "lookahead": 3,
+    "structured_output": true,
+    "overrides_disabled": false
+  },
+  "runs": [
+    {
+      "score": 0.1797,
+      "success": false,
+      "died": false,
+      "floors_reached": 1,
+      "max_floor_id": "MT14",
+      "total_floors": 4,
+      "final_floor_id": "MT14",
+      "failure_reason": "No actions available",
+      "final_hp": 65,
+      "hero_atk": 875,
+      "hero_def": 1025,
+      "keys": {
+        "yellow": 1,
+        "blue": 0,
+        "red": 2
+      },
+      "money": 1028,
+      "exp": 79,
+      "turns": 63,
+      "llm_calls": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "run_log": null,
+      "floor_transitions": [
+        {
+          "from": "MT13",
+          "to": "MT14",
+          "hero_hp": 65,
+          "turn": 63
+        }
+      ],
+      "elapsed_s": 1.7,
+      "timestamp": "2026-09-22T10:48:08",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.1797,
+    "score_sd": 0.0,
+    "score_min": 0.1797,
+    "score_max": 0.1797,
+    "final_hp_mean": 65.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 0,
+    "seconds_per_call": null,
+    "parse_error_rate": null,
+    "elapsed_s_total": 1.7,
+    "floors_reached_mean": 1.0,
+    "floors_reached_max": 1
+  },
+  "updated": "2026-09-22 10:48"
+}

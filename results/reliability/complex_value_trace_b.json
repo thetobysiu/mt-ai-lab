@@ -1,0 +1,3270 @@
+{
+ "complex_qwen3.5-397b_canon#1": {
+  "label": "complex_qwen3.5-397b_canon",
+  "run": 1,
+  "success": false,
+  "died": false,
+  "final_hp": 138,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Slime at (11,8) dmg=103",
+   "forced": false,
+   "hp": 852,
+   "v_before": 30,
+   "v_after": null,
+   "regret": 30
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Fight Green Slime at (8,12) dmg=120",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 4,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 30,
+    "regret": 38
+   },
+   {
+    "turn": 7,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Slime at (11,8) dmg=103",
+    "forced": false,
+    "hp": 852,
+    "v_before": 30,
+    "v_after": null,
+    "regret": 30
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 852,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 927,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Black Slime at (12,9) dmg=153",
+    "forced": false,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 849,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Red Bat at (4,11) dmg=303",
+    "forced": false,
+    "hp": 546,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Collect Blue Gem (+1 DEF) at (3,12)",
+    "forced": true,
+    "hp": 546,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Collect Blue Gem (+1 DEF) at (4,12)",
+    "forced": true,
+    "hp": 546,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Fight Green Slime at (10,6) dmg=49",
+    "forced": false,
+    "hp": 497,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Open yellow door at (10,5)",
+    "forced": false,
+    "hp": 497,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 572,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Fight Bat at (11,4) dmg=235",
+    "forced": false,
+    "hp": 337,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 412,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 412,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Fight Red Slime at (9,3) dmg=55",
+    "forced": false,
+    "hp": 357,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Open blue door at (12,2)",
+    "forced": false,
+    "hp": 357,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 357,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 432,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Fight Red Slime at (11,0) dmg=50",
+    "forced": false,
+    "hp": 382,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 382,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 457,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Fight Big Bat at (12,12) dmg=211",
+    "forced": false,
+    "hp": 246,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 32,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 446,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 33,
+    "action": "Fight Slime Lord at (3,10) dmg=230",
+    "forced": false,
+    "hp": 216,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 34,
+    "action": "Fight Black Slime at (2,9) dmg=136",
+    "forced": false,
+    "hp": 80,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 35,
+    "action": "Collect Blue Gem (+1 DEF) at (1,9)",
+    "forced": true,
+    "hp": 80,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 36,
+    "action": "Collect Red Potion (+75 HP) at (1,7)",
+    "forced": true,
+    "hp": 155,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 37,
+    "action": "Fight Green Slime at (3,8) dmg=17",
+    "forced": false,
+    "hp": 138,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ },
+ "complex_qwen3.5-397b_canon#2": {
+  "label": "complex_qwen3.5-397b_canon",
+  "run": 2,
+  "success": false,
+  "died": false,
+  "final_hp": 129,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Bat at (4,11) dmg=310",
+   "forced": false,
+   "hp": 657,
+   "v_before": 42,
+   "v_after": null,
+   "regret": 42
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 42,
+    "regret": 26
+   },
+   {
+    "turn": 4,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 1075,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 1075,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Fight Green Slime at (8,12) dmg=108",
+    "forced": false,
+    "hp": 967,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 7,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 967,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 967,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Bat at (4,11) dmg=310",
+    "forced": false,
+    "hp": 657,
+    "v_before": 42,
+    "v_after": null,
+    "regret": 42
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (3,12)",
+    "forced": true,
+    "hp": 657,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Blue Gem (+1 DEF) at (4,12)",
+    "forced": true,
+    "hp": 657,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Red Slime at (11,8) dmg=79",
+    "forced": false,
+    "hp": 578,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 578,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 653,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Black Slime at (12,9) dmg=147",
+    "forced": false,
+    "hp": 506,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 506,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 581,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Fight Green Slime at (10,6) dmg=49",
+    "forced": false,
+    "hp": 532,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Fight Slime Lord at (3,10) dmg=235",
+    "forced": false,
+    "hp": 297,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Fight Green Slime at (3,8) dmg=49",
+    "forced": false,
+    "hp": 248,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Collect Red Potion (+75 HP) at (1,7)",
+    "forced": true,
+    "hp": 323,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Fight Slime Lord at (10,10) dmg=235",
+    "forced": false,
+    "hp": 88,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 288,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Open yellow door at (10,5)",
+    "forced": false,
+    "hp": 288,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 363,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Fight Bat at (11,4) dmg=235",
+    "forced": false,
+    "hp": 128,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 203,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 203,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Open blue door at (12,2)",
+    "forced": false,
+    "hp": 203,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 203,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 278,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 32,
+    "action": "Fight Red Slime at (11,0) dmg=50",
+    "forced": false,
+    "hp": 228,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 33,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 228,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 34,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 303,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 35,
+    "action": "Fight Red Slime at (9,3) dmg=38",
+    "forced": false,
+    "hp": 265,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 36,
+    "action": "Fight Black Slime at (2,9) dmg=136",
+    "forced": false,
+    "hp": 129,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 37,
+    "action": "Collect Blue Gem (+1 DEF) at (1,9)",
+    "forced": true,
+    "hp": 129,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ },
+ "complex_qwen3.5-397b_canon#3": {
+  "label": "complex_qwen3.5-397b_canon",
+  "run": 3,
+  "success": false,
+  "died": false,
+  "final_hp": 14,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Slime at (11,8) dmg=103",
+   "forced": false,
+   "hp": 852,
+   "v_before": 30,
+   "v_after": null,
+   "regret": 30
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Fight Green Slime at (8,12) dmg=120",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 4,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 30,
+    "regret": 38
+   },
+   {
+    "turn": 7,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Slime at (11,8) dmg=103",
+    "forced": false,
+    "hp": 852,
+    "v_before": 30,
+    "v_after": null,
+    "regret": 30
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 852,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 927,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Black Slime at (12,9) dmg=153",
+    "forced": false,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 849,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Green Slime at (10,6) dmg=67",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Open yellow door at (8,4)",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Fight Red Slime at (9,3) dmg=91",
+    "forced": false,
+    "hp": 691,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 766,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Fight Slime Lord at (10,10) dmg=235",
+    "forced": false,
+    "hp": 531,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 731,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Fight Bat at (8,2) dmg=259",
+    "forced": false,
+    "hp": 472,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Open blue door at (6,2)",
+    "forced": false,
+    "hp": 472,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Collect Red Gem (+1 ATK) at (6,1)",
+    "forced": true,
+    "hp": 472,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Fight Big Bat at (9,1) dmg=226",
+    "forced": false,
+    "hp": 246,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 246,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 321,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Fight Red Slime at (11,0) dmg=58",
+    "forced": false,
+    "hp": 263,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 338,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 338,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Fight Bat at (11,4) dmg=200",
+    "forced": false,
+    "hp": 138,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 213,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 32,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 213,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 33,
+    "action": "Fight Big Bat at (12,12) dmg=199",
+    "forced": false,
+    "hp": 14,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ },
+ "complex_qwen3.5-397b_canon#4": {
+  "label": "complex_qwen3.5-397b_canon",
+  "run": 4,
+  "success": false,
+  "died": false,
+  "final_hp": 111,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Slime at (11,8) dmg=103",
+   "forced": false,
+   "hp": 864,
+   "v_before": 42,
+   "v_after": null,
+   "regret": 42
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 42,
+    "regret": 26
+   },
+   {
+    "turn": 4,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 1075,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 1075,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Fight Green Slime at (8,12) dmg=108",
+    "forced": false,
+    "hp": 967,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 7,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 967,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 967,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Slime at (11,8) dmg=103",
+    "forced": false,
+    "hp": 864,
+    "v_before": 42,
+    "v_after": null,
+    "regret": 42
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 864,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 939,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Red Bat at (4,11) dmg=303",
+    "forced": false,
+    "hp": 636,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Blue Gem (+1 DEF) at (3,12)",
+    "forced": true,
+    "hp": 636,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Blue Gem (+1 DEF) at (4,12)",
+    "forced": true,
+    "hp": 636,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Black Slime at (12,9) dmg=147",
+    "forced": false,
+    "hp": 489,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 489,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 564,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Fight Green Slime at (10,6) dmg=49",
+    "forced": false,
+    "hp": 515,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Fight Slime Lord at (10,10) dmg=235",
+    "forced": false,
+    "hp": 280,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 480,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Open yellow door at (10,5)",
+    "forced": false,
+    "hp": 480,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 555,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Fight Red Slime at (9,3) dmg=67",
+    "forced": false,
+    "hp": 488,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Fight Bat at (11,4) dmg=235",
+    "forced": false,
+    "hp": 253,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 328,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 328,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Open blue door at (12,2)",
+    "forced": false,
+    "hp": 328,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 328,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 403,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Fight Red Slime at (11,0) dmg=50",
+    "forced": false,
+    "hp": 353,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 353,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 32,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 428,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 33,
+    "action": "Fight Slime Lord at (3,10) dmg=230",
+    "forced": false,
+    "hp": 198,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 34,
+    "action": "Fight Green Slime at (3,8) dmg=26",
+    "forced": false,
+    "hp": 172,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 35,
+    "action": "Collect Red Potion (+75 HP) at (1,7)",
+    "forced": true,
+    "hp": 247,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 36,
+    "action": "Fight Black Slime at (2,9) dmg=136",
+    "forced": false,
+    "hp": 111,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 37,
+    "action": "Collect Blue Gem (+1 DEF) at (1,9)",
+    "forced": true,
+    "hp": 111,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ },
+ "complex_qwen3.5-397b_canon#5": {
+  "label": "complex_qwen3.5-397b_canon",
+  "run": 5,
+  "success": false,
+  "died": false,
+  "final_hp": 111,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Slime at (11,8) dmg=103",
+   "forced": false,
+   "hp": 864,
+   "v_before": 42,
+   "v_after": null,
+   "regret": 42
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 42,
+    "regret": 26
+   },
+   {
+    "turn": 4,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 1075,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 1075,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Fight Green Slime at (8,12) dmg=108",
+    "forced": false,
+    "hp": 967,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 7,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 967,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 967,
+    "v_before": 42,
+    "v_after": 42,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Slime at (11,8) dmg=103",
+    "forced": false,
+    "hp": 864,
+    "v_before": 42,
+    "v_after": null,
+    "regret": 42
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 864,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 939,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Red Bat at (4,11) dmg=303",
+    "forced": false,
+    "hp": 636,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Blue Gem (+1 DEF) at (3,12)",
+    "forced": true,
+    "hp": 636,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Blue Gem (+1 DEF) at (4,12)",
+    "forced": true,
+    "hp": 636,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Black Slime at (12,9) dmg=147",
+    "forced": false,
+    "hp": 489,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 489,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 564,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Fight Slime Lord at (10,10) dmg=235",
+    "forced": false,
+    "hp": 329,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 529,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Fight Green Slime at (10,6) dmg=49",
+    "forced": false,
+    "hp": 480,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Open yellow door at (10,5)",
+    "forced": false,
+    "hp": 480,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 555,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Fight Red Slime at (9,3) dmg=67",
+    "forced": false,
+    "hp": 488,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Fight Bat at (11,4) dmg=235",
+    "forced": false,
+    "hp": 253,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 328,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 328,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Open blue door at (12,2)",
+    "forced": false,
+    "hp": 328,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 328,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 403,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Fight Red Slime at (11,0) dmg=50",
+    "forced": false,
+    "hp": 353,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 353,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 32,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 428,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 33,
+    "action": "Fight Slime Lord at (3,10) dmg=230",
+    "forced": false,
+    "hp": 198,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 34,
+    "action": "Fight Green Slime at (3,8) dmg=26",
+    "forced": false,
+    "hp": 172,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 35,
+    "action": "Collect Red Potion (+75 HP) at (1,7)",
+    "forced": true,
+    "hp": 247,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 36,
+    "action": "Fight Black Slime at (2,9) dmg=136",
+    "forced": false,
+    "hp": 111,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 37,
+    "action": "Collect Blue Gem (+1 DEF) at (1,9)",
+    "forced": true,
+    "hp": 111,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ },
+ "complex_qwen3.6-35b_canon#1": {
+  "label": "complex_qwen3.6-35b_canon",
+  "run": 1,
+  "success": false,
+  "died": false,
+  "final_hp": 167,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Slime at (11,8) dmg=103",
+   "forced": false,
+   "hp": 852,
+   "v_before": 30,
+   "v_after": null,
+   "regret": 30
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Fight Green Slime at (8,12) dmg=120",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 4,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 30,
+    "regret": 38
+   },
+   {
+    "turn": 7,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Slime at (11,8) dmg=103",
+    "forced": false,
+    "hp": 852,
+    "v_before": 30,
+    "v_after": null,
+    "regret": 30
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 852,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 927,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Black Slime at (12,9) dmg=153",
+    "forced": false,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 849,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Green Slime at (10,6) dmg=67",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Open yellow door at (10,5)",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 857,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Fight Bat at (11,4) dmg=259",
+    "forced": false,
+    "hp": 598,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 673,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 673,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Fight Red Slime at (9,3) dmg=79",
+    "forced": false,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Fight Big Bat at (9,1) dmg=255",
+    "forced": false,
+    "hp": 339,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 339,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 414,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Open blue door at (12,2)",
+    "forced": false,
+    "hp": 414,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 414,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 489,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Fight Slime Lord at (10,10) dmg=230",
+    "forced": false,
+    "hp": 259,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 459,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Fight Red Slime at (11,0) dmg=62",
+    "forced": false,
+    "hp": 397,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Fight Bat at (8,2) dmg=230",
+    "forced": false,
+    "hp": 167,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ },
+ "complex_qwen3.6-35b_canon#2": {
+  "label": "complex_qwen3.6-35b_canon",
+  "run": 2,
+  "success": false,
+  "died": false,
+  "final_hp": 166,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Slime at (11,8) dmg=103",
+   "forced": false,
+   "hp": 852,
+   "v_before": 30,
+   "v_after": null,
+   "regret": 30
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Fight Green Slime at (8,12) dmg=120",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 4,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 30,
+    "regret": 38
+   },
+   {
+    "turn": 7,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Slime at (11,8) dmg=103",
+    "forced": false,
+    "hp": 852,
+    "v_before": 30,
+    "v_after": null,
+    "regret": 30
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 852,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 927,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Black Slime at (12,9) dmg=153",
+    "forced": false,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 849,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Green Slime at (10,6) dmg=67",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Open yellow door at (10,5)",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 857,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Fight Bat at (11,4) dmg=259",
+    "forced": false,
+    "hp": 598,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 673,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 673,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Fight Red Slime at (9,3) dmg=79",
+    "forced": false,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Open blue door at (12,2)",
+    "forced": false,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 669,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Fight Red Slime at (11,0) dmg=74",
+    "forced": false,
+    "hp": 595,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 595,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 670,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Fight Slime Lord at (10,10) dmg=230",
+    "forced": false,
+    "hp": 440,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 640,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Fight Big Bat at (12,12) dmg=237",
+    "forced": false,
+    "hp": 403,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Fight Big Bat at (9,1) dmg=237",
+    "forced": false,
+    "hp": 166,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ },
+ "complex_qwen3.6-35b_canon#3": {
+  "label": "complex_qwen3.6-35b_canon",
+  "run": 3,
+  "success": false,
+  "died": false,
+  "final_hp": 173,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Slime at (11,8) dmg=103",
+   "forced": false,
+   "hp": 852,
+   "v_before": 30,
+   "v_after": null,
+   "regret": 30
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Fight Green Slime at (8,12) dmg=120",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 4,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 30,
+    "regret": 38
+   },
+   {
+    "turn": 7,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Slime at (11,8) dmg=103",
+    "forced": false,
+    "hp": 852,
+    "v_before": 30,
+    "v_after": null,
+    "regret": 30
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 852,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 927,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Black Slime at (12,9) dmg=153",
+    "forced": false,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 849,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Green Slime at (10,6) dmg=67",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Open yellow door at (10,5)",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 857,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Fight Bat at (11,4) dmg=259",
+    "forced": false,
+    "hp": 598,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 673,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 673,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Fight Red Slime at (9,3) dmg=79",
+    "forced": false,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Open blue door at (12,2)",
+    "forced": false,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 669,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Fight Red Slime at (11,0) dmg=74",
+    "forced": false,
+    "hp": 595,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 595,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 670,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Fight Slime Lord at (10,10) dmg=230",
+    "forced": false,
+    "hp": 440,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 640,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Fight Big Bat at (12,12) dmg=237",
+    "forced": false,
+    "hp": 403,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Fight Bat at (8,2) dmg=230",
+    "forced": false,
+    "hp": 173,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ },
+ "complex_qwen3.6-35b_canon#4": {
+  "label": "complex_qwen3.6-35b_canon",
+  "run": 4,
+  "success": false,
+  "died": false,
+  "final_hp": 173,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Slime at (11,8) dmg=103",
+   "forced": false,
+   "hp": 852,
+   "v_before": 30,
+   "v_after": null,
+   "regret": 30
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Fight Green Slime at (8,12) dmg=120",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 4,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 30,
+    "regret": 38
+   },
+   {
+    "turn": 7,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Slime at (11,8) dmg=103",
+    "forced": false,
+    "hp": 852,
+    "v_before": 30,
+    "v_after": null,
+    "regret": 30
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 852,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 927,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Black Slime at (12,9) dmg=153",
+    "forced": false,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 849,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Green Slime at (10,6) dmg=67",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Open yellow door at (10,5)",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 857,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Fight Bat at (11,4) dmg=259",
+    "forced": false,
+    "hp": 598,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 673,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 673,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Fight Red Slime at (9,3) dmg=79",
+    "forced": false,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Open blue door at (12,2)",
+    "forced": false,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 594,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 669,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Fight Red Slime at (11,0) dmg=74",
+    "forced": false,
+    "hp": 595,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 595,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 670,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Fight Slime Lord at (10,10) dmg=230",
+    "forced": false,
+    "hp": 440,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 640,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Fight Big Bat at (12,12) dmg=237",
+    "forced": false,
+    "hp": 403,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Fight Bat at (8,2) dmg=230",
+    "forced": false,
+    "hp": 173,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ },
+ "complex_qwen3.6-35b_canon#5": {
+  "label": "complex_qwen3.6-35b_canon",
+  "run": 5,
+  "success": false,
+  "died": false,
+  "final_hp": 34,
+  "v_start": 68,
+  "crucial": {
+   "turn": 9,
+   "action": "Fight Red Slime at (11,8) dmg=103",
+   "forced": false,
+   "hp": 852,
+   "v_before": 30,
+   "v_after": null,
+   "regret": 30
+  },
+  "turns": [
+   {
+    "turn": 1,
+    "action": "Collect Blue Key at (6,9)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 2,
+    "action": "Collect Yellow Key at (7,8)",
+    "forced": true,
+    "hp": 1000,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 3,
+    "action": "Fight Green Slime at (8,12) dmg=120",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 4,
+    "action": "Collect Green Gem (+5 MDEF) at (8,11)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 5,
+    "action": "Collect Red Gem (+1 ATK) at (8,10)",
+    "forced": true,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 68,
+    "regret": 0
+   },
+   {
+    "turn": 6,
+    "action": "Open yellow door at (8,7)",
+    "forced": false,
+    "hp": 880,
+    "v_before": 68,
+    "v_after": 30,
+    "regret": 38
+   },
+   {
+    "turn": 7,
+    "action": "Collect Red Potion (+75 HP) at (8,6)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 8,
+    "action": "Collect Blue Gem (+1 DEF) at (8,5)",
+    "forced": true,
+    "hp": 955,
+    "v_before": 30,
+    "v_after": 30,
+    "regret": 0
+   },
+   {
+    "turn": 9,
+    "action": "Fight Red Slime at (11,8) dmg=103",
+    "forced": false,
+    "hp": 852,
+    "v_before": 30,
+    "v_after": null,
+    "regret": 30
+   },
+   {
+    "turn": 10,
+    "action": "Collect Blue Gem (+1 DEF) at (12,6)",
+    "forced": true,
+    "hp": 852,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 11,
+    "action": "Collect Red Potion (+75 HP) at (12,7)",
+    "forced": true,
+    "hp": 927,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 12,
+    "action": "Fight Black Slime at (12,9) dmg=153",
+    "forced": false,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 13,
+    "action": "Collect Yellow Key at (12,10)",
+    "forced": true,
+    "hp": 774,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 14,
+    "action": "Collect Red Potion (+75 HP) at (12,11)",
+    "forced": true,
+    "hp": 849,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 15,
+    "action": "Fight Green Slime at (10,6) dmg=67",
+    "forced": false,
+    "hp": 782,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 16,
+    "action": "Fight Slime Lord at (10,10) dmg=235",
+    "forced": false,
+    "hp": 547,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 17,
+    "action": "Collect Blue Potion (+200 HP) at (10,12)",
+    "forced": true,
+    "hp": 747,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 18,
+    "action": "Open yellow door at (10,5)",
+    "forced": false,
+    "hp": 747,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 19,
+    "action": "Collect Red Potion (+75 HP) at (10,3)",
+    "forced": true,
+    "hp": 822,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 20,
+    "action": "Fight Bat at (11,4) dmg=259",
+    "forced": false,
+    "hp": 563,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 21,
+    "action": "Collect Red Potion (+75 HP) at (12,4)",
+    "forced": true,
+    "hp": 638,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 22,
+    "action": "Collect Blue Gem (+1 DEF) at (12,3)",
+    "forced": true,
+    "hp": 638,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 23,
+    "action": "Fight Red Slime at (9,3) dmg=79",
+    "forced": false,
+    "hp": 559,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 24,
+    "action": "Open blue door at (12,2)",
+    "forced": false,
+    "hp": 559,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 25,
+    "action": "Collect Green Gem (+5 MDEF) at (12,1)",
+    "forced": true,
+    "hp": 559,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 26,
+    "action": "Collect Red Potion (+75 HP) at (12,0)",
+    "forced": true,
+    "hp": 634,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 27,
+    "action": "Fight Red Slime at (11,0) dmg=74",
+    "forced": false,
+    "hp": 560,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 28,
+    "action": "Collect Blue Gem (+1 DEF) at (9,0)",
+    "forced": true,
+    "hp": 560,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 29,
+    "action": "Collect Red Potion (+75 HP) at (8,0)",
+    "forced": true,
+    "hp": 635,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 30,
+    "action": "Fight Red Bat at (4,11) dmg=284",
+    "forced": false,
+    "hp": 351,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 31,
+    "action": "Collect Blue Gem (+1 DEF) at (3,12)",
+    "forced": true,
+    "hp": 351,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 32,
+    "action": "Collect Blue Gem (+1 DEF) at (4,12)",
+    "forced": true,
+    "hp": 351,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 33,
+    "action": "Fight Slime Lord at (3,10) dmg=230",
+    "forced": false,
+    "hp": 121,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 34,
+    "action": "Fight Green Slime at (3,8) dmg=26",
+    "forced": false,
+    "hp": 95,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 35,
+    "action": "Collect Red Potion (+75 HP) at (1,7)",
+    "forced": true,
+    "hp": 170,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 36,
+    "action": "Fight Black Slime at (2,9) dmg=136",
+    "forced": false,
+    "hp": 34,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   },
+   {
+    "turn": 37,
+    "action": "Collect Blue Gem (+1 DEF) at (1,9)",
+    "forced": true,
+    "hp": 34,
+    "v_before": null,
+    "v_after": null,
+    "regret": null
+   }
+  ]
+ }
+}

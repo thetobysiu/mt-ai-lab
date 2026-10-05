@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the thesis."
+title: "Magic Tower AI Lab"
+type: software
+authors:
+  - family-names: Siu
+    given-names: King Wai
+repository-code: "https://github.com/thetobysiu/mt-ai-lab"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-06"
+keywords:
+  - LLM agents
+  - hybrid deterministic-neural agents
+  - observation design
+  - long-horizon planning
+  - evolutionary prompt optimisation
+  - Magic Tower
+preferred-citation:
+  type: thesis
+  thesis-type: "Master's thesis"
+  title: "From Reactive Control to Holistic Planning: Evolutionary Prompt Optimization for Hybrid Deterministic-Neural Agents in Long-Horizon Environments"
+  authors:
+    - family-names: Siu
+      given-names: King Wai
+  institution:
+    name: "Leuphana University Lüneburg"
+  year: 2026

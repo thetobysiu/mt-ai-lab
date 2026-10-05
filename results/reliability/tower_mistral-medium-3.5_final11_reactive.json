@@ -1,0 +1,448 @@
+{
+  "label": "tower_mistral-medium-3.5_final11_reactive",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 6036,
+    "model": "mistral-medium-3.5-128b",
+    "task_mode": "instruct",
+    "preset": "mistral-medium-3.5",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "8192",
+      "CONVERSATION_HISTORY_TURNS": "0",
+      "MOTA_OFFER_LEVELUPS": "1",
+      "MOTA_TOWER_HP_FLOOR": "0",
+      "MOTA_ORDER_TWO_SIDED": "1",
+      "MOTA_FIGHT_KEY_FLOOD": "1",
+      "MOTA_SHOP_ROUTE": "1",
+      "MOTA_REMOTE_ACTIONS": "1",
+      "MOTA_WAY_UP": "1",
+      "MOTA_TOWER_FIDELITY": "1",
+      "MOTA_PLAN_MEMORY": "1",
+      "MOTA_NO_KEY_PURCHASE": "1",
+      "MOTA_WAYUP_COMBINED": "1",
+      "MOTA_FREE_AFFORD": "1",
+      "MOTA_NPC_TRADES": "1",
+      "MOTA_KEY_RESERVE": "1",
+      "MOTA_AFTER_BATTLE": "1",
+      "MOTA_BUY_QUANTITY": "1",
+      "MOTA_VAMPIRE_TAG": "1",
+      "MOTA_EVENT_WAY": "1",
+      "LLM_TIMEOUT": "300"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.5511,
+      "success": false,
+      "died": false,
+      "floors_reached": 8,
+      "max_floor_id": "MT8",
+      "total_floors": 24,
+      "final_floor_id": "MT1",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose [MT5] Fight Junior Guard at (10,8) dmg=2800)",
+      "final_hp": 1886,
+      "hero_atk": 98,
+      "hero_def": 100,
+      "keys": {
+        "yellow": 4,
+        "blue": 7,
+        "red": 1
+      },
+      "money": 16,
+      "exp": 13,
+      "turns": 204,
+      "llm_calls": 82,
+      "model_calls": 83,
+      "planned_turns": 0,
+      "parse_errors": 0,
+      "forced_turns": 122,
+      "lethal_only_stop": {
+        "action": "[MT5] Fight Junior Guard at (10,8) dmg=2800",
+        "hp_after": -914,
+        "damage": 2800
+      },
+      "run_log": "20261005_064128_771280_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 468,
+          "turn": 39
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 427,
+          "turn": 42,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 355,
+          "turn": 47,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 355,
+          "turn": 48,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 355,
+          "turn": 49,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 351,
+          "turn": 69
+        },
+        {
+          "from": "MT5",
+          "to": "MT1",
+          "hero_hp": 351,
+          "turn": 78,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT5",
+          "hero_hp": 359,
+          "turn": 89,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 359,
+          "turn": 94
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 359,
+          "turn": 96,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 311,
+          "turn": 99,
+          "type": "remote"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 311,
+          "turn": 101
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1611,
+          "turn": 116,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT7",
+          "hero_hp": 2511,
+          "turn": 124,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 2511,
+          "turn": 125,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT1",
+          "hero_hp": 1086,
+          "turn": 160,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT7",
+          "hero_hp": 1086,
+          "turn": 168,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 1086,
+          "turn": 172
+        },
+        {
+          "from": "MT8",
+          "to": "MT4",
+          "hero_hp": 1086,
+          "turn": 177,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT6",
+          "hero_hp": 1086,
+          "turn": 185,
+          "type": "remote"
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 1086,
+          "turn": 192,
+          "type": "remote"
+        }
+      ],
+      "elapsed_s": 2023.0,
+      "timestamp": "2026-10-05T09:15:11",
+      "run_idx": 1
+    },
+    {
+      "score": 0.088,
+      "success": false,
+      "died": false,
+      "floors_reached": 4,
+      "max_floor_id": "MT4",
+      "total_floors": 24,
+      "final_floor_id": "MT4",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose [MT1] Fight Skeleton at (3,3) dmg=24)",
+      "final_hp": 5,
+      "hero_atk": 23,
+      "hero_def": 21,
+      "keys": {
+        "yellow": 3,
+        "blue": 1,
+        "red": 1
+      },
+      "money": 11,
+      "exp": 59,
+      "turns": 52,
+      "llm_calls": 26,
+      "model_calls": 27,
+      "planned_turns": 0,
+      "parse_errors": 4,
+      "forced_turns": 26,
+      "lethal_only_stop": {
+        "action": "[MT1] Fight Skeleton at (3,3) dmg=24",
+        "hp_after": -19,
+        "damage": 24
+      },
+      "run_log": "20261005_071511_869196_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 483,
+          "turn": 38
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 77,
+          "turn": 44,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 5,
+          "turn": 51,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT4",
+          "hero_hp": 5,
+          "turn": 52,
+          "type": "remote"
+        }
+      ],
+      "elapsed_s": 531.7,
+      "timestamp": "2026-10-05T09:24:03",
+      "run_idx": 2
+    },
+    {
+      "score": 0.093,
+      "success": false,
+      "died": false,
+      "floors_reached": 4,
+      "max_floor_id": "MT4",
+      "total_floors": 24,
+      "final_floor_id": "MT4",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose [MT3] Fight Skeleton at (6,4) dmg=72)",
+      "final_hp": 30,
+      "hero_atk": 23,
+      "hero_def": 13,
+      "keys": {
+        "yellow": 5,
+        "blue": 1,
+        "red": 1
+      },
+      "money": 56,
+      "exp": 55,
+      "turns": 47,
+      "llm_calls": 24,
+      "model_calls": 25,
+      "planned_turns": 0,
+      "parse_errors": 4,
+      "forced_turns": 23,
+      "lethal_only_stop": {
+        "action": "[MT3] Fight Skeleton at (6,4) dmg=72",
+        "hp_after": -42,
+        "damage": 72
+      },
+      "run_log": "20261005_072403_562299_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 483,
+          "turn": 38
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 407,
+          "turn": 43,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 401,
+          "turn": 44,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 71,
+          "turn": 45,
+          "type": "remote"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 30,
+          "turn": 47,
+          "type": "remote"
+        }
+      ],
+      "elapsed_s": 697.7,
+      "timestamp": "2026-10-05T09:35:41",
+      "run_idx": 3
+    }
+  ],
+  "aggregate": {
+    "n": 3,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.5615
+    ],
+    "died": 0,
+    "lethal_only_stops": 3,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.244,
+    "score_sd": 0.2659,
+    "score_min": 0.088,
+    "score_max": 0.5511,
+    "final_hp_mean": 640.3333,
+    "final_hp_sd": 1078.8514,
+    "llm_calls_total": 132,
+    "seconds_per_call": 24.64,
+    "parse_error_rate": 0.0606,
+    "elapsed_s_total": 3252.4,
+    "floors_reached_mean": 5.33,
+    "floors_reached_max": 8,
+    "max_floor_ids": [
+      "MT8",
+      "MT4",
+      "MT4"
+    ]
+  },
+  "updated": "2026-10-05 09:35"
+}

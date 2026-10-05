@@ -1,0 +1,112 @@
+{
+  "label": "tower_MT0-MT23w_heuristic",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "prompt_file": "none",
+    "prompt_chars": 0,
+    "model": "heuristic",
+    "task_mode": "-",
+    "preset": "heuristic",
+    "mode": "heuristic",
+    "temperature": 0.0,
+    "overrides_disabled": false
+  },
+  "runs": [
+    {
+      "score": 0.4814,
+      "success": false,
+      "died": false,
+      "floors_reached": 7,
+      "total_floors": 24,
+      "final_floor_id": "MT7",
+      "failure_reason": "Stuck — only unwinnable fights remain",
+      "final_hp": 1646,
+      "hero_atk": 29,
+      "hero_def": 39,
+      "keys": {
+        "yellow": 1,
+        "blue": 4,
+        "red": 0
+      },
+      "money": 22,
+      "turns": 112,
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 550,
+          "turn": 15
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 550,
+          "turn": 16
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 358,
+          "turn": 52
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 610,
+          "turn": 77
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 346,
+          "turn": 93
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 346,
+          "turn": 96
+        }
+      ],
+      "elapsed_s": 1.5,
+      "timestamp": "2026-09-20T12:27:48",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.4814,
+    "score_sd": 0.0,
+    "score_min": 0.4814,
+    "score_max": 0.4814,
+    "final_hp_mean": 1646.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 0,
+    "seconds_per_call": null,
+    "parse_error_rate": null,
+    "elapsed_s_total": 1.5,
+    "floors_reached_mean": 7.0,
+    "floors_reached_max": 7
+  },
+  "updated": "2026-09-20 12:27"
+}

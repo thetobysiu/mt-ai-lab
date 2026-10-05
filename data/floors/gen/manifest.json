@@ -1,0 +1,290 @@
+{
+  "generator": "mota/solver/boss_floor_gen.py",
+  "floors": [
+    {
+      "name": "gen01",
+      "file": "data/floors/gen/gen01.txt",
+      "seed": 134,
+      "doors": 2,
+      "links": 9,
+      "target_hp": 168,
+      "target_atk": 14,
+      "target_def": 7,
+      "ref_steps": 9,
+      "enemies_total": 10,
+      "enemies_killed": 8,
+      "solver_states": 74,
+      "heuristic": {
+        "boss_killed": true,
+        "final_hp": 118,
+        "score": 0.7003
+      }
+    },
+    {
+      "name": "gen02",
+      "file": "data/floors/gen/gen02.txt",
+      "seed": 157,
+      "doors": 1,
+      "links": 9,
+      "target_hp": 232,
+      "target_atk": 14,
+      "target_def": 7,
+      "ref_steps": 7,
+      "enemies_total": 12,
+      "enemies_killed": 6,
+      "solver_states": 279,
+      "heuristic": {
+        "boss_killed": true,
+        "final_hp": 10,
+        "score": 0.6678
+      }
+    },
+    {
+      "name": "gen03",
+      "file": "data/floors/gen/gen03.txt",
+      "seed": 189,
+      "doors": 2,
+      "links": 9,
+      "target_hp": 13,
+      "target_atk": 13,
+      "target_def": 6,
+      "ref_steps": 6,
+      "enemies_total": 11,
+      "enemies_killed": 5,
+      "solver_states": 143,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 506,
+        "score": 0.4232
+      }
+    },
+    {
+      "name": "gen04",
+      "file": "data/floors/gen/gen04.txt",
+      "seed": 216,
+      "doors": 3,
+      "links": 9,
+      "target_hp": 225,
+      "target_atk": 14,
+      "target_def": 8,
+      "ref_steps": 10,
+      "enemies_total": 11,
+      "enemies_killed": 7,
+      "solver_states": 97,
+      "heuristic": {
+        "boss_killed": true,
+        "final_hp": 110,
+        "score": 0.6858
+      }
+    },
+    {
+      "name": "gen05",
+      "file": "data/floors/gen/gen05.txt",
+      "seed": 285,
+      "doors": 1,
+      "links": 9,
+      "target_hp": 172,
+      "target_atk": 14,
+      "target_def": 8,
+      "ref_steps": 10,
+      "enemies_total": 13,
+      "enemies_killed": 9,
+      "solver_states": 579,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 266,
+        "score": 0.3844
+      }
+    },
+    {
+      "name": "gen06",
+      "file": "data/floors/gen/gen06.txt",
+      "seed": 422,
+      "doors": 3,
+      "links": 10,
+      "target_hp": 242,
+      "target_atk": 14,
+      "target_def": 7,
+      "ref_steps": 5,
+      "enemies_total": 8,
+      "enemies_killed": 4,
+      "solver_states": 36,
+      "heuristic": {
+        "boss_killed": true,
+        "final_hp": 162,
+        "score": 0.6018
+      }
+    },
+    {
+      "name": "gen07",
+      "file": "data/floors/gen/gen07.txt",
+      "seed": 491,
+      "doors": 2,
+      "links": 10,
+      "target_hp": 222,
+      "target_atk": 14,
+      "target_def": 9,
+      "ref_steps": 10,
+      "enemies_total": 14,
+      "enemies_killed": 9,
+      "solver_states": 652,
+      "heuristic": {
+        "boss_killed": true,
+        "final_hp": 160,
+        "score": 0.744
+      }
+    },
+    {
+      "name": "gen08",
+      "file": "data/floors/gen/gen08.txt",
+      "seed": 495,
+      "doors": 3,
+      "links": 9,
+      "target_hp": 250,
+      "target_atk": 14,
+      "target_def": 8,
+      "ref_steps": 9,
+      "enemies_total": 11,
+      "enemies_killed": 7,
+      "solver_states": 424,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 187,
+        "score": 0.3468
+      }
+    },
+    {
+      "name": "gen09",
+      "file": "data/floors/gen/gen09.txt",
+      "seed": 508,
+      "doors": 3,
+      "links": 9,
+      "target_hp": 204,
+      "target_atk": 14,
+      "target_def": 8,
+      "ref_steps": 10,
+      "enemies_total": 11,
+      "enemies_killed": 7,
+      "solver_states": 123,
+      "heuristic": {
+        "boss_killed": true,
+        "final_hp": 57,
+        "score": 0.6576
+      }
+    },
+    {
+      "name": "gen10",
+      "file": "data/floors/gen/gen10.txt",
+      "seed": 521,
+      "doors": 3,
+      "links": 9,
+      "target_hp": 88,
+      "target_atk": 14,
+      "target_def": 6,
+      "ref_steps": 10,
+      "enemies_total": 12,
+      "enemies_killed": 9,
+      "solver_states": 39,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 302,
+        "score": 0.3812
+      }
+    },
+    {
+      "name": "gen11",
+      "file": "data/floors/gen/gen11.txt",
+      "seed": 528,
+      "doors": 5,
+      "links": 9,
+      "target_hp": 194,
+      "target_atk": 14,
+      "target_def": 8,
+      "ref_steps": 10,
+      "enemies_total": 9,
+      "enemies_killed": 6,
+      "solver_states": 127,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 397,
+        "score": 0.3453
+      }
+    },
+    {
+      "name": "gen12",
+      "file": "data/floors/gen/gen12.txt",
+      "seed": 544,
+      "doors": 2,
+      "links": 10,
+      "target_hp": 182,
+      "target_atk": 13,
+      "target_def": 4,
+      "ref_steps": 3,
+      "enemies_total": 11,
+      "enemies_killed": 2,
+      "solver_states": 41,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 770,
+        "score": 0.3436
+      }
+    },
+    {
+      "name": "gen13",
+      "file": "data/floors/gen/gen13.txt",
+      "seed": 629,
+      "doors": 1,
+      "links": 9,
+      "target_hp": 207,
+      "target_atk": 14,
+      "target_def": 9,
+      "ref_steps": 9,
+      "enemies_total": 12,
+      "enemies_killed": 8,
+      "solver_states": 108,
+      "heuristic": {
+        "boss_killed": true,
+        "final_hp": 32,
+        "score": 0.6733
+      }
+    },
+    {
+      "name": "gen14",
+      "file": "data/floors/gen/gen14.txt",
+      "seed": 634,
+      "doors": 2,
+      "links": 9,
+      "target_hp": 151,
+      "target_atk": 13,
+      "target_def": 9,
+      "ref_steps": 6,
+      "enemies_total": 9,
+      "enemies_killed": 5,
+      "solver_states": 80,
+      "heuristic": {
+        "boss_killed": false,
+        "final_hp": 468,
+        "score": 0.4184
+      }
+    },
+    {
+      "name": "gen15",
+      "file": "data/floors/gen/gen15.txt",
+      "seed": 681,
+      "doors": 1,
+      "links": 9,
+      "target_hp": 216,
+      "target_atk": 14,
+      "target_def": 9,
+      "ref_steps": 10,
+      "enemies_total": 12,
+      "enemies_killed": 9,
+      "solver_states": 165,
+      "heuristic": {
+        "boss_killed": true,
+        "final_hp": 47,
+        "score": 0.6625
+      }
+    }
+  ]
+}

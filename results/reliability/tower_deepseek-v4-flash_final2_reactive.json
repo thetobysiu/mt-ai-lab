@@ -1,0 +1,2925 @@
+{
+  "label": "tower_deepseek-v4-flash_final2_reactive",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 3630,
+    "model": "deepseek-v4-flash-0731",
+    "task_mode": "thinking",
+    "preset": "deepseek-v4-flash-think",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "8192",
+      "CONVERSATION_HISTORY_TURNS": "0",
+      "MOTA_ORDER_TWO_SIDED": "1",
+      "MOTA_FIGHT_KEY_FLOOD": "1",
+      "LLM_TIMEOUT": "300"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.503,
+      "success": false,
+      "died": false,
+      "floors_reached": 7,
+      "max_floor_id": "MT7",
+      "total_floors": 24,
+      "final_floor_id": "MT7",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose Fight Skeleton Captain at (9,3) dmg=999999999)",
+      "final_hp": 1754,
+      "hero_atk": 33,
+      "hero_def": 38,
+      "keys": {
+        "yellow": 1,
+        "blue": 2,
+        "red": 0
+      },
+      "money": 14,
+      "exp": 130,
+      "turns": 226,
+      "llm_calls": 126,
+      "parse_errors": 2,
+      "forced_turns": 100,
+      "lethal_only_stop": {
+        "action": "Fight Skeleton Captain at (9,3) dmg=999999999",
+        "hp_after": -1,
+        "damage": 999999999
+      },
+      "run_log": "20260929_002849_869408_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 860,
+          "turn": 11,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 12
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 13
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 670,
+          "turn": 15,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 670,
+          "turn": 16
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 670,
+          "turn": 17
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 570,
+          "turn": 20,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 570,
+          "turn": 21
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 570,
+          "turn": 22
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 358,
+          "turn": 48,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 358,
+          "turn": 49
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 358,
+          "turn": 50
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 313,
+          "turn": 56
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 313,
+          "turn": 61,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 313,
+          "turn": 62
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 313,
+          "turn": 63
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 313,
+          "turn": 64
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 313,
+          "turn": 66,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 313,
+          "turn": 67
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 313,
+          "turn": 68
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 313,
+          "turn": 69
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 479,
+          "turn": 75,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 479,
+          "turn": 76
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 479,
+          "turn": 77
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 479,
+          "turn": 78
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 269,
+          "turn": 82,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 269,
+          "turn": 83
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 269,
+          "turn": 84
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 269,
+          "turn": 85
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 459,
+          "turn": 91,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 459,
+          "turn": 92
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 459,
+          "turn": 93
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 459,
+          "turn": 94
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 309,
+          "turn": 101
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 309,
+          "turn": 110
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 309,
+          "turn": 112,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 509,
+          "turn": 119
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 509,
+          "turn": 120
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 509,
+          "turn": 121
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 509,
+          "turn": 122
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 509,
+          "turn": 123
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 509,
+          "turn": 124,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 509,
+          "turn": 125
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 509,
+          "turn": 127,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 509,
+          "turn": 128
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 509,
+          "turn": 130
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1809,
+          "turn": 145,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1809,
+          "turn": 150
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1809,
+          "turn": 151
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1809,
+          "turn": 153,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1809,
+          "turn": 154
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1809,
+          "turn": 155
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1809,
+          "turn": 156,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1809,
+          "turn": 157
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1809,
+          "turn": 158
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1809,
+          "turn": 159
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1809,
+          "turn": 160
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1809,
+          "turn": 161
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1809,
+          "turn": 162
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1809,
+          "turn": 164,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1809,
+          "turn": 165
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1809,
+          "turn": 166
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1809,
+          "turn": 167,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1809,
+          "turn": 169
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1809,
+          "turn": 170
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1809,
+          "turn": 171
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1809,
+          "turn": 172
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1809,
+          "turn": 173
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 1809,
+          "turn": 174,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1754,
+          "turn": 179
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1754,
+          "turn": 180
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1754,
+          "turn": 181
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1754,
+          "turn": 182
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1754,
+          "turn": 183
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1754,
+          "turn": 184
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1754,
+          "turn": 186,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1754,
+          "turn": 187
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1754,
+          "turn": 188
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1754,
+          "turn": 189
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1754,
+          "turn": 190
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1754,
+          "turn": 191
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1754,
+          "turn": 192
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1754,
+          "turn": 194,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1754,
+          "turn": 195
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 1754,
+          "turn": 196,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1754,
+          "turn": 197
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1754,
+          "turn": 198
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1754,
+          "turn": 199
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1754,
+          "turn": 200
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1754,
+          "turn": 201
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1754,
+          "turn": 202
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1754,
+          "turn": 204,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1754,
+          "turn": 205
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1754,
+          "turn": 206
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1754,
+          "turn": 207,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1754,
+          "turn": 208
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1754,
+          "turn": 209
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1754,
+          "turn": 210
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1754,
+          "turn": 211
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1754,
+          "turn": 212
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1754,
+          "turn": 213
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1754,
+          "turn": 215,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1754,
+          "turn": 216
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1754,
+          "turn": 217
+        },
+        {
+          "from": "MT7",
+          "to": "MT6",
+          "hero_hp": 1754,
+          "turn": 218,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1754,
+          "turn": 219
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1754,
+          "turn": 220,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1754,
+          "turn": 221
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1754,
+          "turn": 222
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1754,
+          "turn": 223
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1754,
+          "turn": 224
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1754,
+          "turn": 225
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1754,
+          "turn": 226
+        }
+      ],
+      "elapsed_s": 1454.5,
+      "timestamp": "2026-09-29T02:53:04",
+      "run_idx": 1
+    },
+    {
+      "score": 0.5042,
+      "success": false,
+      "died": false,
+      "floors_reached": 7,
+      "max_floor_id": "MT7",
+      "total_floors": 24,
+      "final_floor_id": "MT7",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose Fight Red Bat at (3,3) dmg=999999999)",
+      "final_hp": 1760,
+      "hero_atk": 33,
+      "hero_def": 38,
+      "keys": {
+        "yellow": 1,
+        "blue": 2,
+        "red": 0
+      },
+      "money": 14,
+      "exp": 130,
+      "turns": 205,
+      "llm_calls": 110,
+      "parse_errors": 0,
+      "forced_turns": 95,
+      "lethal_only_stop": {
+        "action": "Fight Red Bat at (3,3) dmg=999999999",
+        "hp_after": -1,
+        "damage": 999999999
+      },
+      "run_log": "20260930_221705_490927_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 670,
+          "turn": 12,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 670,
+          "turn": 13
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 670,
+          "turn": 14
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 570,
+          "turn": 17,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 570,
+          "turn": 18
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 570,
+          "turn": 19
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 355,
+          "turn": 46,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 355,
+          "turn": 47
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 355,
+          "turn": 48
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 325,
+          "turn": 53
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 325,
+          "turn": 59,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 325,
+          "turn": 60
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 325,
+          "turn": 61
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 325,
+          "turn": 62
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 491,
+          "turn": 68,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 491,
+          "turn": 69
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 491,
+          "turn": 70
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 491,
+          "turn": 71
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 281,
+          "turn": 75,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 281,
+          "turn": 76
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 281,
+          "turn": 77
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 281,
+          "turn": 78
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 471,
+          "turn": 84,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 671,
+          "turn": 92
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 671,
+          "turn": 93
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 671,
+          "turn": 94
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 551,
+          "turn": 101
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 515,
+          "turn": 112
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 515,
+          "turn": 114,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 515,
+          "turn": 115
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 515,
+          "turn": 116
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 515,
+          "turn": 117
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 515,
+          "turn": 118
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 515,
+          "turn": 119
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 515,
+          "turn": 121
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1815,
+          "turn": 136,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1815,
+          "turn": 140
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1815,
+          "turn": 141
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1815,
+          "turn": 143,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1815,
+          "turn": 144
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1815,
+          "turn": 145
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 1815,
+          "turn": 146,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1815,
+          "turn": 147
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1815,
+          "turn": 148
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1815,
+          "turn": 149
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1815,
+          "turn": 150
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1815,
+          "turn": 151
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1815,
+          "turn": 152
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1815,
+          "turn": 154,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1815,
+          "turn": 155
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1815,
+          "turn": 156
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1815,
+          "turn": 157
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1815,
+          "turn": 158
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1815,
+          "turn": 159
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1815,
+          "turn": 160
+        },
+        {
+          "from": "MT7",
+          "to": "MT6",
+          "hero_hp": 1815,
+          "turn": 162,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1815,
+          "turn": 163
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1815,
+          "turn": 164,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1815,
+          "turn": 165
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1815,
+          "turn": 166
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1815,
+          "turn": 167
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1815,
+          "turn": 168
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1815,
+          "turn": 169
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1815,
+          "turn": 170
+        },
+        {
+          "from": "MT7",
+          "to": "MT6",
+          "hero_hp": 1815,
+          "turn": 172,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1815,
+          "turn": 173
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1815,
+          "turn": 174,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1815,
+          "turn": 175
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1815,
+          "turn": 176
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1815,
+          "turn": 177
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1815,
+          "turn": 178
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1815,
+          "turn": 179
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1815,
+          "turn": 180
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1815,
+          "turn": 182,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1760,
+          "turn": 187
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1760,
+          "turn": 188
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1760,
+          "turn": 189
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1760,
+          "turn": 190
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1760,
+          "turn": 191
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 1760,
+          "turn": 192,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1760,
+          "turn": 193
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1760,
+          "turn": 194
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1760,
+          "turn": 196,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1760,
+          "turn": 197
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1760,
+          "turn": 198
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1760,
+          "turn": 199,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1760,
+          "turn": 200
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1760,
+          "turn": 201
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1760,
+          "turn": 202
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1760,
+          "turn": 203
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1760,
+          "turn": 204
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1760,
+          "turn": 205
+        }
+      ],
+      "elapsed_s": 668.9,
+      "timestamp": "2026-10-01T00:28:14",
+      "run_idx": 2
+    },
+    {
+      "score": 0.0702,
+      "success": false,
+      "died": false,
+      "floors_reached": 3,
+      "max_floor_id": "MT3",
+      "total_floors": 24,
+      "final_floor_id": "MT3",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose Fight Red Slime at (1,2) dmg=40)",
+      "final_hp": 25,
+      "hero_atk": 10,
+      "hero_def": 10,
+      "keys": {
+        "yellow": 3,
+        "blue": 1,
+        "red": 1
+      },
+      "money": 19,
+      "exp": 18,
+      "turns": 29,
+      "llm_calls": 12,
+      "parse_errors": 0,
+      "forced_turns": 17,
+      "lethal_only_stop": {
+        "action": "Fight Red Slime at (1,2) dmg=40",
+        "hp_after": -15,
+        "damage": 40
+      },
+      "run_log": "20260930_222814_452453_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 620,
+          "turn": 13,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 620,
+          "turn": 14
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 620,
+          "turn": 15
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 570,
+          "turn": 17,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 570,
+          "turn": 18
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 570,
+          "turn": 19
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 340,
+          "turn": 22,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 340,
+          "turn": 23
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 340,
+          "turn": 24
+        }
+      ],
+      "elapsed_s": 70.2,
+      "timestamp": "2026-10-01T00:29:24",
+      "run_idx": 3
+    },
+    {
+      "score": 0.521,
+      "success": false,
+      "died": false,
+      "floors_reached": 7,
+      "max_floor_id": "MT7",
+      "total_floors": 24,
+      "final_floor_id": "MT7",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose Fight Skeleton Captain at (9,3) dmg=999999999)",
+      "final_hp": 1844,
+      "hero_atk": 33,
+      "hero_def": 38,
+      "keys": {
+        "yellow": 1,
+        "blue": 2,
+        "red": 0
+      },
+      "money": 14,
+      "exp": 130,
+      "turns": 208,
+      "llm_calls": 115,
+      "parse_errors": 2,
+      "forced_turns": 93,
+      "lethal_only_stop": {
+        "action": "Fight Skeleton Captain at (9,3) dmg=999999999",
+        "hp_after": -1,
+        "damage": 999999999
+      },
+      "run_log": "20261001_002930_954872_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 860,
+          "turn": 11,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 12
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 13
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 670,
+          "turn": 15,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 670,
+          "turn": 16
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 670,
+          "turn": 17
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 570,
+          "turn": 20,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 570,
+          "turn": 21
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 570,
+          "turn": 22
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 337,
+          "turn": 49,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 337,
+          "turn": 50
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 337,
+          "turn": 51
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 307,
+          "turn": 56
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 307,
+          "turn": 61,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 307,
+          "turn": 62
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 307,
+          "turn": 63
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 307,
+          "turn": 64
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 307,
+          "turn": 66,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 307,
+          "turn": 67
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 307,
+          "turn": 68
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 307,
+          "turn": 69
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 473,
+          "turn": 75,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 473,
+          "turn": 76
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 473,
+          "turn": 77
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 473,
+          "turn": 78
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 263,
+          "turn": 82,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 439,
+          "turn": 90
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 439,
+          "turn": 91
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 439,
+          "turn": 92
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 599,
+          "turn": 103
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 599,
+          "turn": 113
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 599,
+          "turn": 114,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 599,
+          "turn": 115
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 599,
+          "turn": 117,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 599,
+          "turn": 118
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 599,
+          "turn": 120
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1899,
+          "turn": 135,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1899,
+          "turn": 140
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1899,
+          "turn": 141
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1899,
+          "turn": 143,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1899,
+          "turn": 144
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1899,
+          "turn": 145
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1899,
+          "turn": 146,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1899,
+          "turn": 147
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1899,
+          "turn": 148
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1899,
+          "turn": 149
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1899,
+          "turn": 150
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1899,
+          "turn": 151
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1899,
+          "turn": 152
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1899,
+          "turn": 154,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1899,
+          "turn": 155
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1899,
+          "turn": 156
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1899,
+          "turn": 157,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1844,
+          "turn": 163
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1844,
+          "turn": 164
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1844,
+          "turn": 165
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1844,
+          "turn": 166
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1844,
+          "turn": 167
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1844,
+          "turn": 168
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1844,
+          "turn": 170,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1844,
+          "turn": 171
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 1844,
+          "turn": 172,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1844,
+          "turn": 173
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1844,
+          "turn": 174
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1844,
+          "turn": 175
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1844,
+          "turn": 176
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1844,
+          "turn": 177
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1844,
+          "turn": 178
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1844,
+          "turn": 180,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1844,
+          "turn": 181
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1844,
+          "turn": 182
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1844,
+          "turn": 183,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1844,
+          "turn": 184
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1844,
+          "turn": 185
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1844,
+          "turn": 186
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1844,
+          "turn": 187
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1844,
+          "turn": 188
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1844,
+          "turn": 189
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1844,
+          "turn": 191,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1844,
+          "turn": 192
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1844,
+          "turn": 193
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1844,
+          "turn": 194,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1844,
+          "turn": 195
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1844,
+          "turn": 196
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1844,
+          "turn": 197
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1844,
+          "turn": 198
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1844,
+          "turn": 199
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1844,
+          "turn": 200
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1844,
+          "turn": 202,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1844,
+          "turn": 203
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1844,
+          "turn": 204
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1844,
+          "turn": 205
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1844,
+          "turn": 206
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1844,
+          "turn": 207
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1844,
+          "turn": 208
+        }
+      ],
+      "elapsed_s": 735.4,
+      "timestamp": "2026-10-01T02:41:46",
+      "run_idx": 4
+    },
+    {
+      "score": 0.5222,
+      "success": false,
+      "died": false,
+      "floors_reached": 7,
+      "max_floor_id": "MT7",
+      "total_floors": 24,
+      "final_floor_id": "MT7",
+      "failure_reason": "Stuck — only lethal/unwinnable actions remain (LLM chose Fight Skeleton Captain at (9,3) dmg=999999999)",
+      "final_hp": 1850,
+      "hero_atk": 33,
+      "hero_def": 38,
+      "keys": {
+        "yellow": 0,
+        "blue": 2,
+        "red": 0
+      },
+      "money": 14,
+      "exp": 130,
+      "turns": 222,
+      "llm_calls": 124,
+      "parse_errors": 0,
+      "forced_turns": 98,
+      "lethal_only_stop": {
+        "action": "Fight Skeleton Captain at (9,3) dmg=999999999",
+        "hp_after": -1,
+        "damage": 999999999
+      },
+      "run_log": "20261001_004146_526455_MT0-MT23w_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 9
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 10
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 860,
+          "turn": 11,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 860,
+          "turn": 12
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 860,
+          "turn": 13
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 620,
+          "turn": 16,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 620,
+          "turn": 17
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 620,
+          "turn": 18
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 570,
+          "turn": 20,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 570,
+          "turn": 21
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 570,
+          "turn": 22
+        },
+        {
+          "from": "MT3",
+          "to": "MT1",
+          "hero_hp": 358,
+          "turn": 48,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 358,
+          "turn": 49
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 358,
+          "turn": 50
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 328,
+          "turn": 55
+        },
+        {
+          "from": "MT4",
+          "to": "MT3",
+          "hero_hp": 313,
+          "turn": 60,
+          "type": "return"
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 313,
+          "turn": 62
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 313,
+          "turn": 63,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 313,
+          "turn": 64
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 313,
+          "turn": 65
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 313,
+          "turn": 66
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 313,
+          "turn": 68,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 313,
+          "turn": 70
+        },
+        {
+          "from": "MT2",
+          "to": "MT1",
+          "hero_hp": 313,
+          "turn": 71,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 313,
+          "turn": 72
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 313,
+          "turn": 73
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 313,
+          "turn": 74
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 103,
+          "turn": 76,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 103,
+          "turn": 77
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 103,
+          "turn": 78
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 103,
+          "turn": 79
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 103,
+          "turn": 81,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 103,
+          "turn": 82
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 103,
+          "turn": 83
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 103,
+          "turn": 84
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 479,
+          "turn": 88,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 479,
+          "turn": 89
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 479,
+          "turn": 90
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 479,
+          "turn": 91
+        },
+        {
+          "from": "MT4",
+          "to": "MT1",
+          "hero_hp": 269,
+          "turn": 95,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 445,
+          "turn": 102
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 445,
+          "turn": 103
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 445,
+          "turn": 104
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 605,
+          "turn": 115
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 605,
+          "turn": 124
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 605,
+          "turn": 126,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 605,
+          "turn": 127
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 605,
+          "turn": 129,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 605,
+          "turn": 130
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 605,
+          "turn": 132
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1905,
+          "turn": 147,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1905,
+          "turn": 152
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1905,
+          "turn": 153
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1905,
+          "turn": 155,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1905,
+          "turn": 156
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1905,
+          "turn": 157
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1905,
+          "turn": 158
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1905,
+          "turn": 159
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1905,
+          "turn": 160
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1905,
+          "turn": 161
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1905,
+          "turn": 163,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1905,
+          "turn": 164
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1905,
+          "turn": 165
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1905,
+          "turn": 166
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1905,
+          "turn": 167
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1905,
+          "turn": 168
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1905,
+          "turn": 169
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1905,
+          "turn": 171,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1905,
+          "turn": 172
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 1905,
+          "turn": 173,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1850,
+          "turn": 179
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1850,
+          "turn": 180
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1850,
+          "turn": 181
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1850,
+          "turn": 182
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 183
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 1850,
+          "turn": 184,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 185
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1850,
+          "turn": 186
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1850,
+          "turn": 188,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 189
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 1850,
+          "turn": 190,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1850,
+          "turn": 191
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1850,
+          "turn": 192
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1850,
+          "turn": 193
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1850,
+          "turn": 194
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 195
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1850,
+          "turn": 196
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1850,
+          "turn": 198,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 199
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1850,
+          "turn": 200
+        },
+        {
+          "from": "MT7",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 201,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 1850,
+          "turn": 202,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1850,
+          "turn": 203
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1850,
+          "turn": 204
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1850,
+          "turn": 205
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1850,
+          "turn": 206
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 207
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1850,
+          "turn": 208
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 1850,
+          "turn": 210,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 211
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1850,
+          "turn": 212
+        },
+        {
+          "from": "MT7",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 213,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1850,
+          "turn": 214
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1850,
+          "turn": 215,
+          "type": "return"
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 1850,
+          "turn": 217
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 1850,
+          "turn": 218
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 1850,
+          "turn": 219
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 1850,
+          "turn": 220
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 1850,
+          "turn": 221
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1850,
+          "turn": 222
+        }
+      ],
+      "elapsed_s": 1015.8,
+      "timestamp": "2026-10-01T02:58:42",
+      "run_idx": 5
+    }
+  ],
+  "aggregate": {
+    "n": 5,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.4345
+    ],
+    "died": 0,
+    "lethal_only_stops": 5,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.4241,
+    "score_sd": 0.1981,
+    "score_min": 0.0702,
+    "score_max": 0.5222,
+    "final_hp_mean": 1446.6,
+    "final_hp_sd": 795.9773,
+    "llm_calls_total": 487,
+    "seconds_per_call": 8.1,
+    "parse_error_rate": 0.0082,
+    "elapsed_s_total": 3944.8,
+    "floors_reached_mean": 6.2,
+    "floors_reached_max": 7
+  },
+  "updated": "2026-10-01 02:58"
+}

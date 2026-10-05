@@ -1,0 +1,185 @@
+{
+  "label": "tower_MT0-MT23w_heuristic_final7",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT23w",
+    "max_turns": 1500,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "none",
+    "prompt_chars": 0,
+    "model": "heuristic",
+    "task_mode": "-",
+    "preset": "heuristic",
+    "mode": "heuristic",
+    "temperature": 0.0,
+    "lookahead": 3,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "32768",
+      "MOTA_REMOTE_ACTIONS": "1",
+      "MOTA_TOWER_FIDELITY": "1",
+      "MOTA_HP_RULE_PCT": "60",
+      "LLM_TIMEOUT": "300"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.1949,
+      "success": false,
+      "died": false,
+      "floors_reached": 8,
+      "max_floor_id": "MT8",
+      "total_floors": 24,
+      "final_floor_id": "MT8",
+      "failure_reason": "Stuck — only unwinnable fights remain",
+      "final_hp": 105,
+      "hero_atk": 113,
+      "hero_def": 82,
+      "keys": {
+        "yellow": 11,
+        "blue": 6,
+        "red": 0
+      },
+      "money": 8,
+      "exp": 2,
+      "turns": 211,
+      "llm_calls": null,
+      "model_calls": null,
+      "planned_turns": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "lethal_only_stop": null,
+      "run_log": null,
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 550,
+          "turn": 15
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 550,
+          "turn": 16
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 358,
+          "turn": 51
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 610,
+          "turn": 76
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 314,
+          "turn": 92
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 314,
+          "turn": 95
+        },
+        {
+          "from": "MT7",
+          "to": "MT1",
+          "hero_hp": 1614,
+          "turn": 114,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT5",
+          "hero_hp": 3057,
+          "turn": 140,
+          "type": "remote"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2585,
+          "turn": 175,
+          "type": "remote"
+        },
+        {
+          "from": "MT6",
+          "to": "MT1",
+          "hero_hp": 2525,
+          "turn": 183,
+          "type": "remote"
+        },
+        {
+          "from": "MT1",
+          "to": "MT4",
+          "hero_hp": 2425,
+          "turn": 192,
+          "type": "remote"
+        },
+        {
+          "from": "MT4",
+          "to": "MT7",
+          "hero_hp": 309,
+          "turn": 204,
+          "type": "remote"
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 105,
+          "turn": 208
+        }
+      ],
+      "elapsed_s": 6.6,
+      "timestamp": "2026-10-02T06:03:06",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 0,
+    "lethal_only_stops": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.1949,
+    "score_sd": 0.0,
+    "score_min": 0.1949,
+    "score_max": 0.1949,
+    "final_hp_mean": 105.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 0,
+    "seconds_per_call": null,
+    "parse_error_rate": null,
+    "elapsed_s_total": 6.6,
+    "floors_reached_mean": 8.0,
+    "floors_reached_max": 8,
+    "max_floor_ids": [
+      "MT8"
+    ]
+  },
+  "updated": "2026-10-02 06:03"
+}

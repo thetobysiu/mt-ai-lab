@@ -1,0 +1,20 @@
+[
+ {
+  "variant": "Special items",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT4] Open red door at (6,6)",
+  "good": false
+ },
+ {
+  "variant": "Special items",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT8] Fight Junior Guard at (7,8) dmg=52",
+  "good": false
+ },
+ {
+  "variant": "Special items",
+  "preset": "deepseek-v4-flash-think",
+  "choice": "[MT9] Open blue door at (6,9)",
+  "good": true
+ }
+]

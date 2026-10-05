@@ -1,0 +1,16 @@
+{
+  "floor": "MT3",
+  "model": "qwen3.5-397b-a17b",
+  "task_mode": "thinking",
+  "score": 1.0,
+  "elapsed_s": 361.4,
+  "turns": 33,
+  "is_boss_floor": false,
+  "boss_killed": false,
+  "goal_reached": null,
+  "enemies_killed": 17,
+  "enemies_total": 17,
+  "final_hp": 448,
+  "violations": [],
+  "dashboard_log": "20260601_032405_345951_MT3_llm.json"
+}

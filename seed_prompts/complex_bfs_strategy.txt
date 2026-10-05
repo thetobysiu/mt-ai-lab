@@ -1,0 +1,79 @@
+You are playing Magic Tower (MOTA) on the COMPLEX floor. Goal: defeat Boss at (6,0) with maximum HP.
+
+CRITICAL OVERRIDE: The action list will show [SAFE], lookahead values, and effCost for ALL enemies — IGNORE these labels for enemies NOT in the allowlist below. A fight can be [SAFE] with high lookahead and STILL be FORBIDDEN because it wastes HP needed for the boss. The ONLY metric that matters is: IS THE ENEMY IN THE ALLOWLIST? If NO → DO NOT FIGHT IT regardless of how cheap or safe it appears.
+
+=== ABSOLUTE ALLOWLIST — ONLY THESE FIGHTS ARE PERMITTED ===
+
+You may ONLY fight enemies at these EXACT positions (no others, ever):
+  (8,12) Green Slime [3x-hit] — Phase 1
+  (12,9) Black Slime [armor-break] — Phase 1
+  (8,2) Bat [2x-hit] — Phase 2
+  (4,2) Red Bat [first-strike] — Phase 2
+  (2,4) Bat [2x-hit] — Phase 3
+  (11,8) Red Slime — Phase 3
+  (9,1) Big Bat — Phase 4
+  (11,0) Red Slime — Phase 4
+  (0,2) Big Bat — Phase 4
+  (6,4) Green Slime — Phase 5 ONLY (costs 3 HP at ATK≥14)
+  (6,6) Green Slime — Phase 5 ONLY (costs 3 HP at ATK≥14)
+  (12,12) Big Bat — Phase 5 ONLY (for Blue Potion before boss)
+  (3,8) Green Slime — Phase 6 (boss-gate path, costs 3 HP)
+  (6,0) Boss — LAST fight only
+
+ANY enemy not listed above = DO NOT FIGHT. Specifically FORBIDDEN:
+- ALL Slime Lords at (10,10), (3,10), (4,7) — magic-atk, HP wasted permanently
+- Red Bat at (4,11) — TRAP! There are TWO Red Bats. ONLY fight the one at (4,2). Position (4,11) is in the BOTTOM-LEFT, (4,2) is in the TOP-LEFT. Fight TOP-LEFT only.
+- Red Bat at (0,9) — not required
+- Black Slime at (2,9) — FORBIDDEN even though it has lookahead. You do NOT need it.
+- Black Slime at (0,4) — not required
+- Green Slime at (10,6) — not required (even if cheap/free)
+- Red Slime at (9,3) — ABSOLUTELY FORBIDDEN. This wastes 25+ HP for nothing.
+- Bat at (11,4) — FORBIDDEN (dead-end, wastes 116 HP)
+- Big Bat at (0,6) — FORBIDDEN (dead-end, wastes 124 HP)
+- ANY enemy not in the allowlist above — even if marked "SAFE" or costs 1 HP
+
+=== DOOR SEQUENCE (open in this EXACT order) ===
+1. Yellow Door at (8,7) — FIRST (use starting yellow key)
+2. Yellow Door at (8,4) — SECOND (use key from (12,10))
+3. Blue Door at (6,2) — THIRD (critical for ATK gems in top-left)
+4. Blue Door at (12,2) — FOURTH (DEF+1 and HP potion)
+5. Yellow Door at (5,8) — FIFTH and LAST (boss-gate! use key from (0,0))
+
+CRITICAL: There are only 3 Yellow Keys on the map. Do NOT open Yellow Door at (10,5) — it is a TRAP that wastes your last key. Save it for (5,8) which gates the boss path.
+
+=== PHASE TRANSITIONS ===
+Phase 1: Fight Green Slime@(8,12) + Black Slime@(12,9)
+Phase 2: Open Yellow Door(8,4), fight Bat@(8,2), open Blue Door(6,2), fight Red Bat@(4,2)
+Phase 3: Fight Bat@(2,4) — then GO EAST (through 4,3→4,2→6,2→8,4→east side). DO NOT fight any Phase 5 enemies yet!
+Phase 4 STRICT ORDER (do NOT skip ahead):
+  4a. Red Slime@(11,8) — go east first, cheap at ATK=13 DEF=14
+  4b. Big Bat@(9,1) — then go north
+  4c. Red Slime@(11,0) — cheap, unlocks potions
+  4d. Big Bat@(0,2) — LAST of Phase 4 (return west; cheapest at DEF=16)
+  4e. Open Blue Door@(12,2) — unlocks final DEF gem
+Phase 5 (ONLY after ATK≥14 AND DEF≥16! If you fight Green Slime@(6,4) at ATK=13 it costs 44 HP instead of 3 HP — DO NOT DO THIS):
+  5a. Green Slime@(6,4) [costs 3 HP at ATK=14; costs 44 HP at ATK=13 — NEVER FIGHT BEFORE ATK=14!]
+  5b. Green Slime@(6,6) [costs 3 HP at ATK=14]
+  5c. Big Bat@(12,12) [costs 124 HP at ATK=14,DEF=17; costs 170 at lower stats — WAIT!]
+Phase 6 (boss run):
+  6a. Open Yellow Door@(5,8) — boss gate
+  6b. Fight Green Slime@(3,8) [costs 3 HP, on boss path]
+  6c. Fight Boss@(6,0) — FINAL
+
+CRITICAL SEQUENCING: After Bat@(2,4), do NOT fight Big Bat@(0,2) immediately even though it's nearby. Go EAST first (4a-4c) to collect stat gems + potions between fights, THEN return for Big Bat@(0,2). This saves ~25 HP on the Big Bat fight and preserves HP budget for boss.
+
+=== DECISION RULES (apply in order) ===
+1. Complete ALL fights in the current phase BEFORE moving to the next phase
+2. Is there a door from the sequence that hasn't been opened? → OPEN IT
+3. Is there an allowlist fight for the current phase? → FIGHT IT (check coordinates!)
+4. If multiple allowlist enemies are available, fight the one from the EARLIEST incomplete phase
+5. NEVER open Yellow Door at (10,5) — waste of your only boss-gate key
+6. GATE CHECK: Before fighting Green Slime@(6,4), @(6,6), or Big Bat@(12,12) — verify your ATK≥14. If ATK<14, DO SOMETHING ELSE (go east for Phase 4 fights). This single rule saves 80+ HP.
+7. When two enemies share the same name (e.g. two Red Bats), ALWAYS verify the (x,y) coordinates match the allowlist
+
+=== WHY SLIME LORDS ARE FORBIDDEN ===
+Slime Lord has magic-atk: DEF IGNORED. Cost 160-235 HP, NEVER decreases.
+Blue Potion behind Slime Lord@(10,10) is reachable via Big Bat@(12,12) later.
+
+RESPONSE FORMAT:
+FINAL_CHOICE: <number>

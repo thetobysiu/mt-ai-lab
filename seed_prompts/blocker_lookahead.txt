@@ -1,0 +1,28 @@
+You play Magic Tower (MOTA): a deterministic, turn-based dungeon game on ONE floor. Each turn the engine lists every legal action with its exact damage, and describes the floor as areas and the monsters and doors between them; you answer with one action number.
+
+COMBAT (exact, deterministic, turn-based):
+- You and the monster trade hits in rounds; you strike first.
+- Your hit = heroATK - monDEF. If heroATK <= monDEF you deal no damage and cannot win.
+- Monster hit = monATK - heroDEF. If heroDEF >= monATK the fight costs 0 HP.
+- rounds = ceil(monHP / your hit); total cost = rounds x monster hit. The list shows it for the actions you can take now.
+- Special abilities: [magic-atk] ignores your DEF; [Nx-combo] multiplies the monster's hit; [first-strike] adds one extra monster hit.
+
+THE AREAS:
+- Walls split the floor into areas A1, A2, ...; you can walk freely inside an area and pick up everything in it.
+- Each monster or door is listed with what it touches. Fighting the monster, or opening the door with a key of its colour, joins everything it touches. A blocker that touches another blocker opens nothing on that side until the second one is cleared too.
+- Positions are written (x,y).
+
+HOW TO DECIDE (do this in your reasoning before every choice):
+1. For each listed action, find which areas it joins to yours and what they contain: items, keys, and the next monsters and doors.
+2. Follow each branch two or three actions further: what the next fights there cost at your stats (use the combat rules), and what the stat items you would collect on that branch save on the fights that remain.
+3. Compare the branches by the HP you keep at the end of them and by whether the boss stays winnable, then choose the first action of the best branch.
+
+PRIORITIES:
+1. Stat items first. Every +1 DEF lowers every future fight; every +1 ATK lowers the rounds. Reach stat items before paying for fights that get cheaper afterwards; the order of fights decides how much HP you keep.
+2. Never fight a monster that costs more than 40% of your current HP unless nothing else on the floor can still make progress.
+3. HP is the only currency here. Never pay HP for a fight that unlocks nothing needed for the goal.
+4. Keys are scarce: open a door only when what it unlocks is needed.
+
+GOAL: reach the floor's objective (kill the boss if there is one) alive with as much HP as possible.
+
+Give your reasoning, then end with: FINAL_CHOICE: <number>

@@ -1,0 +1,162 @@
+{
+  "label": "complex_qwen3.6-35b_reactive_raw_la2",
+  "config": {
+    "floor": "complex",
+    "start": null,
+    "end": null,
+    "max_turns": null,
+    "prompt_file": "complex_bfs_strategy.txt",
+    "prompt_chars": 4898,
+    "model": "qwen3.6-35b-a3b",
+    "task_mode": "thinking",
+    "preset": "qwen3.6-35b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": true,
+    "reference_hp": 68
+  },
+  "runs": [
+    {
+      "score": 0.7012,
+      "success": false,
+      "goal": "boss",
+      "goal_reached": true,
+      "died": true,
+      "final_hp": -82,
+      "hero_atk": 14,
+      "hero_def": 17,
+      "enemies_killed": 14,
+      "enemies_total": 25,
+      "steps": 49,
+      "violations": [
+        "suicide_fight: Boss at (6,0)"
+      ],
+      "llm_calls": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "elapsed_s": 249.4,
+      "timestamp": "2026-09-21T08:23:43",
+      "run_idx": 1,
+      "boss_fight_won": true
+    },
+    {
+      "score": 0.7012,
+      "success": false,
+      "goal": "boss",
+      "goal_reached": true,
+      "died": true,
+      "final_hp": -82,
+      "hero_atk": 14,
+      "hero_def": 17,
+      "enemies_killed": 14,
+      "enemies_total": 25,
+      "steps": 49,
+      "violations": [
+        "suicide_fight: Boss at (6,0)"
+      ],
+      "llm_calls": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "elapsed_s": 253.8,
+      "timestamp": "2026-09-21T08:27:57",
+      "run_idx": 2,
+      "boss_fight_won": true
+    },
+    {
+      "score": 0.7012,
+      "success": false,
+      "goal": "boss",
+      "goal_reached": true,
+      "died": true,
+      "final_hp": -82,
+      "hero_atk": 14,
+      "hero_def": 17,
+      "enemies_killed": 14,
+      "enemies_total": 25,
+      "steps": 49,
+      "violations": [
+        "suicide_fight: Boss at (6,0)"
+      ],
+      "llm_calls": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "elapsed_s": 248.9,
+      "timestamp": "2026-09-21T08:32:06",
+      "run_idx": 3,
+      "boss_fight_won": true
+    },
+    {
+      "score": 0.7012,
+      "success": false,
+      "goal": "boss",
+      "goal_reached": true,
+      "died": true,
+      "final_hp": -82,
+      "hero_atk": 14,
+      "hero_def": 17,
+      "enemies_killed": 14,
+      "enemies_total": 25,
+      "steps": 49,
+      "violations": [
+        "suicide_fight: Boss at (6,0)"
+      ],
+      "llm_calls": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "elapsed_s": 251.1,
+      "timestamp": "2026-09-21T08:36:17",
+      "run_idx": 4,
+      "boss_fight_won": true
+    },
+    {
+      "score": 0.6862,
+      "success": false,
+      "goal": "boss",
+      "goal_reached": true,
+      "died": true,
+      "final_hp": -124,
+      "hero_atk": 14,
+      "hero_def": 17,
+      "enemies_killed": 17,
+      "enemies_total": 25,
+      "steps": 53,
+      "violations": [
+        "suicide_fight: Boss at (6,0)"
+      ],
+      "llm_calls": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "elapsed_s": 366.8,
+      "timestamp": "2026-09-21T08:42:24",
+      "run_idx": 5,
+      "boss_fight_won": true
+    }
+  ],
+  "aggregate": {
+    "n": 5,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.4345
+    ],
+    "died": 5,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.6982,
+    "score_sd": 0.0067,
+    "score_min": 0.6862,
+    "score_max": 0.7012,
+    "final_hp_mean": -90.4,
+    "final_hp_sd": 18.783,
+    "llm_calls_total": 0,
+    "seconds_per_call": null,
+    "parse_error_rate": null,
+    "elapsed_s_total": 1370.0
+  },
+  "updated": "2026-09-21 08:42"
+}

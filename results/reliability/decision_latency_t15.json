@@ -1,0 +1,68 @@
+{
+ "prompt": {
+  "log": "20260923_165759_089758_simple_llm.json",
+  "turn": 15,
+  "n_actions": 5,
+  "system_chars": 5775,
+  "user_chars": 3561,
+  "thinking_cap": 8192,
+  "episode_choice": "Fight Bat at (3,5) dmg=144"
+ },
+ "rows": [
+  {
+   "preset": "qwen3.5-397b",
+   "model": "qwen3.5-397b-a17b",
+   "mode": "thinking",
+   "n": 3,
+   "seconds_median": 113.4,
+   "seconds_min": 48.8,
+   "seconds_max": 622.4,
+   "reasoning_chars_median": 7857,
+   "parsed": 3,
+   "truncated": 0,
+   "choices": [
+    1,
+    1,
+    1
+   ],
+   "errors": []
+  },
+  {
+   "preset": "qwen3.6-35b",
+   "model": "qwen3.6-35b-a3b",
+   "mode": "thinking",
+   "n": 3,
+   "seconds_median": 34.4,
+   "seconds_min": 33.3,
+   "seconds_max": 65.2,
+   "reasoning_chars_median": 18571,
+   "parsed": 3,
+   "truncated": 0,
+   "choices": [
+    1,
+    1,
+    1
+   ],
+   "errors": []
+  },
+  {
+   "preset": "glm-5.3-flash",
+   "model": "glm-5.3-flash",
+   "mode": "thinking",
+   "n": 3,
+   "seconds_median": 38.8,
+   "seconds_min": 13.3,
+   "seconds_max": 103.7,
+   "reasoning_chars_median": 5885,
+   "parsed": 3,
+   "truncated": 0,
+   "choices": [
+    1,
+    1,
+    1
+   ],
+   "errors": []
+  }
+ ],
+ "timestamp": "2026-09-24 00:25"
+}

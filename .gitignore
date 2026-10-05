@@ -1,0 +1,47 @@
+# Secrets
+.env
+.env.*
+!.env.example
+!mota/dashboard/web/.env.development
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Run logs, job manifests and other runtime output (download the thesis run logs with scripts/fetch_run_logs.py)
+logs/
+results/prompt_history/
+results/reliability/rerun_*.json
+
+# Java solver build output
+tools/java_bfs/out/
+*.class
+
+# Web front end
+node_modules/
+mota/dashboard/web/.next/
+mota/dashboard/web/out/
+mota/dashboard/web/next-env.d.ts
+*.tsbuildinfo
+
+# Model weights and archives (the run-log archive is a release asset, not part of the tree)
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.zip
+training/models/
+training/output/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

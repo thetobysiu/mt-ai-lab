@@ -1,0 +1,119 @@
+{
+  "label": "segment0_heuristic",
+  "config": {
+    "floor": null,
+    "start": "MT0",
+    "end": "MT5",
+    "max_turns": 800,
+    "checkpoint": 0,
+    "hero_override": {
+      "hp": 1000,
+      "atk": 10,
+      "def": 10,
+      "money": 0,
+      "exp": 0,
+      "yellow": 1,
+      "blue": 1,
+      "red": 1
+    },
+    "prompt_file": "none",
+    "prompt_chars": 0,
+    "model": "heuristic",
+    "task_mode": "-",
+    "preset": "heuristic",
+    "mode": "heuristic",
+    "temperature": 0.0,
+    "lookahead": 3,
+    "structured_output": true,
+    "overrides_disabled": false
+  },
+  "runs": [
+    {
+      "score": 0.8628,
+      "success": true,
+      "died": false,
+      "floors_reached": 5,
+      "max_floor_id": "MT5",
+      "total_floors": 6,
+      "final_floor_id": "MT5",
+      "failure_reason": "",
+      "final_hp": 314,
+      "hero_atk": 30,
+      "hero_def": 32,
+      "keys": {
+        "yellow": 3,
+        "blue": 0,
+        "red": 1
+      },
+      "money": 22,
+      "exp": 136,
+      "turns": 93,
+      "llm_calls": null,
+      "parse_errors": null,
+      "forced_turns": null,
+      "run_log": null,
+      "floor_transitions": [
+        {
+          "from": "MT0",
+          "to": "MT1",
+          "hero_hp": 1000,
+          "turn": 2
+        },
+        {
+          "from": "MT1",
+          "to": "MT2",
+          "hero_hp": 550,
+          "turn": 15
+        },
+        {
+          "from": "MT2",
+          "to": "MT3",
+          "hero_hp": 550,
+          "turn": 16
+        },
+        {
+          "from": "MT3",
+          "to": "MT4",
+          "hero_hp": 358,
+          "turn": 52
+        },
+        {
+          "from": "MT4",
+          "to": "MT5",
+          "hero_hp": 610,
+          "turn": 77
+        }
+      ],
+      "elapsed_s": 2.6,
+      "timestamp": "2026-09-22T10:47:16",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 1,
+    "success_rate": 1.0,
+    "success_ci95": [
+      0.2065,
+      1.0
+    ],
+    "died": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.8628,
+    "score_sd": 0.0,
+    "score_min": 0.8628,
+    "score_max": 0.8628,
+    "final_hp_mean": 314.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 0,
+    "seconds_per_call": null,
+    "parse_error_rate": null,
+    "elapsed_s_total": 2.6,
+    "floors_reached_mean": 5.0,
+    "floors_reached_max": 5
+  },
+  "updated": "2026-09-22 10:47"
+}

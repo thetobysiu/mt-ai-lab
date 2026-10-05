@@ -1,0 +1,241 @@
+{
+  "label": "segment1_qwen3.5-397b_basic_d1d4",
+  "config": {
+    "floor": null,
+    "start": "MT5",
+    "end": "MT8",
+    "max_turns": 400,
+    "checkpoint": 1,
+    "hero_override": {
+      "hp": 2640,
+      "atk": 29,
+      "def": 42,
+      "money": 22,
+      "exp": 136,
+      "yellow": 4,
+      "blue": 5,
+      "red": 0
+    },
+    "prompt_file": "engine-default-tower-basic",
+    "prompt_chars": 3630,
+    "model": "qwen3.5-397b-a17b",
+    "task_mode": "thinking",
+    "preset": "qwen3.5-397b",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 2,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "8192"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.679,
+      "success": false,
+      "died": false,
+      "floors_reached": 3,
+      "max_floor_id": "MT8",
+      "total_floors": 4,
+      "final_floor_id": "MT8",
+      "failure_reason": "Stuck — only unwinnable fight remains",
+      "final_hp": 895,
+      "hero_atk": 62,
+      "hero_def": 77,
+      "keys": {
+        "yellow": 11,
+        "blue": 6,
+        "red": 0
+      },
+      "money": 7,
+      "exp": 23,
+      "turns": 94,
+      "llm_calls": 61,
+      "parse_errors": 3,
+      "forced_turns": 33,
+      "run_log": "20260926_024458_514629_MT5-MT8_llm.json",
+      "floor_transitions": [
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2640,
+          "turn": 15
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2640,
+          "turn": 18
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 2640,
+          "turn": 20,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2685,
+          "turn": 24
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2685,
+          "turn": 25
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 2685,
+          "turn": 27,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2685,
+          "turn": 29
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 2685,
+          "turn": 30,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2685,
+          "turn": 31
+        },
+        {
+          "from": "MT6",
+          "to": "MT5",
+          "hero_hp": 2685,
+          "turn": 33,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2085,
+          "turn": 39
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2085,
+          "turn": 40
+        },
+        {
+          "from": "MT7",
+          "to": "MT6",
+          "hero_hp": 2085,
+          "turn": 41,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 1965,
+          "turn": 43
+        },
+        {
+          "from": "MT7",
+          "to": "MT5",
+          "hero_hp": 2965,
+          "turn": 45,
+          "type": "return"
+        },
+        {
+          "from": "MT5",
+          "to": "MT6",
+          "hero_hp": 2281,
+          "turn": 61,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2281,
+          "turn": 62
+        },
+        {
+          "from": "MT7",
+          "to": "MT6",
+          "hero_hp": 2281,
+          "turn": 66,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 2281,
+          "turn": 69
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 895,
+          "turn": 73
+        },
+        {
+          "from": "MT8",
+          "to": "MT6",
+          "hero_hp": 895,
+          "turn": 77,
+          "type": "return"
+        },
+        {
+          "from": "MT6",
+          "to": "MT7",
+          "hero_hp": 895,
+          "turn": 80
+        },
+        {
+          "from": "MT7",
+          "to": "MT8",
+          "hero_hp": 895,
+          "turn": 81
+        }
+      ],
+      "elapsed_s": 1722.7,
+      "timestamp": "2026-09-26T05:13:41",
+      "run_idx": 1
+    }
+  ],
+  "aggregate": {
+    "n": 1,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.7935
+    ],
+    "died": 0,
+    "lethal_only_stops": 0,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": null,
+    "goal_score_sd": null,
+    "score_mean": 0.679,
+    "score_sd": 0.0,
+    "score_min": 0.679,
+    "score_max": 0.679,
+    "final_hp_mean": 895.0,
+    "final_hp_sd": 0.0,
+    "llm_calls_total": 61,
+    "seconds_per_call": 28.24,
+    "parse_error_rate": 0.0492,
+    "elapsed_s_total": 1722.7,
+    "floors_reached_mean": 3.0,
+    "floors_reached_max": 3
+  },
+  "updated": "2026-09-26 05:17"
+}

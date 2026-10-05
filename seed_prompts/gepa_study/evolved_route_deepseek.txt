@@ -1,0 +1,23 @@
+You play Magic Tower (MOTA): deterministic, turn-based, ONE floor. Goal: kill the boss alive with max HP. Engine lists actions with exact damage, hpAfter, lookahead, effCost, min-cost@maxStats, [FREE if DEF>=X], [OPTIONAL], [LETHAL]. Answer: FINAL_CHOICE: <number>.
+
+COMBAT:
+- You hit first. Your hit = ATK - monDEF. If <=0, cannot win.
+- Monster hit = monATK - DEF (magic-atk ignores DEF). If DEF >= monATK, fight free.
+- rounds = ceil(monHP / your hit); damage = rounds * monster hit.
+
+READING LIST (strict semantics):
+- damage/hpAfter exact for current stats. min-cost@maxStats = cost after ALL remaining stat gems (ATK/DEF/MDEF) collected. If min-cost@maxStats is 0 or much lower, the fight MUST be deferred until those gems are collected first, no matter what.
+- lookahead = value of stat gems (ATK/DEF/MDEF) ONLY. Keys, doors, potions are NOT progress. If lookahead=0 or effCost=None, the fight unlocks NO stat gem — it is a DEAD END, even if marked non-optional, even if it leads to potions/keys. Never pay HP for it.
+- effCost = damage - lookahead. Negative effCost is strong. Positive effCost means you pay more than gem value — take only if gem is critical for boss access and no cheaper alternative exists.
+- [OPTIONAL] = not required for boss or stat gems. Never fight optional. [LETHAL] = hpAfter <= 0 — never take.
+- Potions are recovery ONLY, not progress. Fighting to reach a potion still costs full damage — the potion does NOT reduce the cost of the fight. Only count potions AFTER deciding the fight is worthwhile for stats/boss.
+
+HARD RULES (in strict order, no exceptions):
+1. NEVER fight a monster with lookahead=0 or effCost=None — it is a dead end. Skip it regardless of flags, potions, or keys behind it.
+2. NEVER fight any [OPTIONAL] monster.
+3. Before any fight, check min-cost@maxStats. If it is 0 or much lower than current damage, DO NOT fight now. Collect those stat gems first, even via free doors or other required fights that are cheaper now.
+4. Among remaining required fights (those that unlock stat gems or the boss path), pick the one with LOWEST effCost, preferring fights that are free now.
+5. Never spend >40% of current HP on a fight unless it's the only way to reach a stat gem required for the boss, and no other fight can be taken first.
+6. Always take free actions (doors, potion pickups) before any fight, if available. If a door or free path gives the same access as a fight, take the door/free path.
+
+Think: Which stat gems remain? Which fights are truly required for the boss? Which fights become free after those gems? Which are dead ends? Maximize final HP — wait for stat gems to make fights free or nearly free, not the reverse.

@@ -1,0 +1,193 @@
+{
+  "label": "complex_glm-5.3-flash_final2_la3",
+  "config": {
+    "floor": "complex",
+    "start": null,
+    "end": null,
+    "max_turns": null,
+    "checkpoint": null,
+    "hero_override": null,
+    "prompt_file": "engine-default-floor-basic",
+    "prompt_chars": 2527,
+    "model": "glm-5.3-flash",
+    "task_mode": "thinking",
+    "preset": "glm-5.3-flash",
+    "mode": "reactive",
+    "temperature": 0.0,
+    "lookahead": 3,
+    "structured_output": true,
+    "overrides_disabled": false,
+    "env": {
+      "THINKING_MAX_TOKENS": "32768",
+      "CONVERSATION_HISTORY_TURNS": "0",
+      "MOTA_ORDER_TWO_SIDED": "1",
+      "MOTA_FIGHT_KEY_FLOOD": "1",
+      "LLM_TIMEOUT": "300"
+    },
+    "source": "cli"
+  },
+  "runs": [
+    {
+      "score": 0.3682,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 143,
+      "hero_atk": 12,
+      "hero_def": 17,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "steps": 39,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 15,
+      "parse_errors": 5,
+      "forced_turns": 24,
+      "planned_turns": 0,
+      "lethal_only_stop": {
+        "action": "Fight Bat at (2,4) dmg=150",
+        "hp_after": -7,
+        "damage": 150
+      },
+      "map_enum": null,
+      "map_graph": null,
+      "run_log": "20261001_045535_980148_complex_llm.json",
+      "elapsed_s": 15227.3,
+      "timestamp": "2026-10-01T11:09:23",
+      "run_idx": 1
+    },
+    {
+      "score": 0.3694,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 135,
+      "hero_atk": 11,
+      "hero_def": 17,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "steps": 37,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 15,
+      "parse_errors": 10,
+      "forced_turns": 22,
+      "planned_turns": 0,
+      "lethal_only_stop": {
+        "action": "Fight Slime Lord at (4,7) dmg=230",
+        "hp_after": -95,
+        "damage": 230
+      },
+      "map_enum": null,
+      "map_graph": null,
+      "run_log": "20261001_090923_346702_complex_llm.json",
+      "elapsed_s": 18437.6,
+      "timestamp": "2026-10-01T16:16:40",
+      "run_idx": 2
+    },
+    {
+      "score": 0.4338,
+      "goal_score": 0.182,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 73,
+      "hero_atk": 11,
+      "hero_def": 17,
+      "enemies_killed": 13,
+      "enemies_total": 25,
+      "steps": 39,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 16,
+      "parse_errors": 8,
+      "forced_turns": 23,
+      "planned_turns": 0,
+      "lethal_only_stop": {
+        "action": "Fight Red Bat at (4,2) dmg=258",
+        "hp_after": -185,
+        "damage": 258
+      },
+      "map_enum": null,
+      "map_graph": null,
+      "run_log": "20261001_141640_932076_complex_llm.json",
+      "elapsed_s": 11168.9,
+      "timestamp": "2026-10-01T19:22:49",
+      "run_idx": 3
+    },
+    {
+      "score": 0.3755,
+      "goal_score": 0.168,
+      "success": false,
+      "hp_ratio": null,
+      "boss_fight_won": false,
+      "goal": "boss",
+      "goal_reached": false,
+      "died": false,
+      "final_hp": 123,
+      "hero_atk": 11,
+      "hero_def": 17,
+      "enemies_killed": 12,
+      "enemies_total": 25,
+      "steps": 37,
+      "violations": [
+        "boss_not_killed"
+      ],
+      "llm_calls": 15,
+      "parse_errors": 9,
+      "forced_turns": 22,
+      "planned_turns": 0,
+      "lethal_only_stop": {
+        "action": "Fight Slime Lord at (4,7) dmg=230",
+        "hp_after": -107,
+        "damage": 230
+      },
+      "map_enum": null,
+      "map_graph": null,
+      "run_log": "20261001_172249_810181_complex_llm.json",
+      "elapsed_s": 10390.1,
+      "timestamp": "2026-10-01T22:15:59",
+      "run_idx": 4
+    }
+  ],
+  "aggregate": {
+    "n": 4,
+    "successes": 0,
+    "success_rate": 0.0,
+    "success_ci95": [
+      0.0,
+      0.4899
+    ],
+    "died": 0,
+    "lethal_only_stops": 4,
+    "hp_ratio_mean": null,
+    "hp_ratio_sd": null,
+    "goal_score_mean": 0.1715,
+    "goal_score_sd": 0.007,
+    "score_mean": 0.3867,
+    "score_sd": 0.0315,
+    "score_min": 0.3682,
+    "score_max": 0.4338,
+    "final_hp_mean": 118.5,
+    "final_hp_sd": 31.4272,
+    "llm_calls_total": 61,
+    "seconds_per_call": 905.31,
+    "parse_error_rate": 0.5246,
+    "elapsed_s_total": 55223.9
+  },
+  "updated": "2026-10-01 22:15"
+}
