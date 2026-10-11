@@ -45,7 +45,7 @@ be drawn as coloured cells with the engine's numbers or with the original game's
 
 | Tab | What it shows |
 |---|---|
-| **Thesis results** (default) | Table F.4 of the thesis row by row: each table, figure or paragraph of Chapter 6 with its result files, k/N with the Wilson interval, HP/opt, deaths, highest tower floor. Click a file to list its episodes; each episode links to its replay once the run logs are downloaded. |
+| **Thesis results** (default) | Table D.4 of the thesis row by row: each table, figure or paragraph of Chapter 6 with its result files, k/N with the Wilson interval, HP/opt, deaths, highest tower floor. Click a file to list its episodes; each episode links to its replay once the run logs are downloaded. |
 | Re-run thesis experiments | the catalogue: select entries, optionally cap the episodes, and start them with your API key; results appear next to the thesis results under a new label |
 | Custom run ×N | any condition through the same harness as `run_reliability.py` |
 | All stored results | every result file with its interval, filterable to the files reported in the thesis |

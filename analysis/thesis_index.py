@@ -1,13 +1,13 @@
 """Index of the thesis results: which result files stand behind each table, figure and paragraph of Chapter 6.
 
-The index follows Table F.4 of the thesis (Appendix F, "Result files") row by row; Table F.5 supplies the tower
+The index follows Table D.4 of the thesis (Appendix D, "Result files") row by row; Table D.5 supplies the tower
 labels. It writes
 
-  results/thesis_index.json            rows of Table F.4 with their result files and aggregates (read by the dashboard)
+  results/thesis_index.json            rows of Table D.4 with their result files and aggregates (read by the dashboard)
   results/reliability/_thesis_labels.json   flat list of thesis labels (the "thesis" filter on the Logs page)
   docs/results.md                      the same index as a readable page
 
-    python analysis/thesis_index.py --appendix path/to/13_appendix_f_configuration.md
+    python analysis/thesis_index.py --appendix path/to/11_appendix_d_configuration.md
     python analysis/thesis_index.py            # only re-render docs/results.md from results/thesis_index.json
 """
 from __future__ import annotations
@@ -94,14 +94,14 @@ def summarise(path: Path) -> dict:
 
 def build(appendix: Path) -> dict:
     text = appendix.read_text(encoding="utf-8")
-    f5 = table(text, "Table F.5")
+    f5 = table(text, "Table D.5")
     tower_labels = sorted({m for row in f5 for m in re.findall(r"`([^`]+)`", row[1])}, key=len, reverse=True)
     design_label = {row[0]: re.findall(r"`([^`]+)`", row[1])[0] for row in f5 if re.findall(r"`([^`]+)`", row[1])}
     files = all_results()
     rows, unmatched = [], []
-    for result, cell in table(text, "Table F.4"):
+    for result, cell in table(text, "Table D.4"):
         names = re.findall(r"`([^`]+)`", cell)
-        m = re.fullmatch(r"design (\S+) of Table 6\.13", cell)
+        m = re.fullmatch(r"the (\S+)-observation rows of Table 6\.13", cell)
         if m and m.group(1) in design_label:
             names = [f"tower_<m>_{design_label[m.group(1)]}_reactive"]
         matched: dict[str, Path] = {}
@@ -140,7 +140,7 @@ def build(appendix: Path) -> dict:
                     r["matched"][rel] = p
     for r in rows:
         r["items"] = [summarise(p) for _, p in sorted(r.pop("matched").items())]
-    return {"source": "Thesis, Appendix F, Table F.4 (result files) and Table F.5 (tower labels)", "rows": rows,
+    return {"source": "Thesis, Appendix D, Table D.4 (result files) and Table D.5 (tower labels)", "rows": rows,
             "unmatched": unmatched}
 
 
@@ -164,7 +164,7 @@ def fmt(it: dict) -> str:
 def render(index: dict) -> str:
     out = ["# Results behind the thesis", "",
            "This page lists, for every table, figure and paragraph of Chapter 6, the result files in `results/` that",
-           "it reports, following Table F.4 of the thesis. Successes are *k/N* episodes with the Wilson 95 % interval;",
+           "it reports, following Table D.4 of the thesis. Successes are *k/N* episodes with the Wilson 95 % interval;",
            "HP/opt is the final HP relative to the exact optimum, averaged over successful episodes. Every episode names",
            "its run log; download the logs (`python scripts/fetch_run_logs.py`) to replay them in the platform",
            "(Experiments → Thesis results).", "",
@@ -186,7 +186,7 @@ def render(index: dict) -> str:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    ap.add_argument("--appendix", type=Path, help="13_appendix_f_configuration.md of the thesis")
+    ap.add_argument("--appendix", type=Path, help="11_appendix_d_configuration.md of the thesis")
     a = ap.parse_args()
     if a.appendix:
         index = build(a.appendix)

@@ -13,7 +13,7 @@ CATALOG: list[dict] = [
     {"group": "RQ1 · main results", "section": "Table 6.2", "id": "main-results",
      "title": "Final configuration on the six single floors (Qwen3.5-397B)",
      "what": "Re-run of Table 6.2: simple floor, complex floor with the single-floor and with the solver-route prompt, "
-             "hand01 to hand04; N = 5. Other models: codes VD…, VS…, VM… (Appendix F).",
+             "hand01 to hand04; N = 5. Other models: codes VD…, VS…, VM… (Appendix D).",
      "codes": ["VQS5", "VQC5", "VQR5", "VQ15", "VQ25", "VQ35", "VQ45"]},
     # --- RQ1: simple floor -----------------------------------------------------------------------------
     {"group": "RQ1 · simple floor", "section": "Section 6.4.1, Table 6.5", "id": "override-census",
@@ -21,7 +21,7 @@ CATALOG: list[dict] = [
      "what": "Table 6.5, row 1: earlier hand-written prompt with the logged strategic override; row 2: single-floor prompt "
              "with mechanical assists only; Table 6.3: all assists off.",
      "codes": ["R0", "B4", "A2"]},
-    {"group": "RQ1 · simple floor", "section": "Section 6.4.4, Table 6.5", "id": "cost-aware-annotation",
+    {"group": "RQ1 · simple floor", "section": "Section 6.4.3, Table 6.5", "id": "cost-aware-annotation",
      "title": "Two-sided annotations (rows 3 and 4)",
      "what": "Same model, prompt and lookahead depth: the alternative-route tag, then the net stat-route and fight-order lines.",
      "codes": ["B5", "B6", "B7"]},
@@ -44,13 +44,13 @@ CATALOG: list[dict] = [
      "title": "Complex floor, solver-route prompt (earlier runs)",
      "what": "The published solver's route with a survival rule, before the re-run of Table 6.2.",
      "codes": ["CQR", "CR", "DCR"]},
-    {"group": "RQ1 · other floors", "section": "Sections 6.2 and 6.4.6", "id": "complex-basic",
+    {"group": "RQ1 · other floors", "section": "Sections 6.2 and 6.4.5", "id": "complex-basic",
      "title": "Complex floor, single-floor prompt (earlier runs)",
      "what": "Final configuration, before the re-run of Table 6.2.", "codes": ["GC", "GCs"]},
     {"group": "RQ1 · other floors", "section": "Section 6.6", "id": "exact-route",
      "title": "Exact-route prompt (68-HP route)",
      "what": "The exact optimal route listed in the prompt (compiled-knowledge condition).", "codes": ["X68S", "X68D"]},
-    {"group": "RQ1 · other floors", "section": "Table D.56", "id": "hand-floors",
+    {"group": "RQ1 · other floors", "section": "Development history", "id": "hand-floors",
      "title": "Hand-designed floors hand01 to hand04 (earlier runs)",
      "what": "Final configuration before the re-run of Table 6.2 (Table 6.11 reports the re-run).",
      "codes": ["HD1", "HD2", "HD3", "HD4", "HS1", "HS2", "HS3", "HS4"]},
@@ -83,15 +83,15 @@ CATALOG: list[dict] = [
      "title": "Long plans: as many actions as the model can",
      "what": "Re-planned and single-call; DeepSeek-V4-Flash on the simple and complex floors, Qwen3.5-397B on the simple floor.",
      "codes": ["DSMO", "DCMO", "DSM", "PMO", "PM"]},
-    {"group": "RQ3 · planning horizon", "section": "Table 6.9, tower design 5", "id": "plan-tower",
+    {"group": "RQ3 · planning horizon", "section": "Development history", "id": "plan-tower",
      "title": "Tower: reactive against commit-3 and commit-5",
      "what": "Development version of design 5, three runs per cell.", "codes": ["T7DR", "T7QR", "T7D3", "T7D5", "T7Q3"]},
     # --- Tower -------------------------------------------------------------------------------------------------
     {"group": "Tower", "section": "Table 6.13", "id": "tower-final",
-     "title": "Tower from MT0, design 7 (final design)", "what": "Three runs per model.",
+     "title": "Tower from MT0, final observation", "what": "Three runs per model.",
      "codes": ["T11QR", "T11DR", "T11Q6", "T11MM"]},
     {"group": "Tower", "section": "Section 6.7.3", "id": "tower-resume",
-     "title": "Design-6 run resumed on MT18 with blue keys for sale", "what": "Qwen3.5-397B; reached the normal ending.",
+     "title": "Stored run resumed on MT18 with blue keys for sale", "what": "Qwen3.5-397B; reached the normal ending.",
      "codes": ["PXQ"]},
 ]
 

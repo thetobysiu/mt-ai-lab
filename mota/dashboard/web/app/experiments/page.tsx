@@ -49,7 +49,7 @@ function itemOutcome(it: IndexItem) {
     died: it.died ?? null, floors_max: it.floors_max ?? null, updated: null });
 }
 
-// Table F.4 of the thesis, row by row: every number in Chapter 6 leads to its result files and their episodes.
+// Table D.4 of the thesis, row by row: every number in Chapter 6 leads to its result files and their episodes.
 function ThesisResults() {
   const [data, setData] = useState<{ rows: IndexRow[]; run_logs_present: number; source: string } | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -69,7 +69,7 @@ function ThesisResults() {
     <Widget title="Thesis results" testId="thesis-results" className="min-h-0" bodyClass="text-xs space-y-3 max-h-[calc(100vh-11rem)] overflow-auto"
             badge={<span className="tag">{data.rows.length} tables and paragraphs</span>}
             actions={<input className="input w-64" placeholder="filter: Table 6.2, hand01, tower …" value={filter} onChange={(e) => setFilter(e.target.value)} data-testid="thesis-filter" />}
-            footer={<>Follows Table F.4 of the thesis (Appendix F): each table, figure or paragraph of Chapter 6 with the result files it reports.
+            footer={<>Follows Table D.4 of the thesis (Appendix D): each table, figure or paragraph of Chapter 6 with the result files it reports.
               Success = k/N with the Wilson 95% interval; HP/opt = final HP relative to the exact optimum among successes. Click a file to list its episodes.</>}>
       {data.run_logs_present === 0 && (
         <div className="panel p-2 text-amber-300" data-testid="thesis-no-logs">

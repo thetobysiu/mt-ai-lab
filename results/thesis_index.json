@@ -1,5 +1,5 @@
 {
- "source": "Thesis, Appendix F, Table F.4 (result files) and Table F.5 (tower labels)",
+ "source": "Thesis, Appendix D, Table D.4 (result files) and Table D.5 (tower labels)",
  "rows": [
   {
    "result": "Table 6.2, single-floor columns (re-run of Table 6.2, $N = 5$)",
@@ -429,7 +429,7 @@
   },
   {
    "result": "Table 6.2, tower column",
-   "files_cell": "design 7 of Table 6.13",
+   "files_cell": "the final-observation rows of Table 6.13",
    "items": [
     {
      "path": "results/reliability/tower_deepseek-v4-flash_final11_reactive.json",
@@ -494,8 +494,8 @@
    ]
   },
   {
-   "result": "Temperatures 0.6 and 1.0 (Sections 6.2 and 6.3, Table 6.3, Table D.57)",
-   "files_cell": "the file of the temperature-0 cell with the suffix `_t06` or `_t10`: re-run of Table 6.2 `simple_<m>_canon_t06`, `complex_<m>_canon_t06`, `complex_route_<m>_canon_t06` and the same with `_t10` (Qwen3.5-397B, DeepSeek-V4-Flash); earlier runs (Table D.57) `simple_qwen3.5-397b_final2_la3_t06` and the other `final2` cells of that table; earlier annotation version `simple_qwen3.5-397b_basic_d1d4_t06`",
+   "result": "Temperatures 0.6 and 1.0 (Sections 6.2 and 6.3, Table 6.3)",
+   "files_cell": "the file of the temperature-0 cell with the suffix `_t06` or `_t10`: `simple_<m>_canon_t06`, `complex_<m>_canon_t06`, `complex_route_<m>_canon_t06` and the same with `_t10` (Qwen3.5-397B, DeepSeek-V4-Flash)",
    "items": [
     {
      "path": "results/reliability/complex_deepseek-v4-flash_canon_t06.json",
@@ -1484,7 +1484,7 @@
    ]
   },
   {
-   "result": "Section 6.3, tower settings on single floors",
+   "result": "Section 6.1.2, tower settings on single floors",
    "files_cell": "`<floor>_<m>_canon_hp60` (prompt `floor_basic_hp60.txt`, `MOTA_HP_RULE_PCT=60`; the solver-route cells keep their prompt) and `…_canon_planmem` (`MOTA_PLAN_MEMORY=1`), Qwen3.5-397B and DeepSeek-V4-Flash",
    "items": [
     {
@@ -1928,27 +1928,6 @@
    ]
   },
   {
-   "result": "Table 6.3, assists off",
-   "files_cell": "`simple_qwen3.5-397b_reactive_raw`",
-   "items": [
-    {
-     "path": "results/reliability/simple_qwen3.5-397b_reactive_raw.json",
-     "kind": "reliability",
-     "label": "simple_qwen3.5-397b_reactive_raw",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 0
-    }
-   ]
-  },
-  {
    "result": "Table 6.5 and Figure 6.1, rows 1 to 9",
    "files_cell": "`simple_<m>_` followed by `legacy_strategic_control`, `basic_mechanical_override`, `basic_mech_altroute`, `basic_order_aware`, `basic_d1d4`, `basic_k1k2` (Qwen3.6-35B: `basic_k1k2_16k`), `basic_k1k2_hist0` (Qwen3.6-35B: `basic_k1k2_16k_hist0`), `final_la3`, `final2_la3`",
    "items": [
@@ -2200,28 +2179,7 @@
    "items": []
   },
   {
-   "result": "Section 6.4.2, failure census",
-   "files_cell": "the 31 files listed in `analysis/failure_census_simple.py` (rows 2 to 9 of Table 6.5 with their depth, temperature and history variants; reference trajectory = first episode of `simple_qwen3.5-397b_basic_order_aware`)",
-   "items": [
-    {
-     "path": "results/reliability/simple_qwen3.5-397b_basic_order_aware.json",
-     "kind": "reliability",
-     "label": "simple_qwen3.5-397b_basic_order_aware",
-     "n": 10,
-     "successes": 10,
-     "ci": [
-      0.7225,
-      1.0
-     ],
-     "hp_ratio": 0.1538,
-     "died": 0,
-     "floors_max": null,
-     "logs": 10
-    }
-   ]
-  },
-  {
-   "result": "Section 6.4.6, Table B.4 and Figure 6.2",
+   "result": "Section 6.4.5, Table B.3 and Figure 6.2",
    "files_cell": "`complex_value_trace_[a-e].json`, written by `analysis/complex_value_trace.py` and summarised by `analysis/complex_value_summary.py`",
    "items": [
     {
@@ -3530,144 +3488,9 @@
    ]
   },
   {
-   "result": "Table 6.9, tower row (design 2)",
-   "files_cell": "`tower_deepseek-v4-flash_final3_reactive`, `…_plan<k>`, `…_maxsteps`, `…_maxsteps_once`; first design: `tower_deepseek-v4-flash_final2_*`",
+   "result": "Table 6.9, tower row (second tower observation)",
+   "files_cell": "`tower_deepseek-v4-flash_final3_reactive`, `…_plan<k>`, `…_maxsteps`, `…_maxsteps_once`",
    "items": [
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final2_maxsteps.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final2_maxsteps",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 4,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final2_maxsteps_once.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final2_maxsteps_once",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 3,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final2_plan2.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final2_plan2",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 7,
-     "logs": 1
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final2_plan3.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final2_plan3",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 7,
-     "logs": 1
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final2_plan5.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final2_plan5",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 7,
-     "logs": 1
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final2_planf.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final2_planf",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 7,
-     "logs": 1
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final2_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final2_reactive",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 7,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final2_reactive_t16_t06.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final2_reactive_t16_t06",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 7,
-     "logs": 1
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final2_shoproute_remote.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final2_shoproute_remote",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 3,
-     "logs": 1
-    },
     {
      "path": "results/reliability/tower_deepseek-v4-flash_final3_maxsteps.json",
      "kind": "reliability",
@@ -3756,117 +3579,6 @@
      "hp_ratio": null,
      "died": 0,
      "floors_max": 8,
-     "logs": 3
-    }
-   ]
-  },
-  {
-   "result": "Table 6.9, tower, design 5 rows",
-   "files_cell": "`tower_deepseek-v4-flash_final7_reactive`, `tower_qwen3.5-397b_final7_reactive`, `tower_deepseek-v4-flash_final7_plan3`, `…_final7_plan5`, `tower_qwen3.5-397b_final7_plan3` (development version `final7` of design 5, Table F.5)",
-   "items": [
-    {
-     "path": "results/reliability/_superseded_cross/tower_deepseek-v4-flash_final7_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final7_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/_superseded_cross/tower_qwen3.5-397b_final7_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final7_reactive",
-     "n": 2,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.6576
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 2
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final7_plan3.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final7_plan3",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 16,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final7_plan5.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final7_plan5",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final7_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final7_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_final7_plan3.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final7_plan3",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_final7_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final7_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 16,
      "logs": 3
     }
    ]
@@ -4429,132 +4141,12 @@
   },
   {
    "result": "Table 6.13, tower",
-   "files_cell": "`tower_<m>_<label>_reactive` with the labels of Table F.5 (Qwen3.5-397B, design 1: `tower_qwen3.5-397b_final2`); heuristic `tower_MT0-MT23w_heuristic_final3`, on the corrected engine `tower_MT0-MT23w_heuristic_final7` (same result as `…_final6`)",
+   "files_cell": "`tower_<m>_<label>_reactive` with the labels of Table D.5 (Qwen3.5-397B, first observation: `tower_qwen3.5-397b_final2`); continuations from MT18 `tower_<m>_final11_resume_blue`; heuristic `tower_MT0-MT23w_heuristic_final3`, with the game's item values `tower_MT0-MT23w_heuristic_final7`",
    "items": [
-    {
-     "path": "results/reliability/_superseded_cross/tower_deepseek-v4-flash_final7_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final7_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/_superseded_cross/tower_qwen3.5-397b_final7_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final7_reactive",
-     "n": 2,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.6576
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 2
-    },
-    {
-     "path": "results/reliability/_superseded_hpfloor/tower_deepseek-v4-flash_final6_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final6_reactive",
-     "n": 2,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.6576
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 2
-    },
-    {
-     "path": "results/reliability/_superseded_keyfact/tower_deepseek-v4-flash_final10_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final10_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 16,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/_superseded_keyfact/tower_mistral-medium-3.5_final10_reactive.json",
-     "kind": "reliability",
-     "label": "tower_mistral-medium-3.5_final10_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/_superseded_keyfact/tower_qwen3.6-35b_final10_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.6-35b_final10_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 16,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/_superseded_plannote/tower_qwen3.5-397b_final8_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final8_reactive",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 7,
-     "logs": 1
-    },
     {
      "path": "results/reliability/tower_MT0-MT23w_heuristic_final3.json",
      "kind": "reliability",
      "label": "tower_MT0-MT23w_heuristic_final3",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 0
-    },
-    {
-     "path": "results/reliability/tower_MT0-MT23w_heuristic_final6.json",
-     "kind": "reliability",
-     "label": "tower_MT0-MT23w_heuristic_final6",
      "n": 1,
      "successes": 0,
      "ci": [
@@ -4582,21 +4174,6 @@
      "logs": 0
     },
     {
-     "path": "results/reliability/tower_deepseek-v4-flash_final10_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final10_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 17,
-     "logs": 3
-    },
-    {
      "path": "results/reliability/tower_deepseek-v4-flash_final11_reactive.json",
      "kind": "reliability",
      "label": "tower_deepseek-v4-flash_final11_reactive",
@@ -4609,6 +4186,21 @@
      "hp_ratio": null,
      "died": 0,
      "floors_max": 17,
+     "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_deepseek-v4-flash_final11_resume_blue.json",
+     "kind": "reliability",
+     "label": "tower_deepseek-v4-flash_final11_resume_blue",
+     "n": 3,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.5615
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 21,
      "logs": 3
     },
     {
@@ -4642,81 +4234,6 @@
      "logs": 3
     },
     {
-     "path": "results/reliability/tower_deepseek-v4-flash_final4_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final4_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final5_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final5_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final7_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final7_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final8_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final8_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 16,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_deepseek-v4-flash_final9_reactive.json",
-     "kind": "reliability",
-     "label": "tower_deepseek-v4-flash_final9_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 16,
-     "logs": 3
-    },
-    {
      "path": "results/reliability/tower_mistral-medium-3.5_final11_reactive.json",
      "kind": "reliability",
      "label": "tower_mistral-medium-3.5_final11_reactive",
@@ -4729,21 +4246,6 @@
      "hp_ratio": null,
      "died": 0,
      "floors_max": 8,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_final10_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final10_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 21,
      "logs": 3
     },
     {
@@ -4760,6 +4262,21 @@
      "died": 0,
      "floors_max": 18,
      "logs": 3
+    },
+    {
+     "path": "results/reliability/tower_qwen3.5-397b_final11_resume_blue.json",
+     "kind": "reliability",
+     "label": "tower_qwen3.5-397b_final11_resume_blue",
+     "n": 1,
+     "successes": 1,
+     "ci": [
+      0.2065,
+      1.0
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": 21,
+     "logs": 1
     },
     {
      "path": "results/reliability/tower_qwen3.5-397b_final2.json",
@@ -4792,96 +4309,6 @@
      "logs": 1
     },
     {
-     "path": "results/reliability/tower_qwen3.5-397b_final4_nohp_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final4_nohp_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_final4_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final4_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_final5_nohp_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final5_nohp_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_final5_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final5_reactive",
-     "n": 2,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.6576
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 2
-    },
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_final7_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final7_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 16,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_final8_reactive.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final8_reactive",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 14,
-     "logs": 3
-    },
-    {
      "path": "results/reliability/tower_qwen3.6-35b_final11_reactive.json",
      "kind": "reliability",
      "label": "tower_qwen3.6-35b_final11_reactive",
@@ -4895,94 +4322,6 @@
      "died": 0,
      "floors_max": 16,
      "logs": 3
-    }
-   ]
-  },
-  {
-   "result": "Section 6.7.3, corrected engine without the override",
-   "files_cell": "`_superseded_hpfloor/tower_qwen3.5-397b_final6_reactive_beforeplanmemory`",
-   "items": [
-    {
-     "path": "results/reliability/_superseded_hpfloor/tower_qwen3.5-397b_final6_reactive_beforeplanmemory.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_final6_reactive",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 1
-    }
-   ]
-  },
-  {
-   "result": "Table 6.14, threshold replay",
-   "files_cell": "`hp_rule_decision_test.json` and `…_extra40.json`, produced by `analysis/test_hp_rule.py`, which rebuilds the system prompt of the stored decision from the run log and replaces every \"40 %\" in it and in the stored request; positions from the run logs `20261001_220503_593390_MT0-MT23w_llm.json` (turn 15, corrected engine) and `20261001_084634_705631_MT0-MT23w_llm.json` (turn 17, design 3)",
-   "items": [
-    {
-     "path": "results/reliability/hp_rule_decision_test.json",
-     "kind": "other",
-     "label": "hp_rule_decision_test"
-    },
-    {
-     "path": "results/reliability/hp_rule_decision_test_extra40.json",
-     "kind": "other",
-     "label": "hp_rule_decision_test_extra40"
-    }
-   ]
-  },
-  {
-   "result": "Section 6.7.3, earlier tower runs (development history)",
-   "files_cell": "`tower_qwen3.5-397b_basic` (strategic overrides), `tower_qwen3.5-397b_basic_mechanical`, `tower_qwen3.6-35b_tower_seed` (walkthrough prompt)",
-   "items": [
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_basic.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_basic",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 8,
-     "logs": 1
-    },
-    {
-     "path": "results/reliability/tower_qwen3.5-397b_basic_mechanical.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.5-397b_basic_mechanical",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": 3,
-     "logs": 1
-    },
-    {
-     "path": "results/reliability/tower_qwen3.6-35b_tower_seed.json",
-     "kind": "reliability",
-     "label": "tower_qwen3.6-35b_tower_seed",
-     "n": 1,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.7935
-     ],
-     "hp_ratio": null,
-     "died": 1,
-     "floors_max": 14,
-     "logs": 1
     }
    ]
   },

@@ -103,7 +103,7 @@ check("/api/catalog/run rejects unknown ids", r.status_code == 400)
 r = client.get("/api/thesis-results")
 rows = r.json().get("rows", [])
 t62 = next((x for x in rows if x["result"].startswith("Table 6.2, single-floor")), None)
-check("/api/thesis-results follows Table F.4 (Table 6.2 has 28 result files)", len(rows) >= 30 and t62 and len(t62["items"]) == 28)
+check("/api/thesis-results follows Table D.4 (Table 6.2 has 28 result files)", len(rows) >= 20 and t62 and len(t62["items"]) == 28)
 r = client.get("/api/thesis-results/file", params={"path": "results/reliability/simple_qwen3.5-397b_canon.json"})
 check("/api/thesis-results/file lists episodes with their run logs", r.status_code == 200 and len(r.json()["episodes"]) == 5
       and all(e["run_log"] for e in r.json()["episodes"]))

@@ -4,8 +4,8 @@ A tour of the *Magic Tower AI Lab* in eight steps, from watching a run to inspec
 It mirrors the captioned video and needs **no API key**: every step uses the rule-based heuristic or the
 stored thesis episodes.
 
-**Video:** [videos/walkthrough.mp4](videos/walkthrough.mp4) (3½ minutes, captioned, no sound; also
-attached to the GitHub release).
+**Video:** [videos/walkthrough.mp4](videos/walkthrough.mp4) (6 minutes, captioned, no sound; the
+[voice-over script](#voice-over) is timed to it; also attached to the GitHub release).
 
 ## Before you start
 
@@ -184,53 +184,16 @@ a change to the platform. It needs a running platform with the run logs, Playwri
 pip install imageio-ffmpeg
 python -m mota.dashboard                                   # in another terminal
 python scripts/record_walkthrough.py --url http://localhost:8080
-# -> docs/videos/walkthrough.mp4 and docs/images/walkthrough/NN_<step>.png
+# -> docs/videos/walkthrough.mp4, docs/videos/walkthrough_voiceover.txt, docs/images/walkthrough/NN_<step>.png
 ```
 
-The captions are defined in `tour()` in `scripts/record_walkthrough.py`.
+The captions and the narration are defined in `tour()` in `scripts/record_walkthrough.py`. Every scene
+is held long enough to speak its narration, so a re-recorded video always fits the voice-over script.
 
-## Narration script
+## Voice-over
 
-For a voiced version: one paragraph per scene, read at a calm pace (about 130 words per minute, which
-matches the scene lengths of the captioned video).
-
-**Intro (Live page).** This is Magic Tower AI Lab. A language model plays Magic Tower, a grid puzzle in
-which every fight costs health and the order of fights decides whether the boss can be beaten at all.
-The model does not move on the grid. A deterministic engine lists every legal action with its exact
-cost and what it unlocks, and the model picks one by number.
-
-**1. Live.** Every run appears here, whether it was started in the browser or from a terminal. You see
-the label, the floor, the model, the progress and the result, and selecting a job lets you follow its
-map and its decisions while it runs.
-
-**2. Play.** On the Play page you choose a floor, a model, a prompt and the planning mode. We start the
-rule-based heuristic on the simple floor, which needs no API key. Each decision becomes a turn card
-with the exact text the agent received, its answer and the executed action. The heuristic stays alive
-but never defeats the boss; the best possible play would finish with thirteen health points. You can
-scrub through the episode, and defeated monsters and collected items disappear from the map.
-
-**3. Manual mode.** Play it yourself shows the same numbered actions the model receives, ringed on the
-map and annotated with exact damage and what each action unlocks. Click a tile to take it.
-
-**4. Maps.** The Maps page lists every floor with the facts of the exact solver: the optimum and the
-number of winning sets of fights. The hand-designed floors have exactly one. The tower tab shows the
-twenty-four floors of the original game, drawn with its tiles, and the scripted events of each floor.
-
-**5. Thesis results.** Under Experiments, Thesis results lists every table and figure of Chapter 6 with
-the result files behind it: successes out of episodes with their confidence interval, health relative
-to the optimum, and deaths. Here is Qwen 3.5 with 397 billion parameters on the hand-designed floor
-hand01: five episodes, each with its log. A replay shows what the model saw at every turn, how it
-reasoned, and what it chose.
-
-**6. Logs.** The Logs page holds every stored episode. Filter by scenario, floor and mode, open any
-episode full-size, or compare two runs on the same floor from the turn where they first diverge.
-
-**7. Re-run.** The catalogue re-runs any thesis experiment with your own API key. The key stays in
-server memory only, and every re-run gets its own label next to the thesis result.
-
-**8. GEPA.** The GEPA page shows prompt optimisation iteration by iteration: the teacher model's
-diagnosis of the episodes, the rewritten prompt as a diff against its parent, the validator's verdict,
-and the score on each training floor.
-
-**Outro.** Everything shown here works without an API key. The walkthrough and the guide to running
-experiments are in the docs folder of the repository.
+[videos/walkthrough_voiceover.txt](videos/walkthrough_voiceover.txt) is the narration for a voiced
+version, written by the same script as the video: one block per scene with the time range of the scene
+in the video, one sentence per line. To voice it with a text-to-speech service such as ElevenLabs
+Studio, paste each block as its own paragraph, generate, and place each clip at the start time of its
+scene. Each scene is a little longer than its lines, so the clips never overlap.

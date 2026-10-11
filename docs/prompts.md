@@ -20,7 +20,8 @@ two labelled compiled-knowledge prompts.
 
 ## Earlier prompts
 
-Kept for provenance (the thesis lists every prompt with its role in Appendix I):
+Kept for provenance (the thesis lists the prompts behind its results in Appendix F; earlier prompts are described in
+[development-history.md](development-history.md)):
 
 - tower designs 1, 3, 4, 5 and 6: `tower_basic_v1_stairs.txt`, `tower_basic_v3_statneeds.txt`,
   `tower_basic_v4_wayup.txt`, `tower_basic_v5_fidelity.txt`, `tower_basic_design6.txt`;

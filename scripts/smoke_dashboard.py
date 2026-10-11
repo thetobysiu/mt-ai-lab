@@ -77,7 +77,7 @@ def main() -> int:
         print("\n--- experiments catalog, GEPA runs, planning control ---")
         page.goto(f"{base}/experiments/", wait_until="networkidle")
         page.wait_for_selector('[data-testid="thesis-row"]', timeout=30_000)
-        check("thesis results follow Table F.4", page.locator('[data-testid="thesis-row"]').count() >= 30)
+        check("thesis results follow Table D.4", page.locator('[data-testid="thesis-row"]').count() >= 20)
         page.locator('[data-testid="thesis-item"]').first.click()
         page.wait_for_selector('[data-testid="thesis-episode"]', timeout=30_000)
         check("a thesis result file lists its episodes", page.locator('[data-testid="thesis-episode"]').count() >= 1)

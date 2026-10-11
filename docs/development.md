@@ -52,7 +52,7 @@ python scripts/build_solver.py     # javac -d tools/java_bfs/out tools/java_bfs/
   `mota/harness/catalog.py`.
 - **The thesis index:** after changing results that the thesis reports, regenerate
   `results/thesis_index.json` and `docs/results.md` with
-  `python analysis/thesis_index.py --appendix <path to Appendix F of the thesis>`.
+`python analysis/thesis_index.py --appendix <path to Appendix D of the thesis>`.
 
 ## Run-log archive
 

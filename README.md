@@ -14,7 +14,8 @@ scripts of the master's thesis
 > Leuphana University Lüneburg.
 
 **Start here:** [guided walkthrough of the platform](docs/walkthrough.md) ·
-[watch the 3½-minute tour](docs/videos/walkthrough.mp4) (captioned; also attached to the release)
+[watch the 6-minute tour](docs/videos/walkthrough.mp4) (captioned, with a
+[voice-over script](docs/videos/walkthrough_voiceover.txt); also attached to the release)
 
 ![Live page of the platform](docs/images/fig_dash_10_live_jobs.png)
 
@@ -124,6 +125,7 @@ run_reliability.py    repeated-run harness (command line)
 | [Solver and floors](docs/solver-and-floors.md) | exact solver, floor format, designing floors |
 | [Prompt optimisation](docs/prompt-optimisation.md) | the (1+1) loop, the Pareto loop, the study runner |
 | [Development](docs/development.md) | tests, front-end build, adding features |
+| [Development history](docs/development-history.md) | material removed from the final thesis: earlier experiments, tower designs, excluded runs, pilots |
 | [Glossary](GLOSSARY.md) | the terms used in the thesis and the docs |
 
 ## Citation

@@ -61,8 +61,9 @@ your endpoint serves: `python -c "from mota.optimizer.model_config import check_
 
 ## Tower designs
 
-Each tower design adds settings to the one before it (thesis Table 5.2 and Table F.5). Design 7, the
-final design, uses all of these:
+Each tower design adds settings to the one before it ([development history](development-history.md)). The thesis
+compares design 1 (its *first tower observation*), design 2 (*second*) and design 7 (*final*; Table 6.13 and
+Table D.5). Design 7 uses all of these:
 
 | Variable | Since design | Meaning |
 |---|---|---|
