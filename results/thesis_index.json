@@ -494,7 +494,7 @@
    ]
   },
   {
-   "result": "Temperatures 0.6 and 1.0 (Sections 6.2 and 6.3, Table 6.3)",
+   "result": "Temperatures 0.6 and 1.0 (Section 6.3, Table 6.3)",
    "files_cell": "the file of the temperature-0 cell with the suffix `_t06` or `_t10`: `simple_<m>_canon_t06`, `complex_<m>_canon_t06`, `complex_route_<m>_canon_t06` and the same with `_t10` (Qwen3.5-397B, DeepSeek-V4-Flash)",
    "items": [
     {
@@ -516,36 +516,6 @@
      "path": "results/reliability/complex_deepseek-v4-flash_canon_t10.json",
      "kind": "reliability",
      "label": "complex_deepseek-v4-flash_canon_t10",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_deepseek-v4-flash_final2_la3_t06.json",
-     "kind": "reliability",
-     "label": "complex_deepseek-v4-flash_final2_la3_t06",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_deepseek-v4-flash_final2_la3_t10.json",
-     "kind": "reliability",
-     "label": "complex_deepseek-v4-flash_final2_la3_t10",
      "n": 5,
      "successes": 0,
      "ci": [
@@ -621,21 +591,6 @@
      "path": "results/reliability/complex_qwen3.5-397b_canon_t10.json",
      "kind": "reliability",
      "label": "complex_qwen3.5-397b_canon_t10",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_qwen3.5-397b_final2_la3_t06.json",
-     "kind": "reliability",
-     "label": "complex_qwen3.5-397b_final2_la3_t06",
      "n": 5,
      "successes": 0,
      "ci": [
@@ -968,189 +923,45 @@
    ]
   },
   {
-   "result": "Section 6.2 (earlier runs of the final configuration), Table 6.3 (depth 3), Table 6.5 (row 9)",
-   "files_cell": "`simple_<m>_final2_la3` (Qwen3.5-397B, Qwen3.6-35B), `simple_<m>_final2_reactive` (DeepSeek-V4-Flash, Qwen3.8-27B); `complex_<m>_final2_la3`; `complex_<m>_survival_final2_reactive` (Qwen3.5-397B, Qwen3.6-35B; earlier version `complex_<m>_survival_hints_on`), `complex_deepseek-v4-flash_survival_final2_reactive_t32` (32,768 tokens; `…_reactive` at 16,384), `complex_qwen3.8-27b_survival_final2_reactive_t32_t06`; `hand0<i>_<m>_final2` (DeepSeek-V4-Flash at 32,768 tokens: `…_reactive_t32`)",
+   "result": "Section 6.2 and Table 6.3 (earlier episodes of the final configuration, depth 3), Table 6.5 (row 9)",
+   "files_cell": "`simple_<m>_final2_la3` (Qwen3.5-397B, Qwen3.6-35B)",
    "items": [
     {
-     "path": "results/reliability/_ablation_effcost_numeric/simple_qwen3.5-397b_reactive.json",
+     "path": "results/reliability/simple_qwen3.5-397b_final2_la3.json",
      "kind": "reliability",
-     "label": "simple_qwen3.5-397b_reactive",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 0
-    },
-    {
-     "path": "results/reliability/_ablation_effcost_numeric/simple_qwen3.6-35b_reactive.json",
-     "kind": "reliability",
-     "label": "simple_qwen3.6-35b_reactive",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 0
-    },
-    {
-     "path": "results/reliability/complex_deepseek-v4-flash_final2_la3.json",
-     "kind": "reliability",
-     "label": "complex_deepseek-v4-flash_final2_la3",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive.json",
-     "kind": "reliability",
-     "label": "complex_deepseek-v4-flash_survival_final2_reactive",
-     "n": 5,
-     "successes": 3,
-     "ci": [
-      0.2307,
-      0.8824
-     ],
-     "hp_ratio": 0.2402,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_reactive_t32.json",
-     "kind": "reliability",
-     "label": "complex_deepseek-v4-flash_survival_final2_reactive_t32",
+     "label": "simple_qwen3.5-397b_final2_la3",
      "n": 10,
-     "successes": 8,
+     "successes": 10,
      "ci": [
-      0.4902,
-      0.9433
+      0.7225,
+      1.0
      ],
-     "hp_ratio": 0.2298,
+     "hp_ratio": 0.1538,
      "died": 0,
      "floors_max": null,
      "logs": 10
     },
     {
-     "path": "results/reliability/complex_qwen3.5-397b_final2_la3.json",
+     "path": "results/reliability/simple_qwen3.6-35b_final2_la3.json",
      "kind": "reliability",
-     "label": "complex_qwen3.5-397b_final2_la3",
-     "n": 5,
-     "successes": 0,
+     "label": "simple_qwen3.6-35b_final2_la3",
+     "n": 10,
+     "successes": 7,
      "ci": [
-      0.0,
-      0.4345
+      0.3968,
+      0.8922
      ],
-     "hp_ratio": null,
+     "hp_ratio": 0.1538,
      "died": 0,
      "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_qwen3.5-397b_survival_final2_reactive.json",
-     "kind": "reliability",
-     "label": "complex_qwen3.5-397b_survival_final2_reactive",
-     "n": 5,
-     "successes": 5,
-     "ci": [
-      0.5655,
-      1.0
-     ],
-     "hp_ratio": 0.2647,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_qwen3.5-397b_survival_hints_on.json",
-     "kind": "reliability",
-     "label": "complex_qwen3.5-397b_survival_hints_on",
-     "n": 5,
-     "successes": 2,
-     "ci": [
-      0.1176,
-      0.7693
-     ],
-     "hp_ratio": 0.9546,
-     "died": 3,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_qwen3.6-35b_final2_la3.json",
-     "kind": "reliability",
-     "label": "complex_qwen3.6-35b_final2_la3",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_qwen3.6-35b_survival_final2_reactive.json",
-     "kind": "reliability",
-     "label": "complex_qwen3.6-35b_survival_final2_reactive",
-     "n": 5,
-     "successes": 5,
-     "ci": [
-      0.5655,
-      1.0
-     ],
-     "hp_ratio": 0.3235,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_qwen3.6-35b_survival_hints_on.json",
-     "kind": "reliability",
-     "label": "complex_qwen3.6-35b_survival_hints_on",
-     "n": 5,
-     "successes": 4,
-     "ci": [
-      0.3755,
-      0.9638
-     ],
-     "hp_ratio": 0.4091,
-     "died": 1,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/complex_qwen3.8-27b_survival_final2_reactive_t32_t06.json",
-     "kind": "reliability",
-     "label": "complex_qwen3.8-27b_survival_final2_reactive_t32_t06",
-     "n": 3,
-     "successes": 3,
-     "ci": [
-      0.4385,
-      1.0
-     ],
-     "hp_ratio": 0.3235,
-     "died": 0,
-     "floors_max": null,
-     "logs": 3
-    },
+     "logs": 10
+    }
+   ]
+  },
+  {
+   "result": "Section 6.3, hand01 and hand02 at depth 3",
+   "files_cell": "`hand0<i>_deepseek-v4-flash_final2` (32,768 tokens: `…_reactive_t32`)",
+   "items": [
     {
      "path": "results/reliability/hand01_deepseek-v4-flash_final2.json",
      "kind": "reliability",
@@ -1180,36 +991,6 @@
      "died": 0,
      "floors_max": null,
      "logs": 5
-    },
-    {
-     "path": "results/reliability/hand01_qwen3.5-397b_final2.json",
-     "kind": "reliability",
-     "label": "hand01_qwen3.5-397b_final2",
-     "n": 5,
-     "successes": 5,
-     "ci": [
-      0.5655,
-      1.0
-     ],
-     "hp_ratio": 0.4286,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/hand01_qwen3.6-35b_final2.json",
-     "kind": "reliability",
-     "label": "hand01_qwen3.6-35b_final2",
-     "n": 3,
-     "successes": 3,
-     "ci": [
-      0.4385,
-      1.0
-     ],
-     "hp_ratio": 0.6429,
-     "died": 0,
-     "floors_max": null,
-     "logs": 3
     },
     {
      "path": "results/reliability/hand02_deepseek-v4-flash_final2.json",
@@ -1242,36 +1023,6 @@
      "logs": 5
     },
     {
-     "path": "results/reliability/hand02_qwen3.5-397b_final2.json",
-     "kind": "reliability",
-     "label": "hand02_qwen3.5-397b_final2",
-     "n": 5,
-     "successes": 3,
-     "ci": [
-      0.2307,
-      0.8824
-     ],
-     "hp_ratio": 0.5385,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/hand02_qwen3.6-35b_final2.json",
-     "kind": "reliability",
-     "label": "hand02_qwen3.6-35b_final2",
-     "n": 3,
-     "successes": 3,
-     "ci": [
-      0.4385,
-      1.0
-     ],
-     "hp_ratio": 0.3077,
-     "died": 0,
-     "floors_max": null,
-     "logs": 3
-    },
-    {
      "path": "results/reliability/hand03_deepseek-v4-flash_final2.json",
      "kind": "reliability",
      "label": "hand03_deepseek-v4-flash_final2",
@@ -1287,36 +1038,6 @@
      "logs": 5
     },
     {
-     "path": "results/reliability/hand03_qwen3.5-397b_final2.json",
-     "kind": "reliability",
-     "label": "hand03_qwen3.5-397b_final2",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/hand03_qwen3.6-35b_final2.json",
-     "kind": "reliability",
-     "label": "hand03_qwen3.6-35b_final2",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 3
-    },
-    {
      "path": "results/reliability/hand04_deepseek-v4-flash_final2.json",
      "kind": "reliability",
      "label": "hand04_deepseek-v4-flash_final2",
@@ -1330,156 +1051,6 @@
      "died": 0,
      "floors_max": null,
      "logs": 5
-    },
-    {
-     "path": "results/reliability/hand04_qwen3.5-397b_final2.json",
-     "kind": "reliability",
-     "label": "hand04_qwen3.5-397b_final2",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/hand04_qwen3.6-35b_final2.json",
-     "kind": "reliability",
-     "label": "hand04_qwen3.6-35b_final2",
-     "n": 3,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.5615
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/simple_deepseek-v4-flash_final2_reactive.json",
-     "kind": "reliability",
-     "label": "simple_deepseek-v4-flash_final2_reactive",
-     "n": 5,
-     "successes": 3,
-     "ci": [
-      0.2307,
-      0.8824
-     ],
-     "hp_ratio": 0.1538,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/simple_deepseek-v4-flash_final2_reactive_t32.json",
-     "kind": "reliability",
-     "label": "simple_deepseek-v4-flash_final2_reactive_t32",
-     "n": 5,
-     "successes": 1,
-     "ci": [
-      0.0362,
-      0.6245
-     ],
-     "hp_ratio": 0.1538,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/simple_qwen3.5-397b_final2_la3.json",
-     "kind": "reliability",
-     "label": "simple_qwen3.5-397b_final2_la3",
-     "n": 10,
-     "successes": 10,
-     "ci": [
-      0.7225,
-      1.0
-     ],
-     "hp_ratio": 0.1538,
-     "died": 0,
-     "floors_max": null,
-     "logs": 10
-    },
-    {
-     "path": "results/reliability/simple_qwen3.5-397b_reactive.json",
-     "kind": "reliability",
-     "label": "simple_qwen3.5-397b_reactive",
-     "n": 5,
-     "successes": 3,
-     "ci": [
-      0.2307,
-      0.8824
-     ],
-     "hp_ratio": 0.1538,
-     "died": 0,
-     "floors_max": null,
-     "logs": 0
-    },
-    {
-     "path": "results/reliability/simple_qwen3.6-35b_final2_la3.json",
-     "kind": "reliability",
-     "label": "simple_qwen3.6-35b_final2_la3",
-     "n": 10,
-     "successes": 7,
-     "ci": [
-      0.3968,
-      0.8922
-     ],
-     "hp_ratio": 0.1538,
-     "died": 0,
-     "floors_max": null,
-     "logs": 10
-    },
-    {
-     "path": "results/reliability/simple_qwen3.6-35b_reactive.json",
-     "kind": "reliability",
-     "label": "simple_qwen3.6-35b_reactive",
-     "n": 5,
-     "successes": 0,
-     "ci": [
-      0.0,
-      0.4345
-     ],
-     "hp_ratio": null,
-     "died": 0,
-     "floors_max": null,
-     "logs": 5
-    },
-    {
-     "path": "results/reliability/simple_qwen3.8-27b_final2_reactive.json",
-     "kind": "reliability",
-     "label": "simple_qwen3.8-27b_final2_reactive",
-     "n": 3,
-     "successes": 3,
-     "ci": [
-      0.4385,
-      1.0
-     ],
-     "hp_ratio": 0.1538,
-     "died": 0,
-     "floors_max": null,
-     "logs": 3
-    },
-    {
-     "path": "results/reliability/simple_qwen3.8-27b_reactive.json",
-     "kind": "reliability",
-     "label": "simple_qwen3.8-27b_reactive",
-     "n": 5,
-     "successes": 4,
-     "ci": [
-      0.3755,
-      0.9638
-     ],
-     "hp_ratio": 0.1538,
-     "died": 0,
-     "floors_max": null,
-     "logs": 0
     }
    ]
   },
@@ -2763,7 +2334,7 @@
   },
   {
    "result": "Tables 6.9 and 6.10 and Figure 6.4, single floors",
-   "files_cell": "`simple_<m>_final2_plan<k>`, `…_planf` (long plan, whole-floor wording, re-planned), `…_oneshot_plan` (single call, whole-floor wording), `…_maxsteps`, `…_maxsteps_once`; reactive arms `simple_qwen3.5-397b_final2_la3`, `simple_deepseek-v4-flash_final2_reactive` and `…_reactive_t32`; `complex_deepseek-v4-flash_survival_final2_*`; `hand0<i>_deepseek-v4-flash_final2_plan<k>`, `…_maxsteps`; Qwen3.8-27B: `simple_qwen3.8-27b_final2_*_t06`, `complex_qwen3.8-27b_survival_final2_*_t06`",
+   "files_cell": "`simple_<m>_final2_plan<k>`, `…_planf` (long plan, whole-floor wording, re-planned), `…_oneshot_plan` (single call, whole-floor wording), `…_maxsteps`, `…_maxsteps_once`; reactive arms `simple_qwen3.5-397b_final2_la3`, `simple_deepseek-v4-flash_final2_reactive` and `…_reactive_t32`, `complex_deepseek-v4-flash_survival_final2_reactive` and `…_reactive_t32`, `hand0<i>_deepseek-v4-flash_final2` and `…_reactive_t32`, `simple_qwen3.8-27b_final2_reactive_t32_t06`, `complex_qwen3.8-27b_survival_final2_reactive_t32_t06`; committed modes `complex_deepseek-v4-flash_survival_final2_*`; `hand0<i>_deepseek-v4-flash_final2_plan<k>`, `…_maxsteps`; Qwen3.8-27B: `simple_qwen3.8-27b_final2_*_t06`, `complex_qwen3.8-27b_survival_final2_*_t06`",
    "items": [
     {
      "path": "results/reliability/complex_deepseek-v4-flash_survival_final2_maxsteps.json",
@@ -3036,6 +2607,21 @@
      "logs": 3
     },
     {
+     "path": "results/reliability/hand01_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_final2",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.6786,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
      "path": "results/reliability/hand01_deepseek-v4-flash_final2_maxsteps.json",
      "kind": "reliability",
      "label": "hand01_deepseek-v4-flash_final2_maxsteps",
@@ -3081,6 +2667,36 @@
      "logs": 5
     },
     {
+     "path": "results/reliability/hand01_deepseek-v4-flash_final2_reactive_t32.json",
+     "kind": "reliability",
+     "label": "hand01_deepseek-v4-flash_final2_reactive_t32",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.6572,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_final2",
+     "n": 5,
+     "successes": 5,
+     "ci": [
+      0.5655,
+      1.0
+     ],
+     "hp_ratio": 0.3077,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
      "path": "results/reliability/hand02_deepseek-v4-flash_final2_maxsteps.json",
      "kind": "reliability",
      "label": "hand02_deepseek-v4-flash_final2_maxsteps",
@@ -3114,6 +2730,51 @@
      "path": "results/reliability/hand02_deepseek-v4-flash_final2_plan5.json",
      "kind": "reliability",
      "label": "hand02_deepseek-v4-flash_final2_plan5",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand02_deepseek-v4-flash_final2_reactive_t32.json",
+     "kind": "reliability",
+     "label": "hand02_deepseek-v4-flash_final2_reactive_t32",
+     "n": 5,
+     "successes": 4,
+     "ci": [
+      0.3755,
+      0.9638
+     ],
+     "hp_ratio": 0.2885,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand03_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "hand03_deepseek-v4-flash_final2",
+     "n": 5,
+     "successes": 0,
+     "ci": [
+      0.0,
+      0.4345
+     ],
+     "hp_ratio": null,
+     "died": 0,
+     "floors_max": null,
+     "logs": 5
+    },
+    {
+     "path": "results/reliability/hand04_deepseek-v4-flash_final2.json",
+     "kind": "reliability",
+     "label": "hand04_deepseek-v4-flash_final2",
      "n": 5,
      "successes": 0,
      "ci": [

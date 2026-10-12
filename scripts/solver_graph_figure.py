@@ -1,6 +1,6 @@
 """Figure: the exact solver's node graph for a single floor (thesis chapters_v2 §4.5).
 
-    python scripts/solver_graph_figure.py [hand01] [--out docs/images/fig_solver_graph_hand01.png]
+    python scripts/solver_graph_figure.py [simple | hand01 | path] [--out docs/images/fig_solver_graph_simple.png]
 
 Nodes and edges follow tools/java_bfs/Graph.buildMap/isLinked: every key, gem, potion, door, monster and the
 boss is a node, the hero's start is node 0, and two nodes are linked when a 4-connected path over empty floor
@@ -68,10 +68,11 @@ def linked(grid, a, b) -> bool:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("floor", nargs="?", default="hand01")
-    ap.add_argument("--out", default=str(ROOT / "docs" / "images" / "fig_solver_graph_hand01.png"))
+    ap.add_argument("floor", nargs="?", default="simple")
+    ap.add_argument("--out", default=str(ROOT / "docs" / "images" / "fig_solver_graph_simple.png"))
     a = ap.parse_args()
-    p = Path(a.floor) if Path(a.floor).exists() else ROOT / "data" / "floors" / "hand" / f"{a.floor}.txt"
+    p = next(c for c in (Path(a.floor), ROOT / "data" / "floors" / f"{a.floor}.txt",
+                         ROOT / "data" / "floors" / "hand" / f"{a.floor}.txt") if c.exists())
     grid, hero = load(p)
     grid[hero[1]][hero[0]] = 0
     ns = nodes_of(grid, hero)

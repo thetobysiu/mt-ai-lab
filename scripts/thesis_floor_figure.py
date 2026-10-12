@@ -1,6 +1,6 @@
-"""Render hand01 with the original game sprites for the thesis.
+"""Render the simple floor with the original game sprites for the thesis.
 
-    python scripts/thesis_floor_figure.py   ->  thesis/graphs/2.4.png (rows 4-10, the three first choices), 4.1.png (full floor)
+    python scripts/thesis_floor_figure.py   ->  thesis/graphs/2.4.png (simple floor rows 0-5, the four first choices), 4.1.png (full floor)
 """
 import json
 import sys
@@ -89,9 +89,9 @@ def render(floor: str, rows: range, marks: list[tuple[int, int, str]]) -> Image.
 
 
 if __name__ == "__main__":
-    hand01 = str(ROOT / "data/floors/hand/hand01.txt")
-    for name, fig in (("2.4", render(hand01, range(4, 11), [(4, 8, "1"), (6, 8, "2"), (5, 4, "3")])),
-                      ("4.1", render(hand01, range(0, 11), []))):
+    simple = str(ROOT / "data/floors/simple.txt")
+    for name, fig in (("2.4", render(simple, range(0, 6), [(4, 2, "1"), (5, 3, "2"), (6, 4, "3"), (7, 0, "4")])),
+                      ("4.1", render(simple, range(0, 11), []))):
         out = OUT.with_name(f"{name}.png")
         out.parent.mkdir(parents=True, exist_ok=True)
         fig.save(out, dpi=(300, 300))
