@@ -1,6 +1,7 @@
-"""Render the simple floor with the original game sprites for the thesis.
+"""Render single floors with the original game sprites for the thesis.
 
-    python scripts/thesis_floor_figure.py   ->  thesis/graphs/2.4.png (simple floor rows 0-5, the four first choices), 4.1.png (full floor)
+    python scripts/thesis_floor_figure.py   ->  docs/figures/2.4.png (simple floor rows 0-5, the four first choices),
+        4.1.png (full simple floor, optimal route numbered), B.1.png (complex floor), B.2.png (hand01, first decision)
 """
 import json
 import sys
@@ -48,7 +49,8 @@ def hero_sprite() -> Image.Image:
     return sheet.crop((h["stop"] * fw, h["down"] * fh, (h["stop"] + 1) * fw, (h["down"] + 1) * fh)).resize((CELL, CELL))
 
 
-def render(floor: str, rows: range, marks: list[tuple[int, int, str]]) -> Image.Image:
+def render(floor: str, rows: range, marks: list[tuple[int, int, str]],
+           route: list[tuple[int, int]] = ()) -> Image.Image:
     ev.configure_scenario(floor)
     m = ev._serialize_rich_map(ev._create_state())
     grid, hero = m["grid"], m["hero"]
@@ -85,13 +87,33 @@ def render(floor: str, rows: range, marks: list[tuple[int, int, str]]) -> Image.
         cx, cy = x0 + c - r + 2, y0 + r - 2
         d.ellipse((cx - r, cy - r, cx + r, cy + r), fill="#e8b400", outline="black", width=2)
         d.text((cx, cy), label, fill="black", font=bold, anchor="mm")
+    try:
+        small = ImageFont.truetype("arialbd.ttf", 21)
+    except OSError:
+        small = ImageFont.load_default()
+    for k, (x, y) in enumerate(route, 1):
+        x0, y0 = margin_l + x * c, margin_t + rows.index(y) * c
+        r = 16
+        cx, cy = x0 + r + 1, y0 + r + 1
+        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill="white", outline="#1f3a93", width=3)
+        d.text((cx, cy), str(k), fill="#1f3a93", font=small, anchor="mm")
     return out
+
+
+# the 17 actions of the simple floor's exact optimal route (Section 4.5.1)
+SIMPLE_ROUTE = [(6, 4), (5, 6), (4, 7), (3, 7), (7, 0), (8, 0), (9, 0), (3, 5), (7, 5), (9, 5),
+                (1, 9), (10, 7), (9, 9), (4, 2), (2, 1), (5, 9), (5, 10)]
 
 
 if __name__ == "__main__":
     simple = str(ROOT / "data/floors/simple.txt")
-    for name, fig in (("2.4", render(simple, range(0, 6), [(4, 2, "1"), (5, 3, "2"), (6, 4, "3"), (7, 0, "4")])),
-                      ("4.1", render(simple, range(0, 11), []))):
+    figs = (("2.4", lambda: render(simple, range(0, 6), [(4, 2, "1"), (5, 3, "2"), (6, 4, "3"), (7, 0, "4")])),
+            ("4.1", lambda: render(simple, range(0, 11), [], SIMPLE_ROUTE)),
+            ("B.1", lambda: render(str(ROOT / "data/floors/complex.txt"), range(0, 13), [(8, 7, "1"), (11, 8, "2")])),
+            ("B.2", lambda: render(str(ROOT / "data/floors/hand/hand01.txt"), range(0, 11),
+                                   [(4, 8, "1"), (5, 4, "2"), (6, 8, "3")])))
+    for name, make in figs:
+        fig = make()
         out = OUT.with_name(f"{name}.png")
         out.parent.mkdir(parents=True, exist_ok=True)
         fig.save(out, dpi=(300, 300))

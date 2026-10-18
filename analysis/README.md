@@ -13,6 +13,8 @@ Run them from the repository root. Scripts that read run logs need the logs in `
 | `table62_canon.py` | Table 6.2 (main results) |
 | `failure_census_simple.py` | the failure census of the simple floor ([development history](../docs/development-history.md)) |
 | `override_census.py` | turns on which the executed action differs from the model's choice (Section 6.4.1) |
+| `simple_turns.py` | the model's turns per simple-floor episode: first decision, winning trajectory, departures (Sections 6.2–6.4) |
+| `simple_route_costs.py`, `simple_turn_values.py` | costs along the simple floor's optimal route (Table 4.4) and the state value of every legal action at each decision of an episode (Section 6.4) |
 | `complex_value_trace.py`, `complex_value_summary.py` | exact state values of the complex-floor episodes (Section 6.4.5, Figure 6.2) |
 | `special_abilities_census.py` | special abilities per floor (Table 4.1) |
 | `mapenum_rescore.py` | the map-only condition (Table 6.4) |
